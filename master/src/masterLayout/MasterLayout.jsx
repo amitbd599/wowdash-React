@@ -1,8 +1,15 @@
-import React from 'react'
+import React from "react";
+import ScrollToTop from "react-scroll-to-top";
+import Preloader from "../helper/Preloader";
 
 const MasterLayout = ({ children }) => {
   return (
     <>
+      {/* ScrollToTop */}
+      <ScrollToTop smooth color="#FA6400" />
+
+      {/* Preloader */}
+      <Preloader />
 
       {/* sidebar */}
       <aside className="sidebar">
@@ -98,7 +105,10 @@ const MasterLayout = ({ children }) => {
             </li>
             <li>
               <a href="calendar-main.html">
-                <iconify-icon icon="solar:calendar-outline" className="menu-icon" />
+                <iconify-icon
+                  icon="solar:calendar-outline"
+                  className="menu-icon"
+                />
                 <span>Calendar</span>
               </a>
             </li>
@@ -113,7 +123,10 @@ const MasterLayout = ({ children }) => {
             </li>
             <li className="dropdown">
               <a href="javascript:void(0)">
-                <iconify-icon icon="hugeicons:invoice-03" className="menu-icon" />
+                <iconify-icon
+                  icon="hugeicons:invoice-03"
+                  className="menu-icon"
+                />
                 <span>Invoice</span>
               </a>
               <ul className="sidebar-submenu">
@@ -321,7 +334,8 @@ const MasterLayout = ({ children }) => {
                 </li>
                 <li>
                   <a href="list.html">
-                    <i className="ri-circle-fill circle-icon text-red w-auto" /> List
+                    <i className="ri-circle-fill circle-icon text-red w-auto" />{" "}
+                    List
                   </a>
                 </li>
                 <li>
@@ -384,7 +398,10 @@ const MasterLayout = ({ children }) => {
             </li>
             <li className="dropdown">
               <a href="javascript:void(0)">
-                <iconify-icon icon="mingcute:storage-line" className="menu-icon" />
+                <iconify-icon
+                  icon="mingcute:storage-line"
+                  className="menu-icon"
+                />
                 <span>Table</span>
               </a>
               <ul className="sidebar-submenu">
@@ -404,7 +421,10 @@ const MasterLayout = ({ children }) => {
             </li>
             <li className="dropdown">
               <a href="javascript:void(0)">
-                <iconify-icon icon="solar:pie-chart-outline" className="menu-icon" />
+                <iconify-icon
+                  icon="solar:pie-chart-outline"
+                  className="menu-icon"
+                />
                 <span>Chart</span>
               </a>
               <ul className="sidebar-submenu">
@@ -492,7 +512,10 @@ const MasterLayout = ({ children }) => {
             <li className="sidebar-menu-group-title">Application</li>
             <li className="dropdown">
               <a href="javascript:void(0)">
-                <iconify-icon icon="simple-line-icons:vector" className="menu-icon" />
+                <iconify-icon
+                  icon="simple-line-icons:vector"
+                  className="menu-icon"
+                />
                 <span>Authentication</span>
               </a>
               <ul className="sidebar-submenu">
@@ -545,7 +568,10 @@ const MasterLayout = ({ children }) => {
             </li>
             <li>
               <a href="error.html">
-                <iconify-icon icon="streamline:straight-face" className="menu-icon" />
+                <iconify-icon
+                  icon="streamline:straight-face"
+                  className="menu-icon"
+                />
                 <span>404</span>
               </a>
             </li>
@@ -613,7 +639,6 @@ const MasterLayout = ({ children }) => {
       </aside>
 
       <main className="dashboard-main">
-
         <div className="navbar-header">
           <div className="row align-items-center justify-content-between">
             <div className="col-auto">
@@ -629,7 +654,10 @@ const MasterLayout = ({ children }) => {
                   />
                 </button>
                 <button type="button" className="sidebar-mobile-toggle">
-                  <iconify-icon icon="heroicons:bars-3-solid" className="icon" />
+                  <iconify-icon
+                    icon="heroicons:bars-3-solid"
+                    className="icon"
+                  />
                 </button>
                 <form className="navbar-search">
                   <input type="text" name="search" placeholder="Search" />
@@ -676,7 +704,9 @@ const MasterLayout = ({ children }) => {
                               alt=""
                               className="w-36-px h-36-px bg-success-subtle text-success-main rounded-circle flex-shrink-0"
                             />
-                            <span className="text-md fw-semibold mb-0">English</span>
+                            <span className="text-md fw-semibold mb-0">
+                              English
+                            </span>
                           </span>
                         </label>
                         <input
@@ -697,7 +727,9 @@ const MasterLayout = ({ children }) => {
                               alt=""
                               className="w-36-px h-36-px bg-success-subtle text-success-main rounded-circle flex-shrink-0"
                             />
-                            <span className="text-md fw-semibold mb-0">Japan</span>
+                            <span className="text-md fw-semibold mb-0">
+                              Japan
+                            </span>
                           </span>
                         </label>
                         <input
@@ -718,7 +750,9 @@ const MasterLayout = ({ children }) => {
                               alt=""
                               className="w-36-px h-36-px bg-success-subtle text-success-main rounded-circle flex-shrink-0"
                             />
-                            <span className="text-md fw-semibold mb-0">France</span>
+                            <span className="text-md fw-semibold mb-0">
+                              France
+                            </span>
                           </span>
                         </label>
                         <input
@@ -739,7 +773,9 @@ const MasterLayout = ({ children }) => {
                               alt=""
                               className="w-36-px h-36-px bg-success-subtle text-success-main rounded-circle flex-shrink-0"
                             />
-                            <span className="text-md fw-semibold mb-0">Germany</span>
+                            <span className="text-md fw-semibold mb-0">
+                              Germany
+                            </span>
                           </span>
                         </label>
                         <input
@@ -783,7 +819,9 @@ const MasterLayout = ({ children }) => {
                               alt=""
                               className="w-36-px h-36-px bg-success-subtle text-success-main rounded-circle flex-shrink-0"
                             />
-                            <span className="text-md fw-semibold mb-0">Bangladesh</span>
+                            <span className="text-md fw-semibold mb-0">
+                              Bangladesh
+                            </span>
                           </span>
                         </label>
                         <input
@@ -804,7 +842,9 @@ const MasterLayout = ({ children }) => {
                               alt=""
                               className="w-36-px h-36-px bg-success-subtle text-success-main rounded-circle flex-shrink-0"
                             />
-                            <span className="text-md fw-semibold mb-0">India</span>
+                            <span className="text-md fw-semibold mb-0">
+                              India
+                            </span>
                           </span>
                         </label>
                         <input
@@ -825,7 +865,9 @@ const MasterLayout = ({ children }) => {
                               alt=""
                               className="w-36-px h-36-px bg-success-subtle text-success-main rounded-circle flex-shrink-0"
                             />
-                            <span className="text-md fw-semibold mb-0">Canada</span>
+                            <span className="text-md fw-semibold mb-0">
+                              Canada
+                            </span>
                           </span>
                         </label>
                         <input
@@ -875,7 +917,9 @@ const MasterLayout = ({ children }) => {
                             <span className="w-8-px h-8-px bg-success-main rounded-circle position-absolute end-0 bottom-0" />
                           </span>
                           <div>
-                            <h6 className="text-md fw-semibold mb-4">Kathryn Murphy</h6>
+                            <h6 className="text-md fw-semibold mb-4">
+                              Kathryn Murphy
+                            </h6>
                             <p className="mb-0 text-sm text-secondary-light text-w-100-px">
                               hey! there i’m...
                             </p>
@@ -903,7 +947,9 @@ const MasterLayout = ({ children }) => {
                             <span className="w-8-px h-8-px  bg-neutral-300 rounded-circle position-absolute end-0 bottom-0" />
                           </span>
                           <div>
-                            <h6 className="text-md fw-semibold mb-4">Kathryn Murphy</h6>
+                            <h6 className="text-md fw-semibold mb-4">
+                              Kathryn Murphy
+                            </h6>
                             <p className="mb-0 text-sm text-secondary-light text-w-100-px">
                               hey! there i’m...
                             </p>
@@ -931,7 +977,9 @@ const MasterLayout = ({ children }) => {
                             <span className="w-8-px h-8-px bg-success-main rounded-circle position-absolute end-0 bottom-0" />
                           </span>
                           <div>
-                            <h6 className="text-md fw-semibold mb-4">Kathryn Murphy</h6>
+                            <h6 className="text-md fw-semibold mb-4">
+                              Kathryn Murphy
+                            </h6>
                             <p className="mb-0 text-sm text-secondary-light text-w-100-px">
                               hey! there i’m...
                             </p>
@@ -959,7 +1007,9 @@ const MasterLayout = ({ children }) => {
                             <span className="w-8-px h-8-px bg-neutral-300 rounded-circle position-absolute end-0 bottom-0" />
                           </span>
                           <div>
-                            <h6 className="text-md fw-semibold mb-4">Kathryn Murphy</h6>
+                            <h6 className="text-md fw-semibold mb-4">
+                              Kathryn Murphy
+                            </h6>
                             <p className="mb-0 text-sm text-secondary-light text-w-100-px">
                               hey! there i’m...
                             </p>
@@ -987,7 +1037,9 @@ const MasterLayout = ({ children }) => {
                             <span className="w-8-px h-8-px bg-success-main rounded-circle position-absolute end-0 bottom-0" />
                           </span>
                           <div>
-                            <h6 className="text-md fw-semibold mb-4">Kathryn Murphy</h6>
+                            <h6 className="text-md fw-semibold mb-4">
+                              Kathryn Murphy
+                            </h6>
                             <p className="mb-0 text-sm text-secondary-light text-w-100-px">
                               hey! there i’m...
                             </p>
@@ -1053,8 +1105,8 @@ const MasterLayout = ({ children }) => {
                               Congratulations
                             </h6>
                             <p className="mb-0 text-sm text-secondary-light text-w-200-px">
-                              Your profile has been Verified. Your profile has been
-                              Verified
+                              Your profile has been Verified. Your profile has
+                              been Verified
                             </p>
                           </div>
                         </div>
@@ -1095,7 +1147,9 @@ const MasterLayout = ({ children }) => {
                             AM
                           </span>
                           <div>
-                            <h6 className="text-md fw-semibold mb-4">Arlene McCoy</h6>
+                            <h6 className="text-md fw-semibold mb-4">
+                              Arlene McCoy
+                            </h6>
                             <p className="mb-0 text-sm text-secondary-light text-w-200-px">
                               Invite you to prototyping
                             </p>
@@ -1117,7 +1171,9 @@ const MasterLayout = ({ children }) => {
                             />
                           </span>
                           <div>
-                            <h6 className="text-md fw-semibold mb-4">Annette Black</h6>
+                            <h6 className="text-md fw-semibold mb-4">
+                              Annette Black
+                            </h6>
                             <p className="mb-0 text-sm text-secondary-light text-w-200-px">
                               Invite you to prototyping
                             </p>
@@ -1231,7 +1287,10 @@ const MasterLayout = ({ children }) => {
                           className="dropdown-item text-black px-0 py-8 hover-bg-transparent hover-text-danger d-flex align-items-center gap-3"
                           href="javascript:void(0)"
                         >
-                          <iconify-icon icon="lucide:power" className="icon text-xl" />{" "}
+                          <iconify-icon
+                            icon="lucide:power"
+                            className="icon text-xl"
+                          />{" "}
                           Log Out
                         </a>
                       </li>
@@ -1245,10 +1304,7 @@ const MasterLayout = ({ children }) => {
         </div>
 
         {/* dashboard-main-body */}
-        <div className='dashboard-main-body'>
-          {children}
-        </div>
-
+        <div className="dashboard-main-body">{children}</div>
 
         {/* Footer section */}
         <footer className="d-footer">
@@ -1263,13 +1319,9 @@ const MasterLayout = ({ children }) => {
             </div>
           </div>
         </footer>
-
-
-
       </main>
-
     </>
-  )
-}
+  );
+};
 
-export default MasterLayout
+export default MasterLayout;

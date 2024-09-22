@@ -1,28 +1,20 @@
 import React from "react";
-import Preloader from "../helper/Preloader";
-import ScrollToTop from "react-scroll-to-top";
 import MasterLayout from "../masterLayout/MasterLayout";
-
+import Breadcrumb from "../components/Breadcrumb";
+import UnitCountOne from "../components/UnitCountOne";
 
 const HomePageOne = () => {
-
   return (
     <>
-
-
-      {/* ScrollToTop */}
-      <ScrollToTop smooth color="#FA6400" />
-
-      {/* Preloader */}
-      <Preloader />
-
+      {/* MasterLayout */}
       <MasterLayout>
+        {/* Breadcrumb */}
+        <Breadcrumb />
+
+        {/* UnitCountOne */}
+        <UnitCountOne />
 
       </MasterLayout>
-
-
-
-
     </>
   );
 };
