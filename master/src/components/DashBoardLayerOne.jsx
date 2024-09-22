@@ -1,10 +1,51 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Icon } from '@iconify/react';
-import ReactApexChart from 'react-apexcharts'
-import useReactApexChart from '../hook/useReactApexChart.js';
+import useReactApexChart from '../hook/useReactApexChart';
+import jsVectorMap from "jsvectormap";
+import "jsvectormap/dist/maps/world.js";
+import "jsvectormap/dist/css/jsvectormap.css";
+import ReactApexChart from 'react-apexcharts';
+
+
 
 const DashBoardLayerOne = () => {
     let { chartOptions, chartSeries, barChartSeries, barChartOptions, donutChartSeries, donutChartOptions } = useReactApexChart()
+
+    useEffect(() => {
+        const map = new jsVectorMap({
+            selector: "#map",
+            map: 'world', // Use the map name you installed
+            backgroundColor: 'transparent',
+            borderColor: '#fff',
+            borderOpacity: 0.25,
+            borderWidth: 0,
+            color: '#000000',
+            regionStyle: {
+                initial: {
+                    fill: '#D1D5DB',
+                },
+            },
+            markerStyle: {
+                initial: {
+                    fill: '#FF5722',
+                    stroke: '#FF5722',
+                },
+            },
+            markers: [
+                { coords: [35.8617, 104.1954], name: 'China : 250' },
+                { coords: [25.2744, 133.7751], name: 'Australia : 250' },
+                { coords: [36.77, -119.41], name: 'USA : 82%' },
+                { coords: [55.37, -3.41], name: 'UK : 250' },
+                { coords: [25.20, 55.27], name: 'UAE : 250' },
+            ],
+        });
+
+        // Cleanup the map instance when the component unmounts
+        return () => {
+            map && map.destroy();
+        };
+    }, []);
+
     return (
         <div className="row gy-4 mt-1">
             <div className="col-xxl-6 col-xl-12">
@@ -585,7 +626,8 @@ const DashBoardLayerOne = () => {
                         </div>
                         <div className="row gy-4">
                             <div className="col-lg-6">
-                                <div id="world-map" className="h-100 border radius-8" />
+                                {/*  */}
+                                <div id="map"></div>
                             </div>
                             <div className="col-lg-6">
                                 <div className="h-100 border p-16 pe-0 radius-8">
