@@ -11,7 +11,7 @@ import LastTransactionOne from './child/LastTransactionOne'
 
 const DashBoardLayerTwo = () => {
   return (
-    <div className="row gy-4">
+    <section className="row gy-4">
 
       {/* UnitCountTwo */}
       <UnitCountTwo />
@@ -39,7 +39,7 @@ const DashBoardLayerTwo = () => {
 
       {/* LastTransactionOne */}
       <LastTransactionOne />
-    </div>
+    </section>
 
   )
 }

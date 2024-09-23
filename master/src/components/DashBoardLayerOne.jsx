@@ -11,7 +11,7 @@ import UnitCountOne from './child/UnitCountOne';
 const DashBoardLayerOne = () => {
 
     return (
-        <div className="row gy-4 mt-1">
+        <section className="row gy-4 mt-1">
 
             {/* UnitCountOne */}
             <UnitCountOne />
@@ -37,7 +37,7 @@ const DashBoardLayerOne = () => {
             {/* GeneratedContent */}
             <GeneratedContent />
 
-        </div>
+        </section>
 
     )
 }
