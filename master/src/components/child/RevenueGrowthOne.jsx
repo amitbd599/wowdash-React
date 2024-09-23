@@ -1,6 +1,9 @@
 import React from 'react'
+import useReactApexChart from '../../hook/useReactApexChart'
 
 const RevenueGrowthOne = () => {
+
+    let { createChartTwo } = useReactApexChart()
 
     return (
         <div className="col-xxl-4">
@@ -21,7 +24,8 @@ const RevenueGrowthOne = () => {
                         </div>
                     </div>
                     <div id="revenue-chart" className="mt-28" >
-
+                        {/* Pass the color value here */}
+                        {createChartTwo("#487fff")}
                     </div>
                 </div>
             </div>
