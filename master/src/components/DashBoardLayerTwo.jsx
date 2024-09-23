@@ -1,0 +1,47 @@
+import React from 'react'
+import NewUsersOne from './child/NewUsersOne'
+import RevenueGrowthOne from './child/RevenueGrowthOne'
+import EarningStaticOne from './child/EarningStaticOne'
+import CampaignStaticOne from './child/CampaignStaticOne'
+import ClientPaymentOne from './child/ClientPaymentOne'
+import CountryStatusOne from './child/CountryStatusOne'
+import TopPerformanceOne from './child/TopperformanceOne'
+import LatestPerformanceOne from './child/LatestPerformanceOne'
+import LastTransactionOne from './child/LastTransactionOne'
+
+const DashBoardLayerTwo = () => {
+  return (
+    <div className="row gy-4">
+
+      {/* NewUsersOne */}
+      <NewUsersOne />
+
+      {/* RevenueGrowthOne */}
+      <RevenueGrowthOne />
+
+      {/* EarningStaticOne */}
+      <EarningStaticOne />
+
+      {/* CampaignStaticOne */}
+      <CampaignStaticOne />
+
+      {/* ClientPaymentOne  */}
+      <ClientPaymentOne />
+
+      {/* CountryStatusOne */}
+      <CountryStatusOne />
+
+      {/* TopPerformanceOne */}
+      <TopPerformanceOne />
+
+      {/* LatestPerformanceOne */}
+      <LatestPerformanceOne />
+
+      {/* LastTransactionOne */}
+      <LastTransactionOne />
+    </div>
+
+  )
+}
+
+export default DashBoardLayerTwo

@@ -1,6 +1,6 @@
 import React from "react";
 import { Icon } from '@iconify/react';
-const Breadcrumb = () => {
+const Breadcrumb = ({ title }) => {
   return (
     <div className="d-flex flex-wrap align-items-center justify-content-between gap-3 mb-24">
       <h6 className="fw-semibold mb-0">Dashboard</h6>
@@ -15,7 +15,7 @@ const Breadcrumb = () => {
           </a>
         </li>
         <li> - </li>
-        <li className="fw-medium">AI</li>
+        <li className="fw-medium">{title}</li>
       </ul>
     </div>
   );
