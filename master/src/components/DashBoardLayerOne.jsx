@@ -27,8 +27,12 @@ const DashBoardLayerOne = () => {
             },
             markerStyle: {
                 initial: {
-                    fill: '#FF5722',
-                    stroke: '#FF5722',
+                    r: 5,
+                    'fill': '#fff',
+                    'fill-opacity': 1,
+                    'stroke': '#000',
+                    'stroke-width': 1,
+                    'stroke-opacity': 0.4
                 },
             },
             markers: [
@@ -38,6 +42,35 @@ const DashBoardLayerOne = () => {
                 { coords: [55.37, -3.41], name: 'UK : 250' },
                 { coords: [25.20, 55.27], name: 'UAE : 250' },
             ],
+            series: {
+                regions: [{
+                    attribute: "fill",
+
+                    scale: {
+                        "US": '#487FFF ',
+                        "SA": '#487FFF',
+                        "AU": '#487FFF',
+                        "CN": '#487FFF',
+                        "GB": '#487FFF',
+                    },
+                    values: {
+                        // But when dealing with regions's series you should specify the region key.
+                        US: "US",
+                        SA: "SA",
+                        AU: "AU",
+                        CN: "CN",
+                        GB: "GB",
+                    }
+                }]
+            },
+            hoverOpacity: null,
+            normalizeFunction: 'linear',
+            zoomOnScroll: false,
+            scaleColors: ['#000000', '#000000'],
+            selectedColor: '#000000',
+            selectedRegions: [],
+            enableZoom: false,
+            hoverColor: '#fff',
         });
 
         // Cleanup the map instance when the component unmounts
@@ -626,8 +659,8 @@ const DashBoardLayerOne = () => {
                         </div>
                         <div className="row gy-4">
                             <div className="col-lg-6">
-                                {/*  */}
-                                <div id="map"></div>
+                                {/* world-map */}
+                                <div id="map" className="h-100 border radius-8"></div>
                             </div>
                             <div className="col-lg-6">
                                 <div className="h-100 border p-16 pe-0 radius-8">
