@@ -2,7 +2,7 @@ import { Icon } from '@iconify/react/dist/iconify.js'
 import React from 'react'
 import useReactApexChart from '../../hook/useReactApexChart'
 
-const NewUsersOne = () => {
+const UnitCountTwo = () => {
 
     let { createChart } = useReactApexChart()
 
@@ -228,4 +228,4 @@ const NewUsersOne = () => {
     )
 }
 
-export default NewUsersOne
+export default UnitCountTwo

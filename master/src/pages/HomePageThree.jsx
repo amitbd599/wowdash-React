@@ -1,23 +1,26 @@
 import React from "react";
 import MasterLayout from "../masterLayout/MasterLayout";
 import Breadcrumb from "../components/Breadcrumb";
-import DashBoardLayerOne from "../components/DashBoardLayerOne";
+import DashBoardLayerThree from "../components/DashBoardLayerThree";
 
-const HomePageOne = () => {
+
+const HomePageThree = () => {
   return (
     <>
       {/* MasterLayout */}
       <MasterLayout>
+
         {/* Breadcrumb */}
-        <Breadcrumb title="AI" />
+        <Breadcrumb title="eCommerce" />
+
+        {/* DashBoardLayerThree */}
+        <DashBoardLayerThree />
 
 
-        {/* DashBoardLayerOne */}
-        <DashBoardLayerOne />
 
       </MasterLayout>
     </>
   );
 };
 
-export default HomePageOne;
+export default HomePageThree;

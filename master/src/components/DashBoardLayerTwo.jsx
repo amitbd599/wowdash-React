@@ -1,5 +1,5 @@
 import React from 'react'
-import NewUsersOne from './child/NewUsersOne'
+import UnitCountTwo from './child/UnitCountTwo'
 import RevenueGrowthOne from './child/RevenueGrowthOne'
 import EarningStaticOne from './child/EarningStaticOne'
 import CampaignStaticOne from './child/CampaignStaticOne'
@@ -13,8 +13,8 @@ const DashBoardLayerTwo = () => {
   return (
     <div className="row gy-4">
 
-      {/* NewUsersOne */}
-      <NewUsersOne />
+      {/* UnitCountTwo */}
+      <UnitCountTwo />
 
       {/* RevenueGrowthOne */}
       <RevenueGrowthOne />
