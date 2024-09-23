@@ -1,0 +1,10 @@
+.jvm-zoom-btn.jvm-zoomin,
+.jvm-zoom-btn.jvm-zoomout {
+    top: 10px;
+    background: #D1D5DB;
+    color: #111827;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+}
