@@ -1,3 +1,4 @@
+import { Icon } from '@iconify/react/dist/iconify.js'
 import React from 'react'
 
 const TopPerformanceOne = () => {
@@ -12,7 +13,7 @@ const TopPerformanceOne = () => {
                             className="text-primary-600 hover-text-primary d-flex align-items-center gap-1"
                         >
                             View All
-                            <iconify-icon
+                            <Icon
                                 icon="solar:alt-arrow-right-linear"
                                 className="icon"
                             />

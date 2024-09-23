@@ -1,3 +1,4 @@
+import { Icon } from '@iconify/react/dist/iconify.js'
 import React from 'react'
 
 const LatestPerformanceOne = () => {
@@ -45,7 +46,7 @@ const LatestPerformanceOne = () => {
                         className="text-primary-600 hover-text-primary d-flex align-items-center gap-1"
                     >
                         View All
-                        <iconify-icon icon="solar:alt-arrow-right-linear" className="icon" />
+                        <Icon icon="solar:alt-arrow-right-linear" className="icon" />
                     </a>
                 </div>
                 <div className="card-body p-24">
@@ -95,7 +96,7 @@ const LatestPerformanceOne = () => {
                                                         data-bs-toggle="dropdown"
                                                         aria-expanded="false"
                                                     >
-                                                        <iconify-icon
+                                                        <Icon
                                                             icon="ph:dots-three-outline-vertical-fill"
                                                             className="icon"
                                                         />
@@ -155,7 +156,7 @@ const LatestPerformanceOne = () => {
                                                         data-bs-toggle="dropdown"
                                                         aria-expanded="false"
                                                     >
-                                                        <iconify-icon
+                                                        <Icon
                                                             icon="ph:dots-three-outline-vertical-fill"
                                                             className="icon"
                                                         />
@@ -215,7 +216,7 @@ const LatestPerformanceOne = () => {
                                                         data-bs-toggle="dropdown"
                                                         aria-expanded="false"
                                                     >
-                                                        <iconify-icon
+                                                        <Icon
                                                             icon="ph:dots-three-outline-vertical-fill"
                                                             className="icon"
                                                         />
@@ -275,7 +276,7 @@ const LatestPerformanceOne = () => {
                                                         data-bs-toggle="dropdown"
                                                         aria-expanded="false"
                                                     >
-                                                        <iconify-icon
+                                                        <Icon
                                                             icon="ph:dots-three-outline-vertical-fill"
                                                             className="icon"
                                                         />
@@ -335,7 +336,7 @@ const LatestPerformanceOne = () => {
                                                         data-bs-toggle="dropdown"
                                                         aria-expanded="false"
                                                     >
-                                                        <iconify-icon
+                                                        <Icon
                                                             icon="ph:dots-three-outline-vertical-fill"
                                                             className="icon"
                                                         />
@@ -418,7 +419,7 @@ const LatestPerformanceOne = () => {
                                                         data-bs-toggle="dropdown"
                                                         aria-expanded="false"
                                                     >
-                                                        <iconify-icon
+                                                        <Icon
                                                             icon="ph:dots-three-outline-vertical-fill"
                                                             className="icon"
                                                         />
@@ -478,7 +479,7 @@ const LatestPerformanceOne = () => {
                                                         data-bs-toggle="dropdown"
                                                         aria-expanded="false"
                                                     >
-                                                        <iconify-icon
+                                                        <Icon
                                                             icon="ph:dots-three-outline-vertical-fill"
                                                             className="icon"
                                                         />
@@ -538,7 +539,7 @@ const LatestPerformanceOne = () => {
                                                         data-bs-toggle="dropdown"
                                                         aria-expanded="false"
                                                     >
-                                                        <iconify-icon
+                                                        <Icon
                                                             icon="ph:dots-three-outline-vertical-fill"
                                                             className="icon"
                                                         />
@@ -598,7 +599,7 @@ const LatestPerformanceOne = () => {
                                                         data-bs-toggle="dropdown"
                                                         aria-expanded="false"
                                                     >
-                                                        <iconify-icon
+                                                        <Icon
                                                             icon="ph:dots-three-outline-vertical-fill"
                                                             className="icon"
                                                         />
@@ -658,7 +659,7 @@ const LatestPerformanceOne = () => {
                                                         data-bs-toggle="dropdown"
                                                         aria-expanded="false"
                                                     >
-                                                        <iconify-icon
+                                                        <Icon
                                                             icon="ph:dots-three-outline-vertical-fill"
                                                             className="icon"
                                                         />
