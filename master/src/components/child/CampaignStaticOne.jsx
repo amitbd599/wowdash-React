@@ -1,6 +1,9 @@
 import React from 'react'
+import useReactApexChart from '../../hook/useReactApexChart'
+import ReactApexChart from 'react-apexcharts'
 
 const CampaignStaticOne = () => {
+    let { donutChartSeriesTwo, donutChartOptionsTwo } = useReactApexChart()
     return (
         <div className="col-xxl-4">
             <div className="row gy-4">
@@ -184,10 +187,10 @@ const CampaignStaticOne = () => {
                                         </span>
                                     </li>
                                 </ul>
-                                <div
-                                    id="donutChart"
-                                    className="flex-grow-1 apexcharts-tooltip-z-none title-style circle-none"
-                                />
+                                <div>
+                                    <ReactApexChart options={donutChartOptionsTwo} series={donutChartSeriesTwo} type="donut" height={300} id="donutChart"
+                                        className="flex-grow-1 apexcharts-tooltip-z-none title-style circle-none" />
+                                </div>
                             </div>
                         </div>
                     </div>
