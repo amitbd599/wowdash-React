@@ -9,7 +9,7 @@ import ReactApexChart from 'react-apexcharts';
 
 
 const DashBoardLayerOne = () => {
-    let { chartOptions, chartSeries, barChartSeries, barChartOptions, donutChartSeries, donutChartOptions } = useReactApexChart()
+    let { chartOptions, chartSeries, barChartSeries, barChartOptions, donutChartSeries, donutChartOptions, paymentStatusChartSeries, paymentStatusChartOptions } = useReactApexChart()
 
     useEffect(() => {
         const map = new jsVectorMap({
@@ -911,7 +911,10 @@ const DashBoardLayerOne = () => {
                             </li>
                         </ul>
                         <div className="mt-40">
-                            <div id="paymentStatusChart" className="margin-16-minus" />
+                            <div className="margin-16-minus">
+                                <ReactApexChart options={paymentStatusChartOptions} series={paymentStatusChartSeries} type="bar" height={250} />
+                            </div>
+
                         </div>
                     </div>
                 </div>
