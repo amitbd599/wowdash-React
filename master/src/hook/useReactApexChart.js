@@ -837,8 +837,56 @@ const useReactApexChart = () => {
     };
 
 
+    let statisticsDonutChartSeries = [30, 25]
 
-    return { chartSeries, chartOptions, barChartSeries, barChartOptions, donutChartSeries, donutChartOptions, paymentStatusChartSeries, paymentStatusChartOptions, barChartSeriesTwo, barChartOptionsTwo, donutChartSeriesTwo, donutChartOptionsTwo, paymentStatusChartSeriesTwo, paymentStatusChartOptionsTwo, createChart, createChartTwo, paymentStatusChartSeriesThree, paymentStatusChartOptionsThree };
+    let statisticsDonutChartOptions = {
+
+        colors: ['#FF9F29', '#487FFF'],
+        labels: ['Female', 'Male'],
+        legend: {
+            show: false
+        },
+        chart: {
+            type: 'donut',
+            height: 230,
+            sparkline: {
+                enabled: true // Remove whitespace
+            },
+            margin: {
+                top: 0,
+                right: 0,
+                bottom: 0,
+                left: 0
+            },
+            padding: {
+                top: 0,
+                right: 0,
+                bottom: 0,
+                left: 0
+            }
+        },
+        stroke: {
+            width: 0,
+        },
+        dataLabels: {
+            enabled: false
+        },
+        responsive: [{
+            breakpoint: 480,
+            options: {
+                chart: {
+                    width: 200
+                },
+                legend: {
+                    position: 'bottom'
+                }
+            }
+        }],
+    };
+
+
+
+    return { chartSeries, chartOptions, barChartSeries, barChartOptions, donutChartSeries, donutChartOptions, paymentStatusChartSeries, paymentStatusChartOptions, barChartSeriesTwo, barChartOptionsTwo, donutChartSeriesTwo, donutChartOptionsTwo, paymentStatusChartSeriesTwo, paymentStatusChartOptionsTwo, createChart, createChartTwo, paymentStatusChartSeriesThree, paymentStatusChartOptionsThree, statisticsDonutChartSeries, statisticsDonutChartOptions };
 };
 
 export default useReactApexChart;
