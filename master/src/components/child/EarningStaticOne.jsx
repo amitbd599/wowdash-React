@@ -1,6 +1,11 @@
 import React from 'react'
+import useReactApexChart from '../../hook/useReactApexChart'
+import ReactApexChart from 'react-apexcharts'
+import { Icon } from '@iconify/react/dist/iconify.js'
 
 const EarningStaticOne = () => {
+
+    let { barChartSeriesTwo, barChartOptionsTwo } = useReactApexChart()
     return (
         <div className="col-xxl-8">
             <div className="card h-100 radius-8 border-0">
@@ -24,7 +29,7 @@ const EarningStaticOne = () => {
                     <div className="mt-20 d-flex justify-content-center flex-wrap gap-3">
                         <div className="d-inline-flex align-items-center gap-2 p-2 radius-8 border pe-36 br-hover-primary group-item">
                             <span className="bg-neutral-100 w-44-px h-44-px text-xxl radius-8 d-flex justify-content-center align-items-center text-secondary-light group-hover:bg-primary-600 group-hover:text-white">
-                                <iconify-icon icon="fluent:cart-16-filled" className="icon" />
+                                <Icon icon="fluent:cart-16-filled" className="icon" />
                             </span>
                             <div>
                                 <span className="text-secondary-light text-sm fw-medium">
@@ -35,7 +40,7 @@ const EarningStaticOne = () => {
                         </div>
                         <div className="d-inline-flex align-items-center gap-2 p-2 radius-8 border pe-36 br-hover-primary group-item">
                             <span className="bg-neutral-100 w-44-px h-44-px text-xxl radius-8 d-flex justify-content-center align-items-center text-secondary-light group-hover:bg-primary-600 group-hover:text-white">
-                                <iconify-icon icon="uis:chart" className="icon" />
+                                <Icon icon="uis:chart" className="icon" />
                             </span>
                             <div>
                                 <span className="text-secondary-light text-sm fw-medium">
@@ -46,7 +51,7 @@ const EarningStaticOne = () => {
                         </div>
                         <div className="d-inline-flex align-items-center gap-2 p-2 radius-8 border pe-36 br-hover-primary group-item">
                             <span className="bg-neutral-100 w-44-px h-44-px text-xxl radius-8 d-flex justify-content-center align-items-center text-secondary-light group-hover:bg-primary-600 group-hover:text-white">
-                                <iconify-icon icon="ph:arrow-fat-up-fill" className="icon" />
+                                <Icon icon="ph:arrow-fat-up-fill" className="icon" />
                             </span>
                             <div>
                                 <span className="text-secondary-light text-sm fw-medium">
@@ -56,7 +61,9 @@ const EarningStaticOne = () => {
                             </div>
                         </div>
                     </div>
-                    <div id="barChart" />
+                    <div id="barChart" >
+                        <ReactApexChart options={barChartOptionsTwo} series={barChartSeriesTwo} type="bar" height={310} />
+                    </div>
                 </div>
             </div>
         </div>
