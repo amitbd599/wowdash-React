@@ -418,7 +418,7 @@ const useReactApexChart = () => {
 
     }
 
-    let createChartTwo = (chartColor) => {
+    let createChartTwo = (chartColor, height) => {
 
         let series = [
             {
@@ -451,7 +451,7 @@ const useReactApexChart = () => {
             },
             stroke: {
                 curve: 'smooth',
-                width: 2,
+                width: 4,
                 colors: [chartColor],
                 lineCap: 'round'
             },
@@ -541,7 +541,7 @@ const useReactApexChart = () => {
         };
 
         return (
-            <ReactApexChart options={options} series={series} type="area" height={162} />
+            <ReactApexChart options={options} series={series} type="area" height={height} />
         )
 
     }
