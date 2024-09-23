@@ -1,6 +1,9 @@
 import React from 'react'
+import useReactApexChart from '../../hook/useReactApexChart'
+import ReactApexChart from 'react-apexcharts'
 
 const ClientPaymentOne = () => {
+    let { paymentStatusChartSeriesTwo, paymentStatusChartOptionsTwo } = useReactApexChart()
     return (
         <div className="col-xxl-4 col-sm-6">
             <div className="card h-100 radius-8 border-0">
@@ -30,7 +33,8 @@ const ClientPaymentOne = () => {
                         </li>
                     </ul>
                     <div className="mt-40">
-                        <div id="paymentStatusChart" className="margin-16-minus" />
+                        <ReactApexChart options={paymentStatusChartOptionsTwo} series={paymentStatusChartSeriesTwo} type="bar" height={350} id="paymentStatusChart" className="margin-16-minus" />
+
                     </div>
                 </div>
             </div>

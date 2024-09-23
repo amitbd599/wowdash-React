@@ -718,8 +718,73 @@ const useReactApexChart = () => {
     };
 
 
+    let paymentStatusChartSeriesTwo = [{
+        name: 'Net Profit',
+        data: [44, 100, 40, 56, 30, 58, 50]
+    }, {
+        name: 'Revenue',
+        data: [90, 140, 80, 125, 70, 140, 110]
+    }, {
+        name: 'Free Cash',
+        data: [60, 120, 60, 90, 50, 95, 90]
+    }]
+    let paymentStatusChartOptionsTwo = {
 
-    return { chartSeries, chartOptions, barChartSeries, barChartOptions, donutChartSeries, donutChartOptions, paymentStatusChartSeries, paymentStatusChartOptions, barChartSeriesTwo, barChartOptionsTwo, donutChartSeriesTwo, donutChartOptionsTwo, createChart, createChartTwo };
+        colors: ['#45B369', '#144bd6', '#FF9F29'],
+        labels: ['Active', 'New', 'Total'],
+
+        legend: {
+            show: false
+        },
+        chart: {
+            type: 'bar',
+            height: 350,
+            toolbar: {
+                show: false
+            },
+        },
+        grid: {
+            show: true,
+            borderColor: '#D1D5DB',
+            strokeDashArray: 4, // Use a number for dashed style
+            position: 'back',
+        },
+        plotOptions: {
+            bar: {
+                borderRadius: 4,
+                columnWidth: 8,
+            },
+        },
+        dataLabels: {
+            enabled: false
+        },
+        states: {
+            hover: {
+                filter: {
+                    type: 'none'
+                }
+            }
+        },
+        stroke: {
+            show: true,
+            width: 0,
+            colors: ['transparent']
+        },
+        xaxis: {
+            categories: ['Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 'Sun'],
+        },
+        yaxis: {
+            categories: ['0', '10,000', '20,000', '30,000', '50,000', '1,00,000', '1,00,000'],
+        },
+        fill: {
+            opacity: 1,
+            width: 18,
+        },
+    };
+
+
+
+    return { chartSeries, chartOptions, barChartSeries, barChartOptions, donutChartSeries, donutChartOptions, paymentStatusChartSeries, paymentStatusChartOptions, barChartSeriesTwo, barChartOptionsTwo, donutChartSeriesTwo, donutChartOptionsTwo, paymentStatusChartSeriesTwo, paymentStatusChartOptionsTwo, createChart, createChartTwo };
 };
 
 export default useReactApexChart;
