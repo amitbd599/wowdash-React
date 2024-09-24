@@ -11,33 +11,36 @@ import UnitCountOne from './child/UnitCountOne';
 const DashBoardLayerOne = () => {
 
     return (
-        <section className="row gy-4 mt-1">
-
+        <>
             {/* UnitCountOne */}
             <UnitCountOne />
 
-            {/* SalesStatisticOne */}
-            <SalesStatisticOne />
+            <section className="row gy-4 mt-1">
 
-            {/* TotalSubscriberOne */}
-            <TotalSubscriberOne />
+                {/* SalesStatisticOne */}
+                <SalesStatisticOne />
 
-            {/* UsersOverviewOne */}
-            <UsersOverviewOne />
+                {/* TotalSubscriberOne */}
+                <TotalSubscriberOne />
 
-            {/* LatestRegisteredOne */}
-            <LatestRegisteredOne />
+                {/* UsersOverviewOne */}
+                <UsersOverviewOne />
 
-            {/* TopPerformerOne */}
-            <TopPerformerOne />
+                {/* LatestRegisteredOne */}
+                <LatestRegisteredOne />
 
-            {/* TopCountries */}
-            <TopCountries />
+                {/* TopPerformerOne */}
+                <TopPerformerOne />
 
-            {/* GeneratedContent */}
-            <GeneratedContent />
+                {/* TopCountries */}
+                <TopCountries />
 
-        </section>
+                {/* GeneratedContent */}
+                <GeneratedContent />
+
+            </section>
+        </>
+
 
     )
 }
