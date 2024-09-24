@@ -1443,9 +1443,98 @@ const useReactApexChart = () => {
     };
 
 
+    let upDownBarChartSeries = [
+        {
+            name: "Income",
+            data: [44, 42, 57, 86, 58, 55, 70, 44, 42, 57, 86, 58, 55, 70],
+        },
+        {
+            name: "Expenses",
+            data: [-34, -22, -37, -56, -21, -35, -60, -34, -22, -37, -56, -21, -35, -60],
+        },
+    ]
+    let upDownBarChartOptions = {
+
+        chart: {
+            stacked: true,
+            type: "bar",
+            height: 263,
+            fontFamily: "Poppins, sans-serif",
+            toolbar: {
+                show: false,
+            },
+        },
+        colors: ["#487FFF", "#EF4A00"],
+        plotOptions: {
+            bar: {
+                columnWidth: "8",
+                borderRadius: [2],
+                borderRadiusWhenStacked: "all",
+            },
+        },
+        stroke: {
+            width: [5, 5]
+        },
+        dataLabels: {
+            enabled: false,
+        },
+        legend: {
+            show: true,
+            position: "top",
+        },
+        yaxis: {
+            show: false,
+            title: {
+                text: undefined,
+            },
+            labels: {
+                formatter: function (y) {
+                    return y.toFixed(0) + "";
+                },
+            },
+        },
+        xaxis: {
+            show: false,
+            type: "week",
+            categories: [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun",
+            ],
+            axisBorder: {
+                show: false,
+            },
+            axisTicks: {
+                show: false,
+            },
+            labels: {
+                show: true,
+                style: {
+                    colors: "#d4d7d9",
+                    fontSize: "10px",
+                    fontWeight: 500,
+                },
+            },
+        },
+        tooltip: {
+            enabled: true,
+            shared: true,
+            intersect: false,
+            theme: "dark",
+            x: {
+                show: false,
+            },
+        },
+    };
 
 
-    return { chartSeries, chartOptions, barChartSeries, barChartOptions, donutChartSeries, donutChartOptions, paymentStatusChartSeries, paymentStatusChartOptions, barChartSeriesTwo, barChartOptionsTwo, donutChartSeriesTwo, donutChartOptionsTwo, paymentStatusChartSeriesTwo, paymentStatusChartOptionsTwo, createChart, createChartTwo, createChartThree, createChartFour, paymentStatusChartSeriesThree, paymentStatusChartOptionsThree, statisticsDonutChartSeries, statisticsDonutChartOptions, candleStickChartSeries, candleStickChartOptions, statisticsDonutChartSeriesThree, statisticsDonutChartOptionsThree };
+
+
+    return { chartSeries, chartOptions, barChartSeries, barChartOptions, donutChartSeries, donutChartOptions, paymentStatusChartSeries, paymentStatusChartOptions, barChartSeriesTwo, barChartOptionsTwo, donutChartSeriesTwo, donutChartOptionsTwo, paymentStatusChartSeriesTwo, paymentStatusChartOptionsTwo, createChart, createChartTwo, createChartThree, createChartFour, paymentStatusChartSeriesThree, paymentStatusChartOptionsThree, statisticsDonutChartSeries, statisticsDonutChartOptions, candleStickChartSeries, candleStickChartOptions, statisticsDonutChartSeriesThree, statisticsDonutChartOptionsThree, upDownBarChartSeries, upDownBarChartOptions };
 };
 
 export default useReactApexChart;
