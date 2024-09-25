@@ -1,6 +1,7 @@
 import React from 'react'
 import UnitCountFive from './child/UnitCountFive'
 import TrafficSourcesOne from './child/TrafficSourcesOne'
+import TopCategoriesOne from './child/TopCategoriesOne'
 
 const DashBoardLayerSix = () => {
     return (
@@ -14,172 +15,13 @@ const DashBoardLayerSix = () => {
                 {/* TrafficSourcesOne */}
                 <TrafficSourcesOne />
 
+                {/* TopCategoriesOne */}
+                <TopCategoriesOne />
 
 
-                {/* ======================= First Row Cards End =================== */}
-                {/* ================== Second Row Cards Start ======================= */}
+
                 {/* Top Categories Card Start */}
-                <div className="col-xxl-4 col-md-6">
-                    <div className="card">
-                        <div className="card-header">
-                            <div className="d-flex align-items-center flex-wrap gap-2 justify-content-between">
-                                <h6 className="mb-2 fw-bold text-lg mb-0">Top Categories</h6>
-                                <a
-                                    href="javascript:void(0)"
-                                    className="text-primary-600 hover-text-primary d-flex align-items-center gap-1"
-                                >
-                                    View All
-                                    <iconify-icon
-                                        icon="solar:alt-arrow-right-linear"
-                                        className="icon"
-                                    />
-                                </a>
-                            </div>
-                        </div>
-                        <div className="card-body">
-                            <div className="d-flex align-items-center justify-content-between gap-3 mb-24">
-                                <div className="d-flex align-items-center gap-12">
-                                    <div className="w-40-px h-40-px radius-8 flex-shrink-0 bg-info-50 d-flex justify-content-center align-items-center">
-                                        <img
-                                            src="assets/images/home-six/category-icon1.png"
-                                            alt=""
-                                            className=""
-                                        />
-                                    </div>
-                                    <div className="flex-grow-1">
-                                        <h6 className="text-md mb-0 fw-normal">Web Development</h6>
-                                        <span className="text-sm text-secondary-light fw-normal">
-                                            40+ Courses
-                                        </span>
-                                    </div>
-                                </div>
-                                <a
-                                    href="#"
-                                    className="w-24-px h-24-px bg-primary-50 text-primary-600 d-flex justify-content-center align-items-center text-lg bg-hover-primary-100 radius-4"
-                                >
-                                    <i className="ri-arrow-right-s-line" />
-                                </a>
-                            </div>
-                            <div className="d-flex align-items-center justify-content-between gap-3 mb-24">
-                                <div className="d-flex align-items-center gap-12">
-                                    <div className="w-40-px h-40-px radius-8 flex-shrink-0 bg-success-50 d-flex justify-content-center align-items-center">
-                                        <img
-                                            src="assets/images/home-six/category-icon2.png"
-                                            alt=""
-                                            className=""
-                                        />
-                                    </div>
-                                    <div className="flex-grow-1">
-                                        <h6 className="text-md mb-0 fw-normal">Graphic Design</h6>
-                                        <span className="text-sm text-secondary-light fw-normal">
-                                            40+ Courses
-                                        </span>
-                                    </div>
-                                </div>
-                                <a
-                                    href="#"
-                                    className="w-24-px h-24-px bg-primary-50 text-primary-600 d-flex justify-content-center align-items-center text-lg bg-hover-primary-100 radius-4"
-                                >
-                                    <i className="ri-arrow-right-s-line" />
-                                </a>
-                            </div>
-                            <div className="d-flex align-items-center justify-content-between gap-3 mb-24">
-                                <div className="d-flex align-items-center gap-12">
-                                    <div className="w-40-px h-40-px radius-8 flex-shrink-0 bg-purple-50 d-flex justify-content-center align-items-center">
-                                        <img
-                                            src="assets/images/home-six/category-icon3.png"
-                                            alt=""
-                                            className=""
-                                        />
-                                    </div>
-                                    <div className="flex-grow-1">
-                                        <h6 className="text-md mb-0 fw-normal">UI/UX Design</h6>
-                                        <span className="text-sm text-secondary-light fw-normal">
-                                            40+ Courses
-                                        </span>
-                                    </div>
-                                </div>
-                                <a
-                                    href="#"
-                                    className="w-24-px h-24-px bg-primary-50 text-primary-600 d-flex justify-content-center align-items-center text-lg bg-hover-primary-100 radius-4"
-                                >
-                                    <i className="ri-arrow-right-s-line" />
-                                </a>
-                            </div>
-                            <div className="d-flex align-items-center justify-content-between gap-3 mb-24">
-                                <div className="d-flex align-items-center gap-12">
-                                    <div className="w-40-px h-40-px radius-8 flex-shrink-0 bg-warning-50 d-flex justify-content-center align-items-center">
-                                        <img
-                                            src="assets/images/home-six/category-icon4.png"
-                                            alt=""
-                                            className=""
-                                        />
-                                    </div>
-                                    <div className="flex-grow-1">
-                                        <h6 className="text-md mb-0 fw-normal">Digital Marketing</h6>
-                                        <span className="text-sm text-secondary-light fw-normal">
-                                            40+ Courses
-                                        </span>
-                                    </div>
-                                </div>
-                                <a
-                                    href="#"
-                                    className="w-24-px h-24-px bg-primary-50 text-primary-600 d-flex justify-content-center align-items-center text-lg bg-hover-primary-100 radius-4"
-                                >
-                                    <i className="ri-arrow-right-s-line" />
-                                </a>
-                            </div>
-                            <div className="d-flex align-items-center justify-content-between gap-3 mb-24">
-                                <div className="d-flex align-items-center gap-12">
-                                    <div className="w-40-px h-40-px radius-8 flex-shrink-0 bg-danger-50 d-flex justify-content-center align-items-center">
-                                        <img
-                                            src="assets/images/home-six/category-icon5.png"
-                                            alt=""
-                                            className=""
-                                        />
-                                    </div>
-                                    <div className="flex-grow-1">
-                                        <h6 className="text-md mb-0 fw-normal">
-                                            3d Illustration &amp; Art Design
-                                        </h6>
-                                        <span className="text-sm text-secondary-light fw-normal">
-                                            40+ Courses
-                                        </span>
-                                    </div>
-                                </div>
-                                <a
-                                    href="#"
-                                    className="w-24-px h-24-px bg-primary-50 text-primary-600 d-flex justify-content-center align-items-center text-lg bg-hover-primary-100 radius-4"
-                                >
-                                    <i className="ri-arrow-right-s-line" />
-                                </a>
-                            </div>
-                            <div className="d-flex align-items-center justify-content-between gap-3 mb-0">
-                                <div className="d-flex align-items-center gap-12">
-                                    <div className="w-40-px h-40-px radius-8 flex-shrink-0 bg-primary-50 d-flex justify-content-center align-items-center">
-                                        <img
-                                            src="assets/images/home-six/category-icon6.png"
-                                            alt=""
-                                            className=""
-                                        />
-                                    </div>
-                                    <div className="flex-grow-1">
-                                        <h6 className="text-md mb-0 fw-normal">Logo Design</h6>
-                                        <span className="text-sm text-secondary-light fw-normal">
-                                            40+ Courses
-                                        </span>
-                                    </div>
-                                </div>
-                                <a
-                                    href="#"
-                                    className="w-24-px h-24-px bg-primary-50 text-primary-600 d-flex justify-content-center align-items-center text-lg bg-hover-primary-100 radius-4"
-                                >
-                                    <i className="ri-arrow-right-s-line" />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
                 {/* Top Categories Card End */}
                 {/* Instructor Card Start */}
                 <div className="col-xxl-4 col-md-6">
