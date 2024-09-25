@@ -1147,6 +1147,126 @@ const useReactApexChart = () => {
         return <ReactApexChart options={options} series={series} type="area" height={240} />
     }
 
+    let createChartEight = (color) => {
+        let currentYear = new Date().getFullYear();
+
+
+        let series = [
+            {
+                name: 'series1',
+                data: [0, 10, 8, 25, 15, 26, 13, 35, 15, 39, 16, 46, 42],
+            },
+        ]
+        let options = {
+
+            chart: {
+                type: 'area',
+                width: 164,
+                height: 72,
+
+                sparkline: {
+                    enabled: true // Remove whitespace
+                },
+
+                toolbar: {
+                    show: false
+                },
+                padding: {
+                    left: 0,
+                    right: 0,
+                    top: 0,
+                    bottom: 0
+                }
+            },
+            dataLabels: {
+                enabled: false
+            },
+            stroke: {
+                curve: 'smooth',
+                width: 2,
+                colors: [color],
+                lineCap: 'round'
+            },
+            grid: {
+                show: true,
+                borderColor: 'transparent',
+                strokeDashArray: 0,
+                position: 'back',
+                xaxis: {
+                    lines: {
+                        show: false
+                    }
+                },
+                yaxis: {
+                    lines: {
+                        show: false
+                    }
+                },
+                row: {
+                    colors: undefined,
+                    opacity: 0.5
+                },
+                column: {
+                    colors: undefined,
+                    opacity: 0.5
+                },
+                padding: {
+                    top: -3,
+                    right: 0,
+                    bottom: 0,
+                    left: 0
+                },
+            },
+            fill: {
+                type: 'gradient',
+                colors: [color], // Set the starting color (top color) here
+                gradient: {
+                    shade: 'light', // Gradient shading type
+                    type: 'vertical',  // Gradient direction (vertical)
+                    shadeIntensity: 0.5, // Intensity of the gradient shading
+                    gradientToColors: [`${color}00`], // Bottom gradient color (with transparency)
+                    inverseColors: false, // Do not invert colors
+                    opacityFrom: .8, // Starting opacity
+                    opacityTo: 0.3,  // Ending opacity
+                    stops: [0, 100],
+                },
+            },
+            // Customize the circle marker color on hover
+            markers: {
+                colors: [color],
+                strokeWidth: 2,
+                size: 0,
+                hover: {
+                    size: 8
+                }
+            },
+            xaxis: {
+                labels: {
+                    show: false
+                },
+                categories: [`Jan ${currentYear}`, `Feb ${currentYear}`, `Mar ${currentYear}`, `Apr ${currentYear}`, `May ${currentYear}`, `Jun ${currentYear}`, `Jul ${currentYear}`, `Aug ${currentYear}`, `Sep ${currentYear}`, `Oct ${currentYear}`, `Nov ${currentYear}`, `Dec ${currentYear}`],
+                tooltip: {
+                    enabled: false,
+                },
+            },
+            yaxis: {
+                labels: {
+                    show: false
+                }
+            },
+            tooltip: {
+                x: {
+                    format: 'dd/MM/yy HH:mm'
+                },
+            },
+        };
+
+        return <ReactApexChart options={options} series={series} type="area" height={72} width={164} />
+
+
+
+    }
+
     let barChartSeriesTwo = [{
         name: "Sales",
         data: [{
@@ -2272,6 +2392,101 @@ const useReactApexChart = () => {
 
 
 
+    let dailyIconBarChartSeriesTwo = [{
+        name: "Sales",
+        data: [{
+            x: 'Mon',
+            y: 20,
+        }, {
+            x: 'Tue',
+            y: 40,
+        }, {
+            x: 'Wed',
+            y: 20,
+        }, {
+            x: 'Thur',
+            y: 30,
+        }, {
+            x: 'Fri',
+            y: 40,
+        }, {
+            x: 'Sat',
+            y: 35,
+        }]
+    }]
+    var dailyIconBarChartOptionsTwo = {
+
+        chart: {
+            type: 'bar',
+            width: 164,
+            height: 80,
+            sparkline: {
+                enabled: true // Remove whitespace
+            },
+            toolbar: {
+                show: false
+            }
+        },
+        plotOptions: {
+            bar: {
+                borderRadius: 6,
+                horizontal: false,
+                columnWidth: 14,
+            }
+        },
+        dataLabels: {
+            enabled: false
+        },
+        states: {
+            hover: {
+                filter: {
+                    type: 'none'
+                }
+            }
+        },
+        fill: {
+            type: 'gradient',
+            colors: ['#E3E6E9'], // Set the starting color (top color) here
+            gradient: {
+                shade: 'light', // Gradient shading type
+                type: 'vertical',  // Gradient direction (vertical)
+                shadeIntensity: 0.5, // Intensity of the gradient shading
+                gradientToColors: ['#E3E6E9'], // Bottom gradient color (with transparency)
+                inverseColors: false, // Do not invert colors
+                opacityFrom: 1, // Starting opacity
+                opacityTo: 1,  // Ending opacity
+                stops: [0, 100],
+            },
+        },
+        grid: {
+            show: false,
+            borderColor: '#D1D5DB',
+            strokeDashArray: 1, // Use a number for dashed style
+            position: 'back',
+        },
+        xaxis: {
+            labels: {
+                show: false // Hide y-axis labels
+            },
+            type: 'category',
+            categories: ['Mon', 'Tue', 'Wed', 'Thur', 'Fri', 'Sat']
+        },
+        yaxis: {
+            labels: {
+                show: false,
+                formatter: function (value) {
+                    return (value / 1000).toFixed(0) + 'k';
+                }
+            }
+        },
+        tooltip: {
+            y: {
+                formatter: function (value) {
+                    return value / 1000 + 'k';
+                }
+            }
+        }
+    };
 
 
 
@@ -2279,7 +2494,11 @@ const useReactApexChart = () => {
 
 
 
-    return { chartSeries, chartOptions, barChartSeries, barChartOptions, donutChartSeries, donutChartOptions, paymentStatusChartSeries, paymentStatusChartOptions, barChartSeriesTwo, barChartOptionsTwo, donutChartSeriesTwo, donutChartOptionsTwo, paymentStatusChartSeriesTwo, paymentStatusChartOptionsTwo, createChart, createChartTwo, createChartThree, createChartFour, createChartFive, createChartSix, createChartSeven, paymentStatusChartSeriesThree, paymentStatusChartOptionsThree, statisticsDonutChartSeries, statisticsDonutChartOptions, candleStickChartSeries, candleStickChartOptions, statisticsDonutChartSeriesThree, statisticsDonutChartOptionsThree, upDownBarChartSeries, upDownBarChartOptions, semiCircleGaugeSeriesOne, semiCircleGaugeOptionsOne, dailyIconBarChartSeriesOne, dailyIconBarChartOptionsOne, transactionLineChartSeries, transactionLineChartOptions, userOverviewDonutChartSeries, userOverviewDonutChartOptions, paymentStatusChartSeriesOne, paymentStatusChartOptionsOne };
+
+
+
+
+    return { chartSeries, chartOptions, barChartSeries, barChartOptions, donutChartSeries, donutChartOptions, paymentStatusChartSeries, paymentStatusChartOptions, barChartSeriesTwo, barChartOptionsTwo, donutChartSeriesTwo, donutChartOptionsTwo, paymentStatusChartSeriesTwo, paymentStatusChartOptionsTwo, createChart, createChartTwo, createChartThree, createChartFour, createChartFive, createChartSix, createChartSeven, createChartEight, paymentStatusChartSeriesThree, paymentStatusChartOptionsThree, statisticsDonutChartSeries, statisticsDonutChartOptions, candleStickChartSeries, candleStickChartOptions, statisticsDonutChartSeriesThree, statisticsDonutChartOptionsThree, upDownBarChartSeries, upDownBarChartOptions, semiCircleGaugeSeriesOne, semiCircleGaugeOptionsOne, dailyIconBarChartSeriesOne, dailyIconBarChartOptionsOne, transactionLineChartSeries, transactionLineChartOptions, userOverviewDonutChartSeries, userOverviewDonutChartOptions, paymentStatusChartSeriesOne, paymentStatusChartOptionsOne, dailyIconBarChartSeriesTwo, dailyIconBarChartOptionsTwo };
 };
 
 export default useReactApexChart;

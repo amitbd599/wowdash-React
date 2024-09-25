@@ -4,6 +4,7 @@ import TrendingBidsOne from './child/TrendingBidsOne'
 import TrendingNFTsOne from './child/TrendingNFTsOne'
 import RecentBidOne from './child/RecentBidOne'
 import ETHPriceOne from './child/ETHPriceOne'
+import StatisticsOne from './child/StatisticsOne'
 
 
 const DashBoardLayerSeven = () => {
@@ -42,43 +43,10 @@ const DashBoardLayerSeven = () => {
                         <ETHPriceOne />
 
 
-                        <div className="col-xxl-12 col-md-6">
-                            <div className="card h-100">
-                                <div className="card-header border-bottom d-flex align-items-center flex-wrap gap-2 justify-content-between">
-                                    <h6 className="fw-bold text-lg mb-0">Statistics</h6>
-                                    <a
-                                        href="javascript:void(0)"
-                                        className="text-primary-600 hover-text-primary d-flex align-items-center gap-1"
-                                    >
-                                        View All
-                                        <iconify-icon
-                                            icon="solar:alt-arrow-right-linear"
-                                            className="icon"
-                                        />
-                                    </a>
-                                </div>
-                                <div className="card-body">
-                                    <div className="d-flex align-items-center gap-1 justify-content-between mb-44">
-                                        <div>
-                                            <h5 className="fw-semibold mb-12">145</h5>
-                                            <span className="text-secondary-light fw-normal text-xl">
-                                                Total Art Sold
-                                            </span>
-                                        </div>
-                                        <div id="dailyIconBarChart" />
-                                    </div>
-                                    <div className="d-flex align-items-center gap-1 justify-content-between">
-                                        <div>
-                                            <h5 className="fw-semibold mb-12">750 ETH</h5>
-                                            <span className="text-secondary-light fw-normal text-xl">
-                                                Total Earnings
-                                            </span>
-                                        </div>
-                                        <div id="areaChart" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        {/* StatisticsOne */}
+                        <StatisticsOne />
+
+
                         <div className="col-xxl-12 col-md-6">
                             <div className="card h-100">
                                 <div className="card-header border-bottom d-flex align-items-center flex-wrap gap-2 justify-content-between">
