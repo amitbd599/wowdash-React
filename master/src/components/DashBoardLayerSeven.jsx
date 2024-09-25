@@ -3,6 +3,7 @@ import BannerInnerOne from './child/BannerInnerOne'
 import TrendingBidsOne from './child/TrendingBidsOne'
 import TrendingNFTsOne from './child/TrendingNFTsOne'
 import RecentBidOne from './child/RecentBidOne'
+import ETHPriceOne from './child/ETHPriceOne'
 
 
 const DashBoardLayerSeven = () => {
@@ -29,52 +30,18 @@ const DashBoardLayerSeven = () => {
                         {/* RecentBidOne */}
                         <RecentBidOne />
 
-
-
-
-
-
-
-
-
-
-
-
-
-
                     </div>
                 </div>
 
 
-
                 <div className="col-xxl-4">
                     <div className="row gy-4">
-                        <div className="col-xxl-12 col-md-6">
-                            <div className="card h-100">
-                                <div className="card-header border-bottom d-flex align-items-center flex-wrap gap-2 justify-content-between">
-                                    <h6 className="fw-bold text-lg mb-0">ETH Price</h6>
-                                    <select className="form-select form-select-sm w-auto bg-base border text-secondary-light rounded-pill">
-                                        <option>November </option>
-                                        <option>December</option>
-                                        <option>January</option>
-                                        <option>February</option>
-                                        <option>March</option>
-                                        <option>April</option>
-                                        <option>May</option>
-                                        <option>June</option>
-                                        <option>July</option>
-                                        <option>August</option>
-                                        <option>September</option>
-                                    </select>
-                                </div>
-                                <div className="card-body">
-                                    <div
-                                        id="enrollmentChart"
-                                        className="apexcharts-tooltip-style-1 yaxies-more"
-                                    />
-                                </div>
-                            </div>
-                        </div>
+
+
+                        {/* ETHPriceOne */}
+                        <ETHPriceOne />
+
+
                         <div className="col-xxl-12 col-md-6">
                             <div className="card h-100">
                                 <div className="card-header border-bottom d-flex align-items-center flex-wrap gap-2 justify-content-between">
