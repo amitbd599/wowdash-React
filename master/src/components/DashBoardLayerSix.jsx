@@ -1,5 +1,6 @@
 import React from 'react'
 import UnitCountFive from './child/UnitCountFive'
+import TrafficSourcesOne from './child/TrafficSourcesOne'
 
 const DashBoardLayerSix = () => {
     return (
@@ -10,54 +11,11 @@ const DashBoardLayerSix = () => {
                 {/* UnitCountFive */}
                 <UnitCountFive />
 
-                <div className="col-xxl-4 col-md-6">
-                    <div className="card h-100 radius-8 border-0">
-                        <div className="card-body p-24 d-flex flex-column justify-content-between gap-8">
-                            <div className="d-flex align-items-center flex-wrap gap-2 justify-content-between mb-20">
-                                <h6 className="mb-2 fw-bold text-lg mb-0">Traffic Sources</h6>
-                                <select className="form-select form-select-sm w-auto bg-base border text-secondary-light">
-                                    <option>Yearly</option>
-                                    <option>Monthly</option>
-                                    <option>Weekly</option>
-                                    <option>Today</option>
-                                </select>
-                            </div>
-                            <div
-                                id="userOverviewDonutChart"
-                                className="margin-16-minus y-value-left"
-                            />
-                            <ul className="d-flex flex-wrap align-items-center justify-content-between mt-3 gap-3">
-                                <li className="d-flex flex-column gap-8">
-                                    <div className="d-flex align-items-center gap-2">
-                                        <span className="w-12-px h-12-px rounded-circle bg-warning-600" />
-                                        <span className="text-secondary-light text-sm fw-semibold">
-                                            Organic Search
-                                        </span>
-                                    </div>
-                                    <span className="text-primary-light fw-bold">875</span>
-                                </li>
-                                <li className="d-flex flex-column gap-8">
-                                    <div className="d-flex align-items-center gap-2">
-                                        <span className="w-12-px h-12-px rounded-circle bg-success-600" />
-                                        <span className="text-secondary-light text-sm fw-semibold">
-                                            Referrals
-                                        </span>
-                                    </div>
-                                    <span className="text-primary-light fw-bold">450</span>
-                                </li>
-                                <li className="d-flex flex-column gap-8">
-                                    <div className="d-flex align-items-center gap-2">
-                                        <span className="w-12-px h-12-px rounded-circle bg-primary-600" />
-                                        <span className="text-secondary-light text-sm fw-semibold">
-                                            Social Media
-                                        </span>
-                                    </div>
-                                    <span className="text-primary-light fw-bold">4,305</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                {/* TrafficSourcesOne */}
+                <TrafficSourcesOne />
+
+
+
                 {/* ======================= First Row Cards End =================== */}
                 {/* ================== Second Row Cards Start ======================= */}
                 {/* Top Categories Card Start */}
