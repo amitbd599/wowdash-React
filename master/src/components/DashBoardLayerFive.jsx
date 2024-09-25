@@ -3,6 +3,7 @@ import UnitCountFour from './child/UnitCountFour'
 import RevenueStatisticsOne from './child/RevenueStatisticsOne'
 import SalesStatisticTwo from './child/SalesStatisticTwo'
 import TopCountriesTwo from './child/TopCountriesTwo'
+import UserActivatesTwo from './child/UserActivatesTwo'
 
 const DashBoardLayerFive = () => {
     return (
@@ -24,8 +25,11 @@ const DashBoardLayerFive = () => {
                 <TopCountriesTwo />
 
 
+                {/* UserActivatesTwo */}
+                <UserActivatesTwo />
 
-                {/* Most Location End */}
+
+
                 {/* My portfolio Start */}
                 <div className="col-xxl-3">
                     <div className="card h-100 radius-8 border-0">
