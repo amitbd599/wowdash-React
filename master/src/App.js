@@ -27,7 +27,10 @@ function App() {
         <Route exact path="/index-6" element={<HomePageSix />} />
         <Route exact path="/index-7" element={<HomePageSeven />} />
         <Route exact path="/email" element={<EmailPage />} />
+
+        {/* SL */}
         <Route exact path="/add-user" element={<AddUserPage />} />
+        <Route exact path="/alert" element={<AddUserPage />} />
 
 
       </Routes>
