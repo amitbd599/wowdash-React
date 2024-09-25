@@ -27,6 +27,7 @@ const ETHPriceOne = () => {
                         id="enrollmentChart"
                         className="apexcharts-tooltip-style-1 yaxies-more"
                     >
+                        {/* pass the color value here */}
                         {createChartSeven("#487FFF")}
                     </div>
                 </div>
