@@ -23,7 +23,7 @@ const TotalTransactionsOne = () => {
                         <li className="d-flex align-items-center gap-2">
                             <span className="w-16-px h-16-px radius-2 bg-primary-600" />
                             <span className="text-secondary-light text-lg fw-normal">
-                                Total Gain:
+                                Total Gain: {" "}
                                 <span className="text-primary-light fw-bold text-lg">
                                     $50,000
                                 </span>
