@@ -2089,12 +2089,73 @@ const useReactApexChart = () => {
     };
 
 
+    let paymentStatusChartSeriesOne = [{
+        name: 'Net Profit',
+        data: [44, 100, 40, 56, 30, 58, 50]
+    }, {
+        name: 'Free Cash',
+        data: [60, 120, 60, 90, 50, 95, 90]
+    }]
+
+    let paymentStatusChartOptionsOne = {
+
+        colors: ['#45B369', '#FF9F29'],
+        labels: ['Active', 'New', 'Total'],
+
+        legend: {
+            show: false
+        },
+        chart: {
+            type: 'bar',
+            height: 420,
+            toolbar: {
+                show: false
+            },
+        },
+        grid: {
+            show: true,
+            borderColor: '#D1D5DB',
+            strokeDashArray: 4, // Use a number for dashed style
+            position: 'back',
+        },
+        plotOptions: {
+            bar: {
+                borderRadius: 4,
+                columnWidth: 8,
+            },
+        },
+        dataLabels: {
+            enabled: false
+        },
+        states: {
+            hover: {
+                filter: {
+                    type: 'none'
+                }
+            }
+        },
+        stroke: {
+            show: true,
+            width: 0,
+            colors: ['transparent']
+        },
+        xaxis: {
+            categories: ['Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 'Sun'],
+        },
+        fill: {
+            opacity: 1,
+            width: 18,
+        },
+    };
 
 
 
 
 
-    return { chartSeries, chartOptions, barChartSeries, barChartOptions, donutChartSeries, donutChartOptions, paymentStatusChartSeries, paymentStatusChartOptions, barChartSeriesTwo, barChartOptionsTwo, donutChartSeriesTwo, donutChartOptionsTwo, paymentStatusChartSeriesTwo, paymentStatusChartOptionsTwo, createChart, createChartTwo, createChartThree, createChartFour, createChartFive, createChartSix, paymentStatusChartSeriesThree, paymentStatusChartOptionsThree, statisticsDonutChartSeries, statisticsDonutChartOptions, candleStickChartSeries, candleStickChartOptions, statisticsDonutChartSeriesThree, statisticsDonutChartOptionsThree, upDownBarChartSeries, upDownBarChartOptions, semiCircleGaugeSeriesOne, semiCircleGaugeOptionsOne, dailyIconBarChartSeriesOne, dailyIconBarChartOptionsOne, transactionLineChartSeries, transactionLineChartOptions, userOverviewDonutChartSeries, userOverviewDonutChartOptions };
+
+
+
+    return { chartSeries, chartOptions, barChartSeries, barChartOptions, donutChartSeries, donutChartOptions, paymentStatusChartSeries, paymentStatusChartOptions, barChartSeriesTwo, barChartOptionsTwo, donutChartSeriesTwo, donutChartOptionsTwo, paymentStatusChartSeriesTwo, paymentStatusChartOptionsTwo, createChart, createChartTwo, createChartThree, createChartFour, createChartFive, createChartSix, paymentStatusChartSeriesThree, paymentStatusChartOptionsThree, statisticsDonutChartSeries, statisticsDonutChartOptions, candleStickChartSeries, candleStickChartOptions, statisticsDonutChartSeriesThree, statisticsDonutChartOptionsThree, upDownBarChartSeries, upDownBarChartOptions, semiCircleGaugeSeriesOne, semiCircleGaugeOptionsOne, dailyIconBarChartSeriesOne, dailyIconBarChartOptionsOne, transactionLineChartSeries, transactionLineChartOptions, userOverviewDonutChartSeries, userOverviewDonutChartOptions, paymentStatusChartSeriesOne, paymentStatusChartOptionsOne };
 };
 
 export default useReactApexChart;

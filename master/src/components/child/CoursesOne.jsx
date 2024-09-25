@@ -2,6 +2,7 @@ import { Icon } from '@iconify/react/dist/iconify.js'
 import React from 'react'
 
 const CoursesOne = () => {
+
     return (
         <div className="col-xxl-8">
             <div className="card h-100">
