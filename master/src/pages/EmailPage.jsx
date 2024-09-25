@@ -1,24 +1,25 @@
 import React from "react";
 import MasterLayout from "../masterLayout/MasterLayout";
 import Breadcrumb from "../components/Breadcrumb";
-import DashBoardLayerSeven from "../components/DashBoardLayerSeven";
+import EmailLayer from "../components/EmailLayer";
 
 
-const HomePageSeven = () => {
+const EmailPage = () => {
   return (
     <>
       {/* MasterLayout */}
       <MasterLayout>
 
         {/* Breadcrumb */}
-        <Breadcrumb title="NFT & Gaming" />
+        <Breadcrumb title="Components / Email" />
 
-        {/* DashBoardLayerSeven */}
-        <DashBoardLayerSeven />
+        {/* EmailLayer */}
+        <EmailLayer />
+
 
       </MasterLayout>
     </>
   );
 };
 
-export default HomePageSeven;
+export default EmailPage;

@@ -7,6 +7,7 @@ import HomePageFour from "./pages/HomePageFour";
 import HomePageFive from "./pages/HomePageFive";
 import HomePageSix from "./pages/HomePageSix";
 import HomePageSeven from "./pages/HomePageSeven";
+import EmailPage from "./pages/EmailPage";
 // import PhosphorIconInit from "./helper/PhosphorIconInit";
 
 
@@ -24,6 +25,7 @@ function App() {
         <Route exact path="/index-5" element={<HomePageFive />} />
         <Route exact path="/index-6" element={<HomePageSix />} />
         <Route exact path="/index-7" element={<HomePageSeven />} />
+        <Route exact path="/email" element={<EmailPage />} />
 
 
       </Routes>
