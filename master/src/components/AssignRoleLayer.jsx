@@ -110,6 +110,8 @@ const AssignRoleLayer = () => {
                                                     className="form-check-input radius-4 border border-neutral-400"
                                                     type="checkbox"
                                                     name="checkbox"
+                                                    checked={item.checked}
+                                                    onChange={() => handleCheckboxChange(item.id)}
                                                 />
                                             </div>
                                             {item.id}
