@@ -11,6 +11,7 @@ import EmailPage from "./pages/EmailPage";
 import AddUserPage from "./pages/AddUserPage";
 import AlertPage from "./pages/AlertPage";
 import AssignRolePage from "./pages/AssignRolePage";
+import AvatarPage from "./pages/AvatarPage";
 // import PhosphorIconInit from "./helper/PhosphorIconInit";
 
 
@@ -34,6 +35,7 @@ function App() {
         <Route exact path="/add-user" element={<AddUserPage />} />
         <Route exact path="/alert" element={<AlertPage />} />
         <Route exact path="/assign-role" element={<AssignRolePage />} />
+        <Route exact path="/avatar" element={<AvatarPage />} />
 
 
       </Routes>
