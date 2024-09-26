@@ -9,6 +9,7 @@ import HomePageSix from "./pages/HomePageSix";
 import HomePageSeven from "./pages/HomePageSeven";
 import EmailPage from "./pages/EmailPage";
 import AddUserPage from "./pages/AddUserPage";
+import AlertPage from "./pages/AlertPage";
 // import PhosphorIconInit from "./helper/PhosphorIconInit";
 
 
@@ -30,7 +31,7 @@ function App() {
 
         {/* SL */}
         <Route exact path="/add-user" element={<AddUserPage />} />
-        <Route exact path="/alert" element={<AddUserPage />} />
+        <Route exact path="/alert" element={<AlertPage />} />
 
 
       </Routes>
