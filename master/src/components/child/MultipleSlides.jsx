@@ -38,35 +38,35 @@ const MultipleSlides = () => {
                 </div>
                 <div className="card-body py-24 px-16 multiple-carousel dots-style-circle">
                     <Slider {...settings}>
-                        <div className="mx-8 mb-24 px-3">
+                        <div className=" mb-24">
                             <img
                                 src="assets/images/carousel/mutiple-carousel-img1.png"
                                 className="w-100 h-100 object-fit-cover"
                                 alt=""
                             />
                         </div>
-                        <div className="mx-8 mb-24 px-3">
+                        <div className=" mb-24">
                             <img
                                 src="assets/images/carousel/mutiple-carousel-img2.png"
                                 className="w-100 h-100 object-fit-cover"
                                 alt=""
                             />
                         </div>
-                        <div className="mx-8 mb-24 px-3">
+                        <div className=" mb-24">
                             <img
                                 src="assets/images/carousel/mutiple-carousel-img3.png"
                                 className="w-100 h-100 object-fit-cover"
                                 alt=""
                             />
                         </div>
-                        <div className="mx-8 mb-24 px-3">
+                        <div className=" mb-24">
                             <img
                                 src="assets/images/carousel/mutiple-carousel-img4.png"
                                 className="w-100 h-100 object-fit-cover"
                                 alt=""
                             />
                         </div>
-                        <div className="mx-8 mb-24 px-3">
+                        <div className=" mb-24">
                             <img
                                 src="assets/images/carousel/mutiple-carousel-img2.png"
                                 className="w-100 h-100 object-fit-cover"
