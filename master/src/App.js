@@ -47,6 +47,7 @@ function App() {
         <Route exact path="/calendar" element={<CalendarMainPage />} />
         <Route exact path="/card" element={<CardPage />} />
         <Route exact path="/carousel" element={<CarouselPage />} />
+        <Route exact path="/chat-empty" element={<CarouselPage />} />
 
 
       </Routes>
