@@ -17,6 +17,7 @@ import ButtonPage from "./pages/ButtonPage";
 import CalendarMainPage from "./pages/CalendarMainPage";
 import CardPage from "./pages/CardPage";
 import CarouselPage from "./pages/CarouselPage";
+import ChatEmptyPage from "./pages/ChatEmptyPage";
 // import PhosphorIconInit from "./helper/PhosphorIconInit";
 
 
@@ -47,7 +48,7 @@ function App() {
         <Route exact path="/calendar" element={<CalendarMainPage />} />
         <Route exact path="/card" element={<CardPage />} />
         <Route exact path="/carousel" element={<CarouselPage />} />
-        <Route exact path="/chat-empty" element={<CarouselPage />} />
+        <Route exact path="/chat-empty" element={<ChatEmptyPage />} />
 
 
       </Routes>
