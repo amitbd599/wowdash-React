@@ -104,3 +104,8 @@
 .slider-progress .active{
   transition: all .3s linear;
 }
+
+.card {
+  
+    position: initial !important;
+}
