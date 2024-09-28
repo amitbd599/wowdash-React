@@ -1,7 +1,36 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Calendar from './child/Calendar'
 import { Icon } from '@iconify/react/dist/iconify.js'
+import flatpickr from 'flatpickr';
+import 'flatpickr/dist/flatpickr.min.css';
+
+
+const DatePicker = ({ id, placeholder }) => {
+    const datePickerRef = useRef(null);
+
+    useEffect(() => {
+        // Initialize flatpickr on the input element
+        flatpickr(datePickerRef.current, {
+            enableTime: true,
+            dateFormat: 'd/m/Y H:i',
+        });
+    }, []);
+
+    return (
+        <input
+            ref={datePickerRef}
+            id={id}
+            type="text"
+            className="form-control radius-8 bg-base"
+            placeholder={placeholder}
+        />
+    );
+};
+
+
 const CalendarMainLayer = () => {
+
+
     return (
         <>
             <div className="row gy-4">
@@ -423,18 +452,11 @@ const CalendarMainLayer = () => {
                                         >
                                             Start Date
                                         </label>
-                                        <div className=" position-relative">
-                                            <input
-                                                className="form-control radius-8 bg-base"
-                                                id="startDate"
-                                                type="text"
-                                                placeholder="03/12/2024, 10:30 AM"
-                                            />
+                                        <div className="position-relative">
+
+                                            <DatePicker className="form-control radius-8 bg-base" id="startDate" placeholder="03/12/2024, 10:30 AM" />
                                             <span className="position-absolute end-0 top-50 translate-middle-y me-12 line-height-1">
-                                                <Icon
-                                                    icon="solar:calendar-linear"
-                                                    className="icon text-lg"
-                                                />
+                                                <iconify-icon icon="solar:calendar-linear" className="icon text-lg"></iconify-icon>
                                             </span>
                                         </div>
                                     </div>
@@ -445,18 +467,11 @@ const CalendarMainLayer = () => {
                                         >
                                             End Date
                                         </label>
-                                        <div className=" position-relative">
-                                            <input
-                                                className="form-control radius-8 bg-base"
-                                                id="endDate"
-                                                type="text"
-                                                placeholder="03/12/2024, 2:30 PM"
-                                            />
+                                        <div className="position-relative">
+
+                                            <DatePicker className="form-control radius-8 bg-base" id="endDate" placeholder="03/12/2024, 2:30 PM" />
                                             <span className="position-absolute end-0 top-50 translate-middle-y me-12 line-height-1">
-                                                <Icon
-                                                    icon="solar:calendar-linear"
-                                                    className="icon text-lg"
-                                                />
+                                                <iconify-icon icon="solar:calendar-linear" className="icon text-lg"></iconify-icon>
                                             </span>
                                         </div>
                                     </div>
@@ -686,12 +701,8 @@ const CalendarMainLayer = () => {
                                             Start Date
                                         </label>
                                         <div className=" position-relative">
-                                            <input
-                                                className="form-control radius-8 bg-base"
-                                                id="editstartDate"
-                                                type="text"
-                                                placeholder="03/12/2024, 10:30 AM"
-                                            />
+
+                                            <DatePicker className="form-control radius-8 bg-base" id="startDate" placeholder="03/12/2024, 10:30 AM" />
                                             <span className="position-absolute end-0 top-50 translate-middle-y me-12 line-height-1">
                                                 <Icon
                                                     icon="solar:calendar-linear"
@@ -708,12 +719,7 @@ const CalendarMainLayer = () => {
                                             End Date
                                         </label>
                                         <div className=" position-relative">
-                                            <input
-                                                className="form-control radius-8 bg-base"
-                                                id="editendDate"
-                                                type="text"
-                                                placeholder="03/12/2024, 2:30 PM"
-                                            />
+                                            <DatePicker className="form-control radius-8 bg-base" id="endDate" placeholder="03/12/2024, 2:30 PM" />
                                             <span className="position-absolute end-0 top-50 translate-middle-y me-12 line-height-1">
                                                 <Icon
                                                     icon="solar:calendar-linear"
