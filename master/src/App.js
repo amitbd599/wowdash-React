@@ -15,7 +15,7 @@ import AvatarPage from "./pages/AvatarPage";
 import BadgesPage from "./pages/BadgesPage";
 import ButtonPage from "./pages/ButtonPage";
 import CalendarMainPage from "./pages/CalendarMainPage";
-import DemoApp from "./components/child/Calendar";
+import CardPage from "./pages/CardPage";
 // import PhosphorIconInit from "./helper/PhosphorIconInit";
 
 
@@ -44,6 +44,7 @@ function App() {
         <Route exact path="/button" element={<ButtonPage />} />
         <Route exact path="/calendar-main" element={<CalendarMainPage />} />
         <Route exact path="/calendar" element={<CalendarMainPage />} />
+        <Route exact path="/card" element={<CardPage />} />
 
 
       </Routes>
