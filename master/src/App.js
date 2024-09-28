@@ -40,6 +40,7 @@ function App() {
         <Route exact path="/avatar" element={<AvatarPage />} />
         <Route exact path="/badges" element={<BadgesPage />} />
         <Route exact path="/button" element={<ButtonPage />} />
+        <Route exact path="/calendar-main" element={<ButtonPage />} />
 
 
       </Routes>
