@@ -9,7 +9,6 @@ const DatePicker = ({ id, placeholder }) => {
     const datePickerRef = useRef(null);
 
     useEffect(() => {
-        // Initialize flatpickr on the input element
         flatpickr(datePickerRef.current, {
             enableTime: true,
             dateFormat: 'd/m/Y H:i',
@@ -29,8 +28,6 @@ const DatePicker = ({ id, placeholder }) => {
 
 
 const CalendarMainLayer = () => {
-
-
     return (
         <>
             <div className="row gy-4">
@@ -884,7 +881,6 @@ const CalendarMainLayer = () => {
                 </div>
             </div>
         </>
-
     )
 }
 
