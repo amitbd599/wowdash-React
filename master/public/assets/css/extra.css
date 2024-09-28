@@ -100,3 +100,7 @@
    
    
 }
+
+.slider-progress .active{
+  transition: all .3s linear;
+}
