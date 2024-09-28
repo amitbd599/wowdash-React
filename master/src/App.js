@@ -43,7 +43,7 @@ function App() {
         <Route exact path="/badges" element={<BadgesPage />} />
         <Route exact path="/button" element={<ButtonPage />} />
         <Route exact path="/calendar-main" element={<CalendarMainPage />} />
-        {/* <Route exact path="/calendar-main" element={<DemoApp />} /> */}
+        <Route exact path="/calendar" element={<CalendarMainPage />} />
 
 
       </Routes>
