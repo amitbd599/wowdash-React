@@ -3,7 +3,7 @@ import useReactApexChart from '../hook/useReactApexChart'
 import ReactApexChart from 'react-apexcharts'
 
 const ColumnChartLayer = () => {
-    let { columnChartSeriesOne, columnChartOptionsOne, columnChartSeriesTwo, columnChartOptionsTwo } = useReactApexChart()
+    let { columnChartSeriesOne, columnChartOptionsOne, columnChartSeriesTwo, columnChartOptionsTwo, columnChartSeriesThree, columnChartOptionsThree, columnChartSeriesFour, columnChartOptionsFour } = useReactApexChart()
     return (
         <div className="row gy-4">
             <div className="col-md-6">
@@ -32,7 +32,7 @@ const ColumnChartLayer = () => {
                         <h6 className="text-lg fw-semibold mb-0">Group Column</h6>
                     </div>
                     <div className="card-body p-24">
-                        <div id="groupColumnBarChart" className="" />
+                        <ReactApexChart id="groupColumnBarChart" options={columnChartOptionsThree} series={columnChartSeriesThree} type="bar" height={264} />
                     </div>
                 </div>
             </div>
@@ -42,7 +42,7 @@ const ColumnChartLayer = () => {
                         <h6 className="text-lg fw-semibold mb-0">Simple Column</h6>
                     </div>
                     <div className="card-body p-24">
-                        <div id="upDownBarchart" />
+                        <ReactApexChart id="upDownBarchart" options={columnChartOptionsFour} series={columnChartSeriesFour} type="bar" height={264} />
                     </div>
                 </div>
             </div>
