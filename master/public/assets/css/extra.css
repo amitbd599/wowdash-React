@@ -115,3 +115,9 @@
  }
 
  .slick-slide > div { padding: 0 10px; }
+
+ .center-gap{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+ }

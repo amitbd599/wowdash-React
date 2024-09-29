@@ -29,7 +29,7 @@ const CarouselLayer = () => {
                                 <li>
                                     <a
                                         href="chat-profile.html"
-                                        className="dropdown-item rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                        className="dropdown-item center-gap rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
                                     >
                                         <Icon icon="fluent:person-32-regular" />
                                         Profile
@@ -38,7 +38,7 @@ const CarouselLayer = () => {
                                 <li>
                                     <a
                                         href="chat-profile.html"
-                                        className="dropdown-item rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                        className="dropdown-item center-gap rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
                                     >
                                         <Icon icon="carbon:settings" />
                                         Settings
@@ -375,7 +375,7 @@ const CarouselLayer = () => {
                             <ul className="dropdown-menu dropdown-menu-lg-end border">
                                 <li>
                                     <button
-                                        className="dropdown-item rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                        className="dropdown-item center-gap rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
                                         type="button"
                                     >
                                         <Icon icon="mdi:clear-circle-outline" />
@@ -384,7 +384,7 @@ const CarouselLayer = () => {
                                 </li>
                                 <li>
                                     <button
-                                        className="dropdown-item rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                        className="dropdown-item center-gap rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
                                         type="button"
                                     >
                                         <Icon icon="ic:baseline-block" />
