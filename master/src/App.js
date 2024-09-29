@@ -23,6 +23,7 @@ import ChatProfilePage from "./pages/ChatProfilePage";
 import CodeGeneratorNewPage from "./pages/CodeGeneratorNewPage";
 import CodeGeneratorPage from "./pages/CodeGeneratorPage";
 import ColorsPage from "./pages/ColorsPage";
+import ColumnChartPage from "./pages/ColumnChartPage";
 // import PhosphorIconInit from "./helper/PhosphorIconInit";
 
 
@@ -59,6 +60,7 @@ function App() {
         <Route exact path="/code-generator" element={<CodeGeneratorPage />} />
         <Route exact path="/code-generator-new" element={<CodeGeneratorNewPage />} />
         <Route exact path="/colors" element={<ColorsPage />} />
+        <Route exact path="/column-chart" element={<ColumnChartPage />} />
 
 
       </Routes>

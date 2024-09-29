@@ -2414,7 +2414,7 @@ const useReactApexChart = () => {
             y: 35,
         }]
     }]
-    var dailyIconBarChartOptionsTwo = {
+    let dailyIconBarChartOptionsTwo = {
 
         chart: {
             type: 'bar',
@@ -2490,6 +2490,177 @@ const useReactApexChart = () => {
 
 
 
+    let columnChartSeriesOne = [{
+        name: 'Net Profit',
+        data: [20000, 16000, 14000, 25000, 45000, 18000, 28000, 11000, 26000, 48000, 18000, 22000]
+    }, {
+        name: 'Revenue',
+        data: [15000, 18000, 19000, 20000, 35000, 20000, 18000, 13000, 18000, 38000, 14000, 16000]
+    }]
+    let columnChartOptionsOne = {
+
+        colors: ['#487FFF', '#FF9F29'],
+        labels: ['Active', 'New', 'Total'],
+        legend: {
+            show: false
+        },
+        chart: {
+            type: 'bar',
+            height: 264,
+            toolbar: {
+                show: false
+            },
+        },
+        grid: {
+            show: true,
+            borderColor: '#D1D5DB',
+            strokeDashArray: 4, // Use a number for dashed style
+            position: 'back',
+        },
+        plotOptions: {
+            bar: {
+                borderRadius: 4,
+                columnWidth: 10,
+            },
+        },
+        dataLabels: {
+            enabled: false
+        },
+        stroke: {
+            show: true,
+            width: 2,
+            colors: ['transparent']
+        },
+        xaxis: {
+            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+        },
+        yaxis: {
+            categories: ['0', '5000', '10,000', '20,000', '30,000', '50,000', '60,000', '60,000', '70,000', '80,000', '90,000', '100,000'],
+        },
+        yaxis: {
+            labels: {
+                formatter: function (value) {
+                    return (value / 1000).toFixed(0) + 'k';
+                }
+            }
+        },
+        tooltip: {
+            y: {
+                formatter: function (value) {
+                    return value / 1000 + 'k';
+                }
+            }
+        },
+        fill: {
+            opacity: 1,
+            width: 18,
+        },
+    };
+
+
+    let columnChartSeriesTwo = [{
+        name: "Sales",
+        data: [{
+            x: 'Jan',
+            y: 85000,
+        }, {
+            x: 'Feb',
+            y: 70000,
+        }, {
+            x: 'Mar',
+            y: 40000,
+        }, {
+            x: 'Apr',
+            y: 50000,
+        }, {
+            x: 'May',
+            y: 60000,
+        }, {
+            x: 'Jun',
+            y: 50000,
+        }, {
+            x: 'Jul',
+            y: 40000,
+        }, {
+            x: 'Aug',
+            y: 50000,
+        }, {
+            x: 'Sep',
+            y: 40000,
+        }, {
+            x: 'Oct',
+            y: 60000,
+        }, {
+            x: 'Nov',
+            y: 30000,
+        }, {
+            x: 'Dec',
+            y: 50000,
+        }]
+    }]
+
+    let columnChartOptionsTwo = {
+
+        chart: {
+            type: 'bar',
+            height: 264,
+            toolbar: {
+                show: false
+            }
+        },
+        plotOptions: {
+            bar: {
+                horizontal: false,
+                borderRadius: 8,
+                columnWidth: 10,
+                borderRadiusApplication: 'end', // 'around', 'end'
+                borderRadiusWhenStacked: 'last', // 'all', 'last'
+                columnWidth: '23%',
+                endingShape: 'rounded',
+            }
+        },
+        dataLabels: {
+            enabled: false
+        },
+        fill: {
+            type: 'gradient',
+            colors: ['#487FFF'], // Set the starting color (top color) here
+            gradient: {
+                shade: 'light', // Gradient shading type
+                type: 'vertical',  // Gradient direction (vertical)
+                shadeIntensity: 0.5, // Intensity of the gradient shading
+                gradientToColors: ['#487FFF'], // Bottom gradient color (with transparency)
+                inverseColors: false, // Do not invert colors
+                opacityFrom: 1, // Starting opacity
+                opacityTo: 1,  // Ending opacity
+                stops: [0, 100],
+            },
+        },
+        grid: {
+            show: true,
+            borderColor: '#D1D5DB',
+            strokeDashArray: 4, // Use a number for dashed style
+            position: 'back',
+        },
+        xaxis: {
+            type: 'category',
+            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+        },
+        yaxis: {
+            labels: {
+                formatter: function (value) {
+                    return (value / 1000).toFixed(0) + 'k';
+                }
+            }
+        },
+        tooltip: {
+            y: {
+                formatter: function (value) {
+                    return value / 1000 + 'k';
+                }
+            }
+        }
+    };
 
 
 
@@ -2498,7 +2669,8 @@ const useReactApexChart = () => {
 
 
 
-    return { chartSeries, chartOptions, barChartSeries, barChartOptions, donutChartSeries, donutChartOptions, paymentStatusChartSeries, paymentStatusChartOptions, barChartSeriesTwo, barChartOptionsTwo, donutChartSeriesTwo, donutChartOptionsTwo, paymentStatusChartSeriesTwo, paymentStatusChartOptionsTwo, createChart, createChartTwo, createChartThree, createChartFour, createChartFive, createChartSix, createChartSeven, createChartEight, paymentStatusChartSeriesThree, paymentStatusChartOptionsThree, statisticsDonutChartSeries, statisticsDonutChartOptions, candleStickChartSeries, candleStickChartOptions, statisticsDonutChartSeriesThree, statisticsDonutChartOptionsThree, upDownBarChartSeries, upDownBarChartOptions, semiCircleGaugeSeriesOne, semiCircleGaugeOptionsOne, dailyIconBarChartSeriesOne, dailyIconBarChartOptionsOne, transactionLineChartSeries, transactionLineChartOptions, userOverviewDonutChartSeries, userOverviewDonutChartOptions, paymentStatusChartSeriesOne, paymentStatusChartOptionsOne, dailyIconBarChartSeriesTwo, dailyIconBarChartOptionsTwo };
+
+    return { chartSeries, chartOptions, barChartSeries, barChartOptions, donutChartSeries, donutChartOptions, paymentStatusChartSeries, paymentStatusChartOptions, barChartSeriesTwo, barChartOptionsTwo, donutChartSeriesTwo, donutChartOptionsTwo, paymentStatusChartSeriesTwo, paymentStatusChartOptionsTwo, createChart, createChartTwo, createChartThree, createChartFour, createChartFive, createChartSix, createChartSeven, createChartEight, paymentStatusChartSeriesThree, paymentStatusChartOptionsThree, statisticsDonutChartSeries, statisticsDonutChartOptions, candleStickChartSeries, candleStickChartOptions, statisticsDonutChartSeriesThree, statisticsDonutChartOptionsThree, upDownBarChartSeries, upDownBarChartOptions, semiCircleGaugeSeriesOne, semiCircleGaugeOptionsOne, dailyIconBarChartSeriesOne, dailyIconBarChartOptionsOne, transactionLineChartSeries, transactionLineChartOptions, userOverviewDonutChartSeries, userOverviewDonutChartOptions, paymentStatusChartSeriesOne, paymentStatusChartOptionsOne, dailyIconBarChartSeriesTwo, dailyIconBarChartOptionsTwo, columnChartSeriesOne, columnChartOptionsOne, columnChartSeriesTwo, columnChartOptionsTwo };
 };
 
 export default useReactApexChart;
