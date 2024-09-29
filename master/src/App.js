@@ -19,6 +19,7 @@ import CardPage from "./pages/CardPage";
 import CarouselPage from "./pages/CarouselPage";
 import ChatEmptyPage from "./pages/ChatEmptyPage";
 import ChatMessagePage from "./pages/ChatMessagePage";
+import ChatProfilePage from "./pages/ChatProfilePage";
 // import PhosphorIconInit from "./helper/PhosphorIconInit";
 
 
@@ -51,6 +52,7 @@ function App() {
         <Route exact path="/carousel" element={<CarouselPage />} />
         <Route exact path="/chat-empty" element={<ChatEmptyPage />} />
         <Route exact path="/chat-message" element={<ChatMessagePage />} />
+        <Route exact path="/chat-profile" element={<ChatProfilePage />} />
 
 
       </Routes>
