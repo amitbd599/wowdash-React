@@ -27,6 +27,7 @@ import ColumnChartPage from "./pages/ColumnChartPage";
 import CompanyPage from "./pages/CompanyPage";
 import CurrenciesPage from "./pages/CurrenciesPage";
 import DropdownPage from "./pages/DropdownPage";
+import ErrorPage from "./pages/ErrorPage";
 // import PhosphorIconInit from "./helper/PhosphorIconInit";
 
 
@@ -68,7 +69,9 @@ function App() {
         <Route exact path="/currencies" element={<CurrenciesPage />} />
         <Route exact path="/dropdown" element={<DropdownPage />} />
         <Route exact path="/email" element={<EmailPage />} />
-        <Route exact path="/error" element={<EmailPage />} />
+
+
+        <Route exact path="*" element={<ErrorPage />} />
 
 
       </Routes>
