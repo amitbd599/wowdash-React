@@ -1,3 +1,4 @@
+import { Icon } from '@iconify/react/dist/iconify.js'
 import React from 'react'
 
 const InputCustomStyles = () => {
@@ -87,7 +88,7 @@ const InputCustomStyles = () => {
                                     defaultValue="www.random.com"
                                 />
                                 <button type="button" className="input-group-text bg-base">
-                                    <iconify-icon icon="lucide:copy" /> Copy
+                                    <Icon icon="lucide:copy" /> Copy
                                 </button>
                                 <div className="invalid-feedback">Looks good.</div>
                             </div>
