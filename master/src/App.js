@@ -26,6 +26,7 @@ import ColorsPage from "./pages/ColorsPage";
 import ColumnChartPage from "./pages/ColumnChartPage";
 import CompanyPage from "./pages/CompanyPage";
 import CurrenciesPage from "./pages/CurrenciesPage";
+import DropdownPage from "./pages/DropdownPage";
 // import PhosphorIconInit from "./helper/PhosphorIconInit";
 
 
@@ -43,7 +44,7 @@ function App() {
         <Route exact path="/index-5" element={<HomePageFive />} />
         <Route exact path="/index-6" element={<HomePageSix />} />
         <Route exact path="/index-7" element={<HomePageSeven />} />
-        <Route exact path="/email" element={<EmailPage />} />
+
 
         {/* SL */}
         <Route exact path="/add-user" element={<AddUserPage />} />
@@ -65,6 +66,9 @@ function App() {
         <Route exact path="/column-chart" element={<ColumnChartPage />} />
         <Route exact path="/company" element={<CompanyPage />} />
         <Route exact path="/currencies" element={<CurrenciesPage />} />
+        <Route exact path="/dropdown" element={<DropdownPage />} />
+        <Route exact path="/email" element={<EmailPage />} />
+        <Route exact path="/error" element={<EmailPage />} />
 
 
       </Routes>

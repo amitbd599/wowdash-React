@@ -700,7 +700,6 @@ const CurrenciesLayer = () => {
                 </div>
             </div>
 
-
         </>
     )
 }
