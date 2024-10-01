@@ -31,6 +31,7 @@ import ErrorPage from "./pages/ErrorPage";
 import FaqPage from "./pages/FaqPage";
 import ForgotPasswordPage from "./pages/ForgotPasswordPage";
 import FormLayoutPage from "./pages/FormLayoutPage";
+import FormValidationPage from "./pages/FormValidationPage";
 // import PhosphorIconInit from "./helper/PhosphorIconInit";
 
 
@@ -75,6 +76,7 @@ function App() {
         <Route exact path="/faq" element={<FaqPage />} />
         <Route exact path="/forgot-password" element={<ForgotPasswordPage />} />
         <Route exact path="/form-layout" element={<FormLayoutPage />} />
+        <Route exact path="/form-validation" element={<FormValidationPage />} />
 
 
         <Route exact path="*" element={<ErrorPage />} />
