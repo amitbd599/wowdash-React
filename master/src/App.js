@@ -25,6 +25,7 @@ import CodeGeneratorPage from "./pages/CodeGeneratorPage";
 import ColorsPage from "./pages/ColorsPage";
 import ColumnChartPage from "./pages/ColumnChartPage";
 import CompanyPage from "./pages/CompanyPage";
+import CurrenciesPage from "./pages/CurrenciesPage";
 // import PhosphorIconInit from "./helper/PhosphorIconInit";
 
 
@@ -63,6 +64,7 @@ function App() {
         <Route exact path="/colors" element={<ColorsPage />} />
         <Route exact path="/column-chart" element={<ColumnChartPage />} />
         <Route exact path="/company" element={<CompanyPage />} />
+        <Route exact path="/currencies" element={<CurrenciesPage />} />
 
 
       </Routes>
