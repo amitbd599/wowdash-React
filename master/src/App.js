@@ -34,6 +34,7 @@ import FormLayoutPage from "./pages/FormLayoutPage";
 import FormValidationPage from "./pages/FormValidationPage";
 import FormPage from "./pages/FormPage";
 import GalleryPage from "./pages/GalleryPage";
+import ImageGeneratorPage from "./pages/ImageGeneratorPage";
 // import PhosphorIconInit from "./helper/PhosphorIconInit";
 
 
@@ -81,6 +82,7 @@ function App() {
         <Route exact path="/form-validation" element={<FormValidationPage />} />
         <Route exact path="/form" element={<FormPage />} />
         <Route exact path="/gallery" element={<GalleryPage />} />
+        <Route exact path="/image-generator" element={<ImageGeneratorPage />} />
 
 
         <Route exact path="*" element={<ErrorPage />} />
