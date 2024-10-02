@@ -2925,7 +2925,7 @@ const useReactApexChart = () => {
             data: [12, 18, 12, 48, 18, 30, 18, 15, 88, 40, 65, 24, 48],
         },
     ]
-    var zoomAbleLineChartOptions = {
+    let zoomAbleLineChartOptions = {
 
         chart: {
             type: 'area',
@@ -3044,13 +3044,81 @@ const useReactApexChart = () => {
     };
 
 
+    let lineDataLabelSeries = [{
+        name: "Desktops",
+        data: [5, 25, 35, 15, 21, 15, 35, 35, 51]
+    }]
+    let lineDataLabelOptions = {
+
+        chart: {
+            height: 264,
+            type: 'line',
+            colors: '#000',
+            zoom: {
+                enabled: false
+            },
+            toolbar: {
+                show: false
+            },
+        },
+        colors: ['#487FFF'],  // Set the color of the series
+        dataLabels: {
+            enabled: true
+        },
+        stroke: {
+            curve: 'straight',
+            width: 4,
+            color: "#000"
+        },
+        markers: {
+            size: 0,
+            strokeWidth: 3,
+            hover: {
+                size: 8
+            }
+        },
+        grid: {
+            show: true,
+            borderColor: '#D1D5DB',
+            strokeDashArray: 3,
+            row: {
+                colors: ['#f3f3f3', 'transparent'],
+                opacity: 0,
+            },
+        },
+        // Customize the circle marker color on hover
+        markers: {
+            colors: '#487FFF',
+            strokeWidth: 3,
+            size: 0,
+            hover: {
+                size: 10
+            }
+        },
+        xaxis: {
+            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+            lines: {
+                show: false
+            }
+        },
+        yaxis: {
+            labels: {
+                formatter: function (value) {
+                    return "$" + value + "k";
+                },
+                style: {
+                    fontSize: "14px"
+                }
+            },
+        },
+    };
 
 
 
 
 
 
-    return { chartSeries, chartOptions, barChartSeries, barChartOptions, donutChartSeries, donutChartOptions, paymentStatusChartSeries, paymentStatusChartOptions, barChartSeriesTwo, barChartOptionsTwo, donutChartSeriesTwo, donutChartOptionsTwo, paymentStatusChartSeriesTwo, paymentStatusChartOptionsTwo, createChart, createChartTwo, createChartThree, createChartFour, createChartFive, createChartSix, createChartSeven, createChartEight, paymentStatusChartSeriesThree, paymentStatusChartOptionsThree, statisticsDonutChartSeries, statisticsDonutChartOptions, candleStickChartSeries, candleStickChartOptions, statisticsDonutChartSeriesThree, statisticsDonutChartOptionsThree, upDownBarChartSeries, upDownBarChartOptions, semiCircleGaugeSeriesOne, semiCircleGaugeOptionsOne, dailyIconBarChartSeriesOne, dailyIconBarChartOptionsOne, transactionLineChartSeries, transactionLineChartOptions, userOverviewDonutChartSeries, userOverviewDonutChartOptions, paymentStatusChartSeriesOne, paymentStatusChartOptionsOne, dailyIconBarChartSeriesTwo, dailyIconBarChartOptionsTwo, columnChartSeriesOne, columnChartOptionsOne, columnChartSeriesTwo, columnChartOptionsTwo, columnChartSeriesThree, columnChartOptionsThree, columnChartSeriesFour, columnChartOptionsFour, defaultLineChartSeries, defaultLineChartOptions, zoomAbleLineChartSeries, zoomAbleLineChartOptions };
+    return { chartSeries, chartOptions, barChartSeries, barChartOptions, donutChartSeries, donutChartOptions, paymentStatusChartSeries, paymentStatusChartOptions, barChartSeriesTwo, barChartOptionsTwo, donutChartSeriesTwo, donutChartOptionsTwo, paymentStatusChartSeriesTwo, paymentStatusChartOptionsTwo, createChart, createChartTwo, createChartThree, createChartFour, createChartFive, createChartSix, createChartSeven, createChartEight, paymentStatusChartSeriesThree, paymentStatusChartOptionsThree, statisticsDonutChartSeries, statisticsDonutChartOptions, candleStickChartSeries, candleStickChartOptions, statisticsDonutChartSeriesThree, statisticsDonutChartOptionsThree, upDownBarChartSeries, upDownBarChartOptions, semiCircleGaugeSeriesOne, semiCircleGaugeOptionsOne, dailyIconBarChartSeriesOne, dailyIconBarChartOptionsOne, transactionLineChartSeries, transactionLineChartOptions, userOverviewDonutChartSeries, userOverviewDonutChartOptions, paymentStatusChartSeriesOne, paymentStatusChartOptionsOne, dailyIconBarChartSeriesTwo, dailyIconBarChartOptionsTwo, columnChartSeriesOne, columnChartOptionsOne, columnChartSeriesTwo, columnChartOptionsTwo, columnChartSeriesThree, columnChartOptionsThree, columnChartSeriesFour, columnChartOptionsFour, defaultLineChartSeries, defaultLineChartOptions, zoomAbleLineChartSeries, zoomAbleLineChartOptions, lineDataLabelSeries, lineDataLabelOptions };
 };
 
 export default useReactApexChart;
