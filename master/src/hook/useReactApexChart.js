@@ -3114,11 +3114,127 @@ const useReactApexChart = () => {
     };
 
 
+    let doubleLineChartSeries = [
+        {
+            name: 'This Day',
+            data: [8, 15, 9, 20, 10, 33, 13, 22, 8, 17, 10, 15],
+        },
+        {
+            name: 'Example',
+            data: [8, 24, 18, 40, 18, 48, 22, 38, 18, 30, 20, 28],
+        },
+    ]
+
+    let doubleLineChartOptions = {
+
+        chart: {
+            type: 'line',
+            width: '100%',
+            height: 264,
+            sparkline: {
+                enabled: false // Remove whitespace
+            },
+            toolbar: {
+                show: false
+            },
+            padding: {
+                left: 0,
+                right: 0,
+                top: 0,
+                bottom: 0
+            }
+        },
+        colors: ['#487FFF', '#FF9F29'],  // Set the color of the series
+        dataLabels: {
+            enabled: false
+        },
+        stroke: {
+            curve: 'smooth',
+            width: 4,
+            colors: ["#FF9F29", "#487fff"],
+            lineCap: 'round',
+        },
+        grid: {
+            show: true,
+            borderColor: '#D1D5DB',
+            strokeDashArray: 3,
+            position: 'back',
+            xaxis: {
+                lines: {
+                    show: false
+                }
+            },
+            yaxis: {
+                lines: {
+                    show: true
+                }
+            },
+            row: {
+                colors: undefined,
+                opacity: 0.5
+            },
+            column: {
+                colors: undefined,
+                opacity: 0.5
+            },
+            padding: {
+                top: 0,
+                right: 0,
+                bottom: 0,
+                left: 0
+            },
+        },
+        // Customize the circle marker color on hover
+        markers: {
+            colors: ["#FF9F29", "#487fff"],
+            strokeWidth: 3,
+            size: 0,
+            hover: {
+                size: 10
+            }
+        },
+        xaxis: {
+            labels: {
+                show: false
+            },
+            categories: [`Jan`, `Feb`, `Mar`, `Apr`, `May`, `Jun`, `Jul`, `Aug`, `Sep`, `Oct`, `Nov`, `Dec`],
+            tooltip: {
+                enabled: false,
+            },
+            labels: {
+                formatter: function (value) {
+                    return value;
+                },
+                style: {
+                    fontSize: "14px"
+                }
+            },
+        },
+        yaxis: {
+            labels: {
+                formatter: function (value) {
+                    return "$" + value + "k";
+                },
+                style: {
+                    fontSize: "14px"
+                }
+            },
+        },
+        tooltip: {
+            x: {
+                format: 'dd/MM/yy HH:mm'
+            },
+        },
+        legend: {
+            show: false
+        }
+    };
 
 
 
 
-    return { chartSeries, chartOptions, barChartSeries, barChartOptions, donutChartSeries, donutChartOptions, paymentStatusChartSeries, paymentStatusChartOptions, barChartSeriesTwo, barChartOptionsTwo, donutChartSeriesTwo, donutChartOptionsTwo, paymentStatusChartSeriesTwo, paymentStatusChartOptionsTwo, createChart, createChartTwo, createChartThree, createChartFour, createChartFive, createChartSix, createChartSeven, createChartEight, paymentStatusChartSeriesThree, paymentStatusChartOptionsThree, statisticsDonutChartSeries, statisticsDonutChartOptions, candleStickChartSeries, candleStickChartOptions, statisticsDonutChartSeriesThree, statisticsDonutChartOptionsThree, upDownBarChartSeries, upDownBarChartOptions, semiCircleGaugeSeriesOne, semiCircleGaugeOptionsOne, dailyIconBarChartSeriesOne, dailyIconBarChartOptionsOne, transactionLineChartSeries, transactionLineChartOptions, userOverviewDonutChartSeries, userOverviewDonutChartOptions, paymentStatusChartSeriesOne, paymentStatusChartOptionsOne, dailyIconBarChartSeriesTwo, dailyIconBarChartOptionsTwo, columnChartSeriesOne, columnChartOptionsOne, columnChartSeriesTwo, columnChartOptionsTwo, columnChartSeriesThree, columnChartOptionsThree, columnChartSeriesFour, columnChartOptionsFour, defaultLineChartSeries, defaultLineChartOptions, zoomAbleLineChartSeries, zoomAbleLineChartOptions, lineDataLabelSeries, lineDataLabelOptions };
+
+    return { chartSeries, chartOptions, barChartSeries, barChartOptions, donutChartSeries, donutChartOptions, paymentStatusChartSeries, paymentStatusChartOptions, barChartSeriesTwo, barChartOptionsTwo, donutChartSeriesTwo, donutChartOptionsTwo, paymentStatusChartSeriesTwo, paymentStatusChartOptionsTwo, createChart, createChartTwo, createChartThree, createChartFour, createChartFive, createChartSix, createChartSeven, createChartEight, paymentStatusChartSeriesThree, paymentStatusChartOptionsThree, statisticsDonutChartSeries, statisticsDonutChartOptions, candleStickChartSeries, candleStickChartOptions, statisticsDonutChartSeriesThree, statisticsDonutChartOptionsThree, upDownBarChartSeries, upDownBarChartOptions, semiCircleGaugeSeriesOne, semiCircleGaugeOptionsOne, dailyIconBarChartSeriesOne, dailyIconBarChartOptionsOne, transactionLineChartSeries, transactionLineChartOptions, userOverviewDonutChartSeries, userOverviewDonutChartOptions, paymentStatusChartSeriesOne, paymentStatusChartOptionsOne, dailyIconBarChartSeriesTwo, dailyIconBarChartOptionsTwo, columnChartSeriesOne, columnChartOptionsOne, columnChartSeriesTwo, columnChartOptionsTwo, columnChartSeriesThree, columnChartOptionsThree, columnChartSeriesFour, columnChartOptionsFour, defaultLineChartSeries, defaultLineChartOptions, zoomAbleLineChartSeries, zoomAbleLineChartOptions, lineDataLabelSeries, lineDataLabelOptions, doubleLineChartSeries, doubleLineChartOptions };
 };
 
 export default useReactApexChart;
