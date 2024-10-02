@@ -3231,10 +3231,71 @@ const useReactApexChart = () => {
     };
 
 
+    let stepLineChartSeries = [{
+        data: [16, 25, 38, 50, 32, 20, 42, 18, 4, 25, 12, 12],
+        name: "Example",
+    }]
+    let stepLineChartOptions = {
+
+        chart: {
+            type: 'line',
+            height: 270,
+            toolbar: {
+                show: false
+            },
+        },
+        stroke: {
+            curve: 'stepline',
+        },
+        colors: ['#487FFF'],  // Set the color of the series
+        dataLabels: {
+            enabled: false
+        },
+        markers: {
+            hover: {
+                sizeOffset: 4
+            }
+        },
+        grid: {
+            show: true,
+            borderColor: '#D1D5DB',
+            strokeDashArray: 3,
+            position: 'back',
+        },
+        xaxis: {
+            labels: {
+                show: false
+            },
+            categories: [`Jan`, `Feb`, `Mar`, `Apr`, `May`, `Jun`, `Jul`, `Aug`, `Sep`, `Oct`, `Nov`, `Dec`],
+            tooltip: {
+                enabled: false,
+            },
+            labels: {
+                formatter: function (value) {
+                    return value;
+                },
+                style: {
+                    fontSize: "14px"
+                }
+            },
+        },
+        yaxis: {
+            labels: {
+                formatter: function (value) {
+                    return "$" + value + "k";
+                },
+                style: {
+                    fontSize: "14px"
+                }
+            },
+        },
+    };
 
 
 
-    return { chartSeries, chartOptions, barChartSeries, barChartOptions, donutChartSeries, donutChartOptions, paymentStatusChartSeries, paymentStatusChartOptions, barChartSeriesTwo, barChartOptionsTwo, donutChartSeriesTwo, donutChartOptionsTwo, paymentStatusChartSeriesTwo, paymentStatusChartOptionsTwo, createChart, createChartTwo, createChartThree, createChartFour, createChartFive, createChartSix, createChartSeven, createChartEight, paymentStatusChartSeriesThree, paymentStatusChartOptionsThree, statisticsDonutChartSeries, statisticsDonutChartOptions, candleStickChartSeries, candleStickChartOptions, statisticsDonutChartSeriesThree, statisticsDonutChartOptionsThree, upDownBarChartSeries, upDownBarChartOptions, semiCircleGaugeSeriesOne, semiCircleGaugeOptionsOne, dailyIconBarChartSeriesOne, dailyIconBarChartOptionsOne, transactionLineChartSeries, transactionLineChartOptions, userOverviewDonutChartSeries, userOverviewDonutChartOptions, paymentStatusChartSeriesOne, paymentStatusChartOptionsOne, dailyIconBarChartSeriesTwo, dailyIconBarChartOptionsTwo, columnChartSeriesOne, columnChartOptionsOne, columnChartSeriesTwo, columnChartOptionsTwo, columnChartSeriesThree, columnChartOptionsThree, columnChartSeriesFour, columnChartOptionsFour, defaultLineChartSeries, defaultLineChartOptions, zoomAbleLineChartSeries, zoomAbleLineChartOptions, lineDataLabelSeries, lineDataLabelOptions, doubleLineChartSeries, doubleLineChartOptions };
+
+
+    return { chartSeries, chartOptions, barChartSeries, barChartOptions, donutChartSeries, donutChartOptions, paymentStatusChartSeries, paymentStatusChartOptions, barChartSeriesTwo, barChartOptionsTwo, donutChartSeriesTwo, donutChartOptionsTwo, paymentStatusChartSeriesTwo, paymentStatusChartOptionsTwo, createChart, createChartTwo, createChartThree, createChartFour, createChartFive, createChartSix, createChartSeven, createChartEight, paymentStatusChartSeriesThree, paymentStatusChartOptionsThree, statisticsDonutChartSeries, statisticsDonutChartOptions, candleStickChartSeries, candleStickChartOptions, statisticsDonutChartSeriesThree, statisticsDonutChartOptionsThree, upDownBarChartSeries, upDownBarChartOptions, semiCircleGaugeSeriesOne, semiCircleGaugeOptionsOne, dailyIconBarChartSeriesOne, dailyIconBarChartOptionsOne, transactionLineChartSeries, transactionLineChartOptions, userOverviewDonutChartSeries, userOverviewDonutChartOptions, paymentStatusChartSeriesOne, paymentStatusChartOptionsOne, dailyIconBarChartSeriesTwo, dailyIconBarChartOptionsTwo, columnChartSeriesOne, columnChartOptionsOne, columnChartSeriesTwo, columnChartOptionsTwo, columnChartSeriesThree, columnChartOptionsThree, columnChartSeriesFour, columnChartOptionsFour, defaultLineChartSeries, defaultLineChartOptions, zoomAbleLineChartSeries, zoomAbleLineChartOptions, lineDataLabelSeries, lineDataLabelOptions, doubleLineChartSeries, doubleLineChartOptions, stepLineChartSeries, stepLineChartOptions };
 };
 
 export default useReactApexChart;

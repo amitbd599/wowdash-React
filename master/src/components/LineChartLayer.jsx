@@ -3,6 +3,7 @@ import DefaultLineChart from './child/DefaultLineChart'
 import ZoomAbleLineChart from './child/ZoomAbleLineChart'
 import LineDataLabel from './child/LineDataLabel'
 import DoubleLineChart from './child/DoubleLineChart'
+import StepLineChart from './child/StepLineChart'
 
 const LineChartLayer = () => {
     return (
@@ -19,19 +20,13 @@ const LineChartLayer = () => {
             {/* DoubleLineChart */}
             <DoubleLineChart />
 
+            {/* StepLineChart */}
+            <StepLineChart />
 
 
 
-            <div className="col-md-6">
-                <div className="card h-100 p-0">
-                    <div className="card-header border-bottom bg-base py-16 px-24">
-                        <h6 className="text-lg fw-semibold mb-0">Stepline Charts</h6>
-                    </div>
-                    <div className="card-body p-24">
-                        <div id="stepLineChart" />
-                    </div>
-                </div>
-            </div>
+
+
             <div className="col-md-6">
                 <div className="card h-100 p-0">
                     <div className="card-header border-bottom bg-base py-16 px-24">
