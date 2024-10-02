@@ -43,6 +43,7 @@ import InvoicePreviewPage from "./pages/InvoicePreviewPage";
 import KanbanPage from "./pages/KanbanPage";
 import LanguagePage from "./pages/LanguagePage";
 import LineChartPage from "./pages/LineChartPage";
+import ListPage from "./pages/ListPage";
 // import PhosphorIconInit from "./helper/PhosphorIconInit";
 
 
@@ -99,6 +100,7 @@ function App() {
         <Route exact path="/kanban" element={<KanbanPage />} />
         <Route exact path="/language" element={<LanguagePage />} />
         <Route exact path="/line-chart" element={<LineChartPage />} />
+        <Route exact path="/list" element={<ListPage />} />
 
 
         <Route exact path="*" element={<ErrorPage />} />
