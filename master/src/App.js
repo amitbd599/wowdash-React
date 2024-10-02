@@ -39,6 +39,7 @@ import ImageUploadPage from "./pages/ImageUploadPage";
 import InvoiceAddPage from "./pages/InvoiceAddPage";
 import InvoiceEditPage from "./pages/InvoiceEditPage";
 import InvoiceListPage from "./pages/InvoiceListPage";
+import InvoicePreviewPage from "./pages/InvoicePreviewPage";
 // import PhosphorIconInit from "./helper/PhosphorIconInit";
 
 
@@ -91,6 +92,7 @@ function App() {
         <Route exact path="/invoice-add" element={<InvoiceAddPage />} />
         <Route exact path="/invoice-edit" element={<InvoiceEditPage />} />
         <Route exact path="/invoice-list" element={<InvoiceListPage />} />
+        <Route exact path="/invoice-preview" element={<InvoicePreviewPage />} />
 
 
         <Route exact path="*" element={<ErrorPage />} />
