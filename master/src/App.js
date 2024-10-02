@@ -36,6 +36,7 @@ import FormPage from "./pages/FormPage";
 import GalleryPage from "./pages/GalleryPage";
 import ImageGeneratorPage from "./pages/ImageGeneratorPage";
 import ImageUploadPage from "./pages/ImageUploadPage";
+import InvoiceAddPage from "./pages/InvoiceAddPage";
 // import PhosphorIconInit from "./helper/PhosphorIconInit";
 
 
@@ -85,6 +86,7 @@ function App() {
         <Route exact path="/gallery" element={<GalleryPage />} />
         <Route exact path="/image-generator" element={<ImageGeneratorPage />} />
         <Route exact path="/image-upload" element={<ImageUploadPage />} />
+        <Route exact path="/invoice-add" element={<InvoiceAddPage />} />
 
 
         <Route exact path="*" element={<ErrorPage />} />
