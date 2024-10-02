@@ -44,6 +44,7 @@ import KanbanPage from "./pages/KanbanPage";
 import LanguagePage from "./pages/LanguagePage";
 import LineChartPage from "./pages/LineChartPage";
 import ListPage from "./pages/ListPage";
+import MarketplaceDetailsPage from "./pages/MarketplaceDetailsPage";
 // import PhosphorIconInit from "./helper/PhosphorIconInit";
 
 
@@ -101,6 +102,7 @@ function App() {
         <Route exact path="/language" element={<LanguagePage />} />
         <Route exact path="/line-chart" element={<LineChartPage />} />
         <Route exact path="/list" element={<ListPage />} />
+        <Route exact path="/marketplace-details" element={<MarketplaceDetailsPage />} />
 
 
         <Route exact path="*" element={<ErrorPage />} />
