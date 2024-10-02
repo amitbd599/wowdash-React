@@ -12,8 +12,7 @@ const DefaultLineChart = () => {
                     <h6 className="text-lg fw-semibold mb-0">Default Line Chart</h6>
                 </div>
                 <div className="card-body p-24">
-                    <div id="defaultLineChart" className="apexcharts-tooltip-style-1" />
-                    <ReactApexChart options={defaultLineChartOptions} series={defaultLineChartSeries} type="area"
+                    <ReactApexChart id="defaultLineChart" className="apexcharts-tooltip-style-1" options={defaultLineChartOptions} series={defaultLineChartSeries} type="area"
                         height={264} />
                 </div>
             </div>

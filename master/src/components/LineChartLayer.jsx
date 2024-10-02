@@ -1,5 +1,6 @@
 import React from 'react'
 import DefaultLineChart from './child/DefaultLineChart'
+import ZoomAbleLineChart from './child/ZoomAbleLineChart'
 
 const LineChartLayer = () => {
     return (
@@ -7,16 +8,10 @@ const LineChartLayer = () => {
             {/* DefaultLineChart */}
             <DefaultLineChart />
 
-            <div className="col-md-6">
-                <div className="card h-100 p-0">
-                    <div className="card-header border-bottom bg-base py-16 px-24">
-                        <h6 className="text-lg fw-semibold mb-0">Zoomable Chart</h6>
-                    </div>
-                    <div className="card-body p-24">
-                        <div id="zoomAbleLineChart" />
-                    </div>
-                </div>
-            </div>
+            {/* ZoomAbleLineChart */}
+            <ZoomAbleLineChart />
+
+
             <div className="col-md-6">
                 <div className="card h-100 p-0">
                     <div className="card-header border-bottom bg-base py-16 px-24">
