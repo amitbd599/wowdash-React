@@ -50,6 +50,7 @@ import NotificationAlertPage from "./pages/NotificationAlertPage";
 import NotificationPage from "./pages/NotificationPage";
 import PaginationPage from "./pages/PaginationPage";
 import PaymentGatewayPage from "./pages/PaymentGatewayPage";
+import PieChartPage from "./pages/PieChartPage";
 // import PhosphorIconInit from "./helper/PhosphorIconInit";
 
 
@@ -113,6 +114,7 @@ function App() {
         <Route exact path="/notification" element={<NotificationPage />} />
         <Route exact path="/pagination" element={<PaginationPage />} />
         <Route exact path="/payment-gateway" element={<PaymentGatewayPage />} />
+        <Route exact path="/pie-chart" element={<PieChartPage />} />
 
 
         <Route exact path="*" element={<ErrorPage />} />
