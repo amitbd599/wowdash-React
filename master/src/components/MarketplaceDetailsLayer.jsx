@@ -6,8 +6,6 @@ import ReactApexChart from 'react-apexcharts'
 const MarketplaceDetailsLayer = () => {
     let { timeSeriesChartSeries, timeSeriesChartOptions } = useReactApexChart()
     const [isStarred, setIsStarred] = useState(false);
-
-    // Toggle the state on button click
     const toggleStar = () => {
         setIsStarred(!isStarred);
     };

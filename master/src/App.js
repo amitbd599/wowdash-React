@@ -45,6 +45,8 @@ import LanguagePage from "./pages/LanguagePage";
 import LineChartPage from "./pages/LineChartPage";
 import ListPage from "./pages/ListPage";
 import MarketplaceDetailsPage from "./pages/MarketplaceDetailsPage";
+import MarketplacePage from "./pages/MarketplacePage";
+import NotificationAlertPage from "./pages/NotificationAlertPage";
 // import PhosphorIconInit from "./helper/PhosphorIconInit";
 
 
@@ -103,6 +105,8 @@ function App() {
         <Route exact path="/line-chart" element={<LineChartPage />} />
         <Route exact path="/list" element={<ListPage />} />
         <Route exact path="/marketplace-details" element={<MarketplaceDetailsPage />} />
+        <Route exact path="/marketplace" element={<MarketplacePage />} />
+        <Route exact path="/notification-alert" element={<NotificationAlertPage />} />
 
 
         <Route exact path="*" element={<ErrorPage />} />

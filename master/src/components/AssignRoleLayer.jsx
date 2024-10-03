@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 
 
 const AssignRoleLayer = () => {
-    // Initial state for the checkboxes
+
     const [selectAll, setSelectAll] = useState(false);
     const [checkboxes, setCheckboxes] = useState([
         { id: 1, name: 'Kathryn Murphy', img: "assets/images/user-list/user-list1.png", role: 'Waiter', checked: false },
@@ -196,8 +196,6 @@ const AssignRoleLayer = () => {
                                     </td>
                                 </tr>)
                             }
-
-
                         </tbody>
                     </table>
                 </div>
