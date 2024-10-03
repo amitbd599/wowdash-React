@@ -48,6 +48,7 @@ import MarketplaceDetailsPage from "./pages/MarketplaceDetailsPage";
 import MarketplacePage from "./pages/MarketplacePage";
 import NotificationAlertPage from "./pages/NotificationAlertPage";
 import NotificationPage from "./pages/NotificationPage";
+import PaginationPage from "./pages/PaginationPage";
 // import PhosphorIconInit from "./helper/PhosphorIconInit";
 
 
@@ -109,6 +110,7 @@ function App() {
         <Route exact path="/marketplace" element={<MarketplacePage />} />
         <Route exact path="/notification-alert" element={<NotificationAlertPage />} />
         <Route exact path="/notification" element={<NotificationPage />} />
+        <Route exact path="/pagination" element={<PaginationPage />} />
 
 
         <Route exact path="*" element={<ErrorPage />} />
