@@ -11,7 +11,7 @@ const PieChartPage = () => {
       <MasterLayout>
 
         {/* Breadcrumb */}
-        <Breadcrumb title="Settings - Languages" />
+        <Breadcrumb title="Components / Pie Chart" />
 
         {/* PieChartLayer */}
         <PieChartLayer />
