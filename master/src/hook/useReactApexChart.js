@@ -3506,7 +3506,7 @@ const useReactApexChart = () => {
 
     let pieChartSeriesOne = [70, 80, 90, 30]
 
-    var pieChartOptionsTwo = {
+    let pieChartOptionsTwo = {
 
         chart: {
             height: 264,
@@ -3528,7 +3528,7 @@ const useReactApexChart = () => {
         },
         legend: {
             position: 'bottom',
-            horizontalAlign: 'center' 
+            horizontalAlign: 'center'
         },
         responsive: [{
             breakpoint: 480,
@@ -3548,6 +3548,35 @@ const useReactApexChart = () => {
     };
 
 
+    let basicDonutChartSeries = [44, 55, 13, 33, 28, 14]
+    let basicDonutChartOptions = {
+
+        chart: {
+            height: 264,
+            type: 'donut',
+        },
+        colors: ['#16a34a', '#487fff', '#2563eb', '#dc2626', '#f86624', '#ffc107'],
+        dataLabels: {
+            enabled: false
+        },
+        responsive: [{
+            breakpoint: 480,
+            options: {
+                chart: {
+                    width: 200
+                },
+                legend: {
+                    show: false
+                }
+            }
+        }],
+        legend: {
+            position: 'right',
+            offsetY: 0,
+            height: 230,
+            show: false
+        }
+    };
 
 
 
@@ -3555,7 +3584,9 @@ const useReactApexChart = () => {
 
 
 
-    return { chartSeries, chartOptions, barChartSeries, barChartOptions, donutChartSeries, donutChartOptions, paymentStatusChartSeries, paymentStatusChartOptions, barChartSeriesTwo, barChartOptionsTwo, donutChartSeriesTwo, donutChartOptionsTwo, paymentStatusChartSeriesTwo, paymentStatusChartOptionsTwo, createChart, createChartTwo, createChartThree, createChartFour, createChartFive, createChartSix, createChartSeven, createChartEight, createChartNine, paymentStatusChartSeriesThree, paymentStatusChartOptionsThree, statisticsDonutChartSeries, statisticsDonutChartOptions, candleStickChartSeries, candleStickChartOptions, statisticsDonutChartSeriesThree, statisticsDonutChartOptionsThree, upDownBarChartSeries, upDownBarChartOptions, semiCircleGaugeSeriesOne, semiCircleGaugeOptionsOne, dailyIconBarChartSeriesOne, dailyIconBarChartOptionsOne, transactionLineChartSeries, transactionLineChartOptions, userOverviewDonutChartSeries, userOverviewDonutChartOptions, paymentStatusChartSeriesOne, paymentStatusChartOptionsOne, dailyIconBarChartSeriesTwo, dailyIconBarChartOptionsTwo, columnChartSeriesOne, columnChartOptionsOne, columnChartSeriesTwo, columnChartOptionsTwo, columnChartSeriesThree, columnChartOptionsThree, columnChartSeriesFour, columnChartOptionsFour, defaultLineChartSeries, defaultLineChartOptions, zoomAbleLineChartSeries, zoomAbleLineChartOptions, lineDataLabelSeries, lineDataLabelOptions, doubleLineChartSeries, doubleLineChartOptions, stepLineChartSeries, stepLineChartOptions, timeSeriesChartSeries, timeSeriesChartOptions, pieChartSeriesOne, pieChartOptionsTwo };
+
+
+    return { chartSeries, chartOptions, barChartSeries, barChartOptions, donutChartSeries, donutChartOptions, paymentStatusChartSeries, paymentStatusChartOptions, barChartSeriesTwo, barChartOptionsTwo, donutChartSeriesTwo, donutChartOptionsTwo, paymentStatusChartSeriesTwo, paymentStatusChartOptionsTwo, createChart, createChartTwo, createChartThree, createChartFour, createChartFive, createChartSix, createChartSeven, createChartEight, createChartNine, paymentStatusChartSeriesThree, paymentStatusChartOptionsThree, statisticsDonutChartSeries, statisticsDonutChartOptions, candleStickChartSeries, candleStickChartOptions, statisticsDonutChartSeriesThree, statisticsDonutChartOptionsThree, upDownBarChartSeries, upDownBarChartOptions, semiCircleGaugeSeriesOne, semiCircleGaugeOptionsOne, dailyIconBarChartSeriesOne, dailyIconBarChartOptionsOne, transactionLineChartSeries, transactionLineChartOptions, userOverviewDonutChartSeries, userOverviewDonutChartOptions, paymentStatusChartSeriesOne, paymentStatusChartOptionsOne, dailyIconBarChartSeriesTwo, dailyIconBarChartOptionsTwo, columnChartSeriesOne, columnChartOptionsOne, columnChartSeriesTwo, columnChartOptionsTwo, columnChartSeriesThree, columnChartOptionsThree, columnChartSeriesFour, columnChartOptionsFour, defaultLineChartSeries, defaultLineChartOptions, zoomAbleLineChartSeries, zoomAbleLineChartOptions, lineDataLabelSeries, lineDataLabelOptions, doubleLineChartSeries, doubleLineChartOptions, stepLineChartSeries, stepLineChartOptions, timeSeriesChartSeries, timeSeriesChartOptions, pieChartSeriesOne, pieChartOptionsTwo, basicDonutChartSeries, basicDonutChartOptions };
 };
 
 export default useReactApexChart;

@@ -1,6 +1,9 @@
 import React from 'react'
+import useReactApexChart from '../../hook/useReactApexChart'
+import ReactApexChart from 'react-apexcharts'
 
 const DonutChart = () => {
+    let { basicDonutChartSeries, basicDonutChartOptions } = useReactApexChart()
     return (
         <div className="col-md-6">
             <div className="card h-100 p-0">
@@ -9,7 +12,8 @@ const DonutChart = () => {
                 </div>
                 <div className="card-body p-24 text-center d-flex flex-wrap align-items-start gap-5 justify-content-center">
                     <div className="position-relative">
-                        <div id="basicDonutChart" className="w-auto d-inline-block" />
+                        <ReactApexChart id="basicDonutChart" className="w-auto d-inline-block" options={basicDonutChartOptions} series={basicDonutChartSeries} type="donut"
+                            height={264} />
                         <div className="position-absolute start-50 top-50 translate-middle">
                             <span className="text-lg text-secondary-light fw-medium">
                                 Total Value
