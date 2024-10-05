@@ -1,4 +1,3 @@
-import { Icon } from '@iconify/react/dist/iconify.js'
 import React from 'react'
 import DefaultStarRatings from './child/DefaultStarRatings'
 import HalfStar from './child/HalfStar'
