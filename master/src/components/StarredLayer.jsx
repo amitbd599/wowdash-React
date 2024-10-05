@@ -10,8 +10,7 @@ const StarredLayer = () => {
                         <button
                             type="button"
                             className="btn btn-primary text-sm btn-sm px-12 py-12 w-100 radius-8 d-flex align-items-center gap-2 mb-16"
-                            data-bs-toggle="modal"
-                            data-bs-target="#exampleModal"
+
                         >
                             <Icon
                                 icon="fa6-regular:square-plus"
@@ -200,8 +199,6 @@ const StarredLayer = () => {
                                                 <button
                                                     type="button"
                                                     className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
-                                                    data-bs-toggle="modal"
-                                                    data-bs-target="#exampleModalView"
                                                 >
                                                     All
                                                 </button>
@@ -210,8 +207,7 @@ const StarredLayer = () => {
                                                 <button
                                                     type="button"
                                                     className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
-                                                    data-bs-toggle="modal"
-                                                    data-bs-target="#exampleModalEdit"
+
                                                 >
                                                     None
                                                 </button>
@@ -220,8 +216,7 @@ const StarredLayer = () => {
                                                 <button
                                                     type="button"
                                                     className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
-                                                    data-bs-toggle="modal"
-                                                    data-bs-target="#exampleModalEdit"
+
                                                 >
                                                     Read
                                                 </button>
@@ -230,8 +225,7 @@ const StarredLayer = () => {
                                                 <button
                                                     type="button"
                                                     className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
-                                                    data-bs-toggle="modal"
-                                                    data-bs-target="#exampleModalEdit"
+
                                                 >
                                                     Unread
                                                 </button>
@@ -240,8 +234,7 @@ const StarredLayer = () => {
                                                 <button
                                                     type="button"
                                                     className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
-                                                    data-bs-toggle="modal"
-                                                    data-bs-target="#exampleModalEdit"
+
                                                 >
                                                     Starred
                                                 </button>
@@ -250,8 +243,7 @@ const StarredLayer = () => {
                                                 <button
                                                     type="button"
                                                     className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
-                                                    data-bs-toggle="modal"
-                                                    data-bs-target="#exampleModalEdit"
+
                                                 >
                                                     Unstarred
                                                 </button>
@@ -291,8 +283,7 @@ const StarredLayer = () => {
                                             <button
                                                 type="button"
                                                 className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900 d-flex align-items-center gap-10"
-                                                data-bs-toggle="modal"
-                                                data-bs-target="#exampleModalView"
+
                                             >
                                                 <Icon
                                                     icon="gravity-ui:envelope-open"
