@@ -56,6 +56,7 @@ import PricingPage from "./pages/PricingPage";
 import ProgressPage from "./pages/ProgressPage";
 import RadioPage from "./pages/RadioPage";
 import RoleAccessPage from "./pages/RoleAccessPage";
+import SignInPage from "./pages/SignInPage";
 // import PhosphorIconInit from "./helper/PhosphorIconInit";
 
 
@@ -125,6 +126,7 @@ function App() {
         <Route exact path="/progress" element={<ProgressPage />} />
         <Route exact path="/radio" element={<RadioPage />} />
         <Route exact path="/role-access" element={<RoleAccessPage />} />
+        <Route exact path="/sign-in" element={<SignInPage />} />
 
 
         <Route exact path="*" element={<ErrorPage />} />
