@@ -60,6 +60,7 @@ import SignInPage from "./pages/SignInPage";
 import SignUpPage from "./pages/SignUpPage";
 import StarRatingPage from "./pages/StarRatingPage";
 import StarredPage from "./pages/StarredPage";
+import SwitchPage from "./pages/SwitchPage";
 // import PhosphorIconInit from "./helper/PhosphorIconInit";
 
 
@@ -133,6 +134,7 @@ function App() {
         <Route exact path="/sign-up" element={<SignUpPage />} />
         <Route exact path="/star-rating" element={<StarRatingPage />} />
         <Route exact path="/starred" element={<StarredPage />} />
+        <Route exact path="/switch" element={<SwitchPage />} />
 
 
         <Route exact path="*" element={<ErrorPage />} />
