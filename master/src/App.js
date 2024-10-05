@@ -64,6 +64,7 @@ import SwitchPage from "./pages/SwitchPage";
 import TableBasicPage from "./pages/TableBasicPage";
 import TableDataPage from "./pages/TableDataPage";
 import TabsPage from "./pages/TabsPage";
+import TagsPage from "./pages/TagsPage";
 // import PhosphorIconInit from "./helper/PhosphorIconInit";
 
 
@@ -141,6 +142,7 @@ function App() {
         <Route exact path="/table-basic" element={<TableBasicPage />} />
         <Route exact path="/table-data" element={<TableDataPage />} />
         <Route exact path="/tabs" element={<TabsPage />} />
+        <Route exact path="/tags" element={<TagsPage />} />
 
 
         <Route exact path="*" element={<ErrorPage />} />
