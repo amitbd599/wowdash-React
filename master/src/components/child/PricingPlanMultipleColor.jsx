@@ -26,7 +26,7 @@ const PricingPlanMultipleColor = () => {
                                     id="pills-monthly-tab"
                                     data-bs-toggle="pill"
                                     data-bs-target="#pills-monthly"
-                                    type="button"
+
                                     role="tab"
                                     aria-controls="pills-monthly"
                                     aria-selected="true"
@@ -40,7 +40,7 @@ const PricingPlanMultipleColor = () => {
                                     id="pills-yearly-tab"
                                     data-bs-toggle="pill"
                                     data-bs-target="#pills-yearly"
-                                    type="button"
+
                                     role="tab"
                                     aria-controls="pills-yearly"
                                     aria-selected="false"
@@ -133,10 +133,9 @@ const PricingPlanMultipleColor = () => {
                                                 </li>
                                             </ul>
                                             <button
-                                                type="button"
+
                                                 className="bg-lilac-600 bg-hover-lilac-700 text-white text-center border border-lilac-600 text-sm btn-sm px-12 py-10 w-100 radius-8 mt-28"
-                                                data-bs-toggle="modal"
-                                                data-bs-target="#exampleModal"
+
                                             >
                                                 Get started
                                             </button>
@@ -219,10 +218,9 @@ const PricingPlanMultipleColor = () => {
                                                 </li>
                                             </ul>
                                             <button
-                                                type="button"
+
                                                 className="bg-white text-primary-600 text-white text-center border border-white text-sm btn-sm px-12 py-10 w-100 radius-8 mt-28"
-                                                data-bs-toggle="modal"
-                                                data-bs-target="#exampleModal"
+
                                             >
                                                 Get started
                                             </button>
@@ -302,10 +300,9 @@ const PricingPlanMultipleColor = () => {
                                                 </li>
                                             </ul>
                                             <button
-                                                type="button"
+
                                                 className="bg-success-600 bg-hover-success-700 text-white text-center border border-success-600 text-sm btn-sm px-12 py-10 w-100 radius-8 mt-28"
-                                                data-bs-toggle="modal"
-                                                data-bs-target="#exampleModal"
+
                                             >
                                                 Get started
                                             </button>
@@ -395,10 +392,9 @@ const PricingPlanMultipleColor = () => {
                                                 </li>
                                             </ul>
                                             <button
-                                                type="button"
+
                                                 className="bg-lilac-600 bg-hover-lilac-700 text-white text-center border border-lilac-600 text-sm btn-sm px-12 py-10 w-100 radius-8 mt-28"
-                                                data-bs-toggle="modal"
-                                                data-bs-target="#exampleModal"
+
                                             >
                                                 Get started
                                             </button>
@@ -481,10 +477,9 @@ const PricingPlanMultipleColor = () => {
                                                 </li>
                                             </ul>
                                             <button
-                                                type="button"
+
                                                 className="bg-white text-primary-600 text-white text-center border border-white text-sm btn-sm px-12 py-10 w-100 radius-8 mt-28"
-                                                data-bs-toggle="modal"
-                                                data-bs-target="#exampleModal"
+
                                             >
                                                 Get started
                                             </button>
@@ -564,10 +559,8 @@ const PricingPlanMultipleColor = () => {
                                                 </li>
                                             </ul>
                                             <button
-                                                type="button"
+
                                                 className="bg-success-600 bg-hover-success-700 text-white text-center border border-success-600 text-sm btn-sm px-12 py-10 w-100 radius-8 mt-28"
-                                                data-bs-toggle="modal"
-                                                data-bs-target="#exampleModal"
                                             >
                                                 Get started
                                             </button>

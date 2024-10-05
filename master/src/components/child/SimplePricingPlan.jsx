@@ -110,10 +110,9 @@ const SimplePricingPlan = () => {
                                         </li>
                                     </ul>
                                     <button
-                                        type="button"
+
                                         className="bg-primary-600 bg-hover-primary-700 text-white text-center border border-primary-600 text-sm btn-sm px-12 py-10 w-100 radius-8 mt-28"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#exampleModal"
+
                                     >
                                         Get started
                                     </button>
@@ -194,10 +193,9 @@ const SimplePricingPlan = () => {
                                         </li>
                                     </ul>
                                     <button
-                                        type="button"
+
                                         className="bg-white text-primary-600 text-white text-center border border-white text-sm btn-sm px-12 py-10 w-100 radius-8 mt-28"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#exampleModal"
+
                                     >
                                         Get started
                                     </button>
@@ -274,10 +272,9 @@ const SimplePricingPlan = () => {
                                         </li>
                                     </ul>
                                     <button
-                                        type="button"
+
                                         className="bg-primary-600 bg-hover-primary-700 text-white text-center border border-primary-600 text-sm btn-sm px-12 py-10 w-100 radius-8 mt-28"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#exampleModal"
+
                                     >
                                         Get started
                                     </button>
