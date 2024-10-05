@@ -121,3 +121,8 @@
     align-items: center;
     gap: 6px;
  }
+
+
+ table.dataTable th.dt-type-numeric, table.dataTable th.dt-type-date, table.dataTable td.dt-type-numeric, table.dataTable td.dt-type-date {
+    text-align: unset !important;
+}
