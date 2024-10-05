@@ -52,6 +52,7 @@ import PaginationPage from "./pages/PaginationPage";
 import PaymentGatewayPage from "./pages/PaymentGatewayPage";
 import PieChartPage from "./pages/PieChartPage";
 import PortfolioPage from "./pages/PortfolioPage";
+import PricingPage from "./pages/PricingPage";
 // import PhosphorIconInit from "./helper/PhosphorIconInit";
 
 
@@ -117,6 +118,7 @@ function App() {
         <Route exact path="/payment-gateway" element={<PaymentGatewayPage />} />
         <Route exact path="/pie-chart" element={<PieChartPage />} />
         <Route exact path="/portfolio" element={<PortfolioPage />} />
+        <Route exact path="/pricing" element={<PricingPage />} />
 
 
         <Route exact path="*" element={<ErrorPage />} />
