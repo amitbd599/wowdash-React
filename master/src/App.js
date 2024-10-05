@@ -67,6 +67,7 @@ import TabsPage from "./pages/TabsPage";
 import TagsPage from "./pages/TagsPage";
 import TermsConditionPage from "./pages/TermsConditionPage";
 import TextGeneratorNewPage from "./pages/TextGeneratorNewPage";
+import TextGeneratorPage from "./pages/TextGeneratorPage";
 // import PhosphorIconInit from "./helper/PhosphorIconInit";
 
 
@@ -146,7 +147,7 @@ function App() {
         <Route exact path="/tabs" element={<TabsPage />} />
         <Route exact path="/tags" element={<TagsPage />} />
         <Route exact path="/terms-condition" element={<TermsConditionPage />} />
-        <Route exact path="/text-generator-new" element={<TextGeneratorNewPage />} />
+        <Route exact path="/text-generator" element={<TextGeneratorPage />} />
 
 
         <Route exact path="*" element={<ErrorPage />} />
