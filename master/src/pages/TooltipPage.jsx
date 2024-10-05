@@ -1,9 +1,9 @@
 import React from "react";
 import MasterLayout from "../masterLayout/MasterLayout";
 import Breadcrumb from "../components/Breadcrumb";
-import ThemeLayer from "../components/ThemeLayer";
+import TooltipLayer from "../components/TooltipLayer";
 
-const ThemePage = () => {
+const TooltipPage = () => {
   return (
     <>
 
@@ -13,8 +13,8 @@ const ThemePage = () => {
         {/* Breadcrumb */}
         <Breadcrumb title="Settings - Theme" />
 
-        {/* ThemeLayer */}
-        <ThemeLayer />
+        {/* TooltipLayer */}
+        <TooltipLayer />
 
       </MasterLayout>
 
@@ -22,4 +22,4 @@ const ThemePage = () => {
   );
 };
 
-export default ThemePage; 
+export default TooltipPage; 
