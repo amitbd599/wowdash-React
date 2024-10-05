@@ -54,6 +54,7 @@ import PieChartPage from "./pages/PieChartPage";
 import PortfolioPage from "./pages/PortfolioPage";
 import PricingPage from "./pages/PricingPage";
 import ProgressPage from "./pages/ProgressPage";
+import RadioPage from "./pages/RadioPage";
 // import PhosphorIconInit from "./helper/PhosphorIconInit";
 
 
@@ -121,6 +122,7 @@ function App() {
         <Route exact path="/portfolio" element={<PortfolioPage />} />
         <Route exact path="/pricing" element={<PricingPage />} />
         <Route exact path="/progress" element={<ProgressPage />} />
+        <Route exact path="/radio" element={<RadioPage />} />
 
 
         <Route exact path="*" element={<ErrorPage />} />
