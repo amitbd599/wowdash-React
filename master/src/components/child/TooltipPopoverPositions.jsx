@@ -2,8 +2,8 @@ import React, { useEffect } from 'react'
 import Tooltip from 'bootstrap/js/dist/tooltip';
 const TooltipPopoverPositions = () => {
     useEffect(() => {
-        // Select all elements with the class 'tooltip-button'
-        const tooltipButtons = document.querySelectorAll('.tooltip-button');
+        // Select all elements with the class 'tooltip-buttonOne'
+        const tooltipButtons = document.querySelectorAll('.tooltip-buttonOne');
 
         // Initialize a tooltip for each button
         const tooltipInstances = Array.from(tooltipButtons).map((tooltipButton) => {
@@ -33,7 +33,7 @@ const TooltipPopoverPositions = () => {
                         <div className="">
                             <button
                                 type="button"
-                                className="tooltip-button btn bg-primary-600 text-white border border-primary-600 radius-8 px-32 py-11"
+                                className="tooltip-buttonOne btn bg-primary-600 text-white border border-primary-600 radius-8 px-32 py-11"
                                 data-bs-toggle="tooltip"
                                 data-bs-placement="top"
                                 data-bs-html="true"
@@ -53,7 +53,7 @@ const TooltipPopoverPositions = () => {
                         <div className="">
                             <button
                                 type="button"
-                                className="tooltip-button btn bg-success-600 text-white border border-success-600 radius-8 px-32 py-11"
+                                className="tooltip-buttonOne btn bg-success-600 text-white border border-success-600 radius-8 px-32 py-11"
                                 data-bs-toggle="tooltip"
                                 data-bs-placement="top"
                                 data-bs-html="true"
@@ -73,7 +73,7 @@ const TooltipPopoverPositions = () => {
                         <div className="">
                             <button
                                 type="button"
-                                className="tooltip-button btn bg-info-600 text-white border border-info-600 radius-8 px-32 py-11"
+                                className="tooltip-buttonOne btn bg-info-600 text-white border border-info-600 radius-8 px-32 py-11"
                                 data-bs-toggle="tooltip"
                                 data-bs-placement="top"
                                 data-bs-html="true"
@@ -93,7 +93,7 @@ const TooltipPopoverPositions = () => {
                         <div className="">
                             <button
                                 type="button"
-                                className="tooltip-button btn bg-warning-600 text-white border border-warning-600 radius-8 px-32 py-11"
+                                className="tooltip-buttonOne btn bg-warning-600 text-white border border-warning-600 radius-8 px-32 py-11"
                                 data-bs-toggle="tooltip"
                                 data-bs-placement="top"
                                 data-bs-html="true"
@@ -113,7 +113,7 @@ const TooltipPopoverPositions = () => {
                         <div className="">
                             <button
                                 type="button"
-                                className="tooltip-button btn bg-danger-600 text-white border border-danger-600 radius-8 px-32 py-11"
+                                className="tooltip-buttonOne btn bg-danger-600 text-white border border-danger-600 radius-8 px-32 py-11"
                                 data-bs-toggle="tooltip"
                                 data-bs-placement="top"
                                 data-bs-html="true"
@@ -133,7 +133,7 @@ const TooltipPopoverPositions = () => {
                         <div className="">
                             <button
                                 type="button"
-                                className="tooltip-button btn bg-neutral-900 text-base border border-neutral-900 radius-8 px-32 py-11"
+                                className="tooltip-buttonOne btn bg-neutral-900 text-base border border-neutral-900 radius-8 px-32 py-11"
                                 data-bs-toggle="tooltip"
                                 data-bs-placement="top"
                                 data-bs-html="true"
