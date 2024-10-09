@@ -70,6 +70,7 @@ import TextGeneratorNewPage from "./pages/TextGeneratorNewPage";
 import TextGeneratorPage from "./pages/TextGeneratorPage";
 import ThemePage from "./pages/ThemePage";
 import TooltipPage from "./pages/TooltipPage";
+import TypographyPage from "./pages/TypographyPage";
 // import PhosphorIconInit from "./helper/PhosphorIconInit";
 
 
@@ -152,6 +153,7 @@ function App() {
         <Route exact path="/text-generator" element={<TextGeneratorPage />} />
         <Route exact path="/theme" element={<ThemePage />} />
         <Route exact path="/tooltip" element={<TooltipPage />} />
+        <Route exact path="/typography" element={<TypographyPage />} />
 
 
         <Route exact path="*" element={<ErrorPage />} />
