@@ -1,128 +1,129 @@
 .jvm-zoom-btn.jvm-zoomin,
 .jvm-zoom-btn.jvm-zoomout {
-    top: 10px;
-    background: #D1D5DB;
-    color: #111827;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2px;
+  top: 10px;
+  background: #d1d5db;
+  color: #111827;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
 }
 
-.slick-dots{
-    display: flex !important;
+.slick-dots {
+  display: flex !important;
 }
-
 
 .fc-toolbar-title {
-    font-size: 24px !important;
-    font-weight: 600;
+  font-size: 24px !important;
+  font-weight: 600;
 }
 
-
-
-.fc-button{
-    border-color: var(--primary-600) !important;
-    background: #fff !important;
-    color: var(--primary-600) !important;
-    font-weight: 600 !important;
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    min-width: 80px !important;
+.fc-button {
+  border-color: var(--primary-600) !important;
+  background: #fff !important;
+  color: var(--primary-600) !important;
+  font-weight: 600 !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  min-width: 80px !important;
 }
 
 .fc-button:hover {
-    background-color: var(--primary-50) !important;
+  background-color: var(--primary-50) !important;
 }
 
-.fc-button-active{
-    color: #fff !important;
-    background-color: var(--primary-600) !important;
+.fc-button-active {
+  color: #fff !important;
+  background-color: var(--primary-600) !important;
 }
-.fc-button-active:hover{
-    color: #fff !important;
-    background-color: var(--primary-600) !important;
-}
-
-.fc-button-active:focus, .fc .fc-button-primary:not(:disabled):active:focus {
-    box-shadow: none !important;
+.fc-button-active:hover {
+  color: #fff !important;
+  background-color: var(--primary-600) !important;
 }
 
-.fc-toolbar-chunk{
-    display: flex !important;;
+.fc-button-active:focus,
+.fc .fc-button-primary:not(:disabled):active:focus {
+  box-shadow: none !important;
+}
+
+.fc-toolbar-chunk {
+  display: flex !important;
 }
 
 .fc .fc-button-primary:focus {
-    box-shadow: none !important;
+  box-shadow: none !important;
 }
 
-.fc-h-event{
-    border: 0;
-    padding: 4px;
-    border-radius: 4px;
-    background-color: var(--primary-50) !important;
-    color: var(--primary-600) !important;
-
+.fc-h-event {
+  border: 0;
+  padding: 4px;
+  border-radius: 4px;
+  background-color: var(--primary-50) !important;
+  color: var(--primary-600) !important;
 }
 
 .fc-h-event .fc-event-main {
-    border: 0;
-    padding: 4px;
-    border-radius: 4px;
-    background-color: var(--primary-50) !important;
-    color: var(--primary-600) !important;
+  border: 0;
+  padding: 4px;
+  border-radius: 4px;
+  background-color: var(--primary-50) !important;
+  color: var(--primary-600) !important;
 }
 
 .fc-v-event .fc-event-main {
-    border: 0;
-    padding: 4px;
-    border-radius: 4px;
-    background-color: var(--primary-50) !important;
-    color: var(--primary-600) !important;
+  border: 0;
+  padding: 4px;
+  border-radius: 4px;
+  background-color: var(--primary-50) !important;
+  color: var(--primary-600) !important;
 }
 
- .fc-daygrid-day-number {
-
-    transition: background-color 0.2s;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 600;
-    border-radius: 50%;
+.fc-daygrid-day-number {
+  transition: background-color 0.2s;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  border-radius: 50%;
 }
 .fc-daygrid-day:hover .fc-daygrid-day-number {
-    background-color: var(--primary-100) !important;
-    color: var(--primary-600) !important;
-    transition: background-color 0.2s;
-   
-   
+  background-color: var(--primary-100) !important;
+  color: var(--primary-600) !important;
+  transition: background-color 0.2s;
 }
 
-.slider-progress .active{
-  transition: all .3s linear;
+.slider-progress .active {
+  transition: all 0.3s linear;
 }
 
 .card {
-  
-    position: initial !important;
+  position: initial !important;
 }
 
-.slick-list { 
-    margin: 0 -7px
- }
+.slick-list {
+  margin: 0 -7px;
+}
 
- .slick-slide > div { padding: 0 10px; }
+.slick-slide > div {
+  padding: 0 10px;
+}
 
- .center-gap{
-    display: flex;
-    align-items: center;
-    gap: 6px;
- }
+.center-gap {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
 
+.inline-grid {
+  display: inline-grid;
+}
 
- table.dataTable th.dt-type-numeric, table.dataTable th.dt-type-date, table.dataTable td.dt-type-numeric, table.dataTable td.dt-type-date {
-    text-align: unset !important;
+table.dataTable th.dt-type-numeric,
+table.dataTable th.dt-type-date,
+table.dataTable td.dt-type-numeric,
+table.dataTable td.dt-type-date {
+  text-align: unset !important;
 }
