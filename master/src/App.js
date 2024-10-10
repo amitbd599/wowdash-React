@@ -74,6 +74,7 @@ import TypographyPage from "./pages/TypographyPage";
 import UsersGridPage from "./pages/UsersGridPage";
 import UsersListPage from "./pages/UsersListPage";
 import ViewDetailsPage from "./pages/ViewDetailsPage";
+import VideoGeneratorPage from "./pages/VideoGeneratorPage";
 // import PhosphorIconInit from "./helper/PhosphorIconInit";
 
 
@@ -160,6 +161,7 @@ function App() {
         <Route exact path="/users-grid" element={<UsersGridPage />} />
         <Route exact path="/users-list" element={<UsersListPage />} />
         <Route exact path="/view-details" element={<ViewDetailsPage />} />
+        <Route exact path="/video-generator" element={<VideoGeneratorPage />} />
 
 
         <Route exact path="*" element={<ErrorPage />} />

@@ -120,6 +120,11 @@
 .inline-grid {
   display: inline-grid;
 }
+.image-upload__boxInner.custom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 table.dataTable th.dt-type-numeric,
 table.dataTable th.dt-type-date,
