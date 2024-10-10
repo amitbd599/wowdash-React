@@ -53,24 +53,14 @@ const MasterLayout = ({ children }) => {
     // Open the submenu that contains the active route
     openActiveDropdown();
 
-    // Optional: Close dropdowns when clicking outside the sidebar
-    const handleClickOutside = (event) => {
-      if (!event.target.closest('.sidebar-menu')) {
-        const allDropdowns = document.querySelectorAll('.sidebar-menu .dropdown');
-        allDropdowns.forEach((dropdown) => {
-          dropdown.classList.remove('active');
-        });
-      }
-    };
 
-    document.addEventListener('click', handleClickOutside);
 
     // Cleanup event listeners on unmount
     return () => {
       dropdownTriggers.forEach((trigger) => {
         trigger.removeEventListener('click', handleDropdownClick);
       });
-      document.removeEventListener('click', handleClickOutside);
+
     };
   }, [location.pathname]);
 
