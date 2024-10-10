@@ -78,6 +78,7 @@ import VideoGeneratorPage from "./pages/VideoGeneratorPage";
 import VideosPage from "./pages/VideosPage";
 import ViewProfilePage from "./pages/ViewProfilePage";
 import VoiceGeneratorPage from "./pages/VoiceGeneratorPage";
+import WalletPage from "./pages/WalletPage";
 // import PhosphorIconInit from "./helper/PhosphorIconInit";
 
 
@@ -168,6 +169,7 @@ function App() {
         <Route exact path="/videos" element={<VideosPage />} />
         <Route exact path="/view-profile" element={<ViewProfilePage />} />
         <Route exact path="/voice-generator" element={<VoiceGeneratorPage />} />
+        <Route exact path="/wallet" element={<WalletPage />} />
 
 
         <Route exact path="*" element={<ErrorPage />} />
