@@ -775,7 +775,7 @@ const UsersListLayer = () => {
                     <ul className="pagination d-flex flex-wrap align-items-center gap-2 justify-content-center">
                         <li className="page-item">
                             <a
-                                className="page-link bg-neutral-200 text-secondary-light fw-semibold radius-8 border-0 d-flex align-items-center justify-content-center h-32-px w-32-px text-md"
+                                className="page-link bg-neutral-200 text-secondary-light fw-semibold radius-8 border-0 d-flex align-items-center justify-content-center h-32-px  text-md"
                                 href="javascript:void(0)"
                             >
                                 <Icon icon="ep:d-arrow-left" className="" />
@@ -823,7 +823,7 @@ const UsersListLayer = () => {
                         </li>
                         <li className="page-item">
                             <a
-                                className="page-link bg-neutral-200 text-secondary-light fw-semibold radius-8 border-0 d-flex align-items-center justify-content-center h-32-px w-32-px text-md"
+                                className="page-link bg-neutral-200 text-secondary-light fw-semibold radius-8 border-0 d-flex align-items-center justify-content-center h-32-px  text-md"
                                 href="javascript:void(0)"
                             >
                                 {" "}
