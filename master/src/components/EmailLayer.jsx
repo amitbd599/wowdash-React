@@ -375,13 +375,13 @@ const EmailLayer = () => {
                                     />
                                 </button>
                                 <a
-                                    href="veiw-details.html"
+                                    href="view-details.html"
                                     className="text-primary-light fw-medium text-md text-line-1 w-190-px"
                                 >
                                     Jerome Bell
                                 </a>
                                 <a
-                                    href="veiw-details.html"
+                                    href="view-details.html"
                                     className="text-primary-light fw-medium mb-0 text-line-1 max-w-740-px"
                                 >
                                     Aliquam pulvinar vestibulum blandit. Donec sed nisl libero. Fusce
@@ -415,13 +415,13 @@ const EmailLayer = () => {
                                     />
                                 </button>
                                 <a
-                                    href="veiw-details.html"
+                                    href="view-details.html"
                                     className="text-primary-light fw-medium text-md text-line-1 w-190-px"
                                 >
                                     Kristin Watson
                                 </a>
                                 <a
-                                    href="veiw-details.html"
+                                    href="view-details.html"
                                     className="text-primary-light fw-medium mb-0 text-line-1 max-w-740-px"
                                 >
                                     Aliquam pulvinar vestibulum blandit. Donec sed nisl libero. Fusce
@@ -455,13 +455,13 @@ const EmailLayer = () => {
                                     />
                                 </button>
                                 <a
-                                    href="veiw-details.html"
+                                    href="view-details.html"
                                     className="text-primary-light fw-medium text-md text-line-1 w-190-px"
                                 >
                                     Cody Fisher
                                 </a>
                                 <a
-                                    href="veiw-details.html"
+                                    href="view-details.html"
                                     className="text-primary-light fw-medium mb-0 text-line-1 max-w-740-px"
                                 >
                                     Aliquam pulvinar vestibulum blandit. Donec sed nisl libero. Fusce
@@ -495,13 +495,13 @@ const EmailLayer = () => {
                                     />
                                 </button>
                                 <a
-                                    href="veiw-details.html"
+                                    href="view-details.html"
                                     className="text-primary-light fw-medium text-md text-line-1 w-190-px"
                                 >
                                     Dianne Russell
                                 </a>
                                 <a
-                                    href="veiw-details.html"
+                                    href="view-details.html"
                                     className="text-primary-light fw-medium mb-0 text-line-1 max-w-740-px"
                                 >
                                     Aliquam pulvinar vestibulum blandit. Donec sed nisl libero. Fusce
@@ -535,13 +535,13 @@ const EmailLayer = () => {
                                     />
                                 </button>
                                 <a
-                                    href="veiw-details.html"
+                                    href="view-details.html"
                                     className="text-primary-light fw-medium text-md text-line-1 w-190-px"
                                 >
                                     Floyd Miles
                                 </a>
                                 <a
-                                    href="veiw-details.html"
+                                    href="view-details.html"
                                     className="text-primary-light fw-medium mb-0 text-line-1 max-w-740-px"
                                 >
                                     Aliquam pulvinar vestibulum blandit. Donec sed nisl libero. Fusce
@@ -575,13 +575,13 @@ const EmailLayer = () => {
                                     />
                                 </button>
                                 <a
-                                    href="veiw-details.html"
+                                    href="view-details.html"
                                     className="text-primary-light fw-medium text-md text-line-1 w-190-px"
                                 >
                                     Devon Lane
                                 </a>
                                 <a
-                                    href="veiw-details.html"
+                                    href="view-details.html"
                                     className="text-primary-light fw-medium mb-0 text-line-1 max-w-740-px"
                                 >
                                     Aliquam pulvinar vestibulum blandit. Donec sed nisl libero. Fusce
@@ -615,13 +615,13 @@ const EmailLayer = () => {
                                     />
                                 </button>
                                 <a
-                                    href="veiw-details.html"
+                                    href="view-details.html"
                                     className="text-primary-light fw-medium text-md text-line-1 w-190-px"
                                 >
                                     Dianne Russell
                                 </a>
                                 <a
-                                    href="veiw-details.html"
+                                    href="view-details.html"
                                     className="text-primary-light fw-medium mb-0 text-line-1 max-w-740-px"
                                 >
                                     Aliquam pulvinar vestibulum blandit. Donec sed nisl libero. Fusce
@@ -655,13 +655,13 @@ const EmailLayer = () => {
                                     />
                                 </button>
                                 <a
-                                    href="veiw-details.html"
+                                    href="view-details.html"
                                     className="text-primary-light fw-medium text-md text-line-1 w-190-px"
                                 >
                                     Annette Black
                                 </a>
                                 <a
-                                    href="veiw-details.html"
+                                    href="view-details.html"
                                     className="text-primary-light fw-medium mb-0 text-line-1 max-w-740-px"
                                 >
                                     Aliquam pulvinar vestibulum blandit. Donec sed nisl libero. Fusce
@@ -695,13 +695,13 @@ const EmailLayer = () => {
                                     />
                                 </button>
                                 <a
-                                    href="veiw-details.html"
+                                    href="view-details.html"
                                     className="text-primary-light fw-medium text-md text-line-1 w-190-px"
                                 >
                                     Bessie Cooper
                                 </a>
                                 <a
-                                    href="veiw-details.html"
+                                    href="view-details.html"
                                     className="text-primary-light fw-medium mb-0 text-line-1 max-w-740-px"
                                 >
                                     Aliquam pulvinar vestibulum blandit. Donec sed nisl libero. Fusce
@@ -735,13 +735,13 @@ const EmailLayer = () => {
                                     />
                                 </button>
                                 <a
-                                    href="veiw-details.html"
+                                    href="view-details.html"
                                     className="text-primary-light fw-medium text-md text-line-1 w-190-px"
                                 >
                                     Courtney Henry
                                 </a>
                                 <a
-                                    href="veiw-details.html"
+                                    href="view-details.html"
                                     className="text-primary-light fw-medium mb-0 text-line-1 max-w-740-px"
                                 >
                                     Aliquam pulvinar vestibulum blandit. Donec sed nisl libero. Fusce
@@ -775,13 +775,13 @@ const EmailLayer = () => {
                                     />
                                 </button>
                                 <a
-                                    href="veiw-details.html"
+                                    href="view-details.html"
                                     className="text-primary-light fw-medium text-md text-line-1 w-190-px"
                                 >
                                     Wade Warren
                                 </a>
                                 <a
-                                    href="veiw-details.html"
+                                    href="view-details.html"
                                     className="text-primary-light fw-medium mb-0 text-line-1 max-w-740-px"
                                 >
                                     Aliquam pulvinar vestibulum blandit. Donec sed nisl libero. Fusce
