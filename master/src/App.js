@@ -80,6 +80,7 @@ import ViewProfilePage from "./pages/ViewProfilePage";
 import VoiceGeneratorPage from "./pages/VoiceGeneratorPage";
 import WalletPage from "./pages/WalletPage";
 import WidgetsPage from "./pages/WidgetsPage";
+import WizardPage from "./pages/WizardPage";
 // import PhosphorIconInit from "./helper/PhosphorIconInit";
 
 
@@ -172,6 +173,7 @@ function App() {
         <Route exact path="/voice-generator" element={<VoiceGeneratorPage />} />
         <Route exact path="/wallet" element={<WalletPage />} />
         <Route exact path="/widgets" element={<WidgetsPage />} />
+        <Route exact path="/wizard" element={<WizardPage />} />
 
 
         <Route exact path="*" element={<ErrorPage />} />
