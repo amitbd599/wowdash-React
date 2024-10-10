@@ -72,6 +72,7 @@ import ThemePage from "./pages/ThemePage";
 import TooltipPage from "./pages/TooltipPage";
 import TypographyPage from "./pages/TypographyPage";
 import UsersGridPage from "./pages/UsersGridPage";
+import UsersListPage from "./pages/UsersListPage";
 // import PhosphorIconInit from "./helper/PhosphorIconInit";
 
 
@@ -156,6 +157,7 @@ function App() {
         <Route exact path="/tooltip" element={<TooltipPage />} />
         <Route exact path="/typography" element={<TypographyPage />} />
         <Route exact path="/users-grid" element={<UsersGridPage />} />
+        <Route exact path="/users-list" element={<UsersListPage />} />
 
 
         <Route exact path="*" element={<ErrorPage />} />
