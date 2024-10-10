@@ -1,8 +1,81 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ScrollToTop from "react-scroll-to-top";
 import Preloader from "../helper/Preloader";
+import { Icon } from "@iconify/react/dist/iconify.js";
+import { Link, useLocation } from "react-router-dom";
 
 const MasterLayout = ({ children }) => {
+  const location = useLocation(); // Hook to get the current route
+
+  useEffect(() => {
+    // Function to handle dropdown clicks
+    const handleDropdownClick = (event) => {
+      event.preventDefault();
+      const clickedLink = event.currentTarget;
+      const clickedDropdown = clickedLink.closest('.dropdown');
+
+      if (!clickedDropdown) return;
+
+      const isActive = clickedDropdown.classList.contains('active');
+
+      // Close all dropdowns
+      const allDropdowns = document.querySelectorAll('.sidebar-menu .dropdown');
+      allDropdowns.forEach((dropdown) => {
+        dropdown.classList.remove('active');
+      });
+
+      // Toggle the clicked dropdown
+      if (!isActive) {
+        clickedDropdown.classList.add('active');
+      }
+    };
+
+    // Attach click event listeners to all dropdown triggers
+    const dropdownTriggers = document.querySelectorAll('.sidebar-menu .dropdown > a, .sidebar-menu .dropdown > Link');
+
+    dropdownTriggers.forEach((trigger) => {
+      trigger.addEventListener('click', handleDropdownClick);
+    });
+
+    // Function to open submenu based on current route
+    const openActiveDropdown = () => {
+      const allDropdowns = document.querySelectorAll('.sidebar-menu .dropdown');
+      allDropdowns.forEach((dropdown) => {
+        const submenuLinks = dropdown.querySelectorAll('.sidebar-submenu li a');
+        submenuLinks.forEach((link) => {
+          if (link.getAttribute('href') === location.pathname || link.getAttribute('to') === location.pathname) {
+            dropdown.classList.add('active');
+          }
+        });
+      });
+    };
+
+    // Open the submenu that contains the active route
+    openActiveDropdown();
+
+    // Optional: Close dropdowns when clicking outside the sidebar
+    const handleClickOutside = (event) => {
+      if (!event.target.closest('.sidebar-menu')) {
+        const allDropdowns = document.querySelectorAll('.sidebar-menu .dropdown');
+        allDropdowns.forEach((dropdown) => {
+          dropdown.classList.remove('active');
+        });
+      }
+    };
+
+    document.addEventListener('click', handleClickOutside);
+
+    // Cleanup event listeners on unmount
+    return () => {
+      dropdownTriggers.forEach((trigger) => {
+        trigger.removeEventListener('click', handleDropdownClick);
+      });
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, [location.pathname]);
+
+
+
   return (
     <>
       {/* ScrollToTop */}
@@ -14,10 +87,10 @@ const MasterLayout = ({ children }) => {
       {/* sidebar */}
       <aside className="sidebar">
         <button type="button" className="sidebar-close-btn">
-          <iconify-icon icon="radix-icons:cross-2" />
+          <Icon icon="radix-icons:cross-2" />
         </button>
         <div>
-          <a href="index.html" className="sidebar-logo">
+          <Link to="/" className="sidebar-logo">
             <img
               src="assets/images/logo.png"
               alt="site logo"
@@ -33,604 +106,530 @@ const MasterLayout = ({ children }) => {
               alt="site logo"
               className="logo-icon"
             />
-          </a>
+          </Link>
         </div>
         <div className="sidebar-menu-area">
           <ul className="sidebar-menu" id="sidebar-menu">
             <li className="dropdown">
-              <a href="javascript:void(0)">
-                <iconify-icon
-                  icon="solar:home-smile-angle-outline"
-                  className="menu-icon"
-                />
+              <Link to="#">
+                <Icon icon="solar:home-smile-angle-outline" className="menu-icon" />
                 <span>Dashboard</span>
-              </a>
+              </Link>
               <ul className="sidebar-submenu">
                 <li>
-                  <a href="index.html">
-                    <i className="ri-circle-fill circle-icon text-primary-600 w-auto" />{" "}
-                    AI
-                  </a>
+                  <Link to="/">
+                    <i className="ri-circle-fill circle-icon text-primary-600 w-auto" /> AI
+                  </Link>
                 </li>
                 <li>
-                  <a href="index-2.html">
-                    <i className="ri-circle-fill circle-icon text-warning-main w-auto" />{" "}
-                    CRM
-                  </a>
+                  <Link to="/index-2">
+                    <i className="ri-circle-fill circle-icon text-warning-main w-auto" /> CRM
+                  </Link>
                 </li>
                 <li>
-                  <a href="index-3.html">
-                    <i className="ri-circle-fill circle-icon text-info-main w-auto" />{" "}
-                    eCommerce
-                  </a>
+                  <Link to="/index-3">
+                    <i className="ri-circle-fill circle-icon text-info-main w-auto" /> eCommerce
+                  </Link>
                 </li>
                 <li>
-                  <a href="index-4.html">
+                  <Link to="/index-4">
                     <i className="ri-circle-fill circle-icon text-danger-main w-auto" />
                     Cryptocurrency
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="index-5.html">
-                    <i className="ri-circle-fill circle-icon text-success-main w-auto" />{" "}
-                    Investment
-                  </a>
+                  <Link to="/index-5">
+                    <i className="ri-circle-fill circle-icon text-success-main w-auto" /> Investment
+                  </Link>
                 </li>
                 <li>
-                  <a href="index-6.html">
-                    <i className="ri-circle-fill circle-icon text-purple w-auto" />{" "}
-                    LMS
-                  </a>
+                  <Link to="/index-6">
+                    <i className="ri-circle-fill circle-icon text-purple w-auto" /> LMS
+                  </Link>
                 </li>
                 <li>
-                  <a href="index-7.html">
-                    <i className="ri-circle-fill circle-icon text-info-main w-auto" />{" "}
-                    NFT &amp; Gaming
-                  </a>
+                  <Link to="/index-7">
+                    <i className="ri-circle-fill circle-icon text-info-main w-auto" /> NFT &amp; Gaming
+                  </Link>
                 </li>
               </ul>
             </li>
+
             <li className="sidebar-menu-group-title">Application</li>
             <li>
-              <a href="email.html">
-                <iconify-icon icon="mage:email" className="menu-icon" />
+              <Link to="/email">
+                <Icon icon="mage:email" className="menu-icon" />
                 <span>Email</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="chat-message.html">
-                <iconify-icon icon="bi:chat-dots" className="menu-icon" />
+              <Link to="/chat-message">
+                <Icon icon="bi:chat-dots" className="menu-icon" />
                 <span>Chat</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="calendar-main.html">
-                <iconify-icon
-                  icon="solar:calendar-outline"
-                  className="menu-icon"
-                />
+              <Link to="/calendar-main">
+                <Icon icon="solar:calendar-outline" className="menu-icon" />
                 <span>Calendar</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="kanban.html">
-                <iconify-icon
-                  icon="material-symbols:map-outline"
-                  className="menu-icon"
-                />
+              <Link to="/kanban">
+                <Icon icon="material-symbols:map-outline" className="menu-icon" />
                 <span>Kanban</span>
-              </a>
+              </Link>
             </li>
+
+            {/* Invoice Dropdown */}
             <li className="dropdown">
-              <a href="javascript:void(0)">
-                <iconify-icon
-                  icon="hugeicons:invoice-03"
-                  className="menu-icon"
-                />
+              <Link to="#">
+                <Icon icon="hugeicons:invoice-03" className="menu-icon" />
                 <span>Invoice</span>
-              </a>
+              </Link>
               <ul className="sidebar-submenu">
                 <li>
-                  <a href="invoice-list.html">
-                    <i className="ri-circle-fill circle-icon text-primary-600 w-auto" />{" "}
-                    List
-                  </a>
+                  <Link to="/invoice-list">
+                    <i className="ri-circle-fill circle-icon text-primary-600 w-auto" /> List
+                  </Link>
                 </li>
                 <li>
-                  <a href="invoice-preview.html">
+                  <Link to="/invoice-preview">
                     <i className="ri-circle-fill circle-icon text-warning-main w-auto" />
                     Preview
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="invoice-add.html">
-                    <i className="ri-circle-fill circle-icon text-info-main w-auto" />{" "}
-                    Add new
-                  </a>
+                  <Link to="/invoice-add">
+                    <i className="ri-circle-fill circle-icon text-info-main w-auto" /> Add new
+                  </Link>
                 </li>
                 <li>
-                  <a href="invoice-edit.html">
-                    <i className="ri-circle-fill circle-icon text-danger-main w-auto" />{" "}
-                    Edit
-                  </a>
+                  <Link to="/invoice-edit">
+                    <i className="ri-circle-fill circle-icon text-danger-main w-auto" /> Edit
+                  </Link>
                 </li>
               </ul>
             </li>
+
+            {/* Ai Application Dropdown */}
             <li className="dropdown">
-              <a href="javascript:void(0)">
+              <Link to="#">
                 <i className="ri-robot-2-line" />
                 <span>Ai Application</span>
-              </a>
+              </Link>
               <ul className="sidebar-submenu">
                 <li>
-                  <a href="text-generator.html">
-                    <i className="ri-circle-fill circle-icon text-primary-600 w-auto" />{" "}
-                    Text Generator
-                  </a>
+                  <Link to="/text-generator">
+                    <i className="ri-circle-fill circle-icon text-primary-600 w-auto" /> Text Generator
+                  </Link>
                 </li>
                 <li>
-                  <a href="code-generator.html">
-                    <i className="ri-circle-fill circle-icon text-warning-main w-auto" />{" "}
-                    Code Generator
-                  </a>
+                  <Link to="/code-generator">
+                    <i className="ri-circle-fill circle-icon text-warning-main w-auto" /> Code Generator
+                  </Link>
                 </li>
                 <li>
-                  <a href="image-generator.html">
-                    <i className="ri-circle-fill circle-icon text-info-main w-auto" />{" "}
-                    Image Generator
-                  </a>
+                  <Link to="/image-generator">
+                    <i className="ri-circle-fill circle-icon text-info-main w-auto" /> Image Generator
+                  </Link>
                 </li>
                 <li>
-                  <a href="voice-generator.html">
-                    <i className="ri-circle-fill circle-icon text-danger-main w-auto" />{" "}
-                    Voice Generator
-                  </a>
+                  <Link to="/voice-generator">
+                    <i className="ri-circle-fill circle-icon text-danger-main w-auto" /> Voice Generator
+                  </Link>
                 </li>
                 <li>
-                  <a href="video-generator.html">
-                    <i className="ri-circle-fill circle-icon text-success-main w-auto" />{" "}
-                    Video Generator
-                  </a>
+                  <Link to="/video-generator">
+                    <i className="ri-circle-fill circle-icon text-success-main w-auto" /> Video Generator
+                  </Link>
                 </li>
               </ul>
             </li>
+
+            {/* Crypto Currency Dropdown */}
             <li className="dropdown">
-              <a href="javascript:void(0)">
+              <Link to="#">
                 <i className="ri-robot-2-line" />
                 <span>Crypto Currency</span>
-              </a>
+              </Link>
               <ul className="sidebar-submenu">
                 <li>
-                  <a href="wallet.html">
-                    <i className="ri-circle-fill circle-icon text-primary-600 w-auto" />{" "}
-                    Wallet
-                  </a>
+                  <Link to="/wallet">
+                    <i className="ri-circle-fill circle-icon text-primary-600 w-auto" /> Wallet
+                  </Link>
                 </li>
                 <li>
-                  <a href="marketplace.html">
+                  <Link to="/marketplace">
                     <i className="ri-circle-fill circle-icon text-warning-main w-auto" />
                     Marketplace
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="marketplace-details.html">
+                  <Link to="/marketplace-details">
                     <i className="ri-circle-fill circle-icon text-warning-main w-auto" />
                     Marketplace Details
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="portfolio.html">
+                  <Link to="/portfolio">
                     <i className="ri-circle-fill circle-icon text-warning-main w-auto" />
                     Portfolios
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </li>
+
             <li className="sidebar-menu-group-title">UI Elements</li>
+
+            {/* Components Dropdown */}
             <li className="dropdown">
-              <a href="javascript:void(0)">
-                <iconify-icon
-                  icon="solar:document-text-outline"
-                  className="menu-icon"
-                />
+              <Link to="#">
+                <Icon icon="solar:document-text-outline" className="menu-icon" />
                 <span>Components</span>
-              </a>
+              </Link>
               <ul className="sidebar-submenu">
                 <li>
-                  <a href="typography.html">
+                  <Link to="/typography">
                     <i className="ri-circle-fill circle-icon text-primary-600 w-auto" />
                     Typography
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="colors.html">
-                    <i className="ri-circle-fill circle-icon text-warning-main w-auto" />{" "}
-                    Colors
-                  </a>
+                  <Link to="/colors">
+                    <i className="ri-circle-fill circle-icon text-warning-main w-auto" /> Colors
+                  </Link>
                 </li>
                 <li>
-                  <a href="button.html">
-                    <i className="ri-circle-fill circle-icon text-success-main w-auto" />{" "}
-                    Button
-                  </a>
+                  <Link to="/button">
+                    <i className="ri-circle-fill circle-icon text-success-main w-auto" /> Button
+                  </Link>
                 </li>
                 <li>
-                  <a href="dropdown.html">
-                    <i className="ri-circle-fill circle-icon text-lilac-600 w-auto" />{" "}
-                    Dropdown
-                  </a>
+                  <Link to="/dropdown">
+                    <i className="ri-circle-fill circle-icon text-lilac-600 w-auto" /> Dropdown
+                  </Link>
                 </li>
                 <li>
-                  <a href="alert.html">
-                    <i className="ri-circle-fill circle-icon text-warning-main w-auto" />{" "}
-                    Alerts
-                  </a>
+                  <Link to="/alert">
+                    <i className="ri-circle-fill circle-icon text-warning-main w-auto" /> Alerts
+                  </Link>
                 </li>
                 <li>
-                  <a href="card.html">
-                    <i className="ri-circle-fill circle-icon text-danger-main w-auto" />{" "}
-                    Card
-                  </a>
+                  <Link to="/card">
+                    <i className="ri-circle-fill circle-icon text-danger-main w-auto" /> Card
+                  </Link>
                 </li>
                 <li>
-                  <a href="carousel.html">
-                    <i className="ri-circle-fill circle-icon text-info-main w-auto" />{" "}
-                    Carousel
-                  </a>
+                  <Link to="/carousel">
+                    <i className="ri-circle-fill circle-icon text-info-main w-auto" /> Carousel
+                  </Link>
                 </li>
                 <li>
-                  <a href="avatar.html">
-                    <i className="ri-circle-fill circle-icon text-success-main w-auto" />{" "}
-                    Avatars
-                  </a>
+                  <Link to="/avatar">
+                    <i className="ri-circle-fill circle-icon text-success-main w-auto" /> Avatars
+                  </Link>
                 </li>
                 <li>
-                  <a href="progress.html">
-                    <i className="ri-circle-fill circle-icon text-primary-600 w-auto" />{" "}
-                    Progress bar
-                  </a>
+                  <Link to="/progress">
+                    <i className="ri-circle-fill circle-icon text-primary-600 w-auto" /> Progress bar
+                  </Link>
                 </li>
                 <li>
-                  <a href="tabs.html">
-                    <i className="ri-circle-fill circle-icon text-warning-main w-auto" />{" "}
-                    Tab &amp; Accordion
-                  </a>
+                  <Link to="/tabs">
+                    <i className="ri-circle-fill circle-icon text-warning-main w-auto" /> Tab &amp; Accordion
+                  </Link>
                 </li>
                 <li>
-                  <a href="pagination.html">
+                  <Link to="/pagination">
                     <i className="ri-circle-fill circle-icon text-danger-main w-auto" />
                     Pagination
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="badges.html">
-                    <i className="ri-circle-fill circle-icon text-info-main w-auto" />{" "}
-                    Badges
-                  </a>
+                  <Link to="/badges">
+                    <i className="ri-circle-fill circle-icon text-info-main w-auto" /> Badges
+                  </Link>
                 </li>
                 <li>
-                  <a href="tooltip.html">
-                    <i className="ri-circle-fill circle-icon text-lilac-600 w-auto" />{" "}
-                    Tooltip &amp; Popover
-                  </a>
+                  <Link to="/tooltip">
+                    <i className="ri-circle-fill circle-icon text-lilac-600 w-auto" /> Tooltip &amp; Popover
+                  </Link>
                 </li>
                 <li>
-                  <a href="videos.html">
-                    <i className="ri-circle-fill circle-icon text-cyan w-auto" />{" "}
-                    Videos
-                  </a>
+                  <Link to="/videos">
+                    <i className="ri-circle-fill circle-icon text-cyan w-auto" /> Videos
+                  </Link>
                 </li>
                 <li>
-                  <a href="star-rating.html">
-                    <i className="ri-circle-fill circle-icon text-indigo w-auto" />{" "}
-                    Star Ratings
-                  </a>
+                  <Link to="/star-rating">
+                    <i className="ri-circle-fill circle-icon text-indigo w-auto" /> Star Ratings
+                  </Link>
                 </li>
                 <li>
-                  <a href="tags.html">
-                    <i className="ri-circle-fill circle-icon text-purple w-auto" />{" "}
-                    Tags
-                  </a>
+                  <Link to="/tags">
+                    <i className="ri-circle-fill circle-icon text-purple w-auto" /> Tags
+                  </Link>
                 </li>
                 <li>
-                  <a href="list.html">
-                    <i className="ri-circle-fill circle-icon text-red w-auto" />{" "}
-                    List
-                  </a>
+                  <Link to="/list">
+                    <i className="ri-circle-fill circle-icon text-red w-auto" /> List
+                  </Link>
                 </li>
                 <li>
-                  <a href="calendar.html">
-                    <i className="ri-circle-fill circle-icon text-yellow w-auto" />{" "}
-                    Calendar
-                  </a>
+                  <Link to="/calendar">
+                    <i className="ri-circle-fill circle-icon text-yellow w-auto" /> Calendar
+                  </Link>
                 </li>
                 <li>
-                  <a href="radio.html">
-                    <i className="ri-circle-fill circle-icon text-orange w-auto" />{" "}
-                    Radio
-                  </a>
+                  <Link to="/radio">
+                    <i className="ri-circle-fill circle-icon text-orange w-auto" /> Radio
+                  </Link>
                 </li>
                 <li>
-                  <a href="switch.html">
-                    <i className="ri-circle-fill circle-icon text-pink w-auto" />{" "}
-                    Switch
-                  </a>
+                  <Link to="/switch">
+                    <i className="ri-circle-fill circle-icon text-pink w-auto" /> Switch
+                  </Link>
                 </li>
                 <li>
-                  <a href="image-upload.html">
-                    <i className="ri-circle-fill circle-icon text-primary-600 w-auto" />{" "}
-                    Upload
-                  </a>
+                  <Link to="/image-upload">
+                    <i className="ri-circle-fill circle-icon text-primary-600 w-auto" /> Upload
+                  </Link>
                 </li>
               </ul>
             </li>
+
+            {/* Forms Dropdown */}
             <li className="dropdown">
-              <a href="javascript:void(0)">
-                <iconify-icon icon="heroicons:document" className="menu-icon" />
+              <Link to="#">
+                <Icon icon="heroicons:document" className="menu-icon" />
                 <span>Forms</span>
-              </a>
+              </Link>
               <ul className="sidebar-submenu">
                 <li>
-                  <a href="form.html">
-                    <i className="ri-circle-fill circle-icon text-primary-600 w-auto" />{" "}
-                    Input Forms
-                  </a>
+                  <Link to="/form">
+                    <i className="ri-circle-fill circle-icon text-primary-600 w-auto" /> Input Forms
+                  </Link>
                 </li>
                 <li>
-                  <a href="form-layout.html">
-                    <i className="ri-circle-fill circle-icon text-warning-main w-auto" />{" "}
-                    Input Layout
-                  </a>
+                  <Link to="/form-layout">
+                    <i className="ri-circle-fill circle-icon text-warning-main w-auto" /> Input Layout
+                  </Link>
                 </li>
                 <li>
-                  <a href="form-validation.html">
-                    <i className="ri-circle-fill circle-icon text-success-main w-auto" />{" "}
-                    Form Validation
-                  </a>
+                  <Link to="/form-validation">
+                    <i className="ri-circle-fill circle-icon text-success-main w-auto" /> Form Validation
+                  </Link>
                 </li>
                 <li>
-                  <a href="wizard.html">
-                    <i className="ri-circle-fill circle-icon text-danger-main w-auto" />{" "}
-                    Form Wizard
-                  </a>
+                  <Link to="/wizard">
+                    <i className="ri-circle-fill circle-icon text-danger-main w-auto" /> Form Wizard
+                  </Link>
                 </li>
               </ul>
             </li>
+
+            {/* Table Dropdown */}
             <li className="dropdown">
-              <a href="javascript:void(0)">
-                <iconify-icon
-                  icon="mingcute:storage-line"
-                  className="menu-icon"
-                />
+              <Link to="#">
+                <Icon icon="mingcute:storage-line" className="menu-icon" />
                 <span>Table</span>
-              </a>
+              </Link>
               <ul className="sidebar-submenu">
                 <li>
-                  <a href="table-basic.html">
-                    <i className="ri-circle-fill circle-icon text-primary-600 w-auto" />{" "}
-                    Basic Table
-                  </a>
+                  <Link to="/table-basic">
+                    <i className="ri-circle-fill circle-icon text-primary-600 w-auto" /> Basic Table
+                  </Link>
                 </li>
                 <li>
-                  <a href="table-data.html">
-                    <i className="ri-circle-fill circle-icon text-warning-main w-auto" />{" "}
-                    Data Table
-                  </a>
+                  <Link to="/table-data">
+                    <i className="ri-circle-fill circle-icon text-warning-main w-auto" /> Data Table
+                  </Link>
                 </li>
               </ul>
             </li>
+
+            {/* Chart Dropdown */}
             <li className="dropdown">
-              <a href="javascript:void(0)">
-                <iconify-icon
-                  icon="solar:pie-chart-outline"
-                  className="menu-icon"
-                />
+              <Link to="#">
+                <Icon icon="solar:pie-chart-outline" className="menu-icon" />
                 <span>Chart</span>
-              </a>
+              </Link>
               <ul className="sidebar-submenu">
                 <li>
-                  <a href="line-chart.html">
-                    <i className="ri-circle-fill circle-icon text-danger-main w-auto" />{" "}
-                    Line Chart
-                  </a>
+                  <Link to="/line-chart">
+                    <i className="ri-circle-fill circle-icon text-danger-main w-auto" /> Line Chart
+                  </Link>
                 </li>
                 <li>
-                  <a href="column-chart.html">
-                    <i className="ri-circle-fill circle-icon text-warning-main w-auto" />{" "}
-                    Column Chart
-                  </a>
+                  <Link to="/column-chart">
+                    <i className="ri-circle-fill circle-icon text-warning-main w-auto" /> Column Chart
+                  </Link>
                 </li>
                 <li>
-                  <a href="pie-chart.html">
-                    <i className="ri-circle-fill circle-icon text-success-main w-auto" />{" "}
-                    Pie Chart
-                  </a>
+                  <Link to="/pie-chart">
+                    <i className="ri-circle-fill circle-icon text-success-main w-auto" /> Pie Chart
+                  </Link>
                 </li>
               </ul>
             </li>
+
             <li>
-              <a href="widgets.html">
-                <iconify-icon icon="fe:vector" className="menu-icon" />
+              <Link to="/widgets">
+                <Icon icon="fe:vector" className="menu-icon" />
                 <span>Widgets</span>
-              </a>
+              </Link>
             </li>
+
+            {/* Users Dropdown */}
             <li className="dropdown">
-              <a href="javascript:void(0)">
-                <iconify-icon
-                  icon="flowbite:users-group-outline"
-                  className="menu-icon"
-                />
+              <Link to="#">
+                <Icon icon="flowbite:users-group-outline" className="menu-icon" />
                 <span>Users</span>
-              </a>
+              </Link>
               <ul className="sidebar-submenu">
                 <li>
-                  <a href="users-list.html">
-                    <i className="ri-circle-fill circle-icon text-primary-600 w-auto" />{" "}
-                    Users List
-                  </a>
+                  <Link to="/users-list">
+                    <i className="ri-circle-fill circle-icon text-primary-600 w-auto" /> Users List
+                  </Link>
                 </li>
                 <li>
-                  <a href="users-grid.html">
-                    <i className="ri-circle-fill circle-icon text-warning-main w-auto" />{" "}
-                    Users Grid
-                  </a>
+                  <Link to="/users-grid">
+                    <i className="ri-circle-fill circle-icon text-warning-main w-auto" /> Users Grid
+                  </Link>
                 </li>
                 <li>
-                  <a href="add-user.html">
-                    <i className="ri-circle-fill circle-icon text-info-main w-auto" />{" "}
-                    Add User
-                  </a>
+                  <Link to="/add-user">
+                    <i className="ri-circle-fill circle-icon text-info-main w-auto" /> Add User
+                  </Link>
                 </li>
                 <li>
-                  <a href="view-profile.html">
-                    <i className="ri-circle-fill circle-icon text-danger-main w-auto" />{" "}
-                    View Profile
-                  </a>
+                  <Link to="/view-profile">
+                    <i className="ri-circle-fill circle-icon text-danger-main w-auto" /> View Profile
+                  </Link>
                 </li>
               </ul>
             </li>
+
+            {/* Role & Access Dropdown */}
             <li className="dropdown">
-              <a href="javascript:void(0)">
+              <Link to="#">
                 <i className="ri-user-settings-line" />
                 <span>Role &amp; Access</span>
-              </a>
+              </Link>
               <ul className="sidebar-submenu">
                 <li>
-                  <a href="role-access.html">
-                    <i className="ri-circle-fill circle-icon text-primary-600 w-auto" />{" "}
-                    Role &amp; Access
-                  </a>
+                  <Link to="/role-access">
+                    <i className="ri-circle-fill circle-icon text-primary-600 w-auto" /> Role &amp; Access
+                  </Link>
                 </li>
                 <li>
-                  <a href="assign-role.html">
-                    <i className="ri-circle-fill circle-icon text-warning-main w-auto" />{" "}
-                    Assign Role
-                  </a>
+                  <Link to="/assign-role">
+                    <i className="ri-circle-fill circle-icon text-warning-main w-auto" /> Assign Role
+                  </Link>
                 </li>
               </ul>
             </li>
+
             <li className="sidebar-menu-group-title">Application</li>
+
+            {/* Authentication Dropdown */}
             <li className="dropdown">
-              <a href="javascript:void(0)">
-                <iconify-icon
-                  icon="simple-line-icons:vector"
-                  className="menu-icon"
-                />
+              <Link to="#">
+                <Icon icon="simple-line-icons:vector" className="menu-icon" />
                 <span>Authentication</span>
-              </a>
+              </Link>
               <ul className="sidebar-submenu">
                 <li>
-                  <a href="sign-in.html">
-                    <i className="ri-circle-fill circle-icon text-primary-600 w-auto" />{" "}
-                    Sign In
-                  </a>
+                  <Link to="/sign-in">
+                    <i className="ri-circle-fill circle-icon text-primary-600 w-auto" /> Sign In
+                  </Link>
                 </li>
                 <li>
-                  <a href="sign-up.html">
-                    <i className="ri-circle-fill circle-icon text-warning-main w-auto" />{" "}
-                    Sign Up
-                  </a>
+                  <Link to="/sign-up">
+                    <i className="ri-circle-fill circle-icon text-warning-main w-auto" /> Sign Up
+                  </Link>
                 </li>
                 <li>
-                  <a href="forgot-password.html">
-                    <i className="ri-circle-fill circle-icon text-info-main w-auto" />{" "}
-                    Forgot Password
-                  </a>
+                  <Link to="/forgot-password">
+                    <i className="ri-circle-fill circle-icon text-info-main w-auto" /> Forgot Password
+                  </Link>
                 </li>
               </ul>
             </li>
+
             <li>
-              <a href="gallery.html">
-                <iconify-icon
-                  icon="solar:gallery-wide-linear"
-                  className="menu-icon"
-                />
+              <Link to="/gallery">
+                <Icon icon="solar:gallery-wide-linear" className="menu-icon" />
                 <span>Gallery</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="pricing.html">
-                <iconify-icon
-                  icon="hugeicons:money-send-square"
-                  className="menu-icon"
-                />
+              <Link to="/pricing">
+                <Icon icon="hugeicons:money-send-square" className="menu-icon" />
                 <span>Pricing</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="faq.html">
-                <iconify-icon
-                  icon="mage:message-question-mark-round"
-                  className="menu-icon"
-                />
+              <Link to="/faq">
+                <Icon icon="mage:message-question-mark-round" className="menu-icon" />
                 <span>FAQs.</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="error.html">
-                <iconify-icon
-                  icon="streamline:straight-face"
-                  className="menu-icon"
-                />
+              <Link to="/error">
+                <Icon icon="streamline:straight-face" className="menu-icon" />
                 <span>404</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="terms-condition.html">
-                <iconify-icon icon="octicon:info-24" className="menu-icon" />
+              <Link to="/terms-condition">
+                <Icon icon="octicon:info-24" className="menu-icon" />
                 <span>Terms &amp; Conditions</span>
-              </a>
+              </Link>
             </li>
+
+            {/* Settings Dropdown */}
             <li className="dropdown">
-              <a href="javascript:void(0)">
-                <iconify-icon
-                  icon="icon-park-outline:setting-two"
-                  className="menu-icon"
-                />
+              <Link to="#">
+                <Icon icon="icon-park-outline:setting-two" className="menu-icon" />
                 <span>Settings</span>
-              </a>
+              </Link>
               <ul className="sidebar-submenu">
                 <li>
-                  <a href="company.html">
-                    <i className="ri-circle-fill circle-icon text-primary-600 w-auto" />{" "}
-                    Company
-                  </a>
+                  <Link to="/company">
+                    <i className="ri-circle-fill circle-icon text-primary-600 w-auto" /> Company
+                  </Link>
                 </li>
                 <li>
-                  <a href="notification.html">
-                    <i className="ri-circle-fill circle-icon text-warning-main w-auto" />
-                    Notification
-                  </a>
+                  <Link to="/notification">
+                    <i className="ri-circle-fill circle-icon text-warning-main w-auto" /> Notification
+                  </Link>
                 </li>
                 <li>
-                  <a href="notification-alert.html">
-                    <i className="ri-circle-fill circle-icon text-info-main w-auto" />
-                    Notification Alert
-                  </a>
+                  <Link to="/notification-alert">
+                    <i className="ri-circle-fill circle-icon text-info-main w-auto" /> Notification Alert
+                  </Link>
                 </li>
                 <li>
-                  <a href="theme.html">
-                    <i className="ri-circle-fill circle-icon text-danger-main w-auto" />{" "}
-                    Theme
-                  </a>
+                  <Link to="/theme">
+                    <i className="ri-circle-fill circle-icon text-danger-main w-auto" /> Theme
+                  </Link>
                 </li>
                 <li>
-                  <a href="currencies.html">
-                    <i className="ri-circle-fill circle-icon text-danger-main w-auto" />
-                    Currencies
-                  </a>
+                  <Link to="/currencies">
+                    <i className="ri-circle-fill circle-icon text-danger-main w-auto" /> Currencies
+                  </Link>
                 </li>
                 <li>
-                  <a href="language.html">
-                    <i className="ri-circle-fill circle-icon text-danger-main w-auto" />{" "}
-                    Languages
-                  </a>
+                  <Link to="/language">
+                    <i className="ri-circle-fill circle-icon text-danger-main w-auto" /> Languages
+                  </Link>
                 </li>
                 <li>
-                  <a href="payment-gateway.html">
-                    <i className="ri-circle-fill circle-icon text-danger-main w-auto" />{" "}
-                    Payment Gateway
-                  </a>
+                  <Link to="/payment-gateway">
+                    <i className="ri-circle-fill circle-icon text-danger-main w-auto" /> Payment Gateway
+                  </Link>
                 </li>
               </ul>
             </li>
@@ -644,24 +643,24 @@ const MasterLayout = ({ children }) => {
             <div className="col-auto">
               <div className="d-flex flex-wrap align-items-center gap-4">
                 <button type="button" className="sidebar-toggle">
-                  <iconify-icon
+                  <Icon
                     icon="heroicons:bars-3-solid"
                     className="icon text-2xl non-active"
                   />
-                  <iconify-icon
+                  <Icon
                     icon="iconoir:arrow-right"
                     className="icon text-2xl active"
                   />
                 </button>
                 <button type="button" className="sidebar-mobile-toggle">
-                  <iconify-icon
+                  <Icon
                     icon="heroicons:bars-3-solid"
                     className="icon"
                   />
                 </button>
                 <form className="navbar-search">
                   <input type="text" name="search" placeholder="Search" />
-                  <iconify-icon icon="ion:search-outline" className="icon" />
+                  <Icon icon="ion:search-outline" className="icon" />
                 </form>
               </div>
             </div>
@@ -887,7 +886,7 @@ const MasterLayout = ({ children }) => {
                     type="button"
                     data-bs-toggle="dropdown"
                   >
-                    <iconify-icon
+                    <Icon
                       icon="mage:email"
                       className="text-primary-light text-xl"
                     />
@@ -904,8 +903,8 @@ const MasterLayout = ({ children }) => {
                       </span>
                     </div>
                     <div className="max-h-400-px overflow-y-auto scroll-sm pe-4">
-                      <a
-                        href="javascript:void(0)"
+                      <Link
+                        to="#"
                         className="px-24 py-12 d-flex align-items-start gap-3 mb-2 justify-content-between"
                       >
                         <div className="text-black hover-bg-transparent hover-text-primary d-flex align-items-center gap-3">
@@ -933,9 +932,9 @@ const MasterLayout = ({ children }) => {
                             8
                           </span>
                         </div>
-                      </a>
-                      <a
-                        href="javascript:void(0)"
+                      </Link>
+                      <Link
+                        to="#"
                         className="px-24 py-12 d-flex align-items-start gap-3 mb-2 justify-content-between"
                       >
                         <div className="text-black hover-bg-transparent hover-text-primary d-flex align-items-center gap-3">
@@ -963,9 +962,9 @@ const MasterLayout = ({ children }) => {
                             2
                           </span>
                         </div>
-                      </a>
-                      <a
-                        href="javascript:void(0)"
+                      </Link>
+                      <Link
+                        to="#"
                         className="px-24 py-12 d-flex align-items-start gap-3 mb-2 justify-content-between bg-neutral-50"
                       >
                         <div className="text-black hover-bg-transparent hover-text-primary d-flex align-items-center gap-3">
@@ -993,9 +992,9 @@ const MasterLayout = ({ children }) => {
                             0
                           </span>
                         </div>
-                      </a>
-                      <a
-                        href="javascript:void(0)"
+                      </Link>
+                      <Link
+                        to="#"
                         className="px-24 py-12 d-flex align-items-start gap-3 mb-2 justify-content-between bg-neutral-50"
                       >
                         <div className="text-black hover-bg-transparent hover-text-primary d-flex align-items-center gap-3">
@@ -1023,9 +1022,9 @@ const MasterLayout = ({ children }) => {
                             0
                           </span>
                         </div>
-                      </a>
-                      <a
-                        href="javascript:void(0)"
+                      </Link>
+                      <Link
+                        to="#"
                         className="px-24 py-12 d-flex align-items-start gap-3 mb-2 justify-content-between"
                       >
                         <div className="text-black hover-bg-transparent hover-text-primary d-flex align-items-center gap-3">
@@ -1053,15 +1052,15 @@ const MasterLayout = ({ children }) => {
                             8
                           </span>
                         </div>
-                      </a>
+                      </Link>
                     </div>
                     <div className="text-center py-12 px-16">
-                      <a
-                        href="javascript:void(0)"
+                      <Link
+                        to="#"
                         className="text-primary-600 fw-semibold text-md"
                       >
                         See All Message
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -1072,7 +1071,7 @@ const MasterLayout = ({ children }) => {
                     type="button"
                     data-bs-toggle="dropdown"
                   >
-                    <iconify-icon
+                    <Icon
                       icon="iconoir:bell"
                       className="text-primary-light text-xl"
                     />
@@ -1089,13 +1088,13 @@ const MasterLayout = ({ children }) => {
                       </span>
                     </div>
                     <div className="max-h-400-px overflow-y-auto scroll-sm pe-4">
-                      <a
-                        href="javascript:void(0)"
+                      <Link
+                        to="#"
                         className="px-24 py-12 d-flex align-items-start gap-3 mb-2 justify-content-between"
                       >
                         <div className="text-black hover-bg-transparent hover-text-primary d-flex align-items-center gap-3">
                           <span className="w-44-px h-44-px bg-success-subtle text-success-main rounded-circle d-flex justify-content-center align-items-center flex-shrink-0">
-                            <iconify-icon
+                            <Icon
                               icon="bitcoin-icons:verify-outline"
                               className="icon text-xxl"
                             />
@@ -1113,9 +1112,9 @@ const MasterLayout = ({ children }) => {
                         <span className="text-sm text-secondary-light flex-shrink-0">
                           23 Mins ago
                         </span>
-                      </a>
-                      <a
-                        href="javascript:void(0)"
+                      </Link>
+                      <Link
+                        to="#"
                         className="px-24 py-12 d-flex align-items-start gap-3 mb-2 justify-content-between bg-neutral-50"
                       >
                         <div className="text-black hover-bg-transparent hover-text-primary d-flex align-items-center gap-3">
@@ -1137,9 +1136,9 @@ const MasterLayout = ({ children }) => {
                         <span className="text-sm text-secondary-light flex-shrink-0">
                           23 Mins ago
                         </span>
-                      </a>
-                      <a
-                        href="javascript:void(0)"
+                      </Link>
+                      <Link
+                        to="#"
                         className="px-24 py-12 d-flex align-items-start gap-3 mb-2 justify-content-between"
                       >
                         <div className="text-black hover-bg-transparent hover-text-primary d-flex align-items-center gap-3">
@@ -1158,9 +1157,9 @@ const MasterLayout = ({ children }) => {
                         <span className="text-sm text-secondary-light flex-shrink-0">
                           23 Mins ago
                         </span>
-                      </a>
-                      <a
-                        href="javascript:void(0)"
+                      </Link>
+                      <Link
+                        to="#"
                         className="px-24 py-12 d-flex align-items-start gap-3 mb-2 justify-content-between bg-neutral-50"
                       >
                         <div className="text-black hover-bg-transparent hover-text-primary d-flex align-items-center gap-3">
@@ -1182,9 +1181,9 @@ const MasterLayout = ({ children }) => {
                         <span className="text-sm text-secondary-light flex-shrink-0">
                           23 Mins ago
                         </span>
-                      </a>
-                      <a
-                        href="javascript:void(0)"
+                      </Link>
+                      <Link
+                        to="#"
                         className="px-24 py-12 d-flex align-items-start gap-3 mb-2 justify-content-between"
                       >
                         <div className="text-black hover-bg-transparent hover-text-primary d-flex align-items-center gap-3">
@@ -1203,15 +1202,15 @@ const MasterLayout = ({ children }) => {
                         <span className="text-sm text-secondary-light flex-shrink-0">
                           23 Mins ago
                         </span>
-                      </a>
+                      </Link>
                     </div>
                     <div className="text-center py-12 px-16">
-                      <a
-                        href="javascript:void(0)"
+                      <Link
+                        to="#"
                         className="text-primary-600 fw-semibold text-md"
                       >
                         See All Notification
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -1239,7 +1238,7 @@ const MasterLayout = ({ children }) => {
                         </span>
                       </div>
                       <button type="button" className="hover-text-danger">
-                        <iconify-icon
+                        <Icon
                           icon="radix-icons:cross-1"
                           className="icon text-xl"
                         />
@@ -1247,52 +1246,52 @@ const MasterLayout = ({ children }) => {
                     </div>
                     <ul className="to-top-list">
                       <li>
-                        <a
+                        <Link
                           className="dropdown-item text-black px-0 py-8 hover-bg-transparent hover-text-primary d-flex align-items-center gap-3"
-                          href="view-profile.html"
+                          href="view-profile"
                         >
-                          <iconify-icon
+                          <Icon
                             icon="solar:user-linear"
                             className="icon text-xl"
                           />{" "}
                           My Profile
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link
                           className="dropdown-item text-black px-0 py-8 hover-bg-transparent hover-text-primary d-flex align-items-center gap-3"
-                          href="email.html"
+                          href="email"
                         >
-                          <iconify-icon
+                          <Icon
                             icon="tabler:message-check"
                             className="icon text-xl"
                           />{" "}
                           Inbox
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link
                           className="dropdown-item text-black px-0 py-8 hover-bg-transparent hover-text-primary d-flex align-items-center gap-3"
-                          href="company.html"
+                          href="company"
                         >
-                          <iconify-icon
+                          <Icon
                             icon="icon-park-outline:setting-two"
                             className="icon text-xl"
                           />
                           Setting
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link
                           className="dropdown-item text-black px-0 py-8 hover-bg-transparent hover-text-danger d-flex align-items-center gap-3"
                           href="javascript:void(0)"
                         >
-                          <iconify-icon
+                          <Icon
                             icon="lucide:power"
                             className="icon text-xl"
                           />{" "}
                           Log Out
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
