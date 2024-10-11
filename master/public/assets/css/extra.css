@@ -101,15 +101,11 @@
   transition: all 0.3s linear;
 }
 
-.card {
-  position: initial !important;
-}
-
 .slick-list {
   margin: 0 -7px;
 }
 
-.slick-slide>div {
+.slick-slide > div {
   padding: 0 10px;
 }
 
@@ -144,8 +140,8 @@ table.dataTable td.dt-type-date {
   /* Adjust as needed */
 }
 
-/* Show submenu when parent has 'active' class */
-.sidebar-menu .dropdown.active .sidebar-submenu {
+/* Show submenu when parent has 'open' class */
+.sidebar-menu .dropdown.open .sidebar-submenu {
   display: block;
 }
 
@@ -156,7 +152,28 @@ table.dataTable td.dt-type-date {
   max-height: 0;
 }
 
-.sidebar-menu .dropdown.active .sidebar-submenu {
-  max-height: 500px;
+.sidebar-menu .dropdown.open .sidebar-submenu {
+  max-height: 1000px;
   transition: all 0.3s ease-out;
+}
+
+.sidebar-menu li > a > i {
+  margin-inline-end: 0;
+}
+
+.mr-10 {
+  margin-right: 10px !important;
+}
+
+.sidebar-menu .sidebar-submenu li a {
+  gap: 12px;
+}
+
+.sidebar-menu .sidebar-submenu li > .active-page {
+  background-color: var(--button-secondary);
+  color: var(--text-primary-light);
+}
+
+.sidebar-menu li > a.active-page:hover {
+  color: var(--text-primary-light);
 }

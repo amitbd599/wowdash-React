@@ -1,10 +1,11 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import ScrollToTop from "react-scroll-to-top";
 import Preloader from "../helper/Preloader";
 import { Icon } from "@iconify/react/dist/iconify.js";
-import { Link, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 
 const MasterLayout = ({ children }) => {
+  let [sidebarActive, seSidebarActive] = useState(false)
   const location = useLocation(); // Hook to get the current route
 
   useEffect(() => {
@@ -16,17 +17,17 @@ const MasterLayout = ({ children }) => {
 
       if (!clickedDropdown) return;
 
-      const isActive = clickedDropdown.classList.contains('active');
+      const isActive = clickedDropdown.classList.contains('open');
 
       // Close all dropdowns
       const allDropdowns = document.querySelectorAll('.sidebar-menu .dropdown');
       allDropdowns.forEach((dropdown) => {
-        dropdown.classList.remove('active');
+        dropdown.classList.remove('open');
       });
 
       // Toggle the clicked dropdown
       if (!isActive) {
-        clickedDropdown.classList.add('active');
+        clickedDropdown.classList.add('open');
       }
     };
 
@@ -44,13 +45,13 @@ const MasterLayout = ({ children }) => {
         const submenuLinks = dropdown.querySelectorAll('.sidebar-submenu li a');
         submenuLinks.forEach((link) => {
           if (link.getAttribute('href') === location.pathname || link.getAttribute('to') === location.pathname) {
-            dropdown.classList.add('active');
+            dropdown.classList.add('open');
           }
         });
       });
     };
 
-    // Open the submenu that contains the active route
+    // Open the submenu that contains the open route
     openActiveDropdown();
 
 
@@ -65,6 +66,11 @@ const MasterLayout = ({ children }) => {
   }, [location.pathname]);
 
 
+  let sidebarControl = () => {
+    seSidebarActive(!sidebarActive)
+  }
+
+
 
   return (
     <>
@@ -75,7 +81,7 @@ const MasterLayout = ({ children }) => {
       <Preloader />
 
       {/* sidebar */}
-      <aside className="sidebar">
+      <aside className={sidebarActive ? "sidebar active" : "sidebar"}>
         <button type="button" className="sidebar-close-btn">
           <Icon icon="radix-icons:cross-2" />
         </button>
@@ -107,68 +113,90 @@ const MasterLayout = ({ children }) => {
               </Link>
               <ul className="sidebar-submenu">
                 <li>
-                  <Link to="/">
-                    <i className="ri-circle-fill circle-icon text-primary-600 w-auto" /> AI
-                  </Link>
+                  <NavLink to="/" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
+                    <i className="ri-circle-fill circle-icon text-primary-600 w-auto" />AI
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/index-2">
+                  <NavLink to="/index-2" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-warning-main w-auto" /> CRM
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/index-3">
+                  <NavLink to="/index-3" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-info-main w-auto" /> eCommerce
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/index-4">
+                  <NavLink to="/index-4" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-danger-main w-auto" />
                     Cryptocurrency
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/index-5">
+                  <NavLink to="/index-5" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-success-main w-auto" /> Investment
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/index-6">
+                  <NavLink to="/index-6" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-purple w-auto" /> LMS
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/index-7">
+                  <NavLink to="/index-7" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-info-main w-auto" /> NFT &amp; Gaming
-                  </Link>
+                  </NavLink>
                 </li>
               </ul>
             </li>
 
             <li className="sidebar-menu-group-title">Application</li>
             <li>
-              <Link to="/email">
+              <NavLink to="/email" className={(navData) =>
+                navData.isActive && "active-page"
+              }>
                 <Icon icon="mage:email" className="menu-icon" />
                 <span>Email</span>
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/chat-message">
+              <NavLink to="/chat-message" className={(navData) =>
+                navData.isActive && "active-page"
+              }>
                 <Icon icon="bi:chat-dots" className="menu-icon" />
                 <span>Chat</span>
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/calendar-main">
+              <NavLink to="/calendar-main" className={(navData) =>
+                navData.isActive && "active-page"
+              }>
                 <Icon icon="solar:calendar-outline" className="menu-icon" />
                 <span>Calendar</span>
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/kanban">
+              <NavLink to="/kanban" className={(navData) =>
+                navData.isActive && "active-page"
+              }>
                 <Icon icon="material-symbols:map-outline" className="menu-icon" />
                 <span>Kanban</span>
-              </Link>
+              </NavLink>
             </li>
 
             {/* Invoice Dropdown */}
@@ -179,25 +207,33 @@ const MasterLayout = ({ children }) => {
               </Link>
               <ul className="sidebar-submenu">
                 <li>
-                  <Link to="/invoice-list">
+                  <NavLink to="/invoice-list" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-primary-600 w-auto" /> List
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/invoice-preview">
+                  <NavLink to="/invoice-preview" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-warning-main w-auto" />
                     Preview
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/invoice-add">
+                  <NavLink to="/invoice-add" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-info-main w-auto" /> Add new
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/invoice-edit">
+                  <NavLink to="/invoice-edit" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-danger-main w-auto" /> Edit
-                  </Link>
+                  </NavLink>
                 </li>
               </ul>
             </li>
@@ -205,34 +241,45 @@ const MasterLayout = ({ children }) => {
             {/* Ai Application Dropdown */}
             <li className="dropdown">
               <Link to="#">
-                <i className="ri-robot-2-line" />
+                <i className="ri-robot-2-line mr-10" />
+
                 <span>Ai Application</span>
               </Link>
               <ul className="sidebar-submenu">
                 <li>
-                  <Link to="/text-generator">
+                  <NavLink to="/text-generator" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-primary-600 w-auto" /> Text Generator
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/code-generator">
+                  <NavLink to="/code-generator" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-warning-main w-auto" /> Code Generator
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/image-generator">
+                  <NavLink to="/image-generator" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-info-main w-auto" /> Image Generator
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/voice-generator">
+                  <NavLink to="/voice-generator" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-danger-main w-auto" /> Voice Generator
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/video-generator">
+                  <NavLink to="/video-generator" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-success-main w-auto" /> Video Generator
-                  </Link>
+                  </NavLink>
                 </li>
               </ul>
             </li>
@@ -240,32 +287,40 @@ const MasterLayout = ({ children }) => {
             {/* Crypto Currency Dropdown */}
             <li className="dropdown">
               <Link to="#">
-                <i className="ri-robot-2-line" />
+                <i className="ri-robot-2-line mr-10" />
                 <span>Crypto Currency</span>
               </Link>
               <ul className="sidebar-submenu">
                 <li>
-                  <Link to="/wallet">
+                  <NavLink to="/wallet" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-primary-600 w-auto" /> Wallet
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/marketplace">
+                  <NavLink to="/marketplace" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-warning-main w-auto" />
                     Marketplace
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/marketplace-details">
+                  <NavLink to="/marketplace-details" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-warning-main w-auto" />
                     Marketplace Details
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/portfolio">
+                  <NavLink to="/portfolio" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-warning-main w-auto" />
                     Portfolios
-                  </Link>
+                  </NavLink>
                 </li>
               </ul>
             </li>
@@ -280,111 +335,153 @@ const MasterLayout = ({ children }) => {
               </Link>
               <ul className="sidebar-submenu">
                 <li>
-                  <Link to="/typography">
+                  <NavLink to="/typography" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-primary-600 w-auto" />
                     Typography
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/colors">
+                  <NavLink to="/colors" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-warning-main w-auto" /> Colors
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/button">
+                  <NavLink to="/button" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-success-main w-auto" /> Button
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/dropdown">
+                  <NavLink to="/dropdown" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-lilac-600 w-auto" /> Dropdown
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/alert">
+                  <NavLink to="/alert" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-warning-main w-auto" /> Alerts
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/card">
+                  <NavLink to="/card" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-danger-main w-auto" /> Card
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/carousel">
+                  <NavLink to="/carousel" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-info-main w-auto" /> Carousel
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/avatar">
+                  <NavLink to="/avatar" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-success-main w-auto" /> Avatars
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/progress">
+                  <NavLink to="/progress" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-primary-600 w-auto" /> Progress bar
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/tabs">
+                  <NavLink to="/tabs" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-warning-main w-auto" /> Tab &amp; Accordion
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/pagination">
+                  <NavLink to="/pagination" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-danger-main w-auto" />
                     Pagination
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/badges">
+                  <NavLink to="/badges" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-info-main w-auto" /> Badges
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/tooltip">
+                  <NavLink to="/tooltip" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-lilac-600 w-auto" /> Tooltip &amp; Popover
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/videos">
+                  <NavLink to="/videos" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-cyan w-auto" /> Videos
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/star-rating">
+                  <NavLink to="/star-rating" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-indigo w-auto" /> Star Ratings
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/tags">
+                  <NavLink to="/tags" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-purple w-auto" /> Tags
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/list">
+                  <NavLink to="/list" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-red w-auto" /> List
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/calendar">
+                  <NavLink to="/calendar" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-yellow w-auto" /> Calendar
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/radio">
+                  <NavLink to="/radio" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-orange w-auto" /> Radio
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/switch">
+                  <NavLink to="/switch" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-pink w-auto" /> Switch
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/image-upload">
+                  <NavLink to="/image-upload" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-primary-600 w-auto" /> Upload
-                  </Link>
+                  </NavLink>
                 </li>
               </ul>
             </li>
@@ -397,24 +494,32 @@ const MasterLayout = ({ children }) => {
               </Link>
               <ul className="sidebar-submenu">
                 <li>
-                  <Link to="/form">
+                  <NavLink to="/form" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-primary-600 w-auto" /> Input Forms
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/form-layout">
+                  <NavLink to="/form-layout" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-warning-main w-auto" /> Input Layout
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/form-validation">
+                  <NavLink to="/form-validation" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-success-main w-auto" /> Form Validation
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/wizard">
+                  <NavLink to="/wizard" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-danger-main w-auto" /> Form Wizard
-                  </Link>
+                  </NavLink>
                 </li>
               </ul>
             </li>
@@ -427,14 +532,18 @@ const MasterLayout = ({ children }) => {
               </Link>
               <ul className="sidebar-submenu">
                 <li>
-                  <Link to="/table-basic">
+                  <NavLink to="/table-basic" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-primary-600 w-auto" /> Basic Table
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/table-data">
+                  <NavLink to="/table-data" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-warning-main w-auto" /> Data Table
-                  </Link>
+                  </NavLink>
                 </li>
               </ul>
             </li>
@@ -447,19 +556,25 @@ const MasterLayout = ({ children }) => {
               </Link>
               <ul className="sidebar-submenu">
                 <li>
-                  <Link to="/line-chart">
+                  <NavLink to="/line-chart" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-danger-main w-auto" /> Line Chart
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/column-chart">
+                  <NavLink to="/column-chart" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-warning-main w-auto" /> Column Chart
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/pie-chart">
+                  <NavLink to="/pie-chart" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-success-main w-auto" /> Pie Chart
-                  </Link>
+                  </NavLink>
                 </li>
               </ul>
             </li>
@@ -479,24 +594,32 @@ const MasterLayout = ({ children }) => {
               </Link>
               <ul className="sidebar-submenu">
                 <li>
-                  <Link to="/users-list">
+                  <NavLink to="/users-list" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-primary-600 w-auto" /> Users List
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/users-grid">
+                  <NavLink to="/users-grid" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-warning-main w-auto" /> Users Grid
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/add-user">
+                  <NavLink to="/add-user" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-info-main w-auto" /> Add User
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/view-profile">
+                  <NavLink to="/view-profile" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-danger-main w-auto" /> View Profile
-                  </Link>
+                  </NavLink>
                 </li>
               </ul>
             </li>
@@ -509,14 +632,18 @@ const MasterLayout = ({ children }) => {
               </Link>
               <ul className="sidebar-submenu">
                 <li>
-                  <Link to="/role-access">
+                  <NavLink to="/role-access" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-primary-600 w-auto" /> Role &amp; Access
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/assign-role">
+                  <NavLink to="/assign-role" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-warning-main w-auto" /> Assign Role
-                  </Link>
+                  </NavLink>
                 </li>
               </ul>
             </li>
@@ -531,52 +658,68 @@ const MasterLayout = ({ children }) => {
               </Link>
               <ul className="sidebar-submenu">
                 <li>
-                  <Link to="/sign-in">
+                  <NavLink to="/sign-in" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-primary-600 w-auto" /> Sign In
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/sign-up">
+                  <NavLink to="/sign-up" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-warning-main w-auto" /> Sign Up
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/forgot-password">
+                  <NavLink to="/forgot-password" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-info-main w-auto" /> Forgot Password
-                  </Link>
+                  </NavLink>
                 </li>
               </ul>
             </li>
 
             <li>
-              <Link to="/gallery">
+              <NavLink to="/gallery" className={(navData) =>
+                navData.isActive && "active-page"
+              }>
                 <Icon icon="solar:gallery-wide-linear" className="menu-icon" />
                 <span>Gallery</span>
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/pricing">
+              <NavLink to="/pricing" className={(navData) =>
+                navData.isActive && "active-page"
+              }>
                 <Icon icon="hugeicons:money-send-square" className="menu-icon" />
                 <span>Pricing</span>
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/faq">
+              <NavLink to="/faq" className={(navData) =>
+                navData.isActive && "active-page"
+              }>
                 <Icon icon="mage:message-question-mark-round" className="menu-icon" />
                 <span>FAQs.</span>
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/error">
+              <NavLink to="/error" className={(navData) =>
+                navData.isActive && "active-page"
+              }>
                 <Icon icon="streamline:straight-face" className="menu-icon" />
                 <span>404</span>
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/terms-condition">
+              <NavLink to="/terms-condition" className={(navData) =>
+                navData.isActive && "active-page"
+              }>
                 <Icon icon="octicon:info-24" className="menu-icon" />
                 <span>Terms &amp; Conditions</span>
-              </Link>
+              </NavLink>
             </li>
 
             {/* Settings Dropdown */}
@@ -587,39 +730,53 @@ const MasterLayout = ({ children }) => {
               </Link>
               <ul className="sidebar-submenu">
                 <li>
-                  <Link to="/company">
+                  <NavLink to="/company" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-primary-600 w-auto" /> Company
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/notification">
+                  <NavLink to="/notification" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-warning-main w-auto" /> Notification
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/notification-alert">
+                  <NavLink to="/notification-alert" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-info-main w-auto" /> Notification Alert
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/theme">
+                  <NavLink to="/theme" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-danger-main w-auto" /> Theme
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/currencies">
+                  <NavLink to="/currencies" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-danger-main w-auto" /> Currencies
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/language">
+                  <NavLink to="/language" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-danger-main w-auto" /> Languages
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/payment-gateway">
+                  <NavLink to="/payment-gateway" className={(navData) =>
+                    navData.isActive && "active-page"
+                  }>
                     <i className="ri-circle-fill circle-icon text-danger-main w-auto" /> Payment Gateway
-                  </Link>
+                  </NavLink>
                 </li>
               </ul>
             </li>
@@ -627,20 +784,21 @@ const MasterLayout = ({ children }) => {
         </div>
       </aside>
 
-      <main className="dashboard-main">
+      <main className={sidebarActive ? "dashboard-main active" : "dashboard-main"}>
         <div className="navbar-header">
           <div className="row align-items-center justify-content-between">
             <div className="col-auto">
               <div className="d-flex flex-wrap align-items-center gap-4">
-                <button type="button" className="sidebar-toggle">
-                  <Icon
-                    icon="heroicons:bars-3-solid"
-                    className="icon text-2xl non-active"
-                  />
-                  <Icon
-                    icon="iconoir:arrow-right"
-                    className="icon text-2xl active"
-                  />
+                <button type="button" className="sidebar-toggle" onClick={sidebarControl}>
+                  {
+                    sidebarActive ? (<Icon
+                      icon="iconoir:arrow-right"
+                      className="icon text-2xl non-active"
+                    />) : (<Icon
+                      icon="heroicons:bars-3-solid"
+                      className="icon text-2xl non-active "
+                    />)
+                  }
                 </button>
                 <button type="button" className="sidebar-mobile-toggle">
                   <Icon
