@@ -1,5 +1,6 @@
 import { Icon } from '@iconify/react/dist/iconify.js'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const ChatMessageLayer = () => {
     return (
@@ -26,22 +27,22 @@ const ChatMessageLayer = () => {
                             </button>
                             <ul className="dropdown-menu dropdown-menu-lg-end border">
                                 <li>
-                                    <a
-                                        href="chat-profile.html"
+                                    <Link
+                                        to="/chat-profile"
                                         className="dropdown-item rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900 d-flex align-items-center gap-2"
                                     >
                                         <Icon icon="fluent:person-32-regular" />
                                         Profile
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a
-                                        href="chat-profile.html"
+                                    <Link
+                                        to="/chat-profile"
                                         className="dropdown-item rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900 d-flex align-items-center gap-2"
                                     >
                                         <Icon icon="carbon:settings" />
                                         Settings
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                         </div>

@@ -1,5 +1,6 @@
 import { Icon } from '@iconify/react/dist/iconify.js'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const CodeGeneratorLayer = () => {
     return (
@@ -8,49 +9,49 @@ const CodeGeneratorLayer = () => {
                 <div className="card h-100 p-0">
                     <div className="card-body p-0">
                         <div className="p-24">
-                            <a
-                                href="code-generator-new.html"
+                            <Link
+                                to="/code-generator-new"
                                 className="btn btn-primary text-sm btn-sm px-12 py-12 w-100 radius-8 d-flex align-items-center justify-content-center gap-2"
                             >
                                 <i className="ri-messenger-line" />
                                 New Page
-                            </a>
+                            </Link>
                         </div>
                         <ul className="ai-chat-list scroll-sm pe-24 ps-24 pb-24">
                             <li className="mb-16 mt-0">
                                 <span className="text-primary-600 text-sm fw-semibold">Today</span>
                             </li>
                             <li className="mb-16">
-                                <a
-                                    href="code-generator.html"
+                                <Link
+                                    to="/code-generator"
                                     className="text-line-1 text-secondary-light text-hover-primary-600"
                                 >
                                     Please create a 5 Column table with HTML Css and js{" "}
-                                </a>
+                                </Link>
                             </li>
                             <li className="mb-16">
-                                <a
-                                    href="code-generator.html"
+                                <Link
+                                    to="/code-generator"
                                     className="text-line-1 text-secondary-light text-hover-primary-600"
                                 >
                                     Calorie-dense foods: Needs, healthy
-                                </a>
+                                </Link>
                             </li>
                             <li className="mb-16">
-                                <a
-                                    href="code-generator.html"
+                                <Link
+                                    to="/code-generator"
                                     className="text-line-1 text-secondary-light text-hover-primary-600"
                                 >
                                     Calorie-dense foods: Needs, healthy
-                                </a>
+                                </Link>
                             </li>
                             <li className="mb-16">
-                                <a
-                                    href="code-generator.html"
+                                <Link
+                                    to="/code-generator"
                                     className="text-line-1 text-secondary-light text-hover-primary-600"
                                 >
                                     Calorie-dense foods: Needs, healthy
-                                </a>
+                                </Link>
                             </li>
                             <li className="mb-16 mt-24">
                                 <span className="text-primary-600 text-sm fw-semibold">
@@ -58,36 +59,36 @@ const CodeGeneratorLayer = () => {
                                 </span>
                             </li>
                             <li className="mb-16">
-                                <a
-                                    href="code-generator.html"
+                                <Link
+                                    to="/code-generator"
                                     className="text-line-1 text-secondary-light text-hover-primary-600"
                                 >
                                     Online School Education Learning
-                                </a>
+                                </Link>
                             </li>
                             <li className="mb-16">
-                                <a
-                                    href="code-generator.html"
+                                <Link
+                                    to="/code-generator"
                                     className="text-line-1 text-secondary-light text-hover-primary-600"
                                 >
                                     Calorie-dense foods: Needs, healthy
-                                </a>
+                                </Link>
                             </li>
                             <li className="mb-16">
-                                <a
-                                    href="code-generator.html"
+                                <Link
+                                    to="/code-generator"
                                     className="text-line-1 text-secondary-light text-hover-primary-600"
                                 >
                                     Calorie-dense foods: Needs, healthy
-                                </a>
+                                </Link>
                             </li>
                             <li className="mb-16">
-                                <a
-                                    href="code-generator.html"
+                                <Link
+                                    to="/code-generator"
                                     className="text-line-1 text-secondary-light text-hover-primary-600"
                                 >
                                     Calorie-dense foods: Needs, healthy
-                                </a>
+                                </Link>
                             </li>
                             <li className="mb-16 mt-24">
                                 <span className="text-primary-600 text-sm fw-semibold">
@@ -95,36 +96,36 @@ const CodeGeneratorLayer = () => {
                                 </span>
                             </li>
                             <li className="mb-16">
-                                <a
-                                    href="code-generator.html"
+                                <Link
+                                    to="/code-generator"
                                     className="text-line-1 text-secondary-light text-hover-primary-600"
                                 >
                                     Online School Education Learning
-                                </a>
+                                </Link>
                             </li>
                             <li className="mb-16">
-                                <a
-                                    href="code-generator.html"
+                                <Link
+                                    to="/code-generator"
                                     className="text-line-1 text-secondary-light text-hover-primary-600"
                                 >
                                     Calorie-dense foods: Needs, healthy
-                                </a>
+                                </Link>
                             </li>
                             <li className="mb-16">
-                                <a
-                                    href="code-generator.html"
+                                <Link
+                                    to="/code-generator"
                                     className="text-line-1 text-secondary-light text-hover-primary-600"
                                 >
                                     Calorie-dense foods: Needs, healthy
-                                </a>
+                                </Link>
                             </li>
                             <li className="mb-16">
-                                <a
-                                    href="code-generator.html"
+                                <Link
+                                    to="/code-generator"
                                     className="text-line-1 text-secondary-light text-hover-primary-600"
                                 >
                                     Calorie-dense foods: Needs, healthy
-                                </a>
+                                </Link>
                             </li>
                             <li className="mb-16 mt-24">
                                 <span className="text-primary-600 text-sm fw-semibold">
@@ -132,12 +133,12 @@ const CodeGeneratorLayer = () => {
                                 </span>
                             </li>
                             <li className="mb-0">
-                                <a
-                                    href=""
+                                <Link
+                                    to="/"
                                     className="text-line-1 text-secondary-light text-hover-primary-600"
                                 >
                                     Calorie-dense foods: Needs, healthy
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
@@ -147,12 +148,12 @@ const CodeGeneratorLayer = () => {
                 <div className="chat-main card overflow-hidden">
                     <div className="chat-sidebar-single gap-8 justify-content-between cursor-default flex-nowrap">
                         <div className="d-flex align-items-center gap-16">
-                            <a
-                                href="code-generator-new.html"
+                            <Link
+                                to="/code-generator-new"
                                 className="text-primary-light text-2xl line-height-1"
                             >
                                 <i className="ri-arrow-left-line" />
-                            </a>
+                            </Link>
                             <h6 className="text-lg mb-0 text-line-1">
                                 Please create a 5 Column table with HTML Css and js
                             </h6>
@@ -218,7 +219,7 @@ const CodeGeneratorLayer = () => {
                                         {"        "}&lt;meta charset="UTF-8"&gt;{"\n"}
                                         {"        "}&lt;meta name="viewport"
                                         content="width=device-width, initial-scale=1.0"&gt;{"\n"}
-                                        {"        "}&lt;link rel="stylesheet" href="styles.css"&gt;
+                                        {"        "}&lt;link rel="stylesheet" to="/styles.css"&gt;
                                         {"\n"}
                                         {"        "}&lt;title&gt;5 Column Table&lt;/title&gt;{"\n"}
                                         {"    "}&lt;/head&gt;{"\n"}

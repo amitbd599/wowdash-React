@@ -1,5 +1,6 @@
 import { Icon } from '@iconify/react/dist/iconify.js'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const EmailLayer = () => {
     return (
@@ -22,8 +23,8 @@ const EmailLayer = () => {
                         <div className="mt-16">
                             <ul>
                                 <li className="item-active mb-4">
-                                    <a
-                                        href="email.html"
+                                    <Link
+                                        to="/email"
                                         className="bg-hover-primary-50 px-12 py-8 w-100 radius-8 text-secondary-light"
                                     >
                                         <span className="d-flex align-items-center gap-10 justify-content-between w-100">
@@ -38,11 +39,11 @@ const EmailLayer = () => {
                                             </span>
                                             <span className="fw-medium">800</span>
                                         </span>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li className="mb-4">
-                                    <a
-                                        href="starred.html"
+                                    <Link
+                                        to="/starred"
                                         className="bg-hover-primary-50 px-12 py-8 w-100 radius-8 text-secondary-light"
                                     >
                                         <span className="d-flex align-items-center gap-10 justify-content-between w-100">
@@ -57,11 +58,11 @@ const EmailLayer = () => {
                                             </span>
                                             <span className="fw-medium">250</span>
                                         </span>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li className="mb-4">
-                                    <a
-                                        href="email.html"
+                                    <Link
+                                        to="/email"
                                         className="bg-hover-primary-50 px-12 py-8 w-100 radius-8 text-secondary-light"
                                     >
                                         <span className="d-flex align-items-center gap-10 justify-content-between w-100">
@@ -76,11 +77,11 @@ const EmailLayer = () => {
                                             </span>
                                             <span className="fw-medium">80</span>
                                         </span>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li className="mb-4">
-                                    <a
-                                        href="email.html"
+                                    <Link
+                                        to="/email"
                                         className="bg-hover-primary-50 px-12 py-8 w-100 radius-8 text-secondary-light"
                                     >
                                         <span className="d-flex align-items-center gap-10 justify-content-between w-100">
@@ -95,11 +96,11 @@ const EmailLayer = () => {
                                             </span>
                                             <span className="fw-medium">50</span>
                                         </span>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li className="mb-4">
-                                    <a
-                                        href="email.html"
+                                    <Link
+                                        to="/email"
                                         className="bg-hover-primary-50 px-12 py-8 w-100 radius-8 text-secondary-light"
                                     >
                                         <span className="d-flex align-items-center gap-10 justify-content-between w-100">
@@ -114,11 +115,11 @@ const EmailLayer = () => {
                                             </span>
                                             <span className="fw-medium">30</span>
                                         </span>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a
-                                        href="email.html"
+                                    <Link
+                                        to="/email"
                                         className="bg-hover-primary-50 px-12 py-8 w-100 radius-8 text-secondary-light"
                                     >
                                         <span className="d-flex align-items-center gap-10 justify-content-between w-100">
@@ -133,7 +134,7 @@ const EmailLayer = () => {
                                             </span>
                                             <span className="fw-medium">20</span>
                                         </span>
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                             <div className="mt-24">
@@ -325,26 +326,26 @@ const EmailLayer = () => {
                                 <nav aria-label="Page navigation example">
                                     <ul className="pagination">
                                         <li className="page-item">
-                                            <a
+                                            <Link
                                                 className="page-link d-flex bg-base border text-secondary-light text-xl"
-                                                href="javascript:void(0)"
+                                                to="#"
                                             >
                                                 <Icon
                                                     icon="iconamoon:arrow-left-2"
                                                     className="icon"
                                                 />{" "}
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li className="page-item">
-                                            <a
+                                            <Link
                                                 className="page-link d-flex bg-base border text-secondary-light text-xl"
-                                                href="javascript:void(0)"
+                                                to="#"
                                             >
                                                 <Icon
                                                     icon="iconamoon:arrow-right-2"
                                                     className="icon"
                                                 />{" "}
-                                            </a>
+                                            </Link>
                                         </li>
                                     </ul>
                                 </nav>
@@ -374,21 +375,21 @@ const EmailLayer = () => {
                                         className="icon-fill line-height-1 text-warning-600"
                                     />
                                 </button>
-                                <a
-                                    href="view-details.html"
+                                <Link
+                                    to="/view-details"
                                     className="text-primary-light fw-medium text-md text-line-1 w-190-px"
                                 >
                                     Jerome Bell
-                                </a>
-                                <a
-                                    href="view-details.html"
+                                </Link>
+                                <Link
+                                    to="/view-details"
                                     className="text-primary-light fw-medium mb-0 text-line-1 max-w-740-px"
                                 >
                                     Aliquam pulvinar vestibulum blandit. Donec sed nisl libero. Fusce
                                     dignissim luctus sem eu dapibus. Aliquam pulvinar vestibulum
                                     blandit. Donec sed nisl libero. Fusce dignissim luctus sem eu
                                     dapibus
-                                </a>
+                                </Link>
                                 <span className="text-primary-light fw-medium min-w-max-content ms-auto">
                                     6:07 AM
                                 </span>
@@ -414,21 +415,21 @@ const EmailLayer = () => {
                                         className="icon-fill line-height-1 text-warning-600"
                                     />
                                 </button>
-                                <a
-                                    href="view-details.html"
+                                <Link
+                                    to="/view-details"
                                     className="text-primary-light fw-medium text-md text-line-1 w-190-px"
                                 >
                                     Kristin Watson
-                                </a>
-                                <a
-                                    href="view-details.html"
+                                </Link>
+                                <Link
+                                    to="/view-details"
                                     className="text-primary-light fw-medium mb-0 text-line-1 max-w-740-px"
                                 >
                                     Aliquam pulvinar vestibulum blandit. Donec sed nisl libero. Fusce
                                     dignissim luctus sem eu dapibus. Aliquam pulvinar vestibulum
                                     blandit. Donec sed nisl libero. Fusce dignissim luctus sem eu
                                     dapibus
-                                </a>
+                                </Link>
                                 <span className="text-primary-light fw-medium min-w-max-content ms-auto">
                                     6:07 AM
                                 </span>
@@ -454,21 +455,21 @@ const EmailLayer = () => {
                                         className="icon-fill line-height-1 text-warning-600"
                                     />
                                 </button>
-                                <a
-                                    href="view-details.html"
+                                <Link
+                                    to="/view-details"
                                     className="text-primary-light fw-medium text-md text-line-1 w-190-px"
                                 >
                                     Cody Fisher
-                                </a>
-                                <a
-                                    href="view-details.html"
+                                </Link>
+                                <Link
+                                    to="/view-details"
                                     className="text-primary-light fw-medium mb-0 text-line-1 max-w-740-px"
                                 >
                                     Aliquam pulvinar vestibulum blandit. Donec sed nisl libero. Fusce
                                     dignissim luctus sem eu dapibus. Aliquam pulvinar vestibulum
                                     blandit. Donec sed nisl libero. Fusce dignissim luctus sem eu
                                     dapibus
-                                </a>
+                                </Link>
                                 <span className="text-primary-light fw-medium min-w-max-content ms-auto">
                                     6:07 AM
                                 </span>
@@ -494,21 +495,21 @@ const EmailLayer = () => {
                                         className="icon-fill line-height-1 text-warning-600"
                                     />
                                 </button>
-                                <a
-                                    href="view-details.html"
+                                <Link
+                                    to="/view-details"
                                     className="text-primary-light fw-medium text-md text-line-1 w-190-px"
                                 >
                                     Dianne Russell
-                                </a>
-                                <a
-                                    href="view-details.html"
+                                </Link>
+                                <Link
+                                    to="/view-details"
                                     className="text-primary-light fw-medium mb-0 text-line-1 max-w-740-px"
                                 >
                                     Aliquam pulvinar vestibulum blandit. Donec sed nisl libero. Fusce
                                     dignissim luctus sem eu dapibus. Aliquam pulvinar vestibulum
                                     blandit. Donec sed nisl libero. Fusce dignissim luctus sem eu
                                     dapibus
-                                </a>
+                                </Link>
                                 <span className="text-primary-light fw-medium min-w-max-content ms-auto">
                                     6:07 AM
                                 </span>
@@ -534,21 +535,21 @@ const EmailLayer = () => {
                                         className="icon-fill line-height-1 text-warning-600"
                                     />
                                 </button>
-                                <a
-                                    href="view-details.html"
+                                <Link
+                                    to="/view-details"
                                     className="text-primary-light fw-medium text-md text-line-1 w-190-px"
                                 >
                                     Floyd Miles
-                                </a>
-                                <a
-                                    href="view-details.html"
+                                </Link>
+                                <Link
+                                    to="/view-details"
                                     className="text-primary-light fw-medium mb-0 text-line-1 max-w-740-px"
                                 >
                                     Aliquam pulvinar vestibulum blandit. Donec sed nisl libero. Fusce
                                     dignissim luctus sem eu dapibus. Aliquam pulvinar vestibulum
                                     blandit. Donec sed nisl libero. Fusce dignissim luctus sem eu
                                     dapibus
-                                </a>
+                                </Link>
                                 <span className="text-primary-light fw-medium min-w-max-content ms-auto">
                                     6:07 AM
                                 </span>
@@ -574,21 +575,21 @@ const EmailLayer = () => {
                                         className="icon-fill line-height-1 text-warning-600"
                                     />
                                 </button>
-                                <a
-                                    href="view-details.html"
+                                <Link
+                                    to="/view-details"
                                     className="text-primary-light fw-medium text-md text-line-1 w-190-px"
                                 >
                                     Devon Lane
-                                </a>
-                                <a
-                                    href="view-details.html"
+                                </Link>
+                                <Link
+                                    to="/view-details"
                                     className="text-primary-light fw-medium mb-0 text-line-1 max-w-740-px"
                                 >
                                     Aliquam pulvinar vestibulum blandit. Donec sed nisl libero. Fusce
                                     dignissim luctus sem eu dapibus. Aliquam pulvinar vestibulum
                                     blandit. Donec sed nisl libero. Fusce dignissim luctus sem eu
                                     dapibus
-                                </a>
+                                </Link>
                                 <span className="text-primary-light fw-medium min-w-max-content ms-auto">
                                     6:07 AM
                                 </span>
@@ -614,21 +615,21 @@ const EmailLayer = () => {
                                         className="icon-fill line-height-1 text-warning-600"
                                     />
                                 </button>
-                                <a
-                                    href="view-details.html"
+                                <Link
+                                    to="/view-details"
                                     className="text-primary-light fw-medium text-md text-line-1 w-190-px"
                                 >
                                     Dianne Russell
-                                </a>
-                                <a
-                                    href="view-details.html"
+                                </Link>
+                                <Link
+                                    to="/view-details"
                                     className="text-primary-light fw-medium mb-0 text-line-1 max-w-740-px"
                                 >
                                     Aliquam pulvinar vestibulum blandit. Donec sed nisl libero. Fusce
                                     dignissim luctus sem eu dapibus. Aliquam pulvinar vestibulum
                                     blandit. Donec sed nisl libero. Fusce dignissim luctus sem eu
                                     dapibus
-                                </a>
+                                </Link>
                                 <span className="text-primary-light fw-medium min-w-max-content ms-auto">
                                     6:07 AM
                                 </span>
@@ -654,21 +655,21 @@ const EmailLayer = () => {
                                         className="icon-fill line-height-1 text-warning-600"
                                     />
                                 </button>
-                                <a
-                                    href="view-details.html"
+                                <Link
+                                    to="/view-details"
                                     className="text-primary-light fw-medium text-md text-line-1 w-190-px"
                                 >
                                     Annette Black
-                                </a>
-                                <a
-                                    href="view-details.html"
+                                </Link>
+                                <Link
+                                    to="/view-details"
                                     className="text-primary-light fw-medium mb-0 text-line-1 max-w-740-px"
                                 >
                                     Aliquam pulvinar vestibulum blandit. Donec sed nisl libero. Fusce
                                     dignissim luctus sem eu dapibus. Aliquam pulvinar vestibulum
                                     blandit. Donec sed nisl libero. Fusce dignissim luctus sem eu
                                     dapibus
-                                </a>
+                                </Link>
                                 <span className="text-primary-light fw-medium min-w-max-content ms-auto">
                                     6:07 AM
                                 </span>
@@ -694,21 +695,21 @@ const EmailLayer = () => {
                                         className="icon-fill line-height-1 text-warning-600"
                                     />
                                 </button>
-                                <a
-                                    href="view-details.html"
+                                <Link
+                                    to="/view-details"
                                     className="text-primary-light fw-medium text-md text-line-1 w-190-px"
                                 >
                                     Bessie Cooper
-                                </a>
-                                <a
-                                    href="view-details.html"
+                                </Link>
+                                <Link
+                                    to="/view-details"
                                     className="text-primary-light fw-medium mb-0 text-line-1 max-w-740-px"
                                 >
                                     Aliquam pulvinar vestibulum blandit. Donec sed nisl libero. Fusce
                                     dignissim luctus sem eu dapibus. Aliquam pulvinar vestibulum
                                     blandit. Donec sed nisl libero. Fusce dignissim luctus sem eu
                                     dapibus
-                                </a>
+                                </Link>
                                 <span className="text-primary-light fw-medium min-w-max-content ms-auto">
                                     6:07 AM
                                 </span>
@@ -734,21 +735,21 @@ const EmailLayer = () => {
                                         className="icon-fill line-height-1 text-warning-600"
                                     />
                                 </button>
-                                <a
-                                    href="view-details.html"
+                                <Link
+                                    to="/view-details"
                                     className="text-primary-light fw-medium text-md text-line-1 w-190-px"
                                 >
                                     Courtney Henry
-                                </a>
-                                <a
-                                    href="view-details.html"
+                                </Link>
+                                <Link
+                                    to="/view-details"
                                     className="text-primary-light fw-medium mb-0 text-line-1 max-w-740-px"
                                 >
                                     Aliquam pulvinar vestibulum blandit. Donec sed nisl libero. Fusce
                                     dignissim luctus sem eu dapibus. Aliquam pulvinar vestibulum
                                     blandit. Donec sed nisl libero. Fusce dignissim luctus sem eu
                                     dapibus
-                                </a>
+                                </Link>
                                 <span className="text-primary-light fw-medium min-w-max-content ms-auto">
                                     6:07 AM
                                 </span>
@@ -774,21 +775,21 @@ const EmailLayer = () => {
                                         className="icon-fill line-height-1 text-warning-600"
                                     />
                                 </button>
-                                <a
-                                    href="view-details.html"
+                                <Link
+                                    to="/view-details"
                                     className="text-primary-light fw-medium text-md text-line-1 w-190-px"
                                 >
                                     Wade Warren
-                                </a>
-                                <a
-                                    href="view-details.html"
+                                </Link>
+                                <Link
+                                    to="/view-details"
                                     className="text-primary-light fw-medium mb-0 text-line-1 max-w-740-px"
                                 >
                                     Aliquam pulvinar vestibulum blandit. Donec sed nisl libero. Fusce
                                     dignissim luctus sem eu dapibus. Aliquam pulvinar vestibulum
                                     blandit. Donec sed nisl libero. Fusce dignissim luctus sem eu
                                     dapibus
-                                </a>
+                                </Link>
                                 <span className="text-primary-light fw-medium min-w-max-content ms-auto">
                                     6:07 AM
                                 </span>

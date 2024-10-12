@@ -66,7 +66,6 @@ import TableDataPage from "./pages/TableDataPage";
 import TabsPage from "./pages/TabsPage";
 import TagsPage from "./pages/TagsPage";
 import TermsConditionPage from "./pages/TermsConditionPage";
-import TextGeneratorNewPage from "./pages/TextGeneratorNewPage";
 import TextGeneratorPage from "./pages/TextGeneratorPage";
 import ThemePage from "./pages/ThemePage";
 import TooltipPage from "./pages/TooltipPage";

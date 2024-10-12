@@ -2,6 +2,7 @@ import { Icon } from '@iconify/react/dist/iconify.js'
 import React, { useState } from 'react'
 import useReactApexChart from '../hook/useReactApexChart'
 import ReactApexChart from 'react-apexcharts'
+import { Link } from 'react-router-dom'
 
 const MarketplaceDetailsLayer = () => {
     let { timeSeriesChartSeries, timeSeriesChartOptions } = useReactApexChart()
@@ -586,9 +587,9 @@ const MarketplaceDetailsLayer = () => {
                                     <span className="text-primary-600">16.2665 ITC</span> will be
                                     available in your portfolio on 10-10-2022
                                 </p>
-                                <a href="index.html" className="btn btn-primary-600 mt-32 px-24">
+                                <Link to="/" className="btn btn-primary-600 mt-32 px-24">
                                     Back to Dashboard
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>

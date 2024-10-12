@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const ForgotPasswordLayer = () => {
     return (
@@ -38,16 +39,16 @@ const ForgotPasswordLayer = () => {
                                 Continue
                             </button>
                             <div className="text-center">
-                                <a href="sign-in.html" className="text-primary-600 fw-bold mt-24">
+                                <Link to="/sign-in" className="text-primary-600 fw-bold mt-24">
                                     Back to Sign In
-                                </a>
+                                </Link>
                             </div>
                             <div className="mt-120 text-center text-sm">
                                 <p className="mb-0">
                                     Already have an account?{" "}
-                                    <a href="sign-in.html" className="text-primary-600 fw-semibold">
+                                    <Link to="/sign-in" className="text-primary-600 fw-semibold">
                                         Sign In
-                                    </a>
+                                    </Link>
                                 </p>
                             </div>
                         </form>
@@ -80,9 +81,9 @@ const ForgotPasswordLayer = () => {
                             <div className="mt-32 text-sm">
                                 <p className="mb-0">
                                     Don’t receive an email?{" "}
-                                    <a href="resend.html" className="text-primary-600 fw-semibold">
+                                    <Link to="/resend" className="text-primary-600 fw-semibold">
                                         Resend
-                                    </a>
+                                    </Link>
                                 </p>
                             </div>
                         </div>

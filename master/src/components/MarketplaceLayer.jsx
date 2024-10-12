@@ -1,6 +1,7 @@
 import { Icon } from '@iconify/react/dist/iconify.js'
 import React from 'react'
 import useReactApexChart from '../hook/useReactApexChart'
+import { Link } from 'react-router-dom'
 
 const MarketplaceLayer = () => {
     let { createChartNine } = useReactApexChart()
@@ -37,12 +38,12 @@ const MarketplaceLayer = () => {
                         Watchlist
                     </button>
                 </div>
-                <a
-                    href="portfolio.html"
+                <Link
+                    to="/portfolio"
                     className="btn btn-primary text-sm btn-sm px-24 py-10 radius-8"
                 >
                     Portfolios
-                </a>
+                </Link>
             </div>
             <div className="card-body p-24">
                 <div className="table-responsive scroll-sm">
@@ -89,8 +90,8 @@ const MarketplaceLayer = () => {
                                     </div>
                                 </td>
                                 <td>
-                                    <a
-                                        href="marketplace-details.html"
+                                    <Link
+                                        to="/marketplace-details"
                                         className="d-flex align-items-center"
                                     >
                                         <img
@@ -106,7 +107,7 @@ const MarketplaceLayer = () => {
                                                 BTC
                                             </span>
                                         </span>
-                                    </a>
+                                    </Link>
                                 </td>
                                 <td>0.3464 BTC</td>
                                 <td>$2,753.00</td>
@@ -149,8 +150,8 @@ const MarketplaceLayer = () => {
                                     </div>
                                 </td>
                                 <td>
-                                    <a
-                                        href="marketplace-details.html"
+                                    <Link
+                                        to="/marketplace-details"
                                         className="d-flex align-items-center"
                                     >
                                         <img
@@ -166,7 +167,7 @@ const MarketplaceLayer = () => {
                                                 ETH
                                             </span>
                                         </span>
-                                    </a>
+                                    </Link>
                                 </td>
                                 <td>0.5464 ETH</td>
                                 <td>$2,753.00</td>
@@ -209,8 +210,8 @@ const MarketplaceLayer = () => {
                                     </div>
                                 </td>
                                 <td>
-                                    <a
-                                        href="marketplace-details.html"
+                                    <Link
+                                        to="/marketplace-details"
                                         className="d-flex align-items-center"
                                     >
                                         <img
@@ -226,7 +227,7 @@ const MarketplaceLayer = () => {
                                                 LTC
                                             </span>
                                         </span>
-                                    </a>
+                                    </Link>
                                 </td>
                                 <td>0.5464 LTC</td>
                                 <td>$2,753.00</td>
@@ -269,8 +270,8 @@ const MarketplaceLayer = () => {
                                     </div>
                                 </td>
                                 <td>
-                                    <a
-                                        href="marketplace-details.html"
+                                    <Link
+                                        to="/marketplace-details"
                                         className="d-flex align-items-center"
                                     >
                                         <img
@@ -286,7 +287,7 @@ const MarketplaceLayer = () => {
                                                 BNB
                                             </span>
                                         </span>
-                                    </a>
+                                    </Link>
                                 </td>
                                 <td>0.5464 BNB</td>
                                 <td>$2,753.00</td>
@@ -329,8 +330,8 @@ const MarketplaceLayer = () => {
                                     </div>
                                 </td>
                                 <td>
-                                    <a
-                                        href="marketplace-details.html"
+                                    <Link
+                                        to="/marketplace-details"
                                         className="d-flex align-items-center"
                                     >
                                         <img
@@ -346,7 +347,7 @@ const MarketplaceLayer = () => {
                                                 DOGE
                                             </span>
                                         </span>
-                                    </a>
+                                    </Link>
                                 </td>
                                 <td>0.5464 DOGE</td>
                                 <td>$2,753.00</td>
@@ -389,8 +390,8 @@ const MarketplaceLayer = () => {
                                     </div>
                                 </td>
                                 <td>
-                                    <a
-                                        href="marketplace-details.html"
+                                    <Link
+                                        to="/marketplace-details"
                                         className="d-flex align-items-center"
                                     >
                                         <img
@@ -406,7 +407,7 @@ const MarketplaceLayer = () => {
                                                 MATIC
                                             </span>
                                         </span>
-                                    </a>
+                                    </Link>
                                 </td>
                                 <td>0.5464 MATIC</td>
                                 <td>$2,753.00</td>
@@ -449,8 +450,8 @@ const MarketplaceLayer = () => {
                                     </div>
                                 </td>
                                 <td>
-                                    <a
-                                        href="marketplace-details.html"
+                                    <Link
+                                        to="/marketplace-details"
                                         className="d-flex align-items-center"
                                     >
                                         <img
@@ -466,7 +467,7 @@ const MarketplaceLayer = () => {
                                                 MATIC
                                             </span>
                                         </span>
-                                    </a>
+                                    </Link>
                                 </td>
                                 <td>0.5464 MATIC</td>
                                 <td>$2,753.00</td>
@@ -509,8 +510,8 @@ const MarketplaceLayer = () => {
                                     </div>
                                 </td>
                                 <td>
-                                    <a
-                                        href="marketplace-details.html"
+                                    <Link
+                                        to="/marketplace-details"
                                         className="d-flex align-items-center"
                                     >
                                         <img
@@ -526,7 +527,7 @@ const MarketplaceLayer = () => {
                                                 MATIC
                                             </span>
                                         </span>
-                                    </a>
+                                    </Link>
                                 </td>
                                 <td>0.5464 MATIC</td>
                                 <td>$2,753.00</td>
@@ -569,8 +570,8 @@ const MarketplaceLayer = () => {
                                     </div>
                                 </td>
                                 <td>
-                                    <a
-                                        href="marketplace-details.html"
+                                    <Link
+                                        to="/marketplace-details"
                                         className="d-flex align-items-center"
                                     >
                                         <img
@@ -586,7 +587,7 @@ const MarketplaceLayer = () => {
                                                 MATIC
                                             </span>
                                         </span>
-                                    </a>
+                                    </Link>
                                 </td>
                                 <td>0.5464 MATIC</td>
                                 <td>$2,753.00</td>
@@ -629,8 +630,8 @@ const MarketplaceLayer = () => {
                                     </div>
                                 </td>
                                 <td>
-                                    <a
-                                        href="marketplace-details.html"
+                                    <Link
+                                        to="/marketplace-details"
                                         className="d-flex align-items-center"
                                     >
                                         <img
@@ -646,7 +647,7 @@ const MarketplaceLayer = () => {
                                                 MATIC
                                             </span>
                                         </span>
-                                    </a>
+                                    </Link>
                                 </td>
                                 <td>0.5464 MATIC</td>
                                 <td>$2,753.00</td>
@@ -681,61 +682,61 @@ const MarketplaceLayer = () => {
                     <span>Showing 1 to 10 of 12 entries</span>
                     <ul className="pagination d-flex flex-wrap align-items-center gap-2 justify-content-center">
                         <li className="page-item">
-                            <a
+                            <Link
                                 className="page-link bg-neutral-200 text-secondary-light fw-semibold radius-8 border-0 d-flex align-items-center justify-content-center h-32-px w-32-px text-md"
-                                href="javascript:void(0)"
+                                to="#"
                             >
                                 <Icon icon="ep:d-arrow-left" className="" />
-                            </a>
+                            </Link>
                         </li>
                         <li className="page-item">
-                            <a
+                            <Link
                                 className="page-link text-secondary-light fw-semibold radius-8 border-0 d-flex align-items-center justify-content-center h-32-px w-32-px text-md bg-primary-600 text-white"
-                                href="javascript:void(0)"
+                                to="#"
                             >
                                 1
-                            </a>
+                            </Link>
                         </li>
                         <li className="page-item">
-                            <a
+                            <Link
                                 className="page-link bg-neutral-200 text-secondary-light fw-semibold radius-8 border-0 d-flex align-items-center justify-content-center h-32-px w-32-px"
-                                href="javascript:void(0)"
+                                to="#"
                             >
                                 2
-                            </a>
+                            </Link>
                         </li>
                         <li className="page-item">
-                            <a
+                            <Link
                                 className="page-link bg-neutral-200 text-secondary-light fw-semibold radius-8 border-0 d-flex align-items-center justify-content-center h-32-px w-32-px text-md"
-                                href="javascript:void(0)"
+                                to="#"
                             >
                                 3
-                            </a>
+                            </Link>
                         </li>
                         <li className="page-item">
-                            <a
+                            <Link
                                 className="page-link bg-neutral-200 text-secondary-light fw-semibold radius-8 border-0 d-flex align-items-center justify-content-center h-32-px w-32-px text-md"
-                                href="javascript:void(0)"
+                                to="#"
                             >
                                 4
-                            </a>
+                            </Link>
                         </li>
                         <li className="page-item">
-                            <a
+                            <Link
                                 className="page-link bg-neutral-200 text-secondary-light fw-semibold radius-8 border-0 d-flex align-items-center justify-content-center h-32-px w-32-px text-md"
-                                href="javascript:void(0)"
+                                to="#"
                             >
                                 5
-                            </a>
+                            </Link>
                         </li>
                         <li className="page-item">
-                            <a
+                            <Link
                                 className="page-link bg-neutral-200 text-secondary-light fw-semibold radius-8 border-0 d-flex align-items-center justify-content-center h-32-px w-32-px text-md"
-                                href="javascript:void(0)"
+                                to="#"
                             >
                                 {" "}
                                 <Icon icon="ep:d-arrow-right" className="" />{" "}
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                 </div>

@@ -1,5 +1,6 @@
 import { Icon } from '@iconify/react/dist/iconify.js'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const ImageGeneratorLayer = () => {
     return (
@@ -99,12 +100,12 @@ const ImageGeneratorLayer = () => {
                 <div className="chat-main card overflow-hidden">
                     <div className="chat-sidebar-single gap-8 justify-content-between cursor-default flex-nowrap">
                         <div className="d-flex align-items-center gap-16">
-                            <a
-                                href="text-generator-new.html"
+                            <Link
+                                to="/text-generator-new"
                                 className="text-primary-light text-2xl line-height-1"
                             >
                                 <i className="ri-arrow-left-line" />
-                            </a>
+                            </Link>
                             <h6 className="text-lg mb-0 text-line-1">
                                 Please, Make 4 variant of this image Quickly As Soon As possible
                             </h6>

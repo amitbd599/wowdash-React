@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const ErrorLayer = () => {
     return (
@@ -9,9 +10,9 @@ const ErrorLayer = () => {
                 <p className="text-secondary-light">
                     Sorry, the page you are looking for doesn’t exist{" "}
                 </p>
-                <a href="index.html" className="btn btn-primary-600 radius-8 px-20 py-11">
+                <Link to="/" className="btn btn-primary-600 radius-8 px-20 py-11">
                     Back to Home
-                </a>
+                </Link>
             </div>
         </div>
 

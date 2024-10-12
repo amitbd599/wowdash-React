@@ -1,5 +1,6 @@
 import { Icon } from '@iconify/react/dist/iconify.js'
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 
 const InvoiceListLayer = () => {
     // Initial state for the checkboxes
@@ -66,9 +67,9 @@ const InvoiceListLayer = () => {
                         <option>Paid</option>
                         <option>Pending</option>
                     </select>
-                    <a href="invoice-add.html" className="btn btn-sm btn-primary-600">
+                    <Link to="/invoice-add" className="btn btn-sm btn-primary-600">
                         <i className="ri-add-line" /> Create Invoice
-                    </a>
+                    </Link>
                 </div>
             </div>
             <div className="card-body">

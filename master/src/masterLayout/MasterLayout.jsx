@@ -3,6 +3,7 @@ import ScrollToTop from "react-scroll-to-top";
 import Preloader from "../helper/Preloader";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { Link, NavLink, useLocation } from "react-router-dom";
+import ThemeToggleButton from "../helper/ThemeToggleButton";
 
 const MasterLayout = ({ children }) => {
   let [sidebarActive, seSidebarActive] = useState(false)
@@ -814,11 +815,8 @@ const MasterLayout = ({ children }) => {
             </div>
             <div className="col-auto">
               <div className="d-flex flex-wrap align-items-center gap-3">
-                <button
-                  type="button"
-                  data-theme-toggle=""
-                  className="w-40-px h-40-px bg-neutral-200 rounded-circle d-flex justify-content-center align-items-center"
-                />
+                {/* ThemeToggleButton */}
+                <ThemeToggleButton />
                 <div className="dropdown d-none d-sm-inline-block">
                   <button
                     className="has-indicator w-40-px h-40-px bg-neutral-200 rounded-circle d-flex justify-content-center align-items-center"
@@ -1371,7 +1369,7 @@ const MasterLayout = ({ children }) => {
                   >
                     <img
                       src="assets/images/user.png"
-                      alt="image"
+                      alt="image_user"
                       className="w-40-px h-40-px object-fit-cover rounded-circle"
                     />
                   </button>
@@ -1381,70 +1379,56 @@ const MasterLayout = ({ children }) => {
                         <h6 className="text-lg text-primary-light fw-semibold mb-2">
                           Shaidul Islam
                         </h6>
-                        <span className="text-secondary-light fw-medium text-sm">
-                          Admin
-                        </span>
+                        <span className="text-secondary-light fw-medium text-sm">Admin</span>
                       </div>
                       <button type="button" className="hover-text-danger">
-                        <Icon
-                          icon="radix-icons:cross-1"
-                          className="icon text-xl"
-                        />
+                        <Icon icon="radix-icons:cross-1" className="icon text-xl" />
                       </button>
                     </div>
                     <ul className="to-top-list">
                       <li>
-                        <Link
+                        <a
                           className="dropdown-item text-black px-0 py-8 hover-bg-transparent hover-text-primary d-flex align-items-center gap-3"
-                          href="view-profile"
+                          href="view-profile.html"
                         >
-                          <Icon
-                            icon="solar:user-linear"
-                            className="icon text-xl"
-                          />{" "}
-                          My Profile
-                        </Link>
+                          <Icon icon="solar:user-linear" className="icon text-xl" /> My
+                          Profile
+                        </a>
                       </li>
                       <li>
-                        <Link
+                        <a
                           className="dropdown-item text-black px-0 py-8 hover-bg-transparent hover-text-primary d-flex align-items-center gap-3"
-                          href="email"
+                          href="email.html"
                         >
-                          <Icon
-                            icon="tabler:message-check"
-                            className="icon text-xl"
-                          />{" "}
+                          <Icon icon="tabler:message-check" className="icon text-xl" />{" "}
                           Inbox
-                        </Link>
+                        </a>
                       </li>
                       <li>
-                        <Link
+                        <a
                           className="dropdown-item text-black px-0 py-8 hover-bg-transparent hover-text-primary d-flex align-items-center gap-3"
-                          href="company"
+                          href="company.html"
                         >
                           <Icon
                             icon="icon-park-outline:setting-two"
                             className="icon text-xl"
                           />
                           Setting
-                        </Link>
+                        </a>
                       </li>
                       <li>
-                        <Link
+                        <a
                           className="dropdown-item text-black px-0 py-8 hover-bg-transparent hover-text-danger d-flex align-items-center gap-3"
                           href="javascript:void(0)"
                         >
-                          <Icon
-                            icon="lucide:power"
-                            className="icon text-xl"
-                          />{" "}
-                          Log Out
-                        </Link>
+                          <Icon icon="lucide:power" className="icon text-xl" /> Log Out
+                        </a>
                       </li>
                     </ul>
                   </div>
                 </div>
                 {/* Profile dropdown end */}
+
               </div>
             </div>
           </div>
