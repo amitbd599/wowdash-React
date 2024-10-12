@@ -257,7 +257,7 @@ const AssignRoleLayer = () => {
                                 to="#"
                             >
                                 {" "}
-                                <Icon icon="ep:d-arrow-right" className="" />{" "}
+                                <Icon icon="ep:d-arrow-right" className="" />
                             </Link>
                         </li>
                     </ul>

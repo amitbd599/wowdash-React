@@ -76,19 +76,19 @@ const TableDataLayer = () => {
                             <td>
                                 <Link
                                     to="#"
-                                    className="w-32-px h-32-px bg-primary-light text-primary-600 rounded-circle d-inline-flex align-items-center justify-content-center"
+                                    className="w-32-px h-32-px me-8 bg-primary-light text-primary-600 rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="iconamoon:eye-light" />
                                 </Link>
                                 <Link
                                     to="#"
-                                    className="w-32-px h-32-px bg-success-focus text-success-main rounded-circle d-inline-flex align-items-center justify-content-center"
+                                    className="w-32-px h-32-px me-8 bg-success-focus text-success-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="lucide:edit" />
                                 </Link>
                                 <Link
                                     to="#"
-                                    className="w-32-px h-32-px bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center"
+                                    className="w-32-px h-32-px me-8 bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="mingcute:delete-2-line" />
                                 </Link>
@@ -129,19 +129,19 @@ const TableDataLayer = () => {
                             <td>
                                 <Link
                                     to="#"
-                                    className="w-32-px h-32-px bg-primary-light text-primary-600 rounded-circle d-inline-flex align-items-center justify-content-center"
+                                    className="w-32-px h-32-px me-8 bg-primary-light text-primary-600 rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="iconamoon:eye-light" />
                                 </Link>
                                 <Link
                                     to="#"
-                                    className="w-32-px h-32-px bg-success-focus text-success-main rounded-circle d-inline-flex align-items-center justify-content-center"
+                                    className="w-32-px h-32-px me-8 bg-success-focus text-success-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="lucide:edit" />
                                 </Link>
                                 <Link
                                     to="#"
-                                    className="w-32-px h-32-px bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center"
+                                    className="w-32-px h-32-px me-8 bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="mingcute:delete-2-line" />
                                 </Link>
@@ -182,19 +182,19 @@ const TableDataLayer = () => {
                             <td>
                                 <Link
                                     to="#"
-                                    className="w-32-px h-32-px bg-primary-light text-primary-600 rounded-circle d-inline-flex align-items-center justify-content-center"
+                                    className="w-32-px h-32-px me-8 bg-primary-light text-primary-600 rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="iconamoon:eye-light" />
                                 </Link>
                                 <Link
                                     to="#"
-                                    className="w-32-px h-32-px bg-success-focus text-success-main rounded-circle d-inline-flex align-items-center justify-content-center"
+                                    className="w-32-px h-32-px me-8 bg-success-focus text-success-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="lucide:edit" />
                                 </Link>
                                 <Link
                                     to="#"
-                                    className="w-32-px h-32-px bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center"
+                                    className="w-32-px h-32-px me-8 bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="mingcute:delete-2-line" />
                                 </Link>
@@ -235,19 +235,19 @@ const TableDataLayer = () => {
                             <td>
                                 <Link
                                     to="#"
-                                    className="w-32-px h-32-px bg-primary-light text-primary-600 rounded-circle d-inline-flex align-items-center justify-content-center"
+                                    className="w-32-px h-32-px me-8 bg-primary-light text-primary-600 rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="iconamoon:eye-light" />
                                 </Link>
                                 <Link
                                     to="#"
-                                    className="w-32-px h-32-px bg-success-focus text-success-main rounded-circle d-inline-flex align-items-center justify-content-center"
+                                    className="w-32-px h-32-px me-8 bg-success-focus text-success-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="lucide:edit" />
                                 </Link>
                                 <Link
                                     to="#"
-                                    className="w-32-px h-32-px bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center"
+                                    className="w-32-px h-32-px me-8 bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="mingcute:delete-2-line" />
                                 </Link>
@@ -288,19 +288,19 @@ const TableDataLayer = () => {
                             <td>
                                 <Link
                                     to="#"
-                                    className="w-32-px h-32-px bg-primary-light text-primary-600 rounded-circle d-inline-flex align-items-center justify-content-center"
+                                    className="w-32-px h-32-px me-8 bg-primary-light text-primary-600 rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="iconamoon:eye-light" />
                                 </Link>
                                 <Link
                                     to="#"
-                                    className="w-32-px h-32-px bg-success-focus text-success-main rounded-circle d-inline-flex align-items-center justify-content-center"
+                                    className="w-32-px h-32-px me-8 bg-success-focus text-success-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="lucide:edit" />
                                 </Link>
                                 <Link
                                     to="#"
-                                    className="w-32-px h-32-px bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center"
+                                    className="w-32-px h-32-px me-8 bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="mingcute:delete-2-line" />
                                 </Link>
@@ -341,19 +341,19 @@ const TableDataLayer = () => {
                             <td>
                                 <Link
                                     to="#"
-                                    className="w-32-px h-32-px bg-primary-light text-primary-600 rounded-circle d-inline-flex align-items-center justify-content-center"
+                                    className="w-32-px h-32-px me-8 bg-primary-light text-primary-600 rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="iconamoon:eye-light" />
                                 </Link>
                                 <Link
                                     to="#"
-                                    className="w-32-px h-32-px bg-success-focus text-success-main rounded-circle d-inline-flex align-items-center justify-content-center"
+                                    className="w-32-px h-32-px me-8 bg-success-focus text-success-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="lucide:edit" />
                                 </Link>
                                 <Link
                                     to="#"
-                                    className="w-32-px h-32-px bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center"
+                                    className="w-32-px h-32-px me-8 bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="mingcute:delete-2-line" />
                                 </Link>
@@ -394,19 +394,19 @@ const TableDataLayer = () => {
                             <td>
                                 <Link
                                     to="#"
-                                    className="w-32-px h-32-px bg-primary-light text-primary-600 rounded-circle d-inline-flex align-items-center justify-content-center"
+                                    className="w-32-px h-32-px me-8 bg-primary-light text-primary-600 rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="iconamoon:eye-light" />
                                 </Link>
                                 <Link
                                     to="#"
-                                    className="w-32-px h-32-px bg-success-focus text-success-main rounded-circle d-inline-flex align-items-center justify-content-center"
+                                    className="w-32-px h-32-px me-8 bg-success-focus text-success-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="lucide:edit" />
                                 </Link>
                                 <Link
                                     to="#"
-                                    className="w-32-px h-32-px bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center"
+                                    className="w-32-px h-32-px me-8 bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="mingcute:delete-2-line" />
                                 </Link>
@@ -447,19 +447,19 @@ const TableDataLayer = () => {
                             <td>
                                 <Link
                                     to="#"
-                                    className="w-32-px h-32-px bg-primary-light text-primary-600 rounded-circle d-inline-flex align-items-center justify-content-center"
+                                    className="w-32-px h-32-px me-8 bg-primary-light text-primary-600 rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="iconamoon:eye-light" />
                                 </Link>
                                 <Link
                                     to="#"
-                                    className="w-32-px h-32-px bg-success-focus text-success-main rounded-circle d-inline-flex align-items-center justify-content-center"
+                                    className="w-32-px h-32-px me-8 bg-success-focus text-success-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="lucide:edit" />
                                 </Link>
                                 <Link
                                     to="#"
-                                    className="w-32-px h-32-px bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center"
+                                    className="w-32-px h-32-px me-8 bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="mingcute:delete-2-line" />
                                 </Link>
@@ -500,19 +500,19 @@ const TableDataLayer = () => {
                             <td>
                                 <Link
                                     to="#"
-                                    className="w-32-px h-32-px bg-primary-light text-primary-600 rounded-circle d-inline-flex align-items-center justify-content-center"
+                                    className="w-32-px h-32-px me-8 bg-primary-light text-primary-600 rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="iconamoon:eye-light" />
                                 </Link>
                                 <Link
                                     to="#"
-                                    className="w-32-px h-32-px bg-success-focus text-success-main rounded-circle d-inline-flex align-items-center justify-content-center"
+                                    className="w-32-px h-32-px me-8 bg-success-focus text-success-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="lucide:edit" />
                                 </Link>
                                 <Link
                                     to="#"
-                                    className="w-32-px h-32-px bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center"
+                                    className="w-32-px h-32-px me-8 bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="mingcute:delete-2-line" />
                                 </Link>
@@ -553,19 +553,19 @@ const TableDataLayer = () => {
                             <td>
                                 <Link
                                     to="#"
-                                    className="w-32-px h-32-px bg-primary-light text-primary-600 rounded-circle d-inline-flex align-items-center justify-content-center"
+                                    className="w-32-px h-32-px me-8 bg-primary-light text-primary-600 rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="iconamoon:eye-light" />
                                 </Link>
                                 <Link
                                     to="#"
-                                    className="w-32-px h-32-px bg-success-focus text-success-main rounded-circle d-inline-flex align-items-center justify-content-center"
+                                    className="w-32-px h-32-px me-8 bg-success-focus text-success-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="lucide:edit" />
                                 </Link>
                                 <Link
                                     to="#"
-                                    className="w-32-px h-32-px bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center"
+                                    className="w-32-px h-32-px me-8 bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="mingcute:delete-2-line" />
                                 </Link>
@@ -606,19 +606,19 @@ const TableDataLayer = () => {
                             <td>
                                 <Link
                                     to="#"
-                                    className="w-32-px h-32-px bg-primary-light text-primary-600 rounded-circle d-inline-flex align-items-center justify-content-center"
+                                    className="w-32-px h-32-px me-8 bg-primary-light text-primary-600 rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="iconamoon:eye-light" />
                                 </Link>
                                 <Link
                                     to="#"
-                                    className="w-32-px h-32-px bg-success-focus text-success-main rounded-circle d-inline-flex align-items-center justify-content-center"
+                                    className="w-32-px h-32-px me-8 bg-success-focus text-success-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="lucide:edit" />
                                 </Link>
                                 <Link
                                     to="#"
-                                    className="w-32-px h-32-px bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center"
+                                    className="w-32-px h-32-px me-8 bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="mingcute:delete-2-line" />
                                 </Link>
@@ -659,19 +659,19 @@ const TableDataLayer = () => {
                             <td>
                                 <Link
                                     to="#"
-                                    className="w-32-px h-32-px bg-primary-light text-primary-600 rounded-circle d-inline-flex align-items-center justify-content-center"
+                                    className="w-32-px h-32-px me-8 bg-primary-light text-primary-600 rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="iconamoon:eye-light" />
                                 </Link>
                                 <Link
                                     to="#"
-                                    className="w-32-px h-32-px bg-success-focus text-success-main rounded-circle d-inline-flex align-items-center justify-content-center"
+                                    className="w-32-px h-32-px me-8 bg-success-focus text-success-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="lucide:edit" />
                                 </Link>
                                 <Link
                                     to="#"
-                                    className="w-32-px h-32-px bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center"
+                                    className="w-32-px h-32-px me-8 bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="mingcute:delete-2-line" />
                                 </Link>
@@ -712,19 +712,19 @@ const TableDataLayer = () => {
                             <td>
                                 <Link
                                     to="#"
-                                    className="w-32-px h-32-px bg-primary-light text-primary-600 rounded-circle d-inline-flex align-items-center justify-content-center"
+                                    className="w-32-px h-32-px me-8 bg-primary-light text-primary-600 rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="iconamoon:eye-light" />
                                 </Link>
                                 <Link
                                     to="#"
-                                    className="w-32-px h-32-px bg-success-focus text-success-main rounded-circle d-inline-flex align-items-center justify-content-center"
+                                    className="w-32-px h-32-px me-8 bg-success-focus text-success-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="lucide:edit" />
                                 </Link>
                                 <Link
                                     to="#"
-                                    className="w-32-px h-32-px bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center"
+                                    className="w-32-px h-32-px me-8 bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="mingcute:delete-2-line" />
                                 </Link>
@@ -765,19 +765,19 @@ const TableDataLayer = () => {
                             <td>
                                 <Link
                                     to="#"
-                                    className="w-32-px h-32-px bg-primary-light text-primary-600 rounded-circle d-inline-flex align-items-center justify-content-center"
+                                    className="w-32-px h-32-px me-8 bg-primary-light text-primary-600 rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="iconamoon:eye-light" />
                                 </Link>
                                 <Link
                                     to="#"
-                                    className="w-32-px h-32-px bg-success-focus text-success-main rounded-circle d-inline-flex align-items-center justify-content-center"
+                                    className="w-32-px h-32-px me-8 bg-success-focus text-success-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="lucide:edit" />
                                 </Link>
                                 <Link
                                     to="#"
-                                    className="w-32-px h-32-px bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center"
+                                    className="w-32-px h-32-px me-8 bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="mingcute:delete-2-line" />
                                 </Link>
@@ -818,19 +818,19 @@ const TableDataLayer = () => {
                             <td>
                                 <Link
                                     to="#"
-                                    className="w-32-px h-32-px bg-primary-light text-primary-600 rounded-circle d-inline-flex align-items-center justify-content-center"
+                                    className="w-32-px h-32-px me-8 bg-primary-light text-primary-600 rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="iconamoon:eye-light" />
                                 </Link>
                                 <Link
                                     to="#"
-                                    className="w-32-px h-32-px bg-success-focus text-success-main rounded-circle d-inline-flex align-items-center justify-content-center"
+                                    className="w-32-px h-32-px me-8 bg-success-focus text-success-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="lucide:edit" />
                                 </Link>
                                 <Link
                                     to="#"
-                                    className="w-32-px h-32-px bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center"
+                                    className="w-32-px h-32-px me-8 bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="mingcute:delete-2-line" />
                                 </Link>
@@ -871,19 +871,19 @@ const TableDataLayer = () => {
                             <td>
                                 <Link
                                     to="#"
-                                    className="w-32-px h-32-px bg-primary-light text-primary-600 rounded-circle d-inline-flex align-items-center justify-content-center"
+                                    className="w-32-px h-32-px me-8 bg-primary-light text-primary-600 rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="iconamoon:eye-light" />
                                 </Link>
                                 <Link
                                     to="#"
-                                    className="w-32-px h-32-px bg-success-focus text-success-main rounded-circle d-inline-flex align-items-center justify-content-center"
+                                    className="w-32-px h-32-px me-8 bg-success-focus text-success-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="lucide:edit" />
                                 </Link>
                                 <Link
                                     to="#"
-                                    className="w-32-px h-32-px bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center"
+                                    className="w-32-px h-32-px me-8 bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="mingcute:delete-2-line" />
                                 </Link>
@@ -924,19 +924,19 @@ const TableDataLayer = () => {
                             <td>
                                 <Link
                                     to="#"
-                                    className="w-32-px h-32-px bg-primary-light text-primary-600 rounded-circle d-inline-flex align-items-center justify-content-center"
+                                    className="w-32-px h-32-px me-8 bg-primary-light text-primary-600 rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="iconamoon:eye-light" />
                                 </Link>
                                 <Link
                                     to="#"
-                                    className="w-32-px h-32-px bg-success-focus text-success-main rounded-circle d-inline-flex align-items-center justify-content-center"
+                                    className="w-32-px h-32-px me-8 bg-success-focus text-success-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="lucide:edit" />
                                 </Link>
                                 <Link
                                     to="#"
-                                    className="w-32-px h-32-px bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center"
+                                    className="w-32-px h-32-px me-8 bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="mingcute:delete-2-line" />
                                 </Link>
@@ -977,19 +977,19 @@ const TableDataLayer = () => {
                             <td>
                                 <Link
                                     to="#"
-                                    className="w-32-px h-32-px bg-primary-light text-primary-600 rounded-circle d-inline-flex align-items-center justify-content-center"
+                                    className="w-32-px h-32-px me-8 bg-primary-light text-primary-600 rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="iconamoon:eye-light" />
                                 </Link>
                                 <Link
                                     to="#"
-                                    className="w-32-px h-32-px bg-success-focus text-success-main rounded-circle d-inline-flex align-items-center justify-content-center"
+                                    className="w-32-px h-32-px me-8 bg-success-focus text-success-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="lucide:edit" />
                                 </Link>
                                 <Link
                                     to="#"
-                                    className="w-32-px h-32-px bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center"
+                                    className="w-32-px h-32-px me-8 bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="mingcute:delete-2-line" />
                                 </Link>
@@ -1030,19 +1030,19 @@ const TableDataLayer = () => {
                             <td>
                                 <Link
                                     to="#"
-                                    className="w-32-px h-32-px bg-primary-light text-primary-600 rounded-circle d-inline-flex align-items-center justify-content-center"
+                                    className="w-32-px h-32-px me-8 bg-primary-light text-primary-600 rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="iconamoon:eye-light" />
                                 </Link>
                                 <Link
                                     to="#"
-                                    className="w-32-px h-32-px bg-success-focus text-success-main rounded-circle d-inline-flex align-items-center justify-content-center"
+                                    className="w-32-px h-32-px me-8 bg-success-focus text-success-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="lucide:edit" />
                                 </Link>
                                 <Link
                                     to="#"
-                                    className="w-32-px h-32-px bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center"
+                                    className="w-32-px h-32-px me-8 bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="mingcute:delete-2-line" />
                                 </Link>
@@ -1083,19 +1083,19 @@ const TableDataLayer = () => {
                             <td>
                                 <Link
                                     to="#"
-                                    className="w-32-px h-32-px bg-primary-light text-primary-600 rounded-circle d-inline-flex align-items-center justify-content-center"
+                                    className="w-32-px h-32-px me-8 bg-primary-light text-primary-600 rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="iconamoon:eye-light" />
                                 </Link>
                                 <Link
                                     to="#"
-                                    className="w-32-px h-32-px bg-success-focus text-success-main rounded-circle d-inline-flex align-items-center justify-content-center"
+                                    className="w-32-px h-32-px me-8 bg-success-focus text-success-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="lucide:edit" />
                                 </Link>
                                 <Link
                                     to="#"
-                                    className="w-32-px h-32-px bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center"
+                                    className="w-32-px h-32-px me-8 bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="mingcute:delete-2-line" />
                                 </Link>

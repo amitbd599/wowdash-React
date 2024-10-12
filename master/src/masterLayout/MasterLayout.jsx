@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react";
-import ScrollToTop from "react-scroll-to-top";
-import Preloader from "../helper/Preloader";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import ThemeToggleButton from "../helper/ThemeToggleButton";
 
 const MasterLayout = ({ children }) => {
   let [sidebarActive, seSidebarActive] = useState(false)
+  let [mobileMenu, setMobileMenu] = useState(false)
   const location = useLocation(); // Hook to get the current route
 
   useEffect(() => {
@@ -71,19 +70,17 @@ const MasterLayout = ({ children }) => {
     seSidebarActive(!sidebarActive)
   }
 
+  let mobileMenuControl = () => {
+    setMobileMenu(!mobileMenu)
+  }
+
 
 
   return (
-    <>
-      {/* ScrollToTop */}
-      <ScrollToTop smooth color="#FA6400" />
-
-      {/* Preloader */}
-      <Preloader />
-
+    <section className={mobileMenu ? "overlay active" : "overlay "}>
       {/* sidebar */}
-      <aside className={sidebarActive ? "sidebar active" : "sidebar"}>
-        <button type="button" className="sidebar-close-btn">
+      <aside className={sidebarActive ? "sidebar active " : mobileMenu ? "sidebar sidebar-open" : "sidebar"}>
+        <button onClick={mobileMenuControl} type="button" className="sidebar-close-btn">
           <Icon icon="radix-icons:cross-2" />
         </button>
         <div>
@@ -801,7 +798,7 @@ const MasterLayout = ({ children }) => {
                     />)
                   }
                 </button>
-                <button type="button" className="sidebar-mobile-toggle">
+                <button onClick={mobileMenuControl} type="button" className="sidebar-mobile-toggle">
                   <Icon
                     icon="heroicons:bars-3-solid"
                     className="icon"
@@ -1451,7 +1448,7 @@ const MasterLayout = ({ children }) => {
           </div>
         </footer>
       </main>
-    </>
+    </section>
   );
 };
 

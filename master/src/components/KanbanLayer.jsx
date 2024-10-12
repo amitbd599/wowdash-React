@@ -12,7 +12,6 @@ import {
 import {
     arrayMove,
     SortableContext,
-    sortableKeyboardCoordinates,
     rectSortingStrategy,
 } from '@dnd-kit/sortable';
 import SortableTask from '../helper/SortableTask';
