@@ -244,12 +244,12 @@ const MarketplaceDetailsLayer = () => {
                                                                 </span>
                                                             </div>
                                                         </div>
-                                                        <a
-                                                            href=""
+                                                        <Link
+                                                            to="#"
                                                             className="text-md text-neutral-500 text-hover-primary-600"
                                                         >
                                                             <i className="ri-arrow-right-s-line" />
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                 </div>
                                                 <div className="p-16 d-flex align-items-center">
@@ -269,12 +269,12 @@ const MarketplaceDetailsLayer = () => {
                                                                 </span>
                                                             </div>
                                                         </div>
-                                                        <a
-                                                            href=""
+                                                        <Link
+                                                            to="#"
                                                             className="text-md text-neutral-500 text-hover-primary-600"
                                                         >
                                                             <i className="ri-arrow-right-s-line" />
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                 </div>
                                             </div>
@@ -326,12 +326,12 @@ const MarketplaceDetailsLayer = () => {
                                                                 </span>
                                                             </div>
                                                         </div>
-                                                        <a
-                                                            href=""
+                                                        <Link
+                                                            to="#"
                                                             className="text-md text-neutral-500 text-hover-primary-600"
                                                         >
                                                             <i className="ri-arrow-right-s-line" />
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                 </div>
                                                 <div className="p-16 d-flex align-items-center">
@@ -351,12 +351,12 @@ const MarketplaceDetailsLayer = () => {
                                                                 </span>
                                                             </div>
                                                         </div>
-                                                        <a
-                                                            href=""
+                                                        <Link
+                                                            to="#"
                                                             className="text-md text-neutral-500 text-hover-primary-600"
                                                         >
                                                             <i className="ri-arrow-right-s-line" />
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                 </div>
                                             </div>
@@ -408,12 +408,12 @@ const MarketplaceDetailsLayer = () => {
                                                                 </span>
                                                             </div>
                                                         </div>
-                                                        <a
-                                                            href=""
+                                                        <Link
+                                                            to="#"
                                                             className="text-md text-neutral-500 text-hover-primary-600"
                                                         >
                                                             <i className="ri-arrow-right-s-line" />
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                 </div>
                                                 <div className="p-16 d-flex align-items-center">
@@ -433,12 +433,12 @@ const MarketplaceDetailsLayer = () => {
                                                                 </span>
                                                             </div>
                                                         </div>
-                                                        <a
-                                                            href=""
+                                                        <Link
+                                                            to="#"
                                                             className="text-md text-neutral-500 text-hover-primary-600"
                                                         >
                                                             <i className="ri-arrow-right-s-line" />
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                 </div>
                                             </div>
@@ -457,9 +457,9 @@ const MarketplaceDetailsLayer = () => {
                             <div className="px-24 py-20">
                                 <div className="d-flex align-items-center justify-content-between gap-8 pb-24 border-bottom">
                                     <h6 className="text-lg mb-0">Watchlist</h6>
-                                    <a href="#" className="text-primary-600 fw-medium text-md">
+                                    <Link to="#" className="text-primary-600 fw-medium text-md">
                                         Sell all
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="d-flex align-items-center justify-content-between flex-wrap gap-8 py-16 border-bottom">
                                     <div className="d-flex align-items-center">

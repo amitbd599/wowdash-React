@@ -825,7 +825,7 @@ const MasterLayout = ({ children }) => {
                   >
                     <img
                       src="assets/images/lang-flag.png"
-                      alt="image"
+                      alt="Wowdash"
                       className="w-24 h-24 object-fit-cover rounded-circle"
                     />
                   </button>
@@ -1387,42 +1387,42 @@ const MasterLayout = ({ children }) => {
                     </div>
                     <ul className="to-top-list">
                       <li>
-                        <a
+                        <Link
                           className="dropdown-item text-black px-0 py-8 hover-bg-transparent hover-text-primary d-flex align-items-center gap-3"
-                          href="view-profile.html"
+                          to="/view-profile"
                         >
                           <Icon icon="solar:user-linear" className="icon text-xl" /> My
                           Profile
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link
                           className="dropdown-item text-black px-0 py-8 hover-bg-transparent hover-text-primary d-flex align-items-center gap-3"
-                          href="email.html"
+                          to="/email"
                         >
                           <Icon icon="tabler:message-check" className="icon text-xl" />{" "}
                           Inbox
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link
                           className="dropdown-item text-black px-0 py-8 hover-bg-transparent hover-text-primary d-flex align-items-center gap-3"
-                          href="company.html"
+                          to="/company"
                         >
                           <Icon
                             icon="icon-park-outline:setting-two"
                             className="icon text-xl"
                           />
                           Setting
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link
                           className="dropdown-item text-black px-0 py-8 hover-bg-transparent hover-text-danger d-flex align-items-center gap-3"
-                          href="javascript:void(0)"
+                          to="#"
                         >
                           <Icon icon="lucide:power" className="icon text-xl" /> Log Out
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>

@@ -1,5 +1,6 @@
 import { Icon } from '@iconify/react/dist/iconify.js'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const DefaultCard = () => {
     return (
@@ -24,8 +25,8 @@ const DefaultCard = () => {
                                 stressful situations of all kinds, including the most common of
                                 all .
                             </p>
-                            <a
-                                href="javascript:void(0)"
+                            <Link
+                                to="#"
                                 className="btn text-primary-600 hover-text-primary px-0 py-10 d-inline-flex align-items-center gap-2"
                             >
                                 Read More{" "}
@@ -33,7 +34,7 @@ const DefaultCard = () => {
                                     icon="iconamoon:arrow-right-2"
                                     className="text-xl"
                                 />
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -56,8 +57,8 @@ const DefaultCard = () => {
                                 stressful situations of all kinds, including the most common of
                                 all .
                             </p>
-                            <a
-                                href="javascript:void(0)"
+                            <Link
+                                to="#"
                                 className="btn btn-primary-600 px-12 py-10 d-inline-flex align-items-center gap-2"
                             >
                                 Read More{" "}
@@ -65,7 +66,7 @@ const DefaultCard = () => {
                                     icon="iconamoon:arrow-right-2"
                                     className="text-xl"
                                 />
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -89,8 +90,8 @@ const DefaultCard = () => {
                                 all .
                             </p>
                             <div className="d-flex flex-wrap align-items-center justify-content-end gap-3">
-                                <a
-                                    href="javascript:void(0)"
+                                <Link
+                                    to="#"
                                     className="btn btn-primary-100 text-white text-primary-600 px-12 py-10 d-inline-flex align-items-center gap-2"
                                 >
                                     Read More{" "}
@@ -98,7 +99,7 @@ const DefaultCard = () => {
                                         icon="iconamoon:arrow-right-2"
                                         className="text-xl"
                                     />
-                                </a>
+                                </Link>
                                 <button className="btn btn-warning-100 text-white text-warning-600 px-12 py-10 d-inline-flex align-items-center gap-2">
                                     Book Mark{" "}
                                     <Icon icon="bx:bookmark-minus" className="text-xl" />

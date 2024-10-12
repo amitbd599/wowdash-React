@@ -1,5 +1,6 @@
 import { Icon } from '@iconify/react/dist/iconify.js'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const SignUpLayer = () => {
     return (
@@ -12,9 +13,9 @@ const SignUpLayer = () => {
             <div className="auth-right py-32 px-24 d-flex flex-column justify-content-center">
                 <div className="max-w-464-px mx-auto w-100">
                     <div>
-                        <a href="index.html" className="mb-40 max-w-290-px">
+                        <Link to="/" className="mb-40 max-w-290-px">
                             <img src="assets/images/logo.png" alt="" />
-                        </a>
+                        </Link>
                         <h4 className="mb-12">Sign Up to your Account</h4>
                         <p className="mb-32 text-secondary-light text-lg">
                             Welcome back! please enter your detail
@@ -74,19 +75,19 @@ const SignUpLayer = () => {
                                     />
                                     <label className="form-check-label text-sm" htmlFor="condition">
                                         By creating an account means you agree to the
-                                        <a
-                                            href="javascript:void(0)"
+                                        <Link
+                                            to="#"
                                             className="text-primary-600 fw-semibold"
                                         >
                                             Terms &amp; Conditions
-                                        </a>{" "}
+                                        </Link>{" "}
                                         and our
-                                        <a
-                                            href="javascript:void(0)"
+                                        <Link
+                                            to="#"
                                             className="text-primary-600 fw-semibold"
                                         >
                                             Privacy Policy
-                                        </a>
+                                        </Link>
                                     </label>
                                 </div>
                             </div>
@@ -126,9 +127,9 @@ const SignUpLayer = () => {
                         <div className="mt-32 text-center text-sm">
                             <p className="mb-0">
                                 Already have an account?{" "}
-                                <a href="sign-in.html" className="text-primary-600 fw-semibold">
+                                <Link to="/sign-in" className="text-primary-600 fw-semibold">
                                     Sign In
-                                </a>
+                                </Link>
                             </p>
                         </div>
                     </form>

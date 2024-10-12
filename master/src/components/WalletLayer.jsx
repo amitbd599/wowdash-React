@@ -1,5 +1,6 @@
 import { Icon } from '@iconify/react/dist/iconify.js'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const WalletLayer = () => {
     return (
@@ -94,13 +95,13 @@ const WalletLayer = () => {
                                                 </div>
                                             </td>
                                             <td>
-                                                <a
-                                                    href="marketplace-details.html"
+                                                <Link
+                                                    to="/marketplace-details"
                                                     className="d-flex align-items-center"
                                                 >
                                                     <img
                                                         src="assets/images/crypto/crypto-img1.png"
-                                                        alt=""
+                                                        alt="Wowdash"
                                                         className="w-40-px h-40-px rounded-circle flex-shrink-0 me-12 overflow-hidden"
                                                     />
                                                     <span className="flex-grow-1 d-flex flex-column">
@@ -111,7 +112,7 @@ const WalletLayer = () => {
                                                             BTC
                                                         </span>
                                                     </span>
-                                                </a>
+                                                </Link>
                                             </td>
                                             <td>0.3464 BTC</td>
                                             <td>$2,753.00</td>
@@ -152,13 +153,13 @@ const WalletLayer = () => {
                                                 </div>
                                             </td>
                                             <td>
-                                                <a
-                                                    href="marketplace-details.html"
+                                                <Link
+                                                    to="/marketplace-details"
                                                     className="d-flex align-items-center"
                                                 >
                                                     <img
                                                         src="assets/images/crypto/crypto-img2.png"
-                                                        alt=""
+                                                        alt="Wowdash"
                                                         className="w-40-px h-40-px rounded-circle flex-shrink-0 me-12 overflow-hidden"
                                                     />
                                                     <span className="flex-grow-1 d-flex flex-column">
@@ -169,7 +170,7 @@ const WalletLayer = () => {
                                                             ETH
                                                         </span>
                                                     </span>
-                                                </a>
+                                                </Link>
                                             </td>
                                             <td>0.5464 ETH</td>
                                             <td>$2,753.00</td>
@@ -210,13 +211,13 @@ const WalletLayer = () => {
                                                 </div>
                                             </td>
                                             <td>
-                                                <a
-                                                    href="marketplace-details.html"
+                                                <Link
+                                                    to="/marketplace-details"
                                                     className="d-flex align-items-center"
                                                 >
                                                     <img
                                                         src="assets/images/crypto/crypto-img3.png"
-                                                        alt=""
+                                                        alt="Wowdash"
                                                         className="w-40-px h-40-px rounded-circle flex-shrink-0 me-12 overflow-hidden"
                                                     />
                                                     <span className="flex-grow-1 d-flex flex-column">
@@ -227,7 +228,7 @@ const WalletLayer = () => {
                                                             LTC
                                                         </span>
                                                     </span>
-                                                </a>
+                                                </Link>
                                             </td>
                                             <td>0.5464 LTC</td>
                                             <td>$2,753.00</td>
@@ -268,13 +269,13 @@ const WalletLayer = () => {
                                                 </div>
                                             </td>
                                             <td>
-                                                <a
-                                                    href="marketplace-details.html"
+                                                <Link
+                                                    to="/marketplace-details"
                                                     className="d-flex align-items-center"
                                                 >
                                                     <img
                                                         src="assets/images/crypto/crypto-img4.png"
-                                                        alt=""
+                                                        alt="Wowdash"
                                                         className="w-40-px h-40-px rounded-circle flex-shrink-0 me-12 overflow-hidden"
                                                     />
                                                     <span className="flex-grow-1 d-flex flex-column">
@@ -285,7 +286,7 @@ const WalletLayer = () => {
                                                             BNB
                                                         </span>
                                                     </span>
-                                                </a>
+                                                </Link>
                                             </td>
                                             <td>0.5464 BNB</td>
                                             <td>$2,753.00</td>
@@ -326,13 +327,13 @@ const WalletLayer = () => {
                                                 </div>
                                             </td>
                                             <td>
-                                                <a
-                                                    href="marketplace-details.html"
+                                                <Link
+                                                    to="/marketplace-details"
                                                     className="d-flex align-items-center"
                                                 >
                                                     <img
                                                         src="assets/images/crypto/crypto-img6.png"
-                                                        alt=""
+                                                        alt="Wowdash"
                                                         className="w-40-px h-40-px rounded-circle flex-shrink-0 me-12 overflow-hidden"
                                                     />
                                                     <span className="flex-grow-1 d-flex flex-column">
@@ -343,7 +344,7 @@ const WalletLayer = () => {
                                                             DOGE
                                                         </span>
                                                     </span>
-                                                </a>
+                                                </Link>
                                             </td>
                                             <td>0.5464 DOGE</td>
                                             <td>$2,753.00</td>
@@ -384,13 +385,13 @@ const WalletLayer = () => {
                                                 </div>
                                             </td>
                                             <td>
-                                                <a
-                                                    href="marketplace-details.html"
+                                                <Link
+                                                    to="/marketplace-details"
                                                     className="d-flex align-items-center"
                                                 >
                                                     <img
                                                         src="assets/images/crypto/crypto-img5.png"
-                                                        alt=""
+                                                        alt="Wowdash"
                                                         className="w-40-px h-40-px rounded-circle flex-shrink-0 me-12 overflow-hidden"
                                                     />
                                                     <span className="flex-grow-1 d-flex flex-column">
@@ -401,7 +402,7 @@ const WalletLayer = () => {
                                                             MATIC
                                                         </span>
                                                     </span>
-                                                </a>
+                                                </Link>
                                             </td>
                                             <td>0.5464 MATIC</td>
                                             <td>$2,753.00</td>
@@ -442,13 +443,13 @@ const WalletLayer = () => {
                                                 </div>
                                             </td>
                                             <td>
-                                                <a
-                                                    href="marketplace-details.html"
+                                                <Link
+                                                    to="/marketplace-details"
                                                     className="d-flex align-items-center"
                                                 >
                                                     <img
                                                         src="assets/images/crypto/crypto-img5.png"
-                                                        alt=""
+                                                        alt="Wowdash"
                                                         className="w-40-px h-40-px rounded-circle flex-shrink-0 me-12 overflow-hidden"
                                                     />
                                                     <span className="flex-grow-1 d-flex flex-column">
@@ -459,7 +460,7 @@ const WalletLayer = () => {
                                                             MATIC
                                                         </span>
                                                     </span>
-                                                </a>
+                                                </Link>
                                             </td>
                                             <td>0.5464 MATIC</td>
                                             <td>$2,753.00</td>
@@ -500,13 +501,13 @@ const WalletLayer = () => {
                                                 </div>
                                             </td>
                                             <td>
-                                                <a
-                                                    href="marketplace-details.html"
+                                                <Link
+                                                    to="/marketplace-details"
                                                     className="d-flex align-items-center"
                                                 >
                                                     <img
                                                         src="assets/images/crypto/crypto-img5.png"
-                                                        alt=""
+                                                        alt="Wowdash"
                                                         className="w-40-px h-40-px rounded-circle flex-shrink-0 me-12 overflow-hidden"
                                                     />
                                                     <span className="flex-grow-1 d-flex flex-column">
@@ -517,7 +518,7 @@ const WalletLayer = () => {
                                                             MATIC
                                                         </span>
                                                     </span>
-                                                </a>
+                                                </Link>
                                             </td>
                                             <td>0.5464 MATIC</td>
                                             <td>$2,753.00</td>
@@ -558,13 +559,13 @@ const WalletLayer = () => {
                                                 </div>
                                             </td>
                                             <td>
-                                                <a
-                                                    href="marketplace-details.html"
+                                                <Link
+                                                    to="/marketplace-details"
                                                     className="d-flex align-items-center"
                                                 >
                                                     <img
                                                         src="assets/images/crypto/crypto-img5.png"
-                                                        alt=""
+                                                        alt="Wowdash"
                                                         className="w-40-px h-40-px rounded-circle flex-shrink-0 me-12 overflow-hidden"
                                                     />
                                                     <span className="flex-grow-1 d-flex flex-column">
@@ -575,7 +576,7 @@ const WalletLayer = () => {
                                                             MATIC
                                                         </span>
                                                     </span>
-                                                </a>
+                                                </Link>
                                             </td>
                                             <td>0.5464 MATIC</td>
                                             <td>$2,753.00</td>
@@ -616,13 +617,13 @@ const WalletLayer = () => {
                                                 </div>
                                             </td>
                                             <td>
-                                                <a
-                                                    href="marketplace-details.html"
+                                                <Link
+                                                    to="/marketplace-details"
                                                     className="d-flex align-items-center"
                                                 >
                                                     <img
                                                         src="assets/images/crypto/crypto-img5.png"
-                                                        alt=""
+                                                        alt="Wowdash"
                                                         className="w-40-px h-40-px rounded-circle flex-shrink-0 me-12 overflow-hidden"
                                                     />
                                                     <span className="flex-grow-1 d-flex flex-column">
@@ -633,7 +634,7 @@ const WalletLayer = () => {
                                                             MATIC
                                                         </span>
                                                     </span>
-                                                </a>
+                                                </Link>
                                             </td>
                                             <td>0.5464 MATIC</td>
                                             <td>$2,753.00</td>
@@ -666,61 +667,61 @@ const WalletLayer = () => {
                                 <span>Showing 1 to 10 of 12 entries</span>
                                 <ul className="pagination d-flex flex-wrap align-items-center gap-2 justify-content-center">
                                     <li className="page-item">
-                                        <a
+                                        <Link
                                             className="page-link bg-neutral-200 text-secondary-light fw-semibold radius-8 border-0 d-flex align-items-center justify-content-center h-32-px  text-md"
-                                            href="javascript:void(0)"
+                                            to="#"
                                         >
                                             <Icon icon="ep:d-arrow-left" className="" />
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="page-item">
-                                        <a
+                                        <Link
                                             className="page-link text-secondary-light fw-semibold radius-8 border-0 d-flex align-items-center justify-content-center h-32-px w-32-px text-md bg-primary-600 text-white"
-                                            href="javascript:void(0)"
+                                            to="#"
                                         >
                                             1
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="page-item">
-                                        <a
+                                        <Link
                                             className="page-link bg-neutral-200 text-secondary-light fw-semibold radius-8 border-0 d-flex align-items-center justify-content-center h-32-px w-32-px"
-                                            href="javascript:void(0)"
+                                            to="#"
                                         >
                                             2
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="page-item">
-                                        <a
+                                        <Link
                                             className="page-link bg-neutral-200 text-secondary-light fw-semibold radius-8 border-0 d-flex align-items-center justify-content-center h-32-px w-32-px text-md"
-                                            href="javascript:void(0)"
+                                            to="#"
                                         >
                                             3
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="page-item">
-                                        <a
+                                        <Link
                                             className="page-link bg-neutral-200 text-secondary-light fw-semibold radius-8 border-0 d-flex align-items-center justify-content-center h-32-px w-32-px text-md"
-                                            href="javascript:void(0)"
+                                            to="#"
                                         >
                                             4
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="page-item">
-                                        <a
+                                        <Link
                                             className="page-link bg-neutral-200 text-secondary-light fw-semibold radius-8 border-0 d-flex align-items-center justify-content-center h-32-px w-32-px text-md"
-                                            href="javascript:void(0)"
+                                            to="#"
                                         >
                                             5
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="page-item">
-                                        <a
+                                        <Link
                                             className="page-link bg-neutral-200 text-secondary-light fw-semibold radius-8 border-0 d-flex align-items-center justify-content-center h-32-px  text-md"
-                                            href="javascript:void(0)"
+                                            to="#"
                                         >
                                             {" "}
                                             <Icon icon="ep:d-arrow-right" className="" />{" "}
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </div>
@@ -761,15 +762,15 @@ const WalletLayer = () => {
                                 </div>
                                 <div className="d-flex align-items-center justify-content-between gap-8 pb-24 border-bottom">
                                     <h6 className="text-lg mb-0">Watchlist</h6>
-                                    <a href="#" className="text-primary-600 fw-medium text-md">
+                                    <Link to="#" className="text-primary-600 fw-medium text-md">
                                         Sell all
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="d-flex align-items-center justify-content-between flex-wrap gap-8 py-16 border-bottom">
                                     <div className="d-flex align-items-center">
                                         <img
                                             src="assets/images/crypto/crypto-img1.png"
-                                            alt=""
+                                            alt="Wowdash"
                                             className="w-40-px h-40-px rounded-circle flex-shrink-0 me-12 overflow-hidden"
                                         />
                                         <div className="flex-grow-1 d-flex flex-column">
@@ -794,7 +795,7 @@ const WalletLayer = () => {
                                     <div className="d-flex align-items-center">
                                         <img
                                             src="assets/images/crypto/crypto-img2.png"
-                                            alt=""
+                                            alt="Wowdash"
                                             className="w-40-px h-40-px rounded-circle flex-shrink-0 me-12 overflow-hidden"
                                         />
                                         <div className="flex-grow-1 d-flex flex-column">
@@ -819,7 +820,7 @@ const WalletLayer = () => {
                                     <div className="d-flex align-items-center">
                                         <img
                                             src="assets/images/crypto/crypto-img5.png"
-                                            alt=""
+                                            alt="Wowdash"
                                             className="w-40-px h-40-px rounded-circle flex-shrink-0 me-12 overflow-hidden"
                                         />
                                         <div className="flex-grow-1 d-flex flex-column">
@@ -844,7 +845,7 @@ const WalletLayer = () => {
                                     <div className="d-flex align-items-center">
                                         <img
                                             src="assets/images/crypto/crypto-img6.png"
-                                            alt=""
+                                            alt="Wowdash"
                                             className="w-40-px h-40-px rounded-circle flex-shrink-0 me-12 overflow-hidden"
                                         />
                                         <div className="flex-grow-1 d-flex flex-column">
@@ -893,14 +894,14 @@ const WalletLayer = () => {
                         </div>
                         <div className="modal-body p-24">
                             <div className="d-flex flex-column gap-8">
-                                <a
-                                    href="#"
+                                <Link
+                                    to="#"
                                     className="d-flex align-items-center justify-content-between gap-8 p-16 border radius-8 bg-hover-neutral-50"
                                 >
                                     <span className="d-flex align-items-center gap-16">
                                         <img
                                             src="assets/images/crypto/wallet-icon1.png"
-                                            alt=""
+                                            alt="Wowdash"
                                             className="flex-shrink-0 me-12 overflow-hidden"
                                         />
                                         <span className="text-md mb-0 fw-medium text-primary-light d-block">
@@ -910,15 +911,15 @@ const WalletLayer = () => {
                                     <span className="text-secondary-light text-md">
                                         <i className="ri-arrow-right-s-line" />
                                     </span>
-                                </a>
-                                <a
-                                    href="#"
+                                </Link>
+                                <Link
+                                    to="#"
                                     className="d-flex align-items-center justify-content-between gap-8 p-16 border radius-8 bg-hover-neutral-50"
                                 >
                                     <span className="d-flex align-items-center gap-16">
                                         <img
                                             src="assets/images/crypto/wallet-icon2.png"
-                                            alt=""
+                                            alt="Wowdash"
                                             className="flex-shrink-0 me-12 overflow-hidden"
                                         />
                                         <span className="text-md mb-0 fw-medium text-primary-light d-block">
@@ -928,15 +929,15 @@ const WalletLayer = () => {
                                     <span className="text-secondary-light text-md">
                                         <i className="ri-arrow-right-s-line" />
                                     </span>
-                                </a>
-                                <a
-                                    href="#"
+                                </Link>
+                                <Link
+                                    to="#"
                                     className="d-flex align-items-center justify-content-between gap-8 p-16 border radius-8 bg-hover-neutral-50"
                                 >
                                     <span className="d-flex align-items-center gap-16">
                                         <img
                                             src="assets/images/crypto/wallet-icon3.png"
-                                            alt=""
+                                            alt="Wowdash"
                                             className="flex-shrink-0 me-12 overflow-hidden"
                                         />
                                         <span className="text-md mb-0 fw-medium text-primary-light d-block">
@@ -946,15 +947,15 @@ const WalletLayer = () => {
                                     <span className="text-secondary-light text-md">
                                         <i className="ri-arrow-right-s-line" />
                                     </span>
-                                </a>
-                                <a
-                                    href="#"
+                                </Link>
+                                <Link
+                                    to="#"
                                     className="d-flex align-items-center justify-content-between gap-8 p-16 border radius-8 bg-hover-neutral-50"
                                 >
                                     <span className="d-flex align-items-center gap-16">
                                         <img
                                             src="assets/images/crypto/wallet-icon4.png"
-                                            alt=""
+                                            alt="Wowdash"
                                             className="flex-shrink-0 me-12 overflow-hidden"
                                         />
                                         <span className="text-md mb-0 fw-medium text-primary-light d-block">
@@ -964,7 +965,7 @@ const WalletLayer = () => {
                                     <span className="text-secondary-light text-md">
                                         <i className="ri-arrow-right-s-line" />
                                     </span>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -977,4 +978,4 @@ const WalletLayer = () => {
     )
 }
 
-export default WalletLayer
+export default WalletLayer 

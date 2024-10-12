@@ -1,5 +1,6 @@
 import { Icon } from '@iconify/react/dist/iconify.js'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const PaginationLayer = () => {
     return (
@@ -12,136 +13,136 @@ const PaginationLayer = () => {
                     <div className="card-body p-24">
                         <ul className="pagination d-flex flex-wrap align-items-center gap-2 justify-content-center">
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-primary-50 text-secondary-light fw-medium radius-8 border-0  py-10 d-flex align-items-center justify-content-center h-48-px"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     First
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-primary-50 text-secondary-light fw-medium radius-8 border-0  py-10 d-flex align-items-center justify-content-center h-48-px"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     Previous
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-primary-50 text-secondary-light fw-medium radius-8 border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     <Icon icon="ep:d-arrow-left" className="text-xl" />
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-primary-50 text-secondary-light fw-medium radius-8 border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     1
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-primary-50 text-secondary-light fw-medium radius-8 border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px bg-primary-600 text-white"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     2
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-primary-50 text-secondary-light fw-medium radius-8 border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     3
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-primary-50 text-secondary-light fw-medium radius-8 border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     {" "}
                                     <Icon icon="ep:d-arrow-right" className="text-xl" />
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-primary-50 text-secondary-light fw-medium radius-8 border-0  py-10 d-flex align-items-center justify-content-center h-48-px"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     Next
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-primary-50 text-secondary-light fw-medium radius-8 border-0  py-10 d-flex align-items-center justify-content-center h-48-px"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     Last
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                         <ul className="pagination d-flex flex-wrap align-items-center gap-2 justify-content-center mt-24">
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-primary-50 text-secondary-light fw-medium radius-8 border-0  py-10 d-flex align-items-center justify-content-center h-48-px"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     Previous
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-primary-50 text-secondary-light fw-medium radius-8 border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     <Icon icon="ep:d-arrow-left" className="text-xl" />
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-primary-50 text-secondary-light fw-medium radius-8 border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     1
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-primary-50 text-secondary-light fw-medium radius-8 border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px bg-primary-600 text-white"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     2
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-primary-50 text-secondary-light fw-medium radius-8 border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     3
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-primary-50 text-secondary-light fw-medium radius-8 border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     {" "}
                                     <Icon icon="ep:d-arrow-right" className="text-xl" />
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-primary-50 text-secondary-light fw-medium radius-8 border-0  py-10 d-flex align-items-center justify-content-center h-48-px"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     Next
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
@@ -155,136 +156,136 @@ const PaginationLayer = () => {
                     <div className="card-body p-24">
                         <ul className="pagination d-flex flex-wrap align-items-center gap-2 justify-content-center">
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-base border text-secondary-light fw-medium radius-8 border-0  py-10 d-flex align-items-center justify-content-center h-48-px"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     First
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-base border text-secondary-light fw-medium radius-8 border-0  py-10 d-flex align-items-center justify-content-center h-48-px"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     Previous
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-base border text-secondary-light fw-medium radius-8 border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     <Icon icon="ep:d-arrow-left" className="text-xl" />
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-base border text-secondary-light fw-medium radius-8 border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     1
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-base border text-secondary-light fw-medium radius-8 border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px border-primary-400 text-primary-600"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     2
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-base border text-secondary-light fw-medium radius-8 border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     3
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-base border text-secondary-light fw-medium radius-8 border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     {" "}
                                     <Icon icon="ep:d-arrow-right" className="text-xl" />
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-base border text-secondary-light fw-medium radius-8 border-0  py-10 d-flex align-items-center justify-content-center h-48-px"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     Next
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-base border text-secondary-light fw-medium radius-8 border-0  py-10 d-flex align-items-center justify-content-center h-48-px"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     Last
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                         <ul className="pagination d-flex flex-wrap align-items-center gap-2 justify-content-center mt-24">
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-base border text-secondary-light fw-medium radius-8 border-0  py-10 d-flex align-items-center justify-content-center h-48-px"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     Previous
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-base border text-secondary-light fw-medium radius-8 border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     <Icon icon="ep:d-arrow-left" className="text-xl" />
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-base border text-secondary-light fw-medium radius-8 border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     1
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-base border text-secondary-light fw-medium radius-8 border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px border-primary-400 text-primary-600"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     2
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-base border text-secondary-light fw-medium radius-8 border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     3
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-base border text-secondary-light fw-medium radius-8 border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     {" "}
                                     <Icon icon="ep:d-arrow-right" className="text-xl" />
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-base border text-secondary-light fw-medium radius-8 border-0  py-10 d-flex align-items-center justify-content-center h-48-px"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     Next
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
@@ -298,127 +299,127 @@ const PaginationLayer = () => {
                     <div className="card-body p-24">
                         <ul className="pagination d-flex flex-wrap align-items-center gap-2 justify-content-center">
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-primary-50 text-secondary-light fw-medium radius-8 border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     <Icon icon="ep:d-arrow-left" className="text-xl" />
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-primary-50 text-secondary-light fw-medium radius-8 border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     <Icon
                                         icon="iconamoon:arrow-left-2-light"
                                         className="text-xxl"
                                     />
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-primary-50 text-secondary-light fw-medium radius-8 border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     1
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-primary-50 text-secondary-light fw-medium radius-8 border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     2
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-primary-50 text-secondary-light fw-medium radius-8 border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px bg-primary-600 text-white"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     3
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-primary-50 text-secondary-light fw-medium radius-8 border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     4
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-primary-50 text-secondary-light fw-medium radius-8 border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     5
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-primary-50 text-secondary-light fw-medium radius-8 border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     {" "}
                                     <Icon
                                         icon="iconamoon:arrow-right-2-light"
                                         className="text-xxl"
                                     />{" "}
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-primary-50 text-secondary-light fw-medium radius-8 border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     {" "}
                                     <Icon icon="ep:d-arrow-right" className="text-xl" />
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                         <ul className="pagination d-flex flex-wrap align-items-center gap-2 justify-content-center mt-24">
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-primary-50 text-secondary-light fw-medium radius-8 border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     <Icon icon="ep:d-arrow-left" className="text-xl" />
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-primary-50 text-secondary-light fw-medium radius-8 border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     1
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-primary-50 text-secondary-light fw-medium radius-8 border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px bg-primary-600 text-white"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     2
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-primary-50 text-secondary-light fw-medium radius-8 border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     3
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-primary-50 text-secondary-light fw-medium radius-8 border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     {" "}
                                     <Icon icon="ep:d-arrow-right" className="text-xl" />
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
@@ -432,127 +433,127 @@ const PaginationLayer = () => {
                     <div className="card-body p-24">
                         <ul className="pagination d-flex flex-wrap align-items-center gap-2 justify-content-center">
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-primary-50 text-secondary-light fw-medium rounded-circle border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     <Icon icon="ep:d-arrow-left" className="text-xl" />
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-primary-50 text-secondary-light fw-medium rounded-circle border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     <Icon
                                         icon="iconamoon:arrow-left-2-light"
                                         className="text-xxl"
                                     />
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-primary-50 text-secondary-light fw-medium rounded-circle border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     1
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-primary-50 text-secondary-light fw-medium rounded-circle border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     2
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-primary-50 text-secondary-light fw-medium rounded-circle border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px bg-primary-600 text-white"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     3
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-primary-50 text-secondary-light fw-medium rounded-circle border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     4
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-primary-50 text-secondary-light fw-medium rounded-circle border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     5
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-primary-50 text-secondary-light fw-medium rounded-circle border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     {" "}
                                     <Icon
                                         icon="iconamoon:arrow-right-2-light"
                                         className="text-xxl"
                                     />{" "}
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-primary-50 text-secondary-light fw-medium rounded-circle border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     {" "}
                                     <Icon icon="ep:d-arrow-right" className="text-xl" />
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                         <ul className="pagination d-flex flex-wrap align-items-center gap-2 justify-content-center mt-24">
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-primary-50 text-secondary-light fw-medium rounded-circle border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     <Icon icon="ep:d-arrow-left" className="text-xl" />
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-primary-50 text-secondary-light fw-medium rounded-circle border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     1
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-primary-50 text-secondary-light fw-medium rounded-circle border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px bg-primary-600 text-white"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     2
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-primary-50 text-secondary-light fw-medium rounded-circle border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     3
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-primary-50 text-secondary-light fw-medium rounded-circle border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     {" "}
                                     <Icon icon="ep:d-arrow-right" className="text-xl" />
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
@@ -567,85 +568,85 @@ const PaginationLayer = () => {
                         <div className="p-24 bg-primary-50 d-inline-block radius-12 bg-primary-success-gradient justify-content-center mx-auto">
                             <ul className="pagination d-flex flex-wrap align-items-center gap-2 justify-content-center">
                                 <li className="page-item">
-                                    <a
+                                    <Link
                                         className="page-link bg-base text-secondary-light fw-medium radius-8 border-0  py-10 d-flex align-items-center justify-content-center h-48-px"
-                                        href="javascript:void(0)"
+                                        to="#"
                                     >
                                         Page 1of 11
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li className="page-item">
-                                    <a
+                                    <Link
                                         className="page-link bg-base text-secondary-light fw-medium radius-8 border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px"
-                                        href="javascript:void(0)"
+                                        to="#"
                                     >
                                         <Icon icon="ep:d-arrow-left" className="text-xl" />
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li className="page-item">
-                                    <a
+                                    <Link
                                         className="page-link bg-base text-secondary-light fw-medium radius-8 border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px"
-                                        href="javascript:void(0)"
+                                        to="#"
                                     >
                                         1
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li className="page-item">
-                                    <a
+                                    <Link
                                         className="page-link fw-medium radius-8 border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px bg-primary-600 text-white"
-                                        href="javascript:void(0)"
+                                        to="#"
                                     >
                                         2
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li className="page-item">
-                                    <a
+                                    <Link
                                         className="page-link bg-base text-secondary-light fw-medium radius-8 border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px"
-                                        href="javascript:void(0)"
+                                        to="#"
                                     >
                                         3
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li className="page-item">
-                                    <a
+                                    <Link
                                         className="page-link bg-base text-secondary-light fw-medium radius-8 border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px"
-                                        href="javascript:void(0)"
+                                        to="#"
                                     >
                                         4
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li className="page-item">
-                                    <a
+                                    <Link
                                         className="page-link bg-base text-secondary-light fw-medium radius-8 border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px"
-                                        href="javascript:void(0)"
+                                        to="#"
                                     >
                                         5
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li className="page-item">
-                                    <a
+                                    <Link
                                         className="page-link bg-base text-secondary-light fw-medium radius-8 border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px"
-                                        href="javascript:void(0)"
+                                        to="#"
                                     >
                                         ...
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li className="page-item">
-                                    <a
+                                    <Link
                                         className="page-link bg-base text-secondary-light fw-medium radius-8 border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px"
-                                        href="javascript:void(0)"
+                                        to="#"
                                     >
                                         {" "}
                                         <Icon icon="ep:d-arrow-right" className="text-xl" />
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li className="page-item">
-                                    <a
+                                    <Link
                                         className="page-link bg-base text-secondary-light fw-medium radius-8 border-0  py-10 d-flex align-items-center justify-content-center h-48-px"
-                                        href="javascript:void(0)"
+                                        to="#"
                                     >
                                         Last
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                         </div>
@@ -660,149 +661,149 @@ const PaginationLayer = () => {
                     <div className="card-body text-center p-24">
                         <ul className="pagination d-flex flex-wrap align-items-center justify-content-center">
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-primary-50 text-secondary-light fw-medium border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px rounded-pill rounded-end-0"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     <Icon icon="ep:d-arrow-left" className="text-xl" />
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-primary-50 text-secondary-light fw-medium border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     <Icon
                                         icon="iconamoon:arrow-left-2-light"
                                         className="text-xxl"
                                     />
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-primary-50 text-secondary-light fw-medium border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     1
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-primary-50 text-secondary-light fw-medium border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px bg-primary-600 text-white"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     2
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-primary-50 text-secondary-light fw-medium border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     3
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-primary-50 text-secondary-light fw-medium border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     4
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-primary-50 text-secondary-light fw-medium border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     5
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-primary-50 text-secondary-light fw-medium border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     {" "}
                                     <Icon
                                         icon="iconamoon:arrow-right-2-light"
                                         className="text-xxl"
                                     />{" "}
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-primary-50 text-secondary-light fw-medium border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px rounded-pill rounded-start-0"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     {" "}
                                     <Icon icon="ep:d-arrow-right" className="text-xl" />
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                         <ul className="pagination d-flex flex-wrap align-items-center justify-content-center mt-24">
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-primary-50 text-secondary-light fw-medium border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px rounded-pill rounded-end-0"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     <Icon
                                         icon="iconamoon:arrow-left-2-light"
                                         className="text-xxl"
                                     />
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-primary-50 text-secondary-light fw-medium border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     1
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-primary-50 text-secondary-light fw-medium border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px bg-primary-600 text-white"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     2
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-primary-50 text-secondary-light fw-medium border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     3
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-primary-50 text-secondary-light fw-medium border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     4
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-primary-50 text-secondary-light fw-medium border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     5
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-primary-50 text-secondary-light fw-medium border-0  py-10 d-flex align-items-center justify-content-center h-48-px w-48-px rounded-pill rounded-start-0"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     {" "}
                                     <Icon
                                         icon="iconamoon:arrow-right-2-light"
                                         className="text-xxl"
                                     />
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>

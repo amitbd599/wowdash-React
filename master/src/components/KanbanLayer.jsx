@@ -16,6 +16,7 @@ import {
     rectSortingStrategy,
 } from '@dnd-kit/sortable';
 import SortableTask from '../helper/SortableTask';
+import { Link } from 'react-router-dom';
 
 function App() {
     // State for tasks
@@ -298,9 +299,9 @@ function App() {
                                                     </button>
                                                     <ul className="dropdown-menu p-12 border bg-base shadow">
                                                         <li>
-                                                            <a
+                                                            <Link
                                                                 className="duplicate-button dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900 d-flex align-items-center gap-2"
-                                                                href="#"
+                                                                to="#"
                                                                 onClick={(e) => {
                                                                     e.preventDefault();
                                                                     alert('Duplicate functionality not implemented');
@@ -308,12 +309,12 @@ function App() {
                                                             >
                                                                 <Icon icon="humbleicons:duplicate" className="text-xl" />
                                                                 Duplicate
-                                                            </a>
+                                                            </Link>
                                                         </li>
                                                         <li>
-                                                            <a
+                                                            <Link
                                                                 className="delete-button dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900 d-flex align-items-center gap-2"
-                                                                href="#"
+                                                                to="#"
                                                                 onClick={(e) => {
                                                                     e.preventDefault();
                                                                     alert('Delete column functionality not implemented');
@@ -321,7 +322,7 @@ function App() {
                                                             >
                                                                 <Icon icon="mingcute:delete-2-line" className="text-xl" />
                                                                 Delete
-                                                            </a>
+                                                            </Link>
                                                         </li>
                                                     </ul>
                                                 </div>

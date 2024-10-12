@@ -1,5 +1,6 @@
 import { Icon } from '@iconify/react/dist/iconify.js'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const CardWithBackgroundColor = () => {
     return (
@@ -21,8 +22,8 @@ const CardWithBackgroundColor = () => {
                                 Random Text gateway to the Origin al the Works Platform, &amp;
                                 your unique block chain gateway identity.
                             </p>
-                            <a
-                                href="javascript:void(0)"
+                            <Link
+                                to="#"
                                 className="btn text-lilac-600 hover-text-lilac px-0 py-0 mt-16 d-inline-flex align-items-center gap-2"
                             >
                                 Read More{" "}
@@ -30,7 +31,7 @@ const CardWithBackgroundColor = () => {
                                     icon="iconamoon:arrow-right-2"
                                     className="text-xl"
                                 />
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -45,8 +46,8 @@ const CardWithBackgroundColor = () => {
                                 Random Text gateway to the Origin al the Works Platform, &amp;
                                 your unique block chain gateway identity.
                             </p>
-                            <a
-                                href="javascript:void(0)"
+                            <Link
+                                to="#"
                                 className="btn text-primary-600 hover-text-primary px-0 py-10 d-inline-flex align-items-center gap-2"
                             >
                                 Read More{" "}
@@ -54,7 +55,7 @@ const CardWithBackgroundColor = () => {
                                     icon="iconamoon:arrow-right-2"
                                     className="text-xl"
                                 />
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -72,8 +73,8 @@ const CardWithBackgroundColor = () => {
                                 Random Text gateway to the Origin al the Works Platform, &amp;
                                 your unique block chain gateway identity.
                             </p>
-                            <a
-                                href="javascript:void(0)"
+                            <Link
+                                to="#"
                                 className="btn text-success-600 hover-text-success px-0 py-10 d-inline-flex align-items-center gap-2"
                             >
                                 Read More{" "}
@@ -81,7 +82,7 @@ const CardWithBackgroundColor = () => {
                                     icon="iconamoon:arrow-right-2"
                                     className="text-xl"
                                 />
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -96,8 +97,8 @@ const CardWithBackgroundColor = () => {
                                 Random Text gateway to the Origin al the Works Platform, &amp;
                                 your unique block chain gateway identity.
                             </p>
-                            <a
-                                href="javascript:void(0)"
+                            <Link
+                                to="#"
                                 className="btn text-danger-600 hover-text-danger px-0 py-10 d-inline-flex align-items-center gap-2"
                             >
                                 Read More{" "}
@@ -105,7 +106,7 @@ const CardWithBackgroundColor = () => {
                                     icon="iconamoon:arrow-right-2"
                                     className="text-xl"
                                 />
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

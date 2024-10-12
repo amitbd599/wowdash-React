@@ -1,6 +1,7 @@
 import { Icon } from '@iconify/react/dist/iconify.js'
 import React, { useState } from 'react'
 import ModalVideo from 'react-modal-video';
+import { Link } from 'react-router-dom';
 const VideosWithContent = () => {
     const [isOpen, setOpen] = useState(false);
     return (
@@ -19,15 +20,15 @@ const VideosWithContent = () => {
                                         className="w-100 object-fit-cover"
                                         alt=""
                                     />
-                                    <a onClick={() => setOpen(true)}
-                                        href="#"
+                                    <Link onClick={() => setOpen(true)}
+                                        to="#"
                                         className="magnific-video bordered-shadow w-56-px h-56-px bg-white rounded-circle d-flex justify-content-center align-items-center position-absolute start-50 top-50 translate-middle z-1"
                                     >
                                         <Icon
                                             icon="ion:play"
                                             className="text-primary-600 text-xxl"
                                         />
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="p-16">
                                     <h6 className="text-xl mb-6 ">This is Video title</h6>
@@ -46,15 +47,15 @@ const VideosWithContent = () => {
                                         className="w-100 object-fit-cover"
                                         alt=""
                                     />
-                                    <a onClick={() => setOpen(true)}
-                                        href="#"
+                                    <Link onClick={() => setOpen(true)}
+                                        to="#"
                                         className="magnific-video bordered-shadow w-56-px h-56-px bg-white rounded-circle d-flex justify-content-center align-items-center position-absolute start-50 top-50 translate-middle z-1"
                                     >
                                         <Icon
                                             icon="ion:play"
                                             className="text-primary-600 text-xxl"
                                         />
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="p-16">
                                     <h6 className="text-xl mb-6 ">This is Video title here</h6>

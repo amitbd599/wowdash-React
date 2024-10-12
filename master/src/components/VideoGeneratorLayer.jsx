@@ -1,5 +1,6 @@
 import { Icon } from '@iconify/react/dist/iconify.js'
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 
 const VideoGeneratorLayer = () => {
     const [file, setFile] = useState(null);
@@ -144,12 +145,12 @@ const VideoGeneratorLayer = () => {
                 <div className="chat-main card overflow-hidden">
                     <div className="chat-sidebar-single gap-8 justify-content-between cursor-default flex-nowrap">
                         <div className="d-flex align-items-center gap-16">
-                            <a
-                                href="text-generator-new.html"
+                            <Link
+                                to="/text-generator-new"
                                 className="text-primary-light text-2xl line-height-1"
                             >
                                 <i className="ri-arrow-left-line" />
-                            </a>
+                            </Link>
                             <h6 className="text-lg mb-0 text-line-1">
                                 Please, Make 4 variant of this image Quickly As Soon As possible
                             </h6>
@@ -177,7 +178,7 @@ const VideoGeneratorLayer = () => {
                                 <div className="img overflow-hidden flex-shrink-0">
                                     <img
                                         src="assets/images/chat/1.png"
-                                        alt="image"
+                                        alt="Wowdash"
                                         className="w-44-px h-44-px rounded-circle object-fit-cover"
                                     />
                                 </div>
@@ -205,7 +206,7 @@ const VideoGeneratorLayer = () => {
                             <div className="img overflow-hidden flex-shrink-0">
                                 <img
                                     src="assets/images/wow-dash-favicon.png"
-                                    alt="image"
+                                    alt="Wowdash"
                                     className="w-44-px h-44-px rounded-circle object-fit-cover"
                                 />
                             </div>
@@ -216,7 +217,7 @@ const VideoGeneratorLayer = () => {
                                         <div className="generated-image-item radius-8 overflow-hidden position-relative">
                                             <img
                                                 src="assets/images/chatgpt/image-generator5.png"
-                                                alt=""
+                                                alt="Wowdash"
                                                 className="w-100 h-100 object-fit-cover"
                                             />
                                             <button className="w-72-px h-72-px bg-primary-600 rounded-circle text-white text-2xxl d-flex align-items-center justify-content-center bg-hover-primary-700 position-absolute top-50 start-50 translate-middle">
@@ -270,7 +271,7 @@ const VideoGeneratorLayer = () => {
                                 <div className="img overflow-hidden flex-shrink-0">
                                     <img
                                         src="assets/images/chat/1.png"
-                                        alt="image"
+                                        alt="Wowdash"
                                         className="w-44-px h-44-px rounded-circle object-fit-cover"
                                     />
                                 </div>
@@ -298,7 +299,7 @@ const VideoGeneratorLayer = () => {
                             <div className="img overflow-hidden flex-shrink-0">
                                 <img
                                     src="assets/images/wow-dash-favicon.png"
-                                    alt="image"
+                                    alt="Wowdash"
                                     className="w-44-px h-44-px rounded-circle object-fit-cover"
                                 />
                             </div>
@@ -309,7 +310,7 @@ const VideoGeneratorLayer = () => {
                                         <div className="generated-image-item radius-8 overflow-hidden position-relative">
                                             <img
                                                 src="assets/images/chatgpt/image-generator5.png"
-                                                alt=""
+                                                alt="Wowdash"
                                                 className="w-100 h-100 object-fit-cover"
                                             />
                                             <button className="w-72-px h-72-px bg-primary-600 rounded-circle text-white text-2xxl d-flex align-items-center justify-content-center bg-hover-primary-700 position-absolute top-50 start-50 translate-middle">

@@ -1,5 +1,6 @@
 import { Icon } from '@iconify/react/dist/iconify.js'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const UsersGridLayer = () => {
     return (
@@ -29,8 +30,8 @@ const UsersGridLayer = () => {
                         <Icon icon="ion:search-outline" className="icon" />
                     </form>
                 </div>
-                <a
-                    href="view-profile.html"
+                <Link
+                    to="/view-profile"
                     className="btn btn-primary text-sm btn-sm px-12 py-12 radius-8 d-flex align-items-center gap-2"
                 >
                     <Icon
@@ -38,7 +39,7 @@ const UsersGridLayer = () => {
                         className="icon text-xl line-height-1"
                     />
                     Add New User
-                </a>
+                </Link>
             </div>
             <div className="card-body p-24">
                 <div className="row gy-4">
@@ -63,12 +64,12 @@ const UsersGridLayer = () => {
                                 </button>
                                 <ul className="dropdown-menu p-12 border bg-base shadow">
                                     <li>
-                                        <a
+                                        <Link
                                             className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900 d-flex align-items-center gap-10"
                                             href="#"
                                         >
                                             Edit
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
                                         <button
@@ -104,8 +105,8 @@ const UsersGridLayer = () => {
                                         </span>
                                     </div>
                                 </div>
-                                <a
-                                    href="view-profile.html"
+                                <Link
+                                    to="/view-profile"
                                     className="bg-primary-50 text-primary-600 bg-hover-primary-600 hover-text-white p-10 text-sm btn-sm px-12 py-12 radius-8 d-flex align-items-center justify-content-center mt-16 fw-medium gap-2 w-100"
                                 >
                                     View Profile
@@ -113,7 +114,7 @@ const UsersGridLayer = () => {
                                         icon="solar:alt-arrow-right-linear"
                                         className="icon text-xl line-height-1"
                                     />
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -138,12 +139,12 @@ const UsersGridLayer = () => {
                                 </button>
                                 <ul className="dropdown-menu p-12 border bg-base shadow">
                                     <li>
-                                        <a
+                                        <Link
                                             className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900 d-flex align-items-center gap-10"
                                             href="#"
                                         >
                                             Edit
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
                                         <button
@@ -179,8 +180,8 @@ const UsersGridLayer = () => {
                                         </span>
                                     </div>
                                 </div>
-                                <a
-                                    href="view-profile.html"
+                                <Link
+                                    to="/view-profile"
                                     className="bg-primary-50 text-primary-600 bg-hover-primary-600 hover-text-white p-10 text-sm btn-sm px-12 py-12 radius-8 d-flex align-items-center justify-content-center mt-16 fw-medium gap-2 w-100"
                                 >
                                     View Profile
@@ -188,7 +189,7 @@ const UsersGridLayer = () => {
                                         icon="solar:alt-arrow-right-linear"
                                         className="icon text-xl line-height-1"
                                     />
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -213,12 +214,12 @@ const UsersGridLayer = () => {
                                 </button>
                                 <ul className="dropdown-menu p-12 border bg-base shadow">
                                     <li>
-                                        <a
+                                        <Link
                                             className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900 d-flex align-items-center gap-10"
                                             href="#"
                                         >
                                             Edit
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
                                         <button
@@ -254,8 +255,8 @@ const UsersGridLayer = () => {
                                         </span>
                                     </div>
                                 </div>
-                                <a
-                                    href="view-profile.html"
+                                <Link
+                                    to="/view-profile"
                                     className="bg-primary-50 text-primary-600 bg-hover-primary-600 hover-text-white p-10 text-sm btn-sm px-12 py-12 radius-8 d-flex align-items-center justify-content-center mt-16 fw-medium gap-2 w-100"
                                 >
                                     View Profile
@@ -263,7 +264,7 @@ const UsersGridLayer = () => {
                                         icon="solar:alt-arrow-right-linear"
                                         className="icon text-xl line-height-1"
                                     />
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -288,12 +289,12 @@ const UsersGridLayer = () => {
                                 </button>
                                 <ul className="dropdown-menu p-12 border bg-base shadow">
                                     <li>
-                                        <a
+                                        <Link
                                             className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900 d-flex align-items-center gap-10"
                                             href="#"
                                         >
                                             Edit
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
                                         <button
@@ -329,8 +330,8 @@ const UsersGridLayer = () => {
                                         </span>
                                     </div>
                                 </div>
-                                <a
-                                    href="view-profile.html"
+                                <Link
+                                    to="/view-profile"
                                     className="bg-primary-50 text-primary-600 bg-hover-primary-600 hover-text-white p-10 text-sm btn-sm px-12 py-12 radius-8 d-flex align-items-center justify-content-center mt-16 fw-medium gap-2 w-100"
                                 >
                                     View Profile
@@ -338,7 +339,7 @@ const UsersGridLayer = () => {
                                         icon="solar:alt-arrow-right-linear"
                                         className="icon text-xl line-height-1"
                                     />
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -363,12 +364,12 @@ const UsersGridLayer = () => {
                                 </button>
                                 <ul className="dropdown-menu p-12 border bg-base shadow">
                                     <li>
-                                        <a
+                                        <Link
                                             className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900 d-flex align-items-center gap-10"
                                             href="#"
                                         >
                                             Edit
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
                                         <button
@@ -404,8 +405,8 @@ const UsersGridLayer = () => {
                                         </span>
                                     </div>
                                 </div>
-                                <a
-                                    href="view-profile.html"
+                                <Link
+                                    to="/view-profile"
                                     className="bg-primary-50 text-primary-600 bg-hover-primary-600 hover-text-white p-10 text-sm btn-sm px-12 py-12 radius-8 d-flex align-items-center justify-content-center mt-16 fw-medium gap-2 w-100"
                                 >
                                     View Profile
@@ -413,7 +414,7 @@ const UsersGridLayer = () => {
                                         icon="solar:alt-arrow-right-linear"
                                         className="icon text-xl line-height-1"
                                     />
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -438,12 +439,12 @@ const UsersGridLayer = () => {
                                 </button>
                                 <ul className="dropdown-menu p-12 border bg-base shadow">
                                     <li>
-                                        <a
+                                        <Link
                                             className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900 d-flex align-items-center gap-10"
                                             href="#"
                                         >
                                             Edit
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
                                         <button
@@ -479,8 +480,8 @@ const UsersGridLayer = () => {
                                         </span>
                                     </div>
                                 </div>
-                                <a
-                                    href="view-profile.html"
+                                <Link
+                                    to="/view-profile"
                                     className="bg-primary-50 text-primary-600 bg-hover-primary-600 hover-text-white p-10 text-sm btn-sm px-12 py-12 radius-8 d-flex align-items-center justify-content-center mt-16 fw-medium gap-2 w-100"
                                 >
                                     View Profile
@@ -488,7 +489,7 @@ const UsersGridLayer = () => {
                                         icon="solar:alt-arrow-right-linear"
                                         className="icon text-xl line-height-1"
                                     />
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -513,12 +514,12 @@ const UsersGridLayer = () => {
                                 </button>
                                 <ul className="dropdown-menu p-12 border bg-base shadow">
                                     <li>
-                                        <a
+                                        <Link
                                             className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900 d-flex align-items-center gap-10"
                                             href="#"
                                         >
                                             Edit
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
                                         <button
@@ -554,8 +555,8 @@ const UsersGridLayer = () => {
                                         </span>
                                     </div>
                                 </div>
-                                <a
-                                    href="view-profile.html"
+                                <Link
+                                    to="/view-profile"
                                     className="bg-primary-50 text-primary-600 bg-hover-primary-600 hover-text-white p-10 text-sm btn-sm px-12 py-12 radius-8 d-flex align-items-center justify-content-center mt-16 fw-medium gap-2 w-100"
                                 >
                                     View Profile
@@ -563,7 +564,7 @@ const UsersGridLayer = () => {
                                         icon="solar:alt-arrow-right-linear"
                                         className="icon text-xl line-height-1"
                                     />
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -588,12 +589,12 @@ const UsersGridLayer = () => {
                                 </button>
                                 <ul className="dropdown-menu p-12 border bg-base shadow">
                                     <li>
-                                        <a
+                                        <Link
                                             className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900 d-flex align-items-center gap-10"
                                             href="#"
                                         >
                                             Edit
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
                                         <button
@@ -629,8 +630,8 @@ const UsersGridLayer = () => {
                                         </span>
                                     </div>
                                 </div>
-                                <a
-                                    href="view-profile.html"
+                                <Link
+                                    to="/view-profile"
                                     className="bg-primary-50 text-primary-600 bg-hover-primary-600 hover-text-white p-10 text-sm btn-sm px-12 py-12 radius-8 d-flex align-items-center justify-content-center mt-16 fw-medium gap-2 w-100"
                                 >
                                     View Profile
@@ -638,7 +639,7 @@ const UsersGridLayer = () => {
                                         icon="solar:alt-arrow-right-linear"
                                         className="icon text-xl line-height-1"
                                     />
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -663,12 +664,12 @@ const UsersGridLayer = () => {
                                 </button>
                                 <ul className="dropdown-menu p-12 border bg-base shadow">
                                     <li>
-                                        <a
+                                        <Link
                                             className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900 d-flex align-items-center gap-10"
                                             href="#"
                                         >
                                             Edit
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
                                         <button
@@ -704,8 +705,8 @@ const UsersGridLayer = () => {
                                         </span>
                                     </div>
                                 </div>
-                                <a
-                                    href="view-profile.html"
+                                <Link
+                                    to="/view-profile"
                                     className="bg-primary-50 text-primary-600 bg-hover-primary-600 hover-text-white p-10 text-sm btn-sm px-12 py-12 radius-8 d-flex align-items-center justify-content-center mt-16 fw-medium gap-2 w-100"
                                 >
                                     View Profile
@@ -713,7 +714,7 @@ const UsersGridLayer = () => {
                                         icon="solar:alt-arrow-right-linear"
                                         className="icon text-xl line-height-1"
                                     />
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -738,12 +739,12 @@ const UsersGridLayer = () => {
                                 </button>
                                 <ul className="dropdown-menu p-12 border bg-base shadow">
                                     <li>
-                                        <a
+                                        <Link
                                             className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900 d-flex align-items-center gap-10"
                                             href="#"
                                         >
                                             Edit
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
                                         <button
@@ -779,8 +780,8 @@ const UsersGridLayer = () => {
                                         </span>
                                     </div>
                                 </div>
-                                <a
-                                    href="view-profile.html"
+                                <Link
+                                    to="/view-profile"
                                     className="bg-primary-50 text-primary-600 bg-hover-primary-600 hover-text-white p-10 text-sm btn-sm px-12 py-12 radius-8 d-flex align-items-center justify-content-center mt-16 fw-medium gap-2 w-100"
                                 >
                                     View Profile
@@ -788,7 +789,7 @@ const UsersGridLayer = () => {
                                         icon="solar:alt-arrow-right-linear"
                                         className="icon text-xl line-height-1"
                                     />
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -813,12 +814,12 @@ const UsersGridLayer = () => {
                                 </button>
                                 <ul className="dropdown-menu p-12 border bg-base shadow">
                                     <li>
-                                        <a
+                                        <Link
                                             className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900 d-flex align-items-center gap-10"
                                             href="#"
                                         >
                                             Edit
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
                                         <button
@@ -854,8 +855,8 @@ const UsersGridLayer = () => {
                                         </span>
                                     </div>
                                 </div>
-                                <a
-                                    href="view-profile.html"
+                                <Link
+                                    to="/view-profile"
                                     className="bg-primary-50 text-primary-600 bg-hover-primary-600 hover-text-white p-10 text-sm btn-sm px-12 py-12 radius-8 d-flex align-items-center justify-content-center mt-16 fw-medium gap-2 w-100"
                                 >
                                     View Profile
@@ -863,7 +864,7 @@ const UsersGridLayer = () => {
                                         icon="solar:alt-arrow-right-linear"
                                         className="icon text-xl line-height-1"
                                     />
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -888,12 +889,12 @@ const UsersGridLayer = () => {
                                 </button>
                                 <ul className="dropdown-menu p-12 border bg-base shadow">
                                     <li>
-                                        <a
+                                        <Link
                                             className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900 d-flex align-items-center gap-10"
                                             href="#"
                                         >
                                             Edit
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
                                         <button
@@ -929,8 +930,8 @@ const UsersGridLayer = () => {
                                         </span>
                                     </div>
                                 </div>
-                                <a
-                                    href="view-profile.html"
+                                <Link
+                                    to="/view-profile"
                                     className="bg-primary-50 text-primary-600 bg-hover-primary-600 hover-text-white p-10 text-sm btn-sm px-12 py-12 radius-8 d-flex align-items-center justify-content-center mt-16 fw-medium gap-2 w-100"
                                 >
                                     View Profile
@@ -938,7 +939,7 @@ const UsersGridLayer = () => {
                                         icon="solar:alt-arrow-right-linear"
                                         className="icon text-xl line-height-1"
                                     />
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -947,61 +948,61 @@ const UsersGridLayer = () => {
                     <span>Showing 1 to 10 of 12 entries</span>
                     <ul className="pagination d-flex flex-wrap align-items-center gap-2 justify-content-center">
                         <li className="page-item">
-                            <a
+                            <Link
                                 className="page-link bg-neutral-200 text-secondary-light fw-semibold radius-8 border-0 d-flex align-items-center justify-content-center h-32-px  text-md"
-                                href="javascript:void(0)"
+                                to="#"
                             >
                                 <Icon icon="ep:d-arrow-left" className="" />
-                            </a>
+                            </Link>
                         </li>
                         <li className="page-item">
-                            <a
+                            <Link
                                 className="page-link text-secondary-light fw-semibold radius-8 border-0 d-flex align-items-center justify-content-center h-32-px w-32-px text-md bg-primary-600 text-white"
-                                href="javascript:void(0)"
+                                to="#"
                             >
                                 1
-                            </a>
+                            </Link>
                         </li>
                         <li className="page-item">
-                            <a
+                            <Link
                                 className="page-link bg-neutral-200 text-secondary-light fw-semibold radius-8 border-0 d-flex align-items-center justify-content-center h-32-px w-32-px"
-                                href="javascript:void(0)"
+                                to="#"
                             >
                                 2
-                            </a>
+                            </Link>
                         </li>
                         <li className="page-item">
-                            <a
+                            <Link
                                 className="page-link bg-neutral-200 text-secondary-light fw-semibold radius-8 border-0 d-flex align-items-center justify-content-center h-32-px w-32-px text-md"
-                                href="javascript:void(0)"
+                                to="#"
                             >
                                 3
-                            </a>
+                            </Link>
                         </li>
                         <li className="page-item">
-                            <a
+                            <Link
                                 className="page-link bg-neutral-200 text-secondary-light fw-semibold radius-8 border-0 d-flex align-items-center justify-content-center h-32-px w-32-px text-md"
-                                href="javascript:void(0)"
+                                to="#"
                             >
                                 4
-                            </a>
+                            </Link>
                         </li>
                         <li className="page-item">
-                            <a
+                            <Link
                                 className="page-link bg-neutral-200 text-secondary-light fw-semibold radius-8 border-0 d-flex align-items-center justify-content-center h-32-px w-32-px text-md"
-                                href="javascript:void(0)"
+                                to="#"
                             >
                                 5
-                            </a>
+                            </Link>
                         </li>
                         <li className="page-item">
-                            <a
+                            <Link
                                 className="page-link bg-neutral-200 text-secondary-light fw-semibold radius-8 border-0 d-flex align-items-center justify-content-center h-32-px text-md"
-                                href="javascript:void(0)"
+                                to="#"
                             >
                                 {" "}
                                 <Icon icon="ep:d-arrow-right" className="" />{" "}
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                 </div>

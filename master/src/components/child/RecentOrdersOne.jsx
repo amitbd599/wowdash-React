@@ -1,5 +1,6 @@
 import { Icon } from '@iconify/react/dist/iconify.js'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const RecentOrdersOne = () => {
     return (
@@ -8,8 +9,8 @@ const RecentOrdersOne = () => {
                 <div className="card-body p-24">
                     <div className="d-flex align-items-center flex-wrap gap-2 justify-content-between mb-20">
                         <h6 className="mb-2 fw-bold text-lg mb-0">Recent Orders</h6>
-                        <a
-                            href="javascript:void(0)"
+                        <Link
+                            to="#"
                             className="text-primary-600 hover-text-primary d-flex align-items-center gap-1"
                         >
                             View All
@@ -17,7 +18,7 @@ const RecentOrdersOne = () => {
                                 icon="solar:alt-arrow-right-linear"
                                 className="icon"
                             />
-                        </a>
+                        </Link>
                     </div>
                     <div className="table-responsive scroll-sm">
                         <table className="table bordered-table mb-0">

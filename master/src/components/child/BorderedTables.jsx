@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const BorderedTables = () => {
     return (
@@ -22,77 +23,77 @@ const BorderedTables = () => {
                             <tbody>
                                 <tr>
                                     <td>
-                                        <a href="javascript:void(0)" className="text-primary-600">
+                                        <Link to="#" className="text-primary-600">
                                             #526534
-                                        </a>
+                                        </Link>
                                     </td>
                                     <td>Kathryn Murphy</td>
                                     <td>25 Jan 2024</td>
                                     <td>$200.00</td>
                                     <td>
-                                        <a href="javascript:void(0)" className="text-primary-600">
+                                        <Link to="#" className="text-primary-600">
                                             View More &gt;
-                                        </a>
+                                        </Link>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <a href="javascript:void(0)" className="text-primary-600">
+                                        <Link to="#" className="text-primary-600">
                                             #696589
-                                        </a>
+                                        </Link>
                                     </td>
                                     <td>Annette Black</td>
                                     <td>25 Jan 2024</td>
                                     <td>$200.00</td>
                                     <td>
-                                        <a href="javascript:void(0)" className="text-primary-600">
+                                        <Link to="#" className="text-primary-600">
                                             View More &gt;
-                                        </a>
+                                        </Link>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <a href="javascript:void(0)" className="text-primary-600">
+                                        <Link to="#" className="text-primary-600">
                                             #256584
-                                        </a>
+                                        </Link>
                                     </td>
                                     <td>256584</td>
                                     <td>10 Feb 2024</td>
                                     <td>$200.00</td>
                                     <td>
-                                        <a href="javascript:void(0)" className="text-primary-600">
+                                        <Link to="#" className="text-primary-600">
                                             View More &gt;
-                                        </a>
+                                        </Link>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <a href="javascript:void(0)" className="text-primary-600">
+                                        <Link to="#" className="text-primary-600">
                                             #526587
-                                        </a>
+                                        </Link>
                                     </td>
                                     <td>Eleanor Pena</td>
                                     <td>10 Feb 2024</td>
                                     <td>$150.00</td>
                                     <td>
-                                        <a href="javascript:void(0)" className="text-primary-600">
+                                        <Link to="#" className="text-primary-600">
                                             View More &gt;
-                                        </a>
+                                        </Link>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <a href="javascript:void(0)" className="text-primary-600">
+                                        <Link to="#" className="text-primary-600">
                                             #105986
-                                        </a>
+                                        </Link>
                                     </td>
                                     <td>Leslie Alexander</td>
                                     <td>15 Mar 2024</td>
                                     <td>$150.00</td>
                                     <td>
-                                        <a href="javascript:void(0)" className="text-primary-600">
+                                        <Link to="#" className="text-primary-600">
                                             View More &gt;
-                                        </a>
+                                        </Link>
                                     </td>
                                 </tr>
                             </tbody>

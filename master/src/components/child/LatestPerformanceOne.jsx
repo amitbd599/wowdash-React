@@ -1,5 +1,6 @@
 import { Icon } from '@iconify/react/dist/iconify.js'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const LatestPerformanceOne = () => {
     return (
@@ -41,13 +42,13 @@ const LatestPerformanceOne = () => {
                             </button>
                         </li>
                     </ul>
-                    <a
-                        href="javascript:void(0)"
+                    <Link
+                        to="#"
                         className="text-primary-600 hover-text-primary d-flex align-items-center gap-1"
                     >
                         View All
                         <Icon icon="solar:alt-arrow-right-linear" className="icon" />
-                    </a>
+                    </Link>
                 </div>
                 <div className="card-body p-24">
                     <div className="tab-content" id="pills-tabContent">
@@ -103,28 +104,28 @@ const LatestPerformanceOne = () => {
                                                     </button>
                                                     <ul className="dropdown-menu p-12 border bg-base shadow">
                                                         <li>
-                                                            <a
+                                                            <Link
                                                                 className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
-                                                                href="javascript:void(0)"
+                                                                to="#"
                                                             >
                                                                 Action
-                                                            </a>
+                                                            </Link>
                                                         </li>
                                                         <li>
-                                                            <a
+                                                            <Link
                                                                 className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
-                                                                href="javascript:void(0)"
+                                                                to="#"
                                                             >
                                                                 Another action
-                                                            </a>
+                                                            </Link>
                                                         </li>
                                                         <li>
-                                                            <a
+                                                            <Link
                                                                 className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
-                                                                href="javascript:void(0)"
+                                                                to="#"
                                                             >
                                                                 Something else here
-                                                            </a>
+                                                            </Link>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -163,28 +164,28 @@ const LatestPerformanceOne = () => {
                                                     </button>
                                                     <ul className="dropdown-menu p-12 border bg-base shadow">
                                                         <li>
-                                                            <a
+                                                            <Link
                                                                 className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
-                                                                href="javascript:void(0)"
+                                                                to="#"
                                                             >
                                                                 Action
-                                                            </a>
+                                                            </Link>
                                                         </li>
                                                         <li>
-                                                            <a
+                                                            <Link
                                                                 className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
-                                                                href="javascript:void(0)"
+                                                                to="#"
                                                             >
                                                                 Another action
-                                                            </a>
+                                                            </Link>
                                                         </li>
                                                         <li>
-                                                            <a
+                                                            <Link
                                                                 className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
-                                                                href="javascript:void(0)"
+                                                                to="#"
                                                             >
                                                                 Something else here
-                                                            </a>
+                                                            </Link>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -223,28 +224,28 @@ const LatestPerformanceOne = () => {
                                                     </button>
                                                     <ul className="dropdown-menu p-12 border bg-base shadow">
                                                         <li>
-                                                            <a
+                                                            <Link
                                                                 className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
-                                                                href="javascript:void(0)"
+                                                                to="#"
                                                             >
                                                                 Action
-                                                            </a>
+                                                            </Link>
                                                         </li>
                                                         <li>
-                                                            <a
+                                                            <Link
                                                                 className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
-                                                                href="javascript:void(0)"
+                                                                to="#"
                                                             >
                                                                 Another action
-                                                            </a>
+                                                            </Link>
                                                         </li>
                                                         <li>
-                                                            <a
+                                                            <Link
                                                                 className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
-                                                                href="javascript:void(0)"
+                                                                to="#"
                                                             >
                                                                 Something else here
-                                                            </a>
+                                                            </Link>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -283,28 +284,28 @@ const LatestPerformanceOne = () => {
                                                     </button>
                                                     <ul className="dropdown-menu p-12 border bg-base shadow">
                                                         <li>
-                                                            <a
+                                                            <Link
                                                                 className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
-                                                                href="javascript:void(0)"
+                                                                to="#"
                                                             >
                                                                 Action
-                                                            </a>
+                                                            </Link>
                                                         </li>
                                                         <li>
-                                                            <a
+                                                            <Link
                                                                 className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
-                                                                href="javascript:void(0)"
+                                                                to="#"
                                                             >
                                                                 Another action
-                                                            </a>
+                                                            </Link>
                                                         </li>
                                                         <li>
-                                                            <a
+                                                            <Link
                                                                 className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
-                                                                href="javascript:void(0)"
+                                                                to="#"
                                                             >
                                                                 Something else here
-                                                            </a>
+                                                            </Link>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -343,28 +344,28 @@ const LatestPerformanceOne = () => {
                                                     </button>
                                                     <ul className="dropdown-menu p-12 border bg-base shadow">
                                                         <li>
-                                                            <a
+                                                            <Link
                                                                 className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
-                                                                href="javascript:void(0)"
+                                                                to="#"
                                                             >
                                                                 Action
-                                                            </a>
+                                                            </Link>
                                                         </li>
                                                         <li>
-                                                            <a
+                                                            <Link
                                                                 className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
-                                                                href="javascript:void(0)"
+                                                                to="#"
                                                             >
                                                                 Another action
-                                                            </a>
+                                                            </Link>
                                                         </li>
                                                         <li>
-                                                            <a
+                                                            <Link
                                                                 className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
-                                                                href="javascript:void(0)"
+                                                                to="#"
                                                             >
                                                                 Something else here
-                                                            </a>
+                                                            </Link>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -426,28 +427,28 @@ const LatestPerformanceOne = () => {
                                                     </button>
                                                     <ul className="dropdown-menu p-12 border bg-base shadow">
                                                         <li>
-                                                            <a
+                                                            <Link
                                                                 className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
-                                                                href="javascript:void(0)"
+                                                                to="#"
                                                             >
                                                                 Action
-                                                            </a>
+                                                            </Link>
                                                         </li>
                                                         <li>
-                                                            <a
+                                                            <Link
                                                                 className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
-                                                                href="javascript:void(0)"
+                                                                to="#"
                                                             >
                                                                 Another action
-                                                            </a>
+                                                            </Link>
                                                         </li>
                                                         <li>
-                                                            <a
+                                                            <Link
                                                                 className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
-                                                                href="javascript:void(0)"
+                                                                to="#"
                                                             >
                                                                 Something else here
-                                                            </a>
+                                                            </Link>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -486,28 +487,28 @@ const LatestPerformanceOne = () => {
                                                     </button>
                                                     <ul className="dropdown-menu p-12 border bg-base shadow">
                                                         <li>
-                                                            <a
+                                                            <Link
                                                                 className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
-                                                                href="javascript:void(0)"
+                                                                to="#"
                                                             >
                                                                 Action
-                                                            </a>
+                                                            </Link>
                                                         </li>
                                                         <li>
-                                                            <a
+                                                            <Link
                                                                 className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
-                                                                href="javascript:void(0)"
+                                                                to="#"
                                                             >
                                                                 Another action
-                                                            </a>
+                                                            </Link>
                                                         </li>
                                                         <li>
-                                                            <a
+                                                            <Link
                                                                 className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
-                                                                href="javascript:void(0)"
+                                                                to="#"
                                                             >
                                                                 Something else here
-                                                            </a>
+                                                            </Link>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -546,28 +547,28 @@ const LatestPerformanceOne = () => {
                                                     </button>
                                                     <ul className="dropdown-menu p-12 border bg-base shadow">
                                                         <li>
-                                                            <a
+                                                            <Link
                                                                 className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
-                                                                href="javascript:void(0)"
+                                                                to="#"
                                                             >
                                                                 Action
-                                                            </a>
+                                                            </Link>
                                                         </li>
                                                         <li>
-                                                            <a
+                                                            <Link
                                                                 className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
-                                                                href="javascript:void(0)"
+                                                                to="#"
                                                             >
                                                                 Another action
-                                                            </a>
+                                                            </Link>
                                                         </li>
                                                         <li>
-                                                            <a
+                                                            <Link
                                                                 className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
-                                                                href="javascript:void(0)"
+                                                                to="#"
                                                             >
                                                                 Something else here
-                                                            </a>
+                                                            </Link>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -606,28 +607,28 @@ const LatestPerformanceOne = () => {
                                                     </button>
                                                     <ul className="dropdown-menu p-12 border bg-base shadow">
                                                         <li>
-                                                            <a
+                                                            <Link
                                                                 className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
-                                                                href="javascript:void(0)"
+                                                                to="#"
                                                             >
                                                                 Action
-                                                            </a>
+                                                            </Link>
                                                         </li>
                                                         <li>
-                                                            <a
+                                                            <Link
                                                                 className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
-                                                                href="javascript:void(0)"
+                                                                to="#"
                                                             >
                                                                 Another action
-                                                            </a>
+                                                            </Link>
                                                         </li>
                                                         <li>
-                                                            <a
+                                                            <Link
                                                                 className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
-                                                                href="javascript:void(0)"
+                                                                to="#"
                                                             >
                                                                 Something else here
-                                                            </a>
+                                                            </Link>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -666,28 +667,28 @@ const LatestPerformanceOne = () => {
                                                     </button>
                                                     <ul className="dropdown-menu p-12 border bg-base shadow">
                                                         <li>
-                                                            <a
+                                                            <Link
                                                                 className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
-                                                                href="javascript:void(0)"
+                                                                to="#"
                                                             >
                                                                 Action
-                                                            </a>
+                                                            </Link>
                                                         </li>
                                                         <li>
-                                                            <a
+                                                            <Link
                                                                 className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
-                                                                href="javascript:void(0)"
+                                                                to="#"
                                                             >
                                                                 Another action
-                                                            </a>
+                                                            </Link>
                                                         </li>
                                                         <li>
-                                                            <a
+                                                            <Link
                                                                 className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
-                                                                href="javascript:void(0)"
+                                                                to="#"
                                                             >
                                                                 Something else here
-                                                            </a>
+                                                            </Link>
                                                         </li>
                                                     </ul>
                                                 </div>

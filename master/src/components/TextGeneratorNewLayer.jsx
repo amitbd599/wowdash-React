@@ -1,5 +1,6 @@
 import { Icon } from '@iconify/react/dist/iconify.js'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const TextGeneratorNewLayer = () => {
     return (
@@ -8,49 +9,49 @@ const TextGeneratorNewLayer = () => {
                 <div className="card h-100 p-0">
                     <div className="card-body p-0">
                         <div className="p-24">
-                            <a
-                                href="text-generator-new.html"
+                            <Link
+                                to="/text-generator-new"
                                 className="btn btn-primary text-sm btn-sm px-12 py-12 w-100 radius-8 d-flex align-items-center justify-content-center gap-2"
                             >
                                 <i className="ri-messenger-line" />
                                 New Chat
-                            </a>
+                            </Link>
                         </div>
                         <ul className="ai-chat-list scroll-sm pe-24 ps-24 pb-24">
                             <li className="mb-16 mt-0">
                                 <span className="text-primary-600 text-sm fw-semibold">Today</span>
                             </li>
                             <li className="mb-16">
-                                <a
-                                    href="text-generator.html"
+                                <Link
+                                    to="/text-generator"
                                     className="text-line-1 text-secondary-light text-hover-primary-600"
                                 >
                                     UI/UX Design Roadmap write me the roadmap right now{" "}
-                                </a>
+                                </Link>
                             </li>
                             <li className="mb-16">
-                                <a
-                                    href="text-generator.html"
+                                <Link
+                                    to="/text-generator"
                                     className="text-line-1 text-secondary-light text-hover-primary-600"
                                 >
                                     Calorie-dense foods: Needs, healthy
-                                </a>
+                                </Link>
                             </li>
                             <li className="mb-16">
-                                <a
-                                    href="text-generator.html"
+                                <Link
+                                    to="/text-generator"
                                     className="text-line-1 text-secondary-light text-hover-primary-600"
                                 >
                                     Calorie-dense foods: Needs, healthy
-                                </a>
+                                </Link>
                             </li>
                             <li className="mb-16">
-                                <a
-                                    href="text-generator.html"
+                                <Link
+                                    to="/text-generator"
                                     className="text-line-1 text-secondary-light text-hover-primary-600"
                                 >
                                     Calorie-dense foods: Needs, healthy
-                                </a>
+                                </Link>
                             </li>
                             <li className="mb-16 mt-24">
                                 <span className="text-primary-600 text-sm fw-semibold">
@@ -58,36 +59,36 @@ const TextGeneratorNewLayer = () => {
                                 </span>
                             </li>
                             <li className="mb-16">
-                                <a
-                                    href="text-generator.html"
+                                <Link
+                                    to="/text-generator"
                                     className="text-line-1 text-secondary-light text-hover-primary-600"
                                 >
                                     Online School Education Learning
-                                </a>
+                                </Link>
                             </li>
                             <li className="mb-16">
-                                <a
-                                    href="text-generator.html"
+                                <Link
+                                    to="/text-generator"
                                     className="text-line-1 text-secondary-light text-hover-primary-600"
                                 >
                                     Calorie-dense foods: Needs, healthy
-                                </a>
+                                </Link>
                             </li>
                             <li className="mb-16">
-                                <a
-                                    href="text-generator.html"
+                                <Link
+                                    to="/text-generator"
                                     className="text-line-1 text-secondary-light text-hover-primary-600"
                                 >
                                     Calorie-dense foods: Needs, healthy
-                                </a>
+                                </Link>
                             </li>
                             <li className="mb-16">
-                                <a
-                                    href="text-generator.html"
+                                <Link
+                                    to="/text-generator"
                                     className="text-line-1 text-secondary-light text-hover-primary-600"
                                 >
                                     Calorie-dense foods: Needs, healthy
-                                </a>
+                                </Link>
                             </li>
                             <li className="mb-16 mt-24">
                                 <span className="text-primary-600 text-sm fw-semibold">
@@ -95,36 +96,36 @@ const TextGeneratorNewLayer = () => {
                                 </span>
                             </li>
                             <li className="mb-16">
-                                <a
-                                    href="text-generator.html"
+                                <Link
+                                    to="/text-generator"
                                     className="text-line-1 text-secondary-light text-hover-primary-600"
                                 >
                                     Online School Education Learning
-                                </a>
+                                </Link>
                             </li>
                             <li className="mb-16">
-                                <a
-                                    href="text-generator.html"
+                                <Link
+                                    to="/text-generator"
                                     className="text-line-1 text-secondary-light text-hover-primary-600"
                                 >
                                     Calorie-dense foods: Needs, healthy
-                                </a>
+                                </Link>
                             </li>
                             <li className="mb-16">
-                                <a
-                                    href="text-generator.html"
+                                <Link
+                                    to="/text-generator"
                                     className="text-line-1 text-secondary-light text-hover-primary-600"
                                 >
                                     Calorie-dense foods: Needs, healthy
-                                </a>
+                                </Link>
                             </li>
                             <li className="mb-16">
-                                <a
-                                    href="text-generator.html"
+                                <Link
+                                    to="/text-generator"
                                     className="text-line-1 text-secondary-light text-hover-primary-600"
                                 >
                                     Calorie-dense foods: Needs, healthy
-                                </a>
+                                </Link>
                             </li>
                             <li className="mb-16 mt-24">
                                 <span className="text-primary-600 text-sm fw-semibold">
@@ -132,12 +133,12 @@ const TextGeneratorNewLayer = () => {
                                 </span>
                             </li>
                             <li className="mb-0">
-                                <a
+                                <Link
                                     href=""
                                     className="text-line-1 text-secondary-light text-hover-primary-600"
                                 >
                                     Calorie-dense foods: Needs, healthy
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
@@ -147,12 +148,12 @@ const TextGeneratorNewLayer = () => {
                 <div className="chat-main card overflow-hidden">
                     <div className="chat-sidebar-single gap-8 justify-content-between cursor-default flex-nowrap">
                         <div className="d-flex align-items-center gap-16">
-                            <a
-                                href="text-generator-new.html"
+                            <Link
+                                to="/text-generator-new"
                                 className="text-primary-light text-2xl line-height-1"
                             >
                                 <i className="ri-arrow-left-line" />
-                            </a>
+                            </Link>
                             <h6 className="text-lg mb-0 text-line-1">New Chat</h6>
                         </div>
                         <div className="d-flex align-items-center gap-16 flex-shrink-0">

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const TrendingNFTsOne = () => {
     return (
@@ -129,18 +130,18 @@ const TrendingNFTsOne = () => {
                                         </span>
                                     </div>
                                     <div className="d-flex align-items-center flex-wrap mt-12 gap-8">
-                                        <a
-                                            href="#"
+                                        <Link
+                                            to="#"
                                             className="btn rounded-pill border text-neutral-500 border-neutral-500 radius-8 px-12 py-6 bg-hover-neutral-500 text-hover-white flex-grow-1"
                                         >
                                             History
-                                        </a>
-                                        <a
-                                            href="#"
+                                        </Link>
+                                        <Link
+                                            to="#"
                                             className="btn rounded-pill btn-primary-600 radius-8 px-12 py-6 flex-grow-1"
                                         >
                                             Buy Now
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -180,18 +181,18 @@ const TrendingNFTsOne = () => {
                                         </span>
                                     </div>
                                     <div className="d-flex align-items-center flex-wrap mt-12 gap-8">
-                                        <a
-                                            href="#"
+                                        <Link
+                                            to="#"
                                             className="btn rounded-pill border text-neutral-500 border-neutral-500 radius-8 px-12 py-6 bg-hover-neutral-500 text-hover-white flex-grow-1"
                                         >
                                             History
-                                        </a>
-                                        <a
-                                            href="#"
+                                        </Link>
+                                        <Link
+                                            to="#"
                                             className="btn rounded-pill btn-primary-600 radius-8 px-12 py-6 flex-grow-1"
                                         >
                                             Buy Now
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -231,18 +232,18 @@ const TrendingNFTsOne = () => {
                                         </span>
                                     </div>
                                     <div className="d-flex align-items-center flex-wrap mt-12 gap-8">
-                                        <a
-                                            href="#"
+                                        <Link
+                                            to="#"
                                             className="btn rounded-pill border text-neutral-500 border-neutral-500 radius-8 px-12 py-6 bg-hover-neutral-500 text-hover-white flex-grow-1"
                                         >
                                             History
-                                        </a>
-                                        <a
-                                            href="#"
+                                        </Link>
+                                        <Link
+                                            to="#"
                                             className="btn rounded-pill btn-primary-600 radius-8 px-12 py-6 flex-grow-1"
                                         >
                                             Buy Now
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -282,18 +283,18 @@ const TrendingNFTsOne = () => {
                                         </span>
                                     </div>
                                     <div className="d-flex align-items-center flex-wrap mt-12 gap-8">
-                                        <a
-                                            href="#"
+                                        <Link
+                                            to="#"
                                             className="btn rounded-pill border text-neutral-500 border-neutral-500 radius-8 px-12 py-6 bg-hover-neutral-500 text-hover-white flex-grow-1"
                                         >
                                             History
-                                        </a>
-                                        <a
-                                            href="#"
+                                        </Link>
+                                        <Link
+                                            to="#"
                                             className="btn rounded-pill btn-primary-600 radius-8 px-12 py-6 flex-grow-1"
                                         >
                                             Buy Now
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -343,18 +344,18 @@ const TrendingNFTsOne = () => {
                                         </span>
                                     </div>
                                     <div className="d-flex align-items-center flex-wrap mt-12 gap-8">
-                                        <a
-                                            href="#"
+                                        <Link
+                                            to="#"
                                             className="btn rounded-pill border text-neutral-500 border-neutral-500 radius-8 px-12 py-6 bg-hover-neutral-500 text-hover-white flex-grow-1"
                                         >
                                             History
-                                        </a>
-                                        <a
-                                            href="#"
+                                        </Link>
+                                        <Link
+                                            to="#"
                                             className="btn rounded-pill btn-primary-600 radius-8 px-12 py-6 flex-grow-1"
                                         >
                                             Buy Now
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -394,18 +395,18 @@ const TrendingNFTsOne = () => {
                                         </span>
                                     </div>
                                     <div className="d-flex align-items-center flex-wrap mt-12 gap-8">
-                                        <a
-                                            href="#"
+                                        <Link
+                                            to="#"
                                             className="btn rounded-pill border text-neutral-500 border-neutral-500 radius-8 px-12 py-6 bg-hover-neutral-500 text-hover-white flex-grow-1"
                                         >
                                             History
-                                        </a>
-                                        <a
-                                            href="#"
+                                        </Link>
+                                        <Link
+                                            to="#"
                                             className="btn rounded-pill btn-primary-600 radius-8 px-12 py-6 flex-grow-1"
                                         >
                                             Buy Now
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -445,18 +446,18 @@ const TrendingNFTsOne = () => {
                                         </span>
                                     </div>
                                     <div className="d-flex align-items-center flex-wrap mt-12 gap-8">
-                                        <a
-                                            href="#"
+                                        <Link
+                                            to="#"
                                             className="btn rounded-pill border text-neutral-500 border-neutral-500 radius-8 px-12 py-6 bg-hover-neutral-500 text-hover-white flex-grow-1"
                                         >
                                             History
-                                        </a>
-                                        <a
-                                            href="#"
+                                        </Link>
+                                        <Link
+                                            to="#"
                                             className="btn rounded-pill btn-primary-600 radius-8 px-12 py-6 flex-grow-1"
                                         >
                                             Buy Now
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -496,18 +497,18 @@ const TrendingNFTsOne = () => {
                                         </span>
                                     </div>
                                     <div className="d-flex align-items-center flex-wrap mt-12 gap-8">
-                                        <a
-                                            href="#"
+                                        <Link
+                                            to="#"
                                             className="btn rounded-pill border text-neutral-500 border-neutral-500 radius-8 px-12 py-6 bg-hover-neutral-500 text-hover-white flex-grow-1"
                                         >
                                             History
-                                        </a>
-                                        <a
-                                            href="#"
+                                        </Link>
+                                        <Link
+                                            to="#"
                                             className="btn rounded-pill btn-primary-600 radius-8 px-12 py-6 flex-grow-1"
                                         >
                                             Buy Now
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -557,18 +558,18 @@ const TrendingNFTsOne = () => {
                                         </span>
                                     </div>
                                     <div className="d-flex align-items-center flex-wrap mt-12 gap-8">
-                                        <a
-                                            href="#"
+                                        <Link
+                                            to="#"
                                             className="btn rounded-pill border text-neutral-500 border-neutral-500 radius-8 px-12 py-6 bg-hover-neutral-500 text-hover-white flex-grow-1"
                                         >
                                             History
-                                        </a>
-                                        <a
-                                            href="#"
+                                        </Link>
+                                        <Link
+                                            to="#"
                                             className="btn rounded-pill btn-primary-600 radius-8 px-12 py-6 flex-grow-1"
                                         >
                                             Buy Now
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -608,18 +609,18 @@ const TrendingNFTsOne = () => {
                                         </span>
                                     </div>
                                     <div className="d-flex align-items-center flex-wrap mt-12 gap-8">
-                                        <a
-                                            href="#"
+                                        <Link
+                                            to="#"
                                             className="btn rounded-pill border text-neutral-500 border-neutral-500 radius-8 px-12 py-6 bg-hover-neutral-500 text-hover-white flex-grow-1"
                                         >
                                             History
-                                        </a>
-                                        <a
-                                            href="#"
+                                        </Link>
+                                        <Link
+                                            to="#"
                                             className="btn rounded-pill btn-primary-600 radius-8 px-12 py-6 flex-grow-1"
                                         >
                                             Buy Now
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -659,18 +660,18 @@ const TrendingNFTsOne = () => {
                                         </span>
                                     </div>
                                     <div className="d-flex align-items-center flex-wrap mt-12 gap-8">
-                                        <a
-                                            href="#"
+                                        <Link
+                                            to="#"
                                             className="btn rounded-pill border text-neutral-500 border-neutral-500 radius-8 px-12 py-6 bg-hover-neutral-500 text-hover-white flex-grow-1"
                                         >
                                             History
-                                        </a>
-                                        <a
-                                            href="#"
+                                        </Link>
+                                        <Link
+                                            to="#"
                                             className="btn rounded-pill btn-primary-600 radius-8 px-12 py-6 flex-grow-1"
                                         >
                                             Buy Now
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -710,18 +711,18 @@ const TrendingNFTsOne = () => {
                                         </span>
                                     </div>
                                     <div className="d-flex align-items-center flex-wrap mt-12 gap-8">
-                                        <a
-                                            href="#"
+                                        <Link
+                                            to="#"
                                             className="btn rounded-pill border text-neutral-500 border-neutral-500 radius-8 px-12 py-6 bg-hover-neutral-500 text-hover-white flex-grow-1"
                                         >
                                             History
-                                        </a>
-                                        <a
-                                            href="#"
+                                        </Link>
+                                        <Link
+                                            to="#"
                                             className="btn rounded-pill btn-primary-600 radius-8 px-12 py-6 flex-grow-1"
                                         >
                                             Buy Now
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -771,18 +772,18 @@ const TrendingNFTsOne = () => {
                                         </span>
                                     </div>
                                     <div className="d-flex align-items-center flex-wrap mt-12 gap-8">
-                                        <a
-                                            href="#"
+                                        <Link
+                                            to="#"
                                             className="btn rounded-pill border text-neutral-500 border-neutral-500 radius-8 px-12 py-6 bg-hover-neutral-500 text-hover-white flex-grow-1"
                                         >
                                             History
-                                        </a>
-                                        <a
-                                            href="#"
+                                        </Link>
+                                        <Link
+                                            to="#"
                                             className="btn rounded-pill btn-primary-600 radius-8 px-12 py-6 flex-grow-1"
                                         >
                                             Buy Now
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -822,18 +823,18 @@ const TrendingNFTsOne = () => {
                                         </span>
                                     </div>
                                     <div className="d-flex align-items-center flex-wrap mt-12 gap-8">
-                                        <a
-                                            href="#"
+                                        <Link
+                                            to="#"
                                             className="btn rounded-pill border text-neutral-500 border-neutral-500 radius-8 px-12 py-6 bg-hover-neutral-500 text-hover-white flex-grow-1"
                                         >
                                             History
-                                        </a>
-                                        <a
-                                            href="#"
+                                        </Link>
+                                        <Link
+                                            to="#"
                                             className="btn rounded-pill btn-primary-600 radius-8 px-12 py-6 flex-grow-1"
                                         >
                                             Buy Now
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -873,18 +874,18 @@ const TrendingNFTsOne = () => {
                                         </span>
                                     </div>
                                     <div className="d-flex align-items-center flex-wrap mt-12 gap-8">
-                                        <a
-                                            href="#"
+                                        <Link
+                                            to="#"
                                             className="btn rounded-pill border text-neutral-500 border-neutral-500 radius-8 px-12 py-6 bg-hover-neutral-500 text-hover-white flex-grow-1"
                                         >
                                             History
-                                        </a>
-                                        <a
-                                            href="#"
+                                        </Link>
+                                        <Link
+                                            to="#"
                                             className="btn rounded-pill btn-primary-600 radius-8 px-12 py-6 flex-grow-1"
                                         >
                                             Buy Now
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -924,18 +925,18 @@ const TrendingNFTsOne = () => {
                                         </span>
                                     </div>
                                     <div className="d-flex align-items-center flex-wrap mt-12 gap-8">
-                                        <a
-                                            href="#"
+                                        <Link
+                                            to="#"
                                             className="btn rounded-pill border text-neutral-500 border-neutral-500 radius-8 px-12 py-6 bg-hover-neutral-500 text-hover-white flex-grow-1"
                                         >
                                             History
-                                        </a>
-                                        <a
-                                            href="#"
+                                        </Link>
+                                        <Link
+                                            to="#"
                                             className="btn rounded-pill btn-primary-600 radius-8 px-12 py-6 flex-grow-1"
                                         >
                                             Buy Now
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -985,18 +986,18 @@ const TrendingNFTsOne = () => {
                                         </span>
                                     </div>
                                     <div className="d-flex align-items-center flex-wrap mt-12 gap-8">
-                                        <a
-                                            href="#"
+                                        <Link
+                                            to="#"
                                             className="btn rounded-pill border text-neutral-500 border-neutral-500 radius-8 px-12 py-6 bg-hover-neutral-500 text-hover-white flex-grow-1"
                                         >
                                             History
-                                        </a>
-                                        <a
-                                            href="#"
+                                        </Link>
+                                        <Link
+                                            to="#"
                                             className="btn rounded-pill btn-primary-600 radius-8 px-12 py-6 flex-grow-1"
                                         >
                                             Buy Now
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -1036,18 +1037,18 @@ const TrendingNFTsOne = () => {
                                         </span>
                                     </div>
                                     <div className="d-flex align-items-center flex-wrap mt-12 gap-8">
-                                        <a
-                                            href="#"
+                                        <Link
+                                            to="#"
                                             className="btn rounded-pill border text-neutral-500 border-neutral-500 radius-8 px-12 py-6 bg-hover-neutral-500 text-hover-white flex-grow-1"
                                         >
                                             History
-                                        </a>
-                                        <a
-                                            href="#"
+                                        </Link>
+                                        <Link
+                                            to="#"
                                             className="btn rounded-pill btn-primary-600 radius-8 px-12 py-6 flex-grow-1"
                                         >
                                             Buy Now
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -1087,18 +1088,18 @@ const TrendingNFTsOne = () => {
                                         </span>
                                     </div>
                                     <div className="d-flex align-items-center flex-wrap mt-12 gap-8">
-                                        <a
-                                            href="#"
+                                        <Link
+                                            to="#"
                                             className="btn rounded-pill border text-neutral-500 border-neutral-500 radius-8 px-12 py-6 bg-hover-neutral-500 text-hover-white flex-grow-1"
                                         >
                                             History
-                                        </a>
-                                        <a
-                                            href="#"
+                                        </Link>
+                                        <Link
+                                            to="#"
                                             className="btn rounded-pill btn-primary-600 radius-8 px-12 py-6 flex-grow-1"
                                         >
                                             Buy Now
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -1138,18 +1139,18 @@ const TrendingNFTsOne = () => {
                                         </span>
                                     </div>
                                     <div className="d-flex align-items-center flex-wrap mt-12 gap-8">
-                                        <a
-                                            href="#"
+                                        <Link
+                                            to="#"
                                             className="btn rounded-pill border text-neutral-500 border-neutral-500 radius-8 px-12 py-6 bg-hover-neutral-500 text-hover-white flex-grow-1"
                                         >
                                             History
-                                        </a>
-                                        <a
-                                            href="#"
+                                        </Link>
+                                        <Link
+                                            to="#"
                                             className="btn rounded-pill btn-primary-600 radius-8 px-12 py-6 flex-grow-1"
                                         >
                                             Buy Now
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>

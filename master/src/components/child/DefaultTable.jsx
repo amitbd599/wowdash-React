@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const DefaultTable = () => {
     return (
@@ -23,9 +24,9 @@ const DefaultTable = () => {
                                 <tr>
                                     <td>01</td>
                                     <td>
-                                        <a href="javascript:void(0)" className="text-primary-600">
+                                        <Link to="#" className="text-primary-600">
                                             #526534
-                                        </a>
+                                        </Link>
                                     </td>
                                     <td>Kathryn Murphy</td>
                                     <td>25 Jan 2024</td>
@@ -34,9 +35,9 @@ const DefaultTable = () => {
                                 <tr>
                                     <td>02</td>
                                     <td>
-                                        <a href="javascript:void(0)" className="text-primary-600">
+                                        <Link to="#" className="text-primary-600">
                                             #696589
-                                        </a>
+                                        </Link>
                                     </td>
                                     <td>Annette Black</td>
                                     <td>25 Jan 2024</td>
@@ -45,9 +46,9 @@ const DefaultTable = () => {
                                 <tr>
                                     <td>03</td>
                                     <td>
-                                        <a href="javascript:void(0)" className="text-primary-600">
+                                        <Link to="#" className="text-primary-600">
                                             #256584
-                                        </a>
+                                        </Link>
                                     </td>
                                     <td>Ronald Richards</td>
                                     <td>10 Feb 2024</td>
@@ -56,9 +57,9 @@ const DefaultTable = () => {
                                 <tr>
                                     <td>04</td>
                                     <td>
-                                        <a href="javascript:void(0)" className="text-primary-600">
+                                        <Link to="#" className="text-primary-600">
                                             #526587
-                                        </a>
+                                        </Link>
                                     </td>
                                     <td>Eleanor Pena</td>
                                     <td>10 Feb 2024</td>
@@ -67,9 +68,9 @@ const DefaultTable = () => {
                                 <tr>
                                     <td>05</td>
                                     <td>
-                                        <a href="javascript:void(0)" className="text-primary-600">
+                                        <Link to="#" className="text-primary-600">
                                             #105986
-                                        </a>
+                                        </Link>
                                     </td>
                                     <td>Leslie Alexander</td>
                                     <td>15 Mar 2024</td>

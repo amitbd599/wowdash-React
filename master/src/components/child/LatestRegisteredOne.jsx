@@ -1,5 +1,6 @@
 import { Icon } from '@iconify/react/dist/iconify.js'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const LatestRegisteredOne = () => {
     return (
@@ -48,8 +49,8 @@ const LatestRegisteredOne = () => {
                                 </button>
                             </li>
                         </ul>
-                        <a
-                            href="javascript:void(0)"
+                        <Link
+                            to="#"
                             className="text-primary-600 hover-text-primary d-flex align-items-center gap-1"
                         >
                             View All
@@ -57,7 +58,7 @@ const LatestRegisteredOne = () => {
                                 icon="solar:alt-arrow-right-linear"
                                 className="icon"
                             />
-                        </a>
+                        </Link>
                     </div>
                     <div className="tab-content" id="pills-tabContent">
                         <div

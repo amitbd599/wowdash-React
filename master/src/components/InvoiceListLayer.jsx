@@ -118,9 +118,9 @@ const InvoiceListLayer = () => {
                                         </div>
                                     </td>
                                     <td>
-                                        <a href="javascript:void(0)" className="text-primary-600">
+                                        <Link to="#" className="text-primary-600">
                                             {item.invoice}
-                                        </a>
+                                        </Link>
                                     </td>
                                     <td>
                                         <div className="d-flex align-items-center">
@@ -142,24 +142,24 @@ const InvoiceListLayer = () => {
                                         </span>
                                     </td>
                                     <td>
-                                        <a
-                                            href="javascript:void(0)"
+                                        <Link
+                                            to="#"
                                             className="w-32-px h-32-px bg-primary-light text-primary-600 rounded-circle d-inline-flex align-items-center justify-content-center"
                                         >
                                             <Icon icon="iconamoon:eye-light" />
-                                        </a>
-                                        <a
-                                            href="javascript:void(0)"
+                                        </Link>
+                                        <Link
+                                            to="#"
                                             className="w-32-px h-32-px bg-success-focus text-success-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                         >
                                             <Icon icon="lucide:edit" />
-                                        </a>
-                                        <a
-                                            href="javascript:void(0)"
+                                        </Link>
+                                        <Link
+                                            to="#"
                                             className="w-32-px h-32-px bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                         >
                                             <Icon icon="mingcute:delete-2-line" />
-                                        </a>
+                                        </Link>
                                     </td>
                                 </tr>)
                         }
@@ -171,45 +171,45 @@ const InvoiceListLayer = () => {
                     <span>Showing 1 to 10 of 12 entries</span>
                     <ul className="pagination d-flex flex-wrap align-items-center gap-2 justify-content-center">
                         <li className="page-item">
-                            <a
+                            <Link
                                 className="page-link text-secondary-light fw-medium radius-4 border-0 px-10 py-10 d-flex align-items-center justify-content-center h-32-px w-32-px bg-base"
-                                href="javascript:void(0)"
+                                to="#"
                             >
                                 <Icon icon="ep:d-arrow-left" className="text-xl" />
-                            </a>
+                            </Link>
                         </li>
                         <li className="page-item">
-                            <a
+                            <Link
                                 className="page-link bg-primary-600 text-white fw-medium radius-4 border-0 px-10 py-10 d-flex align-items-center justify-content-center h-32-px w-32-px"
-                                href="javascript:void(0)"
+                                to="#"
                             >
                                 1
-                            </a>
+                            </Link>
                         </li>
                         <li className="page-item">
-                            <a
+                            <Link
                                 className="page-link bg-primary-50 text-secondary-light fw-medium radius-4 border-0 px-10 py-10 d-flex align-items-center justify-content-center h-32-px w-32-px"
-                                href="javascript:void(0)"
+                                to="#"
                             >
                                 2
-                            </a>
+                            </Link>
                         </li>
                         <li className="page-item">
-                            <a
+                            <Link
                                 className="page-link bg-primary-50 text-secondary-light fw-medium radius-4 border-0 px-10 py-10 d-flex align-items-center justify-content-center h-32-px w-32-px"
-                                href="javascript:void(0)"
+                                to="#"
                             >
                                 3
-                            </a>
+                            </Link>
                         </li>
                         <li className="page-item">
-                            <a
+                            <Link
                                 className="page-link text-secondary-light fw-medium radius-4 border-0 px-10 py-10 d-flex align-items-center justify-content-center h-32-px w-32-px bg-base"
-                                href="javascript:void(0)"
+                                to="#"
                             >
                                 {" "}
                                 <Icon icon="ep:d-arrow-right" className="text-xl" />{" "}
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                 </div>

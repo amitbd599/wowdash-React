@@ -2,6 +2,7 @@ import { Icon } from '@iconify/react/dist/iconify.js'
 import React from 'react'
 import useReactApexChart from '../../hook/useReactApexChart'
 import ReactApexChart from 'react-apexcharts'
+import { Link } from 'react-router-dom'
 
 const StatisticsOne = () => {
 
@@ -11,8 +12,8 @@ const StatisticsOne = () => {
             <div className="card h-100">
                 <div className="card-header border-bottom d-flex align-items-center flex-wrap gap-2 justify-content-between">
                     <h6 className="fw-bold text-lg mb-0">Statistics</h6>
-                    <a
-                        href="javascript:void(0)"
+                    <Link
+                        to="#"
                         className="text-primary-600 hover-text-primary d-flex align-items-center gap-1"
                     >
                         View All
@@ -20,7 +21,7 @@ const StatisticsOne = () => {
                             icon="solar:alt-arrow-right-linear"
                             className="icon"
                         />
-                    </a>
+                    </Link>
                 </div>
                 <div className="card-body">
                     <div className="d-flex align-items-center gap-1 justify-content-between mb-44">

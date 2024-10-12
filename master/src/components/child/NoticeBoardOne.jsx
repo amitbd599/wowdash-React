@@ -1,4 +1,6 @@
+import { Icon } from '@iconify/react/dist/iconify.js'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const NoticeBoardOne = () => {
     return (
@@ -7,16 +9,16 @@ const NoticeBoardOne = () => {
                 <div className="card-body p-24">
                     <div className="d-flex align-items-center flex-wrap gap-2 justify-content-between mb-20">
                         <h6 className="mb-2 fw-bold text-lg mb-0">Notice board</h6>
-                        <a
-                            href="javascript:void(0)"
+                        <Link
+                            to="#"
                             className="text-primary-600 hover-text-primary d-flex align-items-center gap-1"
                         >
                             View All
-                            <iconify-icon
+                            <Icon
                                 icon="solar:alt-arrow-right-linear"
                                 className="icon"
                             />
-                        </a>
+                        </Link>
                     </div>
                     <div className="d-flex align-items-start gap-2 mb-20">
                         <img

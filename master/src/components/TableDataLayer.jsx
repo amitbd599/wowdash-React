@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import $ from 'jquery';
 import 'datatables.net-dt/js/dataTables.dataTables.js';
 import { Icon } from '@iconify/react/dist/iconify.js';
+import { Link } from 'react-router-dom';
 
 const TableDataLayer = () => {
     useEffect(() => {
@@ -48,9 +49,9 @@ const TableDataLayer = () => {
                                 </div>
                             </td>
                             <td>
-                                <a href="javascript:void(0)" className="text-primary-600">
+                                <Link to="#" className="text-primary-600">
                                     #526534
-                                </a>
+                                </Link>
                             </td>
                             <td>
                                 <div className="d-flex align-items-center">
@@ -73,24 +74,24 @@ const TableDataLayer = () => {
                                 </span>
                             </td>
                             <td>
-                                <a
-                                    href="javascript:void(0)"
+                                <Link
+                                    to="#"
                                     className="w-32-px h-32-px bg-primary-light text-primary-600 rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="iconamoon:eye-light" />
-                                </a>
-                                <a
-                                    href="javascript:void(0)"
+                                </Link>
+                                <Link
+                                    to="#"
                                     className="w-32-px h-32-px bg-success-focus text-success-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="lucide:edit" />
-                                </a>
-                                <a
-                                    href="javascript:void(0)"
+                                </Link>
+                                <Link
+                                    to="#"
                                     className="w-32-px h-32-px bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="mingcute:delete-2-line" />
-                                </a>
+                                </Link>
                             </td>
                         </tr>
                         <tr>
@@ -101,9 +102,9 @@ const TableDataLayer = () => {
                                 </div>
                             </td>
                             <td>
-                                <a href="javascript:void(0)" className="text-primary-600">
+                                <Link to="#" className="text-primary-600">
                                     #696589
-                                </a>
+                                </Link>
                             </td>
                             <td>
                                 <div className="d-flex align-items-center">
@@ -126,24 +127,24 @@ const TableDataLayer = () => {
                                 </span>
                             </td>
                             <td>
-                                <a
-                                    href="javascript:void(0)"
+                                <Link
+                                    to="#"
                                     className="w-32-px h-32-px bg-primary-light text-primary-600 rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="iconamoon:eye-light" />
-                                </a>
-                                <a
-                                    href="javascript:void(0)"
+                                </Link>
+                                <Link
+                                    to="#"
                                     className="w-32-px h-32-px bg-success-focus text-success-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="lucide:edit" />
-                                </a>
-                                <a
-                                    href="javascript:void(0)"
+                                </Link>
+                                <Link
+                                    to="#"
                                     className="w-32-px h-32-px bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="mingcute:delete-2-line" />
-                                </a>
+                                </Link>
                             </td>
                         </tr>
                         <tr>
@@ -154,9 +155,9 @@ const TableDataLayer = () => {
                                 </div>
                             </td>
                             <td>
-                                <a href="javascript:void(0)" className="text-primary-600">
+                                <Link to="#" className="text-primary-600">
                                     #256584
-                                </a>
+                                </Link>
                             </td>
                             <td>
                                 <div className="d-flex align-items-center">
@@ -179,24 +180,24 @@ const TableDataLayer = () => {
                                 </span>
                             </td>
                             <td>
-                                <a
-                                    href="javascript:void(0)"
+                                <Link
+                                    to="#"
                                     className="w-32-px h-32-px bg-primary-light text-primary-600 rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="iconamoon:eye-light" />
-                                </a>
-                                <a
-                                    href="javascript:void(0)"
+                                </Link>
+                                <Link
+                                    to="#"
                                     className="w-32-px h-32-px bg-success-focus text-success-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="lucide:edit" />
-                                </a>
-                                <a
-                                    href="javascript:void(0)"
+                                </Link>
+                                <Link
+                                    to="#"
                                     className="w-32-px h-32-px bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="mingcute:delete-2-line" />
-                                </a>
+                                </Link>
                             </td>
                         </tr>
                         <tr>
@@ -207,9 +208,9 @@ const TableDataLayer = () => {
                                 </div>
                             </td>
                             <td>
-                                <a href="javascript:void(0)" className="text-primary-600">
+                                <Link to="#" className="text-primary-600">
                                     #526587
-                                </a>
+                                </Link>
                             </td>
                             <td>
                                 <div className="d-flex align-items-center">
@@ -232,24 +233,24 @@ const TableDataLayer = () => {
                                 </span>
                             </td>
                             <td>
-                                <a
-                                    href="javascript:void(0)"
+                                <Link
+                                    to="#"
                                     className="w-32-px h-32-px bg-primary-light text-primary-600 rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="iconamoon:eye-light" />
-                                </a>
-                                <a
-                                    href="javascript:void(0)"
+                                </Link>
+                                <Link
+                                    to="#"
                                     className="w-32-px h-32-px bg-success-focus text-success-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="lucide:edit" />
-                                </a>
-                                <a
-                                    href="javascript:void(0)"
+                                </Link>
+                                <Link
+                                    to="#"
                                     className="w-32-px h-32-px bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="mingcute:delete-2-line" />
-                                </a>
+                                </Link>
                             </td>
                         </tr>
                         <tr>
@@ -260,9 +261,9 @@ const TableDataLayer = () => {
                                 </div>
                             </td>
                             <td>
-                                <a href="javascript:void(0)" className="text-primary-600">
+                                <Link to="#" className="text-primary-600">
                                     #105986
-                                </a>
+                                </Link>
                             </td>
                             <td>
                                 <div className="d-flex align-items-center">
@@ -285,24 +286,24 @@ const TableDataLayer = () => {
                                 </span>
                             </td>
                             <td>
-                                <a
-                                    href="javascript:void(0)"
+                                <Link
+                                    to="#"
                                     className="w-32-px h-32-px bg-primary-light text-primary-600 rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="iconamoon:eye-light" />
-                                </a>
-                                <a
-                                    href="javascript:void(0)"
+                                </Link>
+                                <Link
+                                    to="#"
                                     className="w-32-px h-32-px bg-success-focus text-success-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="lucide:edit" />
-                                </a>
-                                <a
-                                    href="javascript:void(0)"
+                                </Link>
+                                <Link
+                                    to="#"
                                     className="w-32-px h-32-px bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="mingcute:delete-2-line" />
-                                </a>
+                                </Link>
                             </td>
                         </tr>
                         <tr>
@@ -313,9 +314,9 @@ const TableDataLayer = () => {
                                 </div>
                             </td>
                             <td>
-                                <a href="javascript:void(0)" className="text-primary-600">
+                                <Link to="#" className="text-primary-600">
                                     #526589
-                                </a>
+                                </Link>
                             </td>
                             <td>
                                 <div className="d-flex align-items-center">
@@ -338,24 +339,24 @@ const TableDataLayer = () => {
                                 </span>
                             </td>
                             <td>
-                                <a
-                                    href="javascript:void(0)"
+                                <Link
+                                    to="#"
                                     className="w-32-px h-32-px bg-primary-light text-primary-600 rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="iconamoon:eye-light" />
-                                </a>
-                                <a
-                                    href="javascript:void(0)"
+                                </Link>
+                                <Link
+                                    to="#"
                                     className="w-32-px h-32-px bg-success-focus text-success-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="lucide:edit" />
-                                </a>
-                                <a
-                                    href="javascript:void(0)"
+                                </Link>
+                                <Link
+                                    to="#"
                                     className="w-32-px h-32-px bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="mingcute:delete-2-line" />
-                                </a>
+                                </Link>
                             </td>
                         </tr>
                         <tr>
@@ -366,9 +367,9 @@ const TableDataLayer = () => {
                                 </div>
                             </td>
                             <td>
-                                <a href="javascript:void(0)" className="text-primary-600">
+                                <Link to="#" className="text-primary-600">
                                     #526520
-                                </a>
+                                </Link>
                             </td>
                             <td>
                                 <div className="d-flex align-items-center">
@@ -391,24 +392,24 @@ const TableDataLayer = () => {
                                 </span>
                             </td>
                             <td>
-                                <a
-                                    href="javascript:void(0)"
+                                <Link
+                                    to="#"
                                     className="w-32-px h-32-px bg-primary-light text-primary-600 rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="iconamoon:eye-light" />
-                                </a>
-                                <a
-                                    href="javascript:void(0)"
+                                </Link>
+                                <Link
+                                    to="#"
                                     className="w-32-px h-32-px bg-success-focus text-success-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="lucide:edit" />
-                                </a>
-                                <a
-                                    href="javascript:void(0)"
+                                </Link>
+                                <Link
+                                    to="#"
                                     className="w-32-px h-32-px bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="mingcute:delete-2-line" />
-                                </a>
+                                </Link>
                             </td>
                         </tr>
                         <tr>
@@ -419,9 +420,9 @@ const TableDataLayer = () => {
                                 </div>
                             </td>
                             <td>
-                                <a href="javascript:void(0)" className="text-primary-600">
+                                <Link to="#" className="text-primary-600">
                                     #256584
-                                </a>
+                                </Link>
                             </td>
                             <td>
                                 <div className="d-flex align-items-center">
@@ -444,24 +445,24 @@ const TableDataLayer = () => {
                                 </span>
                             </td>
                             <td>
-                                <a
-                                    href="javascript:void(0)"
+                                <Link
+                                    to="#"
                                     className="w-32-px h-32-px bg-primary-light text-primary-600 rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="iconamoon:eye-light" />
-                                </a>
-                                <a
-                                    href="javascript:void(0)"
+                                </Link>
+                                <Link
+                                    to="#"
                                     className="w-32-px h-32-px bg-success-focus text-success-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="lucide:edit" />
-                                </a>
-                                <a
-                                    href="javascript:void(0)"
+                                </Link>
+                                <Link
+                                    to="#"
                                     className="w-32-px h-32-px bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="mingcute:delete-2-line" />
-                                </a>
+                                </Link>
                             </td>
                         </tr>
                         <tr>
@@ -472,9 +473,9 @@ const TableDataLayer = () => {
                                 </div>
                             </td>
                             <td>
-                                <a href="javascript:void(0)" className="text-primary-600">
+                                <Link to="#" className="text-primary-600">
                                     #200257
-                                </a>
+                                </Link>
                             </td>
                             <td>
                                 <div className="d-flex align-items-center">
@@ -497,24 +498,24 @@ const TableDataLayer = () => {
                                 </span>
                             </td>
                             <td>
-                                <a
-                                    href="javascript:void(0)"
+                                <Link
+                                    to="#"
                                     className="w-32-px h-32-px bg-primary-light text-primary-600 rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="iconamoon:eye-light" />
-                                </a>
-                                <a
-                                    href="javascript:void(0)"
+                                </Link>
+                                <Link
+                                    to="#"
                                     className="w-32-px h-32-px bg-success-focus text-success-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="lucide:edit" />
-                                </a>
-                                <a
-                                    href="javascript:void(0)"
+                                </Link>
+                                <Link
+                                    to="#"
                                     className="w-32-px h-32-px bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="mingcute:delete-2-line" />
-                                </a>
+                                </Link>
                             </td>
                         </tr>
                         <tr>
@@ -525,9 +526,9 @@ const TableDataLayer = () => {
                                 </div>
                             </td>
                             <td>
-                                <a href="javascript:void(0)" className="text-primary-600">
+                                <Link to="#" className="text-primary-600">
                                     #526525
-                                </a>
+                                </Link>
                             </td>
                             <td>
                                 <div className="d-flex align-items-center">
@@ -550,24 +551,24 @@ const TableDataLayer = () => {
                                 </span>
                             </td>
                             <td>
-                                <a
-                                    href="javascript:void(0)"
+                                <Link
+                                    to="#"
                                     className="w-32-px h-32-px bg-primary-light text-primary-600 rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="iconamoon:eye-light" />
-                                </a>
-                                <a
-                                    href="javascript:void(0)"
+                                </Link>
+                                <Link
+                                    to="#"
                                     className="w-32-px h-32-px bg-success-focus text-success-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="lucide:edit" />
-                                </a>
-                                <a
-                                    href="javascript:void(0)"
+                                </Link>
+                                <Link
+                                    to="#"
                                     className="w-32-px h-32-px bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="mingcute:delete-2-line" />
-                                </a>
+                                </Link>
                             </td>
                         </tr>
                         <tr>
@@ -578,9 +579,9 @@ const TableDataLayer = () => {
                                 </div>
                             </td>
                             <td>
-                                <a href="javascript:void(0)" className="text-primary-600">
+                                <Link to="#" className="text-primary-600">
                                     #526534
-                                </a>
+                                </Link>
                             </td>
                             <td>
                                 <div className="d-flex align-items-center">
@@ -603,24 +604,24 @@ const TableDataLayer = () => {
                                 </span>
                             </td>
                             <td>
-                                <a
-                                    href="javascript:void(0)"
+                                <Link
+                                    to="#"
                                     className="w-32-px h-32-px bg-primary-light text-primary-600 rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="iconamoon:eye-light" />
-                                </a>
-                                <a
-                                    href="javascript:void(0)"
+                                </Link>
+                                <Link
+                                    to="#"
                                     className="w-32-px h-32-px bg-success-focus text-success-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="lucide:edit" />
-                                </a>
-                                <a
-                                    href="javascript:void(0)"
+                                </Link>
+                                <Link
+                                    to="#"
                                     className="w-32-px h-32-px bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="mingcute:delete-2-line" />
-                                </a>
+                                </Link>
                             </td>
                         </tr>
                         <tr>
@@ -631,9 +632,9 @@ const TableDataLayer = () => {
                                 </div>
                             </td>
                             <td>
-                                <a href="javascript:void(0)" className="text-primary-600">
+                                <Link to="#" className="text-primary-600">
                                     #696589
-                                </a>
+                                </Link>
                             </td>
                             <td>
                                 <div className="d-flex align-items-center">
@@ -656,24 +657,24 @@ const TableDataLayer = () => {
                                 </span>
                             </td>
                             <td>
-                                <a
-                                    href="javascript:void(0)"
+                                <Link
+                                    to="#"
                                     className="w-32-px h-32-px bg-primary-light text-primary-600 rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="iconamoon:eye-light" />
-                                </a>
-                                <a
-                                    href="javascript:void(0)"
+                                </Link>
+                                <Link
+                                    to="#"
                                     className="w-32-px h-32-px bg-success-focus text-success-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="lucide:edit" />
-                                </a>
-                                <a
-                                    href="javascript:void(0)"
+                                </Link>
+                                <Link
+                                    to="#"
                                     className="w-32-px h-32-px bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="mingcute:delete-2-line" />
-                                </a>
+                                </Link>
                             </td>
                         </tr>
                         <tr>
@@ -684,9 +685,9 @@ const TableDataLayer = () => {
                                 </div>
                             </td>
                             <td>
-                                <a href="javascript:void(0)" className="text-primary-600">
+                                <Link to="#" className="text-primary-600">
                                     #256584
-                                </a>
+                                </Link>
                             </td>
                             <td>
                                 <div className="d-flex align-items-center">
@@ -709,24 +710,24 @@ const TableDataLayer = () => {
                                 </span>
                             </td>
                             <td>
-                                <a
-                                    href="javascript:void(0)"
+                                <Link
+                                    to="#"
                                     className="w-32-px h-32-px bg-primary-light text-primary-600 rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="iconamoon:eye-light" />
-                                </a>
-                                <a
-                                    href="javascript:void(0)"
+                                </Link>
+                                <Link
+                                    to="#"
                                     className="w-32-px h-32-px bg-success-focus text-success-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="lucide:edit" />
-                                </a>
-                                <a
-                                    href="javascript:void(0)"
+                                </Link>
+                                <Link
+                                    to="#"
                                     className="w-32-px h-32-px bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="mingcute:delete-2-line" />
-                                </a>
+                                </Link>
                             </td>
                         </tr>
                         <tr>
@@ -737,9 +738,9 @@ const TableDataLayer = () => {
                                 </div>
                             </td>
                             <td>
-                                <a href="javascript:void(0)" className="text-primary-600">
+                                <Link to="#" className="text-primary-600">
                                     #526587
-                                </a>
+                                </Link>
                             </td>
                             <td>
                                 <div className="d-flex align-items-center">
@@ -762,24 +763,24 @@ const TableDataLayer = () => {
                                 </span>
                             </td>
                             <td>
-                                <a
-                                    href="javascript:void(0)"
+                                <Link
+                                    to="#"
                                     className="w-32-px h-32-px bg-primary-light text-primary-600 rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="iconamoon:eye-light" />
-                                </a>
-                                <a
-                                    href="javascript:void(0)"
+                                </Link>
+                                <Link
+                                    to="#"
                                     className="w-32-px h-32-px bg-success-focus text-success-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="lucide:edit" />
-                                </a>
-                                <a
-                                    href="javascript:void(0)"
+                                </Link>
+                                <Link
+                                    to="#"
                                     className="w-32-px h-32-px bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="mingcute:delete-2-line" />
-                                </a>
+                                </Link>
                             </td>
                         </tr>
                         <tr>
@@ -790,9 +791,9 @@ const TableDataLayer = () => {
                                 </div>
                             </td>
                             <td>
-                                <a href="javascript:void(0)" className="text-primary-600">
+                                <Link to="#" className="text-primary-600">
                                     #105986
-                                </a>
+                                </Link>
                             </td>
                             <td>
                                 <div className="d-flex align-items-center">
@@ -815,24 +816,24 @@ const TableDataLayer = () => {
                                 </span>
                             </td>
                             <td>
-                                <a
-                                    href="javascript:void(0)"
+                                <Link
+                                    to="#"
                                     className="w-32-px h-32-px bg-primary-light text-primary-600 rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="iconamoon:eye-light" />
-                                </a>
-                                <a
-                                    href="javascript:void(0)"
+                                </Link>
+                                <Link
+                                    to="#"
                                     className="w-32-px h-32-px bg-success-focus text-success-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="lucide:edit" />
-                                </a>
-                                <a
-                                    href="javascript:void(0)"
+                                </Link>
+                                <Link
+                                    to="#"
                                     className="w-32-px h-32-px bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="mingcute:delete-2-line" />
-                                </a>
+                                </Link>
                             </td>
                         </tr>
                         <tr>
@@ -843,9 +844,9 @@ const TableDataLayer = () => {
                                 </div>
                             </td>
                             <td>
-                                <a href="javascript:void(0)" className="text-primary-600">
+                                <Link to="#" className="text-primary-600">
                                     #526589
-                                </a>
+                                </Link>
                             </td>
                             <td>
                                 <div className="d-flex align-items-center">
@@ -868,24 +869,24 @@ const TableDataLayer = () => {
                                 </span>
                             </td>
                             <td>
-                                <a
-                                    href="javascript:void(0)"
+                                <Link
+                                    to="#"
                                     className="w-32-px h-32-px bg-primary-light text-primary-600 rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="iconamoon:eye-light" />
-                                </a>
-                                <a
-                                    href="javascript:void(0)"
+                                </Link>
+                                <Link
+                                    to="#"
                                     className="w-32-px h-32-px bg-success-focus text-success-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="lucide:edit" />
-                                </a>
-                                <a
-                                    href="javascript:void(0)"
+                                </Link>
+                                <Link
+                                    to="#"
                                     className="w-32-px h-32-px bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="mingcute:delete-2-line" />
-                                </a>
+                                </Link>
                             </td>
                         </tr>
                         <tr>
@@ -896,9 +897,9 @@ const TableDataLayer = () => {
                                 </div>
                             </td>
                             <td>
-                                <a href="javascript:void(0)" className="text-primary-600">
+                                <Link to="#" className="text-primary-600">
                                     #526520
-                                </a>
+                                </Link>
                             </td>
                             <td>
                                 <div className="d-flex align-items-center">
@@ -921,24 +922,24 @@ const TableDataLayer = () => {
                                 </span>
                             </td>
                             <td>
-                                <a
-                                    href="javascript:void(0)"
+                                <Link
+                                    to="#"
                                     className="w-32-px h-32-px bg-primary-light text-primary-600 rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="iconamoon:eye-light" />
-                                </a>
-                                <a
-                                    href="javascript:void(0)"
+                                </Link>
+                                <Link
+                                    to="#"
                                     className="w-32-px h-32-px bg-success-focus text-success-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="lucide:edit" />
-                                </a>
-                                <a
-                                    href="javascript:void(0)"
+                                </Link>
+                                <Link
+                                    to="#"
                                     className="w-32-px h-32-px bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="mingcute:delete-2-line" />
-                                </a>
+                                </Link>
                             </td>
                         </tr>
                         <tr>
@@ -949,9 +950,9 @@ const TableDataLayer = () => {
                                 </div>
                             </td>
                             <td>
-                                <a href="javascript:void(0)" className="text-primary-600">
+                                <Link to="#" className="text-primary-600">
                                     #256584
-                                </a>
+                                </Link>
                             </td>
                             <td>
                                 <div className="d-flex align-items-center">
@@ -974,24 +975,24 @@ const TableDataLayer = () => {
                                 </span>
                             </td>
                             <td>
-                                <a
-                                    href="javascript:void(0)"
+                                <Link
+                                    to="#"
                                     className="w-32-px h-32-px bg-primary-light text-primary-600 rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="iconamoon:eye-light" />
-                                </a>
-                                <a
-                                    href="javascript:void(0)"
+                                </Link>
+                                <Link
+                                    to="#"
                                     className="w-32-px h-32-px bg-success-focus text-success-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="lucide:edit" />
-                                </a>
-                                <a
-                                    href="javascript:void(0)"
+                                </Link>
+                                <Link
+                                    to="#"
                                     className="w-32-px h-32-px bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="mingcute:delete-2-line" />
-                                </a>
+                                </Link>
                             </td>
                         </tr>
                         <tr>
@@ -1002,9 +1003,9 @@ const TableDataLayer = () => {
                                 </div>
                             </td>
                             <td>
-                                <a href="javascript:void(0)" className="text-primary-600">
+                                <Link to="#" className="text-primary-600">
                                     #200257
-                                </a>
+                                </Link>
                             </td>
                             <td>
                                 <div className="d-flex align-items-center">
@@ -1027,24 +1028,24 @@ const TableDataLayer = () => {
                                 </span>
                             </td>
                             <td>
-                                <a
-                                    href="javascript:void(0)"
+                                <Link
+                                    to="#"
                                     className="w-32-px h-32-px bg-primary-light text-primary-600 rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="iconamoon:eye-light" />
-                                </a>
-                                <a
-                                    href="javascript:void(0)"
+                                </Link>
+                                <Link
+                                    to="#"
                                     className="w-32-px h-32-px bg-success-focus text-success-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="lucide:edit" />
-                                </a>
-                                <a
-                                    href="javascript:void(0)"
+                                </Link>
+                                <Link
+                                    to="#"
                                     className="w-32-px h-32-px bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="mingcute:delete-2-line" />
-                                </a>
+                                </Link>
                             </td>
                         </tr>
                         <tr>
@@ -1055,9 +1056,9 @@ const TableDataLayer = () => {
                                 </div>
                             </td>
                             <td>
-                                <a href="javascript:void(0)" className="text-primary-600">
+                                <Link to="#" className="text-primary-600">
                                     #526525
-                                </a>
+                                </Link>
                             </td>
                             <td>
                                 <div className="d-flex align-items-center">
@@ -1080,24 +1081,24 @@ const TableDataLayer = () => {
                                 </span>
                             </td>
                             <td>
-                                <a
-                                    href="javascript:void(0)"
+                                <Link
+                                    to="#"
                                     className="w-32-px h-32-px bg-primary-light text-primary-600 rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="iconamoon:eye-light" />
-                                </a>
-                                <a
-                                    href="javascript:void(0)"
+                                </Link>
+                                <Link
+                                    to="#"
                                     className="w-32-px h-32-px bg-success-focus text-success-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="lucide:edit" />
-                                </a>
-                                <a
-                                    href="javascript:void(0)"
+                                </Link>
+                                <Link
+                                    to="#"
                                     className="w-32-px h-32-px bg-danger-focus text-danger-main rounded-circle d-inline-flex align-items-center justify-content-center"
                                 >
                                     <Icon icon="mingcute:delete-2-line" />
-                                </a>
+                                </Link>
                             </td>
                         </tr>
                     </tbody>

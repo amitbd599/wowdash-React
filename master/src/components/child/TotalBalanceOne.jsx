@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const TotalBalanceOne = () => {
     return (
@@ -116,13 +117,13 @@ const TotalBalanceOne = () => {
                                     $320,320.00
                                 </h6>
                             </div>
-                            <a
-                                href=""
+                            <Link
+                                to="#"
                                 className="btn btn-primary text-sm btn-sm px-8 py-12 w-100 radius-8"
                             >
                                 {" "}
                                 Transfer Now
-                            </a>
+                            </Link>
                         </div>
                         <div
                             className="tab-pane fade"
@@ -195,13 +196,13 @@ const TotalBalanceOne = () => {
                                     $320,320.00
                                 </h6>
                             </div>
-                            <a
-                                href=""
+                            <Link
+                                to="#"
                                 className="btn btn-primary text-sm btn-sm px-8 py-12 w-100 radius-8"
                             >
                                 {" "}
                                 Transfer Now
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

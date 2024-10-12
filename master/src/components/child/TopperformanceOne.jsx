@@ -1,5 +1,6 @@
 import { Icon } from '@iconify/react/dist/iconify.js'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const TopPerformanceOne = () => {
     return (
@@ -8,8 +9,8 @@ const TopPerformanceOne = () => {
                 <div className="card-body">
                     <div className="d-flex align-items-center flex-wrap gap-2 justify-content-between">
                         <h6 className="mb-2 fw-bold text-lg mb-0">Top Performer</h6>
-                        <a
-                            href="javascript:void(0)"
+                        <Link
+                            to="#"
                             className="text-primary-600 hover-text-primary d-flex align-items-center gap-1"
                         >
                             View All
@@ -17,7 +18,7 @@ const TopPerformanceOne = () => {
                                 icon="solar:alt-arrow-right-linear"
                                 className="icon"
                             />
-                        </a>
+                        </Link>
                     </div>
                     <div className="mt-32">
                         <div className="d-flex align-items-center justify-content-between gap-3 mb-32">

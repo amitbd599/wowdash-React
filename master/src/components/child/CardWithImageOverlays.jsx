@@ -1,5 +1,6 @@
 import { Icon } from '@iconify/react/dist/iconify.js'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const CardWithImageOverlays = () => {
     return (
@@ -27,8 +28,8 @@ const CardWithImageOverlays = () => {
                                     potentially stressful situations of all kinds, including the
                                     most common of all
                                 </p>
-                                <a
-                                    href="javascript:void(0)"
+                                <Link
+                                    to="#"
                                     className="btn text-primary-600 hover-text-primary px-0 py-10 d-inline-flex align-items-center gap-2"
                                 >
                                     Read More{" "}
@@ -36,7 +37,7 @@ const CardWithImageOverlays = () => {
                                         icon="iconamoon:arrow-right-2"
                                         className="text-xl"
                                     />
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -61,8 +62,8 @@ const CardWithImageOverlays = () => {
                                     potentially stressful situations of all kinds, including the
                                     most common of all
                                 </p>
-                                <a
-                                    href="javascript:void(0)"
+                                <Link
+                                    to="#"
                                     className="btn text-primary-600 hover-text-primary px-0 py-10 d-inline-flex align-items-center gap-2"
                                 >
                                     Read More{" "}
@@ -70,7 +71,7 @@ const CardWithImageOverlays = () => {
                                         icon="iconamoon:arrow-right-2"
                                         className="text-xl"
                                     />
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -95,8 +96,8 @@ const CardWithImageOverlays = () => {
                                     potentially stressful situations of all kinds, including the
                                     most common of all
                                 </p>
-                                <a
-                                    href="javascript:void(0)"
+                                <Link
+                                    to="#"
                                     className="btn text-primary-600 hover-text-primary px-0 py-10 d-inline-flex align-items-center gap-2"
                                 >
                                     Read More{" "}
@@ -104,7 +105,7 @@ const CardWithImageOverlays = () => {
                                         icon="iconamoon:arrow-right-2"
                                         className="text-xl"
                                     />
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>

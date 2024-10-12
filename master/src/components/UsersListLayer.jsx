@@ -1,5 +1,6 @@
 import { Icon } from '@iconify/react/dist/iconify.js'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const UsersListLayer = () => {
     return (
@@ -34,8 +35,8 @@ const UsersListLayer = () => {
                         <option>Inactive</option>
                     </select>
                 </div>
-                <a
-                    href="add-user.html"
+                <Link
+                    to="/add-user"
                     className="btn btn-primary text-sm btn-sm px-12 py-12 radius-8 d-flex align-items-center gap-2"
                 >
                     <Icon
@@ -43,7 +44,7 @@ const UsersListLayer = () => {
                         className="icon text-xl line-height-1"
                     />
                     Add New User
-                </a>
+                </Link>
             </div>
             <div className="card-body p-24">
                 <div className="table-responsive scroll-sm">
@@ -95,7 +96,7 @@ const UsersListLayer = () => {
                                     <div className="d-flex align-items-center">
                                         <img
                                             src="assets/images/user-list/user-list1.png"
-                                            alt=""
+                                            alt="Wowdash"
                                             className="w-40-px h-40-px rounded-circle flex-shrink-0 me-12 overflow-hidden"
                                         />
                                         <div className="flex-grow-1">
@@ -164,7 +165,7 @@ const UsersListLayer = () => {
                                     <div className="d-flex align-items-center">
                                         <img
                                             src="assets/images/user-list/user-list2.png"
-                                            alt=""
+                                            alt="Wowdash"
                                             className="w-40-px h-40-px rounded-circle flex-shrink-0 me-12 overflow-hidden"
                                         />
                                         <div className="flex-grow-1">
@@ -233,7 +234,7 @@ const UsersListLayer = () => {
                                     <div className="d-flex align-items-center">
                                         <img
                                             src="assets/images/user-list/user-list3.png"
-                                            alt=""
+                                            alt="Wowdash"
                                             className="w-40-px h-40-px rounded-circle flex-shrink-0 me-12 overflow-hidden"
                                         />
                                         <div className="flex-grow-1">
@@ -302,7 +303,7 @@ const UsersListLayer = () => {
                                     <div className="d-flex align-items-center">
                                         <img
                                             src="assets/images/user-list/user-list4.png"
-                                            alt=""
+                                            alt="Wowdash"
                                             className="w-40-px h-40-px rounded-circle flex-shrink-0 me-12 overflow-hidden"
                                         />
                                         <div className="flex-grow-1">
@@ -371,7 +372,7 @@ const UsersListLayer = () => {
                                     <div className="d-flex align-items-center">
                                         <img
                                             src="assets/images/user-list/user-list5.png"
-                                            alt=""
+                                            alt="Wowdash"
                                             className="w-40-px h-40-px rounded-circle flex-shrink-0 me-12 overflow-hidden"
                                         />
                                         <div className="flex-grow-1">
@@ -440,7 +441,7 @@ const UsersListLayer = () => {
                                     <div className="d-flex align-items-center">
                                         <img
                                             src="assets/images/user-list/user-list6.png"
-                                            alt=""
+                                            alt="Wowdash"
                                             className="w-40-px h-40-px rounded-circle flex-shrink-0 me-12 overflow-hidden"
                                         />
                                         <div className="flex-grow-1">
@@ -509,7 +510,7 @@ const UsersListLayer = () => {
                                     <div className="d-flex align-items-center">
                                         <img
                                             src="assets/images/user-list/user-list7.png"
-                                            alt=""
+                                            alt="Wowdash"
                                             className="w-40-px h-40-px rounded-circle flex-shrink-0 me-12 overflow-hidden"
                                         />
                                         <div className="flex-grow-1">
@@ -578,7 +579,7 @@ const UsersListLayer = () => {
                                     <div className="d-flex align-items-center">
                                         <img
                                             src="assets/images/user-list/user-list8.png"
-                                            alt=""
+                                            alt="Wowdash"
                                             className="w-40-px h-40-px rounded-circle flex-shrink-0 me-12 overflow-hidden"
                                         />
                                         <div className="flex-grow-1">
@@ -647,7 +648,7 @@ const UsersListLayer = () => {
                                     <div className="d-flex align-items-center">
                                         <img
                                             src="assets/images/user-list/user-list2.png"
-                                            alt=""
+                                            alt="Wowdash"
                                             className="w-40-px h-40-px rounded-circle flex-shrink-0 me-12 overflow-hidden"
                                         />
                                         <div className="flex-grow-1">
@@ -716,7 +717,7 @@ const UsersListLayer = () => {
                                     <div className="d-flex align-items-center">
                                         <img
                                             src="assets/images/user-list/user-list10.png"
-                                            alt=""
+                                            alt="Wowdash"
                                             className="w-40-px h-40-px rounded-circle flex-shrink-0 me-12 overflow-hidden"
                                         />
                                         <div className="flex-grow-1">
@@ -774,61 +775,61 @@ const UsersListLayer = () => {
                     <span>Showing 1 to 10 of 12 entries</span>
                     <ul className="pagination d-flex flex-wrap align-items-center gap-2 justify-content-center">
                         <li className="page-item">
-                            <a
+                            <Link
                                 className="page-link bg-neutral-200 text-secondary-light fw-semibold radius-8 border-0 d-flex align-items-center justify-content-center h-32-px  text-md"
-                                href="javascript:void(0)"
+                                to="#"
                             >
                                 <Icon icon="ep:d-arrow-left" className="" />
-                            </a>
+                            </Link>
                         </li>
                         <li className="page-item">
-                            <a
+                            <Link
                                 className="page-link text-secondary-light fw-semibold radius-8 border-0 d-flex align-items-center justify-content-center h-32-px w-32-px text-md bg-primary-600 text-white"
-                                href="javascript:void(0)"
+                                to="#"
                             >
                                 1
-                            </a>
+                            </Link>
                         </li>
                         <li className="page-item">
-                            <a
+                            <Link
                                 className="page-link bg-neutral-200 text-secondary-light fw-semibold radius-8 border-0 d-flex align-items-center justify-content-center h-32-px w-32-px"
-                                href="javascript:void(0)"
+                                to="#"
                             >
                                 2
-                            </a>
+                            </Link>
                         </li>
                         <li className="page-item">
-                            <a
+                            <Link
                                 className="page-link bg-neutral-200 text-secondary-light fw-semibold radius-8 border-0 d-flex align-items-center justify-content-center h-32-px w-32-px text-md"
-                                href="javascript:void(0)"
+                                to="#"
                             >
                                 3
-                            </a>
+                            </Link>
                         </li>
                         <li className="page-item">
-                            <a
+                            <Link
                                 className="page-link bg-neutral-200 text-secondary-light fw-semibold radius-8 border-0 d-flex align-items-center justify-content-center h-32-px w-32-px text-md"
-                                href="javascript:void(0)"
+                                to="#"
                             >
                                 4
-                            </a>
+                            </Link>
                         </li>
                         <li className="page-item">
-                            <a
+                            <Link
                                 className="page-link bg-neutral-200 text-secondary-light fw-semibold radius-8 border-0 d-flex align-items-center justify-content-center h-32-px w-32-px text-md"
-                                href="javascript:void(0)"
+                                to="#"
                             >
                                 5
-                            </a>
+                            </Link>
                         </li>
                         <li className="page-item">
-                            <a
+                            <Link
                                 className="page-link bg-neutral-200 text-secondary-light fw-semibold radius-8 border-0 d-flex align-items-center justify-content-center h-32-px  text-md"
-                                href="javascript:void(0)"
+                                to="#"
                             >
                                 {" "}
                                 <Icon icon="ep:d-arrow-right" className="" />{" "}
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                 </div>

@@ -1,5 +1,6 @@
 import { Icon } from '@iconify/react/dist/iconify.js'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const VoiceGeneratorLayer = () => {
 
@@ -80,12 +81,12 @@ const VoiceGeneratorLayer = () => {
                 <div className="chat-main card overflow-hidden">
                     <div className="chat-sidebar-single gap-8 justify-content-between cursor-default flex-nowrap">
                         <div className="d-flex align-items-center gap-16">
-                            <a
-                                href="text-generator-new.html"
+                            <Link
+                                to="/text-generator-new"
                                 className="text-primary-light text-2xl line-height-1"
                             >
                                 <i className="ri-arrow-left-line" />
-                            </a>
+                            </Link>
                             <h6 className="text-lg mb-0 text-line-1">
                                 Alright guys, so I've just seen this website...
                             </h6>
@@ -113,7 +114,7 @@ const VoiceGeneratorLayer = () => {
                                 <div className="img overflow-hidden flex-shrink-0">
                                     <img
                                         src="assets/images/chat/1.png"
-                                        alt="image"
+                                        alt="Wowdash"
                                         className="w-44-px h-44-px rounded-circle object-fit-cover"
                                     />
                                 </div>
@@ -141,7 +142,7 @@ const VoiceGeneratorLayer = () => {
                             <div className="img overflow-hidden flex-shrink-0">
                                 <img
                                     src="assets/images/wow-dash-favicon.png"
-                                    alt="image"
+                                    alt="Wowdash"
                                     className="w-44-px h-44-px rounded-circle object-fit-cover"
                                 />
                             </div>

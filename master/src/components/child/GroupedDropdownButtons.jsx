@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const GroupedDropdownButtons = () => {
     return (
@@ -31,20 +32,20 @@ const GroupedDropdownButtons = () => {
                                 </button>
                                 <ul className="dropdown-menu">
                                     <li>
-                                        <a
+                                        <Link
                                             className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
-                                            href="javascript:void(0)"
+                                            to="#"
                                         >
                                             Dropdown link
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
-                                        <a
+                                        <Link
                                             className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
-                                            href="javascript:void(0)"
+                                            to="#"
                                         >
                                             Dropdown link
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </div>
@@ -77,20 +78,20 @@ const GroupedDropdownButtons = () => {
                                 </button>
                                 <ul className="dropdown-menu">
                                     <li>
-                                        <a
+                                        <Link
                                             className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
-                                            href="javascript:void(0)"
+                                            to="#"
                                         >
                                             Dropdown link
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
-                                        <a
+                                        <Link
                                             className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
-                                            href="javascript:void(0)"
+                                            to="#"
                                         >
                                             Dropdown link
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </div>

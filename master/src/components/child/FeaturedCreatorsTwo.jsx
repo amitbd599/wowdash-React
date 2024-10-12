@@ -1,5 +1,6 @@
 import { Icon } from '@iconify/react/dist/iconify.js'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const FeaturedCreatorsTwo = () => {
     return (
@@ -8,8 +9,8 @@ const FeaturedCreatorsTwo = () => {
             <div className="card h-100">
                 <div className="card-header border-bottom d-flex align-items-center flex-wrap gap-2 justify-content-between">
                     <h6 className="fw-bold text-lg mb-0">Featured Creators</h6>
-                    <a
-                        href="javascript:void(0)"
+                    <Link
+                        to="#"
                         className="text-primary-600 hover-text-primary d-flex align-items-center gap-1"
                     >
                         View All
@@ -17,7 +18,7 @@ const FeaturedCreatorsTwo = () => {
                             icon="solar:alt-arrow-right-linear"
                             className="icon"
                         />
-                    </a>
+                    </Link>
                 </div>
                 <div className="card-body pt-24">
                     <div className="d-flex align-items-center justify-content-between gap-8 flex-wrap mb-32">

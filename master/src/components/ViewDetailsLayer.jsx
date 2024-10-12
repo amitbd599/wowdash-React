@@ -1,5 +1,6 @@
 import { Icon } from '@iconify/react/dist/iconify.js'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const ViewDetailsLayer = () => {
     return (
@@ -22,8 +23,8 @@ const ViewDetailsLayer = () => {
                         <div className="mt-16">
                             <ul>
                                 <li className="item-active mb-4">
-                                    <a
-                                        href="email.html"
+                                    <Link
+                                        to="/email"
                                         className="bg-hover-primary-50 px-12 py-8 w-100 radius-8 text-secondary-light"
                                     >
                                         <span className="d-flex align-items-center gap-10 justify-content-between w-100">
@@ -38,11 +39,11 @@ const ViewDetailsLayer = () => {
                                             </span>
                                             <span className="fw-medium">800</span>
                                         </span>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li className="mb-4">
-                                    <a
-                                        href="starred.html"
+                                    <Link
+                                        to="/starred"
                                         className="bg-hover-primary-50 px-12 py-8 w-100 radius-8 text-secondary-light"
                                     >
                                         <span className="d-flex align-items-center gap-10 justify-content-between w-100">
@@ -57,11 +58,11 @@ const ViewDetailsLayer = () => {
                                             </span>
                                             <span className="fw-medium">250</span>
                                         </span>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li className="mb-4">
-                                    <a
-                                        href="email.html"
+                                    <Link
+                                        to="/email"
                                         className="bg-hover-primary-50 px-12 py-8 w-100 radius-8 text-secondary-light"
                                     >
                                         <span className="d-flex align-items-center gap-10 justify-content-between w-100">
@@ -76,11 +77,11 @@ const ViewDetailsLayer = () => {
                                             </span>
                                             <span className="fw-medium">80</span>
                                         </span>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li className="mb-4">
-                                    <a
-                                        href="email.html"
+                                    <Link
+                                        to="/email"
                                         className="bg-hover-primary-50 px-12 py-8 w-100 radius-8 text-secondary-light"
                                     >
                                         <span className="d-flex align-items-center gap-10 justify-content-between w-100">
@@ -95,11 +96,11 @@ const ViewDetailsLayer = () => {
                                             </span>
                                             <span className="fw-medium">50</span>
                                         </span>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li className="mb-4">
-                                    <a
-                                        href="email.html"
+                                    <Link
+                                        to="/email"
                                         className="bg-hover-primary-50 px-12 py-8 w-100 radius-8 text-secondary-light"
                                     >
                                         <span className="d-flex align-items-center gap-10 justify-content-between w-100">
@@ -114,11 +115,11 @@ const ViewDetailsLayer = () => {
                                             </span>
                                             <span className="fw-medium">30</span>
                                         </span>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a
-                                        href="email.html"
+                                    <Link
+                                        to="/email"
                                         className="bg-hover-primary-50 px-12 py-8 w-100 radius-8 text-secondary-light"
                                     >
                                         <span className="d-flex align-items-center gap-10 justify-content-between w-100">
@@ -133,7 +134,7 @@ const ViewDetailsLayer = () => {
                                             </span>
                                             <span className="fw-medium">20</span>
                                         </span>
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                             <div className="mt-24">
@@ -213,7 +214,7 @@ const ViewDetailsLayer = () => {
                                 <div className="d-flex align-items-start gap-3">
                                     <img
                                         src="assets/images/user-list/user-list1.png"
-                                        alt=""
+                                        alt="Wowdash"
                                         className="w-40-px h-40-px rounded-pill"
                                     />
                                     <div className="">
@@ -227,12 +228,12 @@ const ViewDetailsLayer = () => {
                                             <p className="mb-16 text-primary-light">Hi William</p>
                                             <p className="mb-16 text-primary-light">
                                                 Just confirming that we transferred $63.86 to you via PayPal
-                                                <a
-                                                    href="javascript:void(0)"
+                                                <Link
+                                                    to="#"
                                                     className="text-primary-600 text-decoration-underline"
                                                 >
                                                     (info367@gmail.com)
-                                                </a>{" "}
+                                                </Link>{" "}
                                                 which you earned on the themewow Market since your last
                                                 payout.
                                             </p>
@@ -247,7 +248,7 @@ const ViewDetailsLayer = () => {
                                 <div className="d-flex align-items-start gap-3">
                                     <img
                                         src="assets/images/user-list/user-list2.png"
-                                        alt=""
+                                        alt="Wowdash"
                                         className="w-40-px h-40-px rounded-pill"
                                     />
                                     <div className="">

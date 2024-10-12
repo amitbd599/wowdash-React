@@ -1,5 +1,6 @@
 import { Icon } from '@iconify/react/dist/iconify.js'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const HorizontalCard = () => {
     return (
@@ -24,8 +25,8 @@ const HorizontalCard = () => {
                                 stressful situations of all kinds, including the most common of
                                 all .
                             </p>
-                            <a
-                                href="javascript:void(0)"
+                            <Link
+                                to="#"
                                 className="btn text-primary-600 hover-text-primary p-0 d-inline-flex align-items-center gap-2"
                             >
                                 Read More{" "}
@@ -33,7 +34,7 @@ const HorizontalCard = () => {
                                     icon="iconamoon:arrow-right-2"
                                     className="text-xl"
                                 />
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -55,8 +56,8 @@ const HorizontalCard = () => {
                                 stressful situations of all kinds, including the most common of
                                 all .
                             </p>
-                            <a
-                                href="javascript:void(0)"
+                            <Link
+                                to="#"
                                 className="btn text-primary-600 hover-text-primary p-0 d-inline-flex align-items-center gap-2"
                             >
                                 Read More{" "}
@@ -64,7 +65,7 @@ const HorizontalCard = () => {
                                     icon="iconamoon:arrow-right-2"
                                     className="text-xl"
                                 />
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -86,8 +87,8 @@ const HorizontalCard = () => {
                                 stressful situations of all kinds, including the most common of
                                 all .
                             </p>
-                            <a
-                                href="javascript:void(0)"
+                            <Link
+                                to="#"
                                 className="btn text-primary-600 hover-text-primary p-0 d-inline-flex align-items-center gap-2"
                             >
                                 Read More{" "}
@@ -95,7 +96,7 @@ const HorizontalCard = () => {
                                     icon="iconamoon:arrow-right-2"
                                     className="text-xl"
                                 />
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -117,8 +118,8 @@ const HorizontalCard = () => {
                                 stressful situations of all kinds, including the most common of
                                 all .
                             </p>
-                            <a
-                                href="javascript:void(0)"
+                            <Link
+                                to="#"
                                 className="btn text-primary-600 hover-text-primary p-0 d-inline-flex align-items-center gap-2"
                             >
                                 Read More{" "}
@@ -126,7 +127,7 @@ const HorizontalCard = () => {
                                     icon="iconamoon:arrow-right-2"
                                     className="text-xl"
                                 />
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

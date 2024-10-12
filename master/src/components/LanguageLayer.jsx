@@ -1,5 +1,6 @@
 import { Icon } from '@iconify/react/dist/iconify.js'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const LanguageLayer = () => {
     return (
@@ -377,61 +378,61 @@ const LanguageLayer = () => {
                         <span>Showing 1 to 10 of 12 entries</span>
                         <ul className="pagination d-flex flex-wrap align-items-center gap-2 justify-content-center">
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-neutral-200 text-secondary-light fw-semibold radius-8 border-0 d-flex align-items-center justify-content-center h-32-px w-32-px text-md"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     <Icon icon="ep:d-arrow-left" className="" />
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link text-secondary-light fw-semibold radius-8 border-0 d-flex align-items-center justify-content-center h-32-px w-32-px text-md bg-primary-600 text-white"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     1
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-neutral-200 text-secondary-light fw-semibold radius-8 border-0 d-flex align-items-center justify-content-center h-32-px w-32-px"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     2
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-neutral-200 text-secondary-light fw-semibold radius-8 border-0 d-flex align-items-center justify-content-center h-32-px w-32-px text-md"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     3
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-neutral-200 text-secondary-light fw-semibold radius-8 border-0 d-flex align-items-center justify-content-center h-32-px w-32-px text-md"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     4
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-neutral-200 text-secondary-light fw-semibold radius-8 border-0 d-flex align-items-center justify-content-center h-32-px w-32-px text-md"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     5
-                                </a>
+                                </Link>
                             </li>
                             <li className="page-item">
-                                <a
+                                <Link
                                     className="page-link bg-neutral-200 text-secondary-light fw-semibold radius-8 border-0 d-flex align-items-center justify-content-center h-32-px w-32-px text-md"
-                                    href="javascript:void(0)"
+                                    to="#"
                                 >
                                     {" "}
                                     <Icon icon="ep:d-arrow-right" className="" />{" "}
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>

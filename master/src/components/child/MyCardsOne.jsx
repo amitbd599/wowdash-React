@@ -1,5 +1,6 @@
 import { Icon } from '@iconify/react/dist/iconify.js';
 import React from 'react'
+import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
 const MyCardsOne = () => {
     const settings = {
@@ -19,13 +20,13 @@ const MyCardsOne = () => {
                 <div className="card-body">
                     <div className="d-flex align-items-center flex-wrap gap-2 justify-content-between mb-20">
                         <h6 className="mb-2 fw-bold text-lg">My Cards</h6>
-                        <a
+                        <Link
                             href=""
                             className="btn btn-outline-primary d-inline-flex align-items-center gap-2 text-sm btn-sm px-8 py-6"
                         >
                             <Icon icon="ph:plus-circle" className="icon text-xl" />{" "}
                             Button
-                        </a>
+                        </Link>
                     </div>
                     <div>
                         <div className="card-slider">

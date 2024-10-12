@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const BannerInnerOne = () => {
     return (
@@ -27,18 +28,18 @@ const BannerInnerOne = () => {
                             platform for buying, selling, and trading digital assets,
                         </p>
                         <div className="d-flex align-items-center flex-wrap mt-24 gap-16">
-                            <a
-                                href="#"
+                            <Link
+                                to="#"
                                 className="btn rounded-pill border br-white text-white radius-8 px-32 py-11 hover-bg-white text-hover-neutral-900"
                             >
                                 Explore
-                            </a>
-                            <a
-                                href="#"
+                            </Link>
+                            <Link
+                                to="#"
                                 className="btn rounded-pill btn-primary-600 radius-8 px-28 py-11"
                             >
                                 Create Now
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

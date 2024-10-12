@@ -1,32 +1,33 @@
 import { Icon } from '@iconify/react/dist/iconify.js'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const InvoicePreviewLayer = () => {
     return (
         <div className="card">
             <div className="card-header">
                 <div className="d-flex flex-wrap align-items-center justify-content-end gap-2">
-                    <a
-                        href="javascript:void(0)"
+                    <Link
+                        to="#"
                         className="btn btn-sm btn-primary-600 radius-8 d-inline-flex align-items-center gap-1"
                     >
                         <Icon icon="pepicons-pencil:paper-plane" className="text-xl" />
                         Send Invoice
-                    </a>
-                    <a
-                        href="javascript:void(0)"
+                    </Link>
+                    <Link
+                        to="#"
                         className="btn btn-sm btn-warning radius-8 d-inline-flex align-items-center gap-1"
                     >
                         <Icon icon="solar:download-linear" className="text-xl" />
                         Download
-                    </a>
-                    <a
-                        href="javascript:void(0)"
+                    </Link>
+                    <Link
+                        to="#"
                         className="btn btn-sm btn-success radius-8 d-inline-flex align-items-center gap-1"
                     >
                         <Icon icon="uil:edit" className="text-xl" />
                         Edit
-                    </a>
+                    </Link>
                     <button
                         type="button"
                         className="btn btn-sm btn-danger radius-8 d-inline-flex align-items-center gap-1"

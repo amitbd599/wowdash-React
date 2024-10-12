@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const DroprightWarning = () => {
     return (
@@ -21,28 +22,28 @@ const DroprightWarning = () => {
                             </button>
                             <ul className="dropdown-menu">
                                 <li>
-                                    <a
+                                    <Link
                                         className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
-                                        href="javascript:void(0)"
+                                        to="#"
                                     >
                                         Action
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a
+                                    <Link
                                         className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
-                                        href="javascript:void(0)"
+                                        to="#"
                                     >
                                         Primary action
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a
+                                    <Link
                                         className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
-                                        href="javascript:void(0)"
+                                        to="#"
                                     >
                                         Something else
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                         </div>
@@ -58,28 +59,28 @@ const DroprightWarning = () => {
                             </button>
                             <ul className="dropdown-menu">
                                 <li>
-                                    <a
+                                    <Link
                                         className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
-                                        href="javascript:void(0)"
+                                        to="#"
                                     >
                                         Action
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a
+                                    <Link
                                         className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
-                                        href="javascript:void(0)"
+                                        to="#"
                                     >
                                         Primary action
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a
+                                    <Link
                                         className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
-                                        href="javascript:void(0)"
+                                        to="#"
                                     >
                                         Something else
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                         </div>
@@ -95,28 +96,28 @@ const DroprightWarning = () => {
                             </button>
                             <ul className="dropdown-menu">
                                 <li>
-                                    <a
+                                    <Link
                                         className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
-                                        href="javascript:void(0)"
+                                        to="#"
                                     >
                                         Action
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a
+                                    <Link
                                         className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
-                                        href="javascript:void(0)"
+                                        to="#"
                                     >
                                         Primary action
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a
+                                    <Link
                                         className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
-                                        href="javascript:void(0)"
+                                        to="#"
                                     >
                                         Something else
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                         </div>
@@ -132,28 +133,28 @@ const DroprightWarning = () => {
                             </button>
                             <ul className="dropdown-menu">
                                 <li>
-                                    <a
+                                    <Link
                                         className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
-                                        href="javascript:void(0)"
+                                        to="#"
                                     >
                                         Action
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a
+                                    <Link
                                         className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
-                                        href="javascript:void(0)"
+                                        to="#"
                                     >
                                         Primary action
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a
+                                    <Link
                                         className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
-                                        href="javascript:void(0)"
+                                        to="#"
                                     >
                                         Something else
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                         </div>

@@ -1,5 +1,6 @@
 import { Icon } from '@iconify/react/dist/iconify.js'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const CardHeaderFooter = () => {
     return (
@@ -25,9 +26,9 @@ const CardHeaderFooter = () => {
                             </p>
                         </div>
                         <div className="card-footer text-center bg-transparent border border-end-0 border-start-0 border-bottom-0 py-16 px-24">
-                            <a href="javascript:void(0)" className="text-primary-600">
+                            <Link to="#" className="text-primary-600">
                                 View All
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -47,8 +48,8 @@ const CardHeaderFooter = () => {
                                 Intrinsically incubate intuitive opportunities and real-time
                                 potentialities for change for interoperable{" "}
                             </p>
-                            <a
-                                href="javascript:void(0)"
+                            <Link
+                                to="#"
                                 className="btn text-primary-600 hover-text-primary px-0 py-0 d-inline-flex align-items-center gap-2 mt-16"
                             >
                                 Read More{" "}
@@ -56,7 +57,7 @@ const CardHeaderFooter = () => {
                                     icon="iconamoon:arrow-right-2"
                                     className="text-xl"
                                 />
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -67,9 +68,9 @@ const CardHeaderFooter = () => {
                                 <h6 className="text-lg mb-0">How can i help your</h6>
                                 <span className="text-sm">Awesome Support</span>
                             </div>
-                            <a href="javascript:void(0)" className="text-primary-600">
+                            <Link to="#" className="text-primary-600">
                                 View All
-                            </a>
+                            </Link>
                         </div>
                         <div className="card-body py-16 px-24">
                             <p className="card-text text-neutral-600 mb-16">

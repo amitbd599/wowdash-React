@@ -1,5 +1,6 @@
 import { Icon } from '@iconify/react/dist/iconify.js'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const TopCategoriesOne = () => {
     return (
@@ -8,8 +9,8 @@ const TopCategoriesOne = () => {
                 <div className="card-header">
                     <div className="d-flex align-items-center flex-wrap gap-2 justify-content-between">
                         <h6 className="mb-2 fw-bold text-lg mb-0">Top Categories</h6>
-                        <a
-                            href="javascript:void(0)"
+                        <Link
+                            to="#"
                             className="text-primary-600 hover-text-primary d-flex align-items-center gap-1"
                         >
                             View All
@@ -17,7 +18,7 @@ const TopCategoriesOne = () => {
                                 icon="solar:alt-arrow-right-linear"
                                 className="icon"
                             />
-                        </a>
+                        </Link>
                     </div>
                 </div>
                 <div className="card-body">
@@ -37,12 +38,12 @@ const TopCategoriesOne = () => {
                                 </span>
                             </div>
                         </div>
-                        <a
+                        <Link
                             href="#"
                             className="w-24-px h-24-px bg-primary-50 text-primary-600 d-flex justify-content-center align-items-center text-lg bg-hover-primary-100 radius-4"
                         >
                             <i className="ri-arrow-right-s-line" />
-                        </a>
+                        </Link>
                     </div>
                     <div className="d-flex align-items-center justify-content-between gap-3 mb-24">
                         <div className="d-flex align-items-center gap-12">
@@ -60,12 +61,12 @@ const TopCategoriesOne = () => {
                                 </span>
                             </div>
                         </div>
-                        <a
+                        <Link
                             href="#"
                             className="w-24-px h-24-px bg-primary-50 text-primary-600 d-flex justify-content-center align-items-center text-lg bg-hover-primary-100 radius-4"
                         >
                             <i className="ri-arrow-right-s-line" />
-                        </a>
+                        </Link>
                     </div>
                     <div className="d-flex align-items-center justify-content-between gap-3 mb-24">
                         <div className="d-flex align-items-center gap-12">
@@ -83,12 +84,12 @@ const TopCategoriesOne = () => {
                                 </span>
                             </div>
                         </div>
-                        <a
-                            href="#"
+                        <Link
+                            to="#"
                             className="w-24-px h-24-px bg-primary-50 text-primary-600 d-flex justify-content-center align-items-center text-lg bg-hover-primary-100 radius-4"
                         >
                             <i className="ri-arrow-right-s-line" />
-                        </a>
+                        </Link>
                     </div>
                     <div className="d-flex align-items-center justify-content-between gap-3 mb-24">
                         <div className="d-flex align-items-center gap-12">
@@ -106,12 +107,12 @@ const TopCategoriesOne = () => {
                                 </span>
                             </div>
                         </div>
-                        <a
-                            href="#"
+                        <Link
+                            to="#"
                             className="w-24-px h-24-px bg-primary-50 text-primary-600 d-flex justify-content-center align-items-center text-lg bg-hover-primary-100 radius-4"
                         >
                             <i className="ri-arrow-right-s-line" />
-                        </a>
+                        </Link>
                     </div>
                     <div className="d-flex align-items-center justify-content-between gap-3 mb-24">
                         <div className="d-flex align-items-center gap-12">
@@ -131,12 +132,12 @@ const TopCategoriesOne = () => {
                                 </span>
                             </div>
                         </div>
-                        <a
-                            href="#"
+                        <Link
+                            to="#"
                             className="w-24-px h-24-px bg-primary-50 text-primary-600 d-flex justify-content-center align-items-center text-lg bg-hover-primary-100 radius-4"
                         >
                             <i className="ri-arrow-right-s-line" />
-                        </a>
+                        </Link>
                     </div>
                     <div className="d-flex align-items-center justify-content-between gap-3 mb-0">
                         <div className="d-flex align-items-center gap-12">
@@ -154,12 +155,12 @@ const TopCategoriesOne = () => {
                                 </span>
                             </div>
                         </div>
-                        <a
-                            href="#"
+                        <Link
+                            to="#"
                             className="w-24-px h-24-px bg-primary-50 text-primary-600 d-flex justify-content-center align-items-center text-lg bg-hover-primary-100 radius-4"
                         >
                             <i className="ri-arrow-right-s-line" />
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>

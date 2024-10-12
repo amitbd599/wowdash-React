@@ -1,5 +1,6 @@
 import { Icon } from '@iconify/react/dist/iconify.js'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const SignInLayer = () => {
     return (
@@ -12,9 +13,9 @@ const SignInLayer = () => {
             <div className="auth-right py-32 px-24 d-flex flex-column justify-content-center">
                 <div className="max-w-464-px mx-auto w-100">
                     <div>
-                        <a href="index.html" className="mb-40 max-w-290-px">
+                        <Link to="/" className="mb-40 max-w-290-px">
                             <img src="assets/images/logo.png" alt="" />
-                        </a>
+                        </Link>
                         <h4 className="mb-12">Sign In to your Account</h4>
                         <p className="mb-32 text-secondary-light text-lg">
                             Welcome back! please enter your detail
@@ -61,9 +62,9 @@ const SignInLayer = () => {
                                         Remember me{" "}
                                     </label>
                                 </div>
-                                <a href="javascript:void(0)" className="text-primary-600 fw-medium">
+                                <Link to="#" className="text-primary-600 fw-medium">
                                     Forgot Password?
-                                </a>
+                                </Link>
                             </div>
                         </div>
                         <button
@@ -101,9 +102,9 @@ const SignInLayer = () => {
                         <div className="mt-32 text-center text-sm">
                             <p className="mb-0">
                                 Don’t have an account?{" "}
-                                <a href="sign-up.html" className="text-primary-600 fw-semibold">
+                                <Link to="/sign-up" className="text-primary-600 fw-semibold">
                                     Sign Up
-                                </a>
+                                </Link>
                             </p>
                         </div>
                     </form>

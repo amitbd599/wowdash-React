@@ -1,4 +1,6 @@
+import { Icon } from '@iconify/react/dist/iconify.js'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const LastTransactionOne = () => {
     return (
@@ -6,13 +8,13 @@ const LastTransactionOne = () => {
             <div className="card h-100">
                 <div className="card-header border-bottom bg-base py-16 px-24 d-flex align-items-center justify-content-between">
                     <h6 className="text-lg fw-semibold mb-0">Last Transaction</h6>
-                    <a
-                        href="javascript:void(0)"
+                    <Link
+                        to="#"
                         className="text-primary-600 hover-text-primary d-flex align-items-center gap-1"
                     >
                         View All
-                        <iconify-icon icon="solar:alt-arrow-right-linear" className="icon" />
-                    </a>
+                        <Icon icon="solar:alt-arrow-right-linear" className="icon" />
+                    </Link>
                 </div>
                 <div className="card-body p-24">
                     <div className="table-responsive scroll-sm">
