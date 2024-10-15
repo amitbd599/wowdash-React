@@ -39,7 +39,7 @@ import InvoiceAddPage from "./pages/InvoiceAddPage";
 import InvoiceEditPage from "./pages/InvoiceEditPage";
 import InvoiceListPage from "./pages/InvoiceListPage";
 import InvoicePreviewPage from "./pages/InvoicePreviewPage";
-import KanbanPage from "./pages/KanbanPage";
+// import KanbanPage from "./pages/KanbanPage";
 import LanguagePage from "./pages/LanguagePage";
 import LineChartPage from "./pages/LineChartPage";
 import ListPage from "./pages/ListPage";
@@ -80,12 +80,14 @@ import WalletPage from "./pages/WalletPage";
 import WidgetsPage from "./pages/WidgetsPage";
 import WizardPage from "./pages/WizardPage";
 import RouteScrollToTop from "./helper/RouteScrollToTop";
+import BootstrapInit from "./helper/BootstrapInit";
 
 
 function App() {
   return (
     <BrowserRouter>
       <RouteScrollToTop />
+      <BootstrapInit />
       <Routes>
         <Route exact path="/" element={<HomePageOne />} />
         <Route exact path="/index-2" element={<HomePageTwo />} />
@@ -130,7 +132,7 @@ function App() {
         <Route exact path="/invoice-edit" element={<InvoiceEditPage />} />
         <Route exact path="/invoice-list" element={<InvoiceListPage />} />
         <Route exact path="/invoice-preview" element={<InvoicePreviewPage />} />
-        <Route exact path="/kanban" element={<KanbanPage />} />
+        {/* <Route exact path="/kanban" element={<KanbanPage />} /> */}
         <Route exact path="/language" element={<LanguagePage />} />
         <Route exact path="/line-chart" element={<LineChartPage />} />
         <Route exact path="/list" element={<ListPage />} />

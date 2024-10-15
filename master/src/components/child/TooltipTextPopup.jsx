@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import Tooltip from 'bootstrap/js/dist/tooltip';
+import { Tooltip } from 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 const TooltipTextPopup = () => {
     useEffect(() => {

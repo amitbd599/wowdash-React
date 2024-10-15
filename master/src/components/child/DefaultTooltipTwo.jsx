@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { Tooltip } from "bootstrap";
+import { Tooltip } from 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 const DefaultTooltipTwo = () => {
     useEffect(() => {
@@ -10,8 +10,6 @@ const DefaultTooltipTwo = () => {
         const tooltipList = Array.from(tooltipTriggerList).map(
             (tooltipTriggerEl) => new Tooltip(tooltipTriggerEl)
         );
-
-
         // Cleanup on unmount
         return () => {
             tooltipList.forEach((tooltip) => tooltip.dispose());
