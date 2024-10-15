@@ -2299,7 +2299,7 @@ const useReactApexChart = () => {
         plotOptions: {
             bar: {
                 columnWidth: "8",
-                borderRadius: [2],
+                borderRadius: 2,
                 borderRadiusWhenStacked: "all",
             },
         },
@@ -2326,8 +2326,15 @@ const useReactApexChart = () => {
         },
         xaxis: {
             show: false,
-            type: "week",
+            type: "category",
             categories: [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun",
                 "Mon",
                 "Tue",
                 "Wed",
