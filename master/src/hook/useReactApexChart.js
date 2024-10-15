@@ -3931,7 +3931,7 @@ const useReactApexChart = () => {
             [1330642800000, 33.73],
         ]
     }]
-    var timeSeriesChartOptionsTwo = {
+    let timeSeriesChartOptionsTwo = {
 
         chart: {
             type: 'area',
@@ -4000,12 +4000,105 @@ const useReactApexChart = () => {
 
 
 
+    let gradientLineChartSeries = [{
+        name: "This month",
+        data: [12, 6, 22, 18, 38, 16, 40, 8, 35, 18, 35, 22, 50]
+    }];
+    let gradientLineChartOptions = {
+
+        chart: {
+            height: 264,
+            type: 'line',
+            toolbar: {
+                show: false
+            },
+            zoom: {
+                enabled: false
+            },
+        },
+        dataLabels: {
+            enabled: false
+        },
+        stroke: {
+            curve: 'smooth',
+            colors: ['#FF9F29'], // Specify the line color here
+            width: 4
+        },
+        fill: {
+            type: 'gradient',
+            gradient: {
+                shade: 'dark',
+                gradientToColors: ['#0E53F4'],
+                shadeIntensity: 1,
+                type: 'horizontal',
+                opacityFrom: 1,
+                opacityTo: 1,
+                stops: [0, 100, 100, 100]
+            },
+        },
+        markers: {
+            size: 0,
+            strokeWidth: 3,
+            hover: {
+                size: 8
+            }
+        },
+        tooltip: {
+            enabled: true,
+            x: {
+                show: true,
+            },
+            y: {
+                show: false,
+            },
+            z: {
+                show: false,
+            }
+        },
+        grid: {
+            row: {
+                colors: ['transparent', 'transparent'], // takes an array which will be repeated on columns
+                opacity: 0.5
+            },
+            borderColor: '#D1D5DB',
+            strokeDashArray: 3,
+        },
+        yaxis: {
+            labels: {
+                formatter: function (value) {
+                    return "$" + value + "k";
+                },
+                style: {
+                    fontSize: "14px"
+                }
+            },
+        },
+        xaxis: {
+            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+            tooltip: {
+                enabled: false
+            },
+            labels: {
+                formatter: function (value) {
+                    return value;
+                },
+                style: {
+                    fontSize: "14px"
+                }
+            },
+            axisBorder: {
+                show: false
+            },
+        }
+    };
 
 
 
 
 
-    return { chartSeries, chartOptions, barChartSeries, barChartOptions, donutChartSeries, donutChartOptions, paymentStatusChartSeries, paymentStatusChartOptions, barChartSeriesTwo, barChartOptionsTwo, donutChartSeriesTwo, donutChartOptionsTwo, paymentStatusChartSeriesTwo, paymentStatusChartOptionsTwo, createChart, createChartTwo, createChartThree, createChartFour, createChartFive, createChartSix, createChartSeven, createChartEight, createChartNine, createChartTen, createChatEleven, paymentStatusChartSeriesThree, paymentStatusChartOptionsThree, statisticsDonutChartSeries, statisticsDonutChartOptions, candleStickChartSeries, candleStickChartOptions, statisticsDonutChartSeriesThree, statisticsDonutChartOptionsThree, upDownBarChartSeries, upDownBarChartOptions, semiCircleGaugeSeriesOne, semiCircleGaugeOptionsOne, dailyIconBarChartSeriesOne, dailyIconBarChartOptionsOne, transactionLineChartSeries, transactionLineChartOptions, userOverviewDonutChartSeries, userOverviewDonutChartOptions, paymentStatusChartSeriesOne, paymentStatusChartOptionsOne, dailyIconBarChartSeriesTwo, dailyIconBarChartOptionsTwo, columnChartSeriesOne, columnChartOptionsOne, columnChartSeriesTwo, columnChartOptionsTwo, columnChartSeriesThree, columnChartOptionsThree, columnChartSeriesFour, columnChartOptionsFour, defaultLineChartSeries, defaultLineChartOptions, zoomAbleLineChartSeries, zoomAbleLineChartOptions, lineDataLabelSeries, lineDataLabelOptions, doubleLineChartSeries, doubleLineChartOptions, stepLineChartSeries, stepLineChartOptions, timeSeriesChartSeries, timeSeriesChartOptions, pieChartSeriesOne, pieChartOptionsTwo, basicDonutChartSeries, basicDonutChartOptions, radarChartSeries, radarChartOptions, multipleSeriesChartSeries, multipleSeriesChartOptions, timeSeriesChartSeriesTwo, timeSeriesChartOptionsTwo };
+
+
+    return { chartSeries, chartOptions, barChartSeries, barChartOptions, donutChartSeries, donutChartOptions, paymentStatusChartSeries, paymentStatusChartOptions, barChartSeriesTwo, barChartOptionsTwo, donutChartSeriesTwo, donutChartOptionsTwo, paymentStatusChartSeriesTwo, paymentStatusChartOptionsTwo, createChart, createChartTwo, createChartThree, createChartFour, createChartFive, createChartSix, createChartSeven, createChartEight, createChartNine, createChartTen, createChatEleven, paymentStatusChartSeriesThree, paymentStatusChartOptionsThree, statisticsDonutChartSeries, statisticsDonutChartOptions, candleStickChartSeries, candleStickChartOptions, statisticsDonutChartSeriesThree, statisticsDonutChartOptionsThree, upDownBarChartSeries, upDownBarChartOptions, semiCircleGaugeSeriesOne, semiCircleGaugeOptionsOne, dailyIconBarChartSeriesOne, dailyIconBarChartOptionsOne, transactionLineChartSeries, transactionLineChartOptions, userOverviewDonutChartSeries, userOverviewDonutChartOptions, paymentStatusChartSeriesOne, paymentStatusChartOptionsOne, dailyIconBarChartSeriesTwo, dailyIconBarChartOptionsTwo, columnChartSeriesOne, columnChartOptionsOne, columnChartSeriesTwo, columnChartOptionsTwo, columnChartSeriesThree, columnChartOptionsThree, columnChartSeriesFour, columnChartOptionsFour, defaultLineChartSeries, defaultLineChartOptions, zoomAbleLineChartSeries, zoomAbleLineChartOptions, lineDataLabelSeries, lineDataLabelOptions, doubleLineChartSeries, doubleLineChartOptions, stepLineChartSeries, stepLineChartOptions, timeSeriesChartSeries, timeSeriesChartOptions, pieChartSeriesOne, pieChartOptionsTwo, basicDonutChartSeries, basicDonutChartOptions, radarChartSeries, radarChartOptions, multipleSeriesChartSeries, multipleSeriesChartOptions, timeSeriesChartSeriesTwo, timeSeriesChartOptionsTwo, gradientLineChartSeries, gradientLineChartOptions };
 };
 
 export default useReactApexChart;
