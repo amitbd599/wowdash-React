@@ -3158,6 +3158,13 @@ const useReactApexChart = () => {
                 "Fri",
                 "Sat",
                 "Sun",
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun",
             ],
             axisBorder: {
                 show: false,
