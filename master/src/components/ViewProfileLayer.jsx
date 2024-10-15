@@ -3,6 +3,18 @@ import React, { useState } from 'react'
 
 const ViewProfileLayer = () => {
     const [imagePreview, setImagePreview] = useState('assets/images/user-grid/user-grid-img13.png');
+    const [passwordVisible, setPasswordVisible] = useState(false);
+    const [confirmPasswordVisible, setConfirmPasswordVisible] = useState(false);
+
+    // Toggle function for password field
+    const togglePasswordVisibility = () => {
+        setPasswordVisible(!passwordVisible);
+    };
+
+    // Toggle function for confirm password field
+    const toggleConfirmPasswordVisibility = () => {
+        setConfirmPasswordVisible(!confirmPasswordVisible);
+    };
 
     const readURL = (input) => {
         if (input.target.files && input.target.files[0]) {
@@ -339,51 +351,40 @@ const ViewProfileLayer = () => {
                                     </div>
                                 </form>
                             </div>
-                            <div
-                                className="tab-pane fade"
-                                id="pills-change-passwork"
-                                role="tabpanel"
-                                aria-labelledby="pills-change-passwork-tab"
-                                tabIndex={0}
-                            >
+                            <div className="tab-pane fade" id="pills-change-passwork" role="tabpanel" aria-labelledby="pills-change-passwork-tab" tabIndex="0">
                                 <div className="mb-20">
-                                    <label
-                                        htmlFor="your-password"
-                                        className="form-label fw-semibold text-primary-light text-sm mb-8"
-                                    >
+                                    <label htmlFor="your-password" className="form-label fw-semibold text-primary-light text-sm mb-8">
                                         New Password <span className="text-danger-600">*</span>
                                     </label>
                                     <div className="position-relative">
                                         <input
-                                            type="password"
+                                            type={passwordVisible ? "text" : "password"}
                                             className="form-control radius-8"
                                             id="your-password"
                                             placeholder="Enter New Password*"
                                         />
                                         <span
-                                            className="toggle-password ri-eye-line cursor-pointer position-absolute end-0 top-50 translate-middle-y me-16 text-secondary-light"
-                                            data-toggle="#your-password"
-                                        />
+                                            className={`toggle-password ${passwordVisible ? "ri-eye-off-line" : "ri-eye-line"} cursor-pointer position-absolute end-0 top-50 translate-middle-y me-16 text-secondary-light`}
+                                            onClick={togglePasswordVisibility}
+                                        ></span>
                                     </div>
                                 </div>
+
                                 <div className="mb-20">
-                                    <label
-                                        htmlFor="confirm-password"
-                                        className="form-label fw-semibold text-primary-light text-sm mb-8"
-                                    >
-                                        Confirmed Password <span className="text-danger-600">*</span>
+                                    <label htmlFor="confirm-password" className="form-label fw-semibold text-primary-light text-sm mb-8">
+                                        Confirm Password <span className="text-danger-600">*</span>
                                     </label>
                                     <div className="position-relative">
                                         <input
-                                            type="password"
+                                            type={confirmPasswordVisible ? "text" : "password"}
                                             className="form-control radius-8"
                                             id="confirm-password"
                                             placeholder="Confirm Password*"
                                         />
                                         <span
-                                            className="toggle-password ri-eye-line cursor-pointer position-absolute end-0 top-50 translate-middle-y me-16 text-secondary-light"
-                                            data-toggle="#confirm-password"
-                                        />
+                                            className={`toggle-password ${confirmPasswordVisible ? "ri-eye-off-line" : "ri-eye-line"} cursor-pointer position-absolute end-0 top-50 translate-middle-y me-16 text-secondary-light`}
+                                            onClick={toggleConfirmPasswordVisibility}
+                                        ></span>
                                     </div>
                                 </div>
                             </div>
