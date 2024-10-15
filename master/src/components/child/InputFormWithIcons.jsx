@@ -1,3 +1,4 @@
+import { Icon } from '@iconify/react/dist/iconify.js'
 import React from 'react'
 
 const InputFormWithIcons = () => {
@@ -13,7 +14,7 @@ const InputFormWithIcons = () => {
                             <label className="form-label">First Name</label>
                             <div className="icon-field">
                                 <span className="icon">
-                                    <iconify-icon icon="f7:person" />
+                                    <Icon icon="f7:person" />
                                 </span>
                                 <input
                                     type="text"
@@ -27,7 +28,7 @@ const InputFormWithIcons = () => {
                             <label className="form-label">Last Name</label>
                             <div className="icon-field">
                                 <span className="icon">
-                                    <iconify-icon icon="f7:person" />
+                                    <Icon icon="f7:person" />
                                 </span>
                                 <input
                                     type="text"
@@ -41,7 +42,7 @@ const InputFormWithIcons = () => {
                             <label className="form-label">Email</label>
                             <div className="icon-field">
                                 <span className="icon">
-                                    <iconify-icon icon="mage:email" />
+                                    <Icon icon="mage:email" />
                                 </span>
                                 <input
                                     type="email"
@@ -55,7 +56,7 @@ const InputFormWithIcons = () => {
                             <label className="form-label">Phone</label>
                             <div className="icon-field">
                                 <span className="icon">
-                                    <iconify-icon icon="solar:phone-calling-linear" />
+                                    <Icon icon="solar:phone-calling-linear" />
                                 </span>
                                 <input
                                     type="text"
@@ -69,7 +70,7 @@ const InputFormWithIcons = () => {
                             <label className="form-label">Password</label>
                             <div className="icon-field">
                                 <span className="icon">
-                                    <iconify-icon icon="solar:lock-password-outline" />
+                                    <Icon icon="solar:lock-password-outline" />
                                 </span>
                                 <input
                                     type="password"

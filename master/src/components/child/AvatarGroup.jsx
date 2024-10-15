@@ -1,3 +1,4 @@
+import { Icon } from '@iconify/react/dist/iconify.js'
 import React from 'react'
 
 const AvatarGroup = () => {
@@ -51,7 +52,7 @@ const AvatarGroup = () => {
                             type="button"
                             className="w-24-px h-24-px rounded-circle border border-primary-600 text-primary-600 ms-8 border-dashed text-secondary-light text-xs d-inline-flex align-items-center justify-content-center"
                         >
-                            <iconify-icon icon="ic:baseline-plus" className="" />
+                            <Icon icon="ic:baseline-plus" className="" />
                         </button>
                     </div>
                     <div className="d-flex align-items-center flex-wrap mt-24">
@@ -97,7 +98,7 @@ const AvatarGroup = () => {
                             type="button"
                             className="w-32-px h-32-px rounded-circle border border-primary-600 text-primary-600 ms-8 border-dashed text-secondary-light text-lg d-inline-flex align-items-center justify-content-center"
                         >
-                            <iconify-icon icon="ic:baseline-plus" className="" />
+                            <Icon icon="ic:baseline-plus" className="" />
                         </button>
                     </div>
                 </div>

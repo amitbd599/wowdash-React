@@ -1,3 +1,4 @@
+import { Icon } from '@iconify/react/dist/iconify.js'
 import React from 'react'
 
 const ButtonTabsTwo = () => {
@@ -25,7 +26,7 @@ const ButtonTabsTwo = () => {
                                 aria-controls="pills-button-icon-home"
                                 aria-selected="true"
                             >
-                                <iconify-icon
+                                <Icon
                                     icon="solar:home-smile-angle-outline"
                                     className="text-xl"
                                 />
@@ -43,7 +44,7 @@ const ButtonTabsTwo = () => {
                                 aria-controls="pills-button-icon-details"
                                 aria-selected="false"
                             >
-                                <iconify-icon
+                                <Icon
                                     icon="hugeicons:folder-details"
                                     className="text-xl"
                                 />
@@ -61,7 +62,7 @@ const ButtonTabsTwo = () => {
                                 aria-controls="pills-button-icon-profile"
                                 aria-selected="false"
                             >
-                                <iconify-icon icon="iconamoon:profile" className="text-xl" />
+                                <Icon icon="iconamoon:profile" className="text-xl" />
                                 <span className="line-height-1">Profile</span>
                             </button>
                         </li>
@@ -76,7 +77,7 @@ const ButtonTabsTwo = () => {
                                 aria-controls="pills-button-icon-settings"
                                 aria-selected="false"
                             >
-                                <iconify-icon icon="uil:setting" className="text-xl" />
+                                <Icon icon="uil:setting" className="text-xl" />
                                 <span className="line-height-1">Settings</span>
                             </button>
                         </li>

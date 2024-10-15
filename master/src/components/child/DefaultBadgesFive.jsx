@@ -1,3 +1,4 @@
+import { Icon } from '@iconify/react/dist/iconify.js'
 import React from 'react'
 
 const DefaultBadgesFive = () => {
@@ -35,7 +36,7 @@ const DefaultBadgesFive = () => {
                             <button type="button" className="position-relative">
                                 <img
                                     src="assets/images/lang-flag.png"
-                                    alt="image"
+                                    alt="image_icon"
                                     className="w-32-px h-32-px object-fit-cover rounded-circle"
                                 />
                                 <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger-600 border border-white">
@@ -47,7 +48,7 @@ const DefaultBadgesFive = () => {
                             className="position-relative rounded-circle d-flex justify-content-center align-items-center"
                             type="button"
                         >
-                            <iconify-icon
+                            <Icon
                                 icon="mage:email"
                                 className="text-primary-light text-2xxl"
                             />
@@ -59,7 +60,7 @@ const DefaultBadgesFive = () => {
                             className="position-relative rounded-circle d-flex justify-content-center align-items-center"
                             type="button"
                         >
-                            <iconify-icon
+                            <Icon
                                 icon="iconoir:bell"
                                 className="text-primary-light text-2xxl"
                             />
@@ -71,7 +72,7 @@ const DefaultBadgesFive = () => {
                             className="position-relative rounded-circle d-flex justify-content-center align-items-center"
                             type="button"
                         >
-                            <iconify-icon
+                            <Icon
                                 icon="iconoir:bell"
                                 className="text-primary-light text-2xxl"
                             />

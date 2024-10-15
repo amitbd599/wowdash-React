@@ -1,3 +1,4 @@
+import { Icon } from '@iconify/react/dist/iconify.js'
 import React from 'react'
 import { Link } from 'react-router-dom'
 
@@ -22,7 +23,7 @@ const ForgotPasswordLayer = () => {
                         <form action="#">
                             <div className="icon-field">
                                 <span className="icon top-50 translate-middle-y">
-                                    <iconify-icon icon="mage:email" />
+                                    <Icon icon="mage:email" />
                                 </span>
                                 <input
                                     type="email"

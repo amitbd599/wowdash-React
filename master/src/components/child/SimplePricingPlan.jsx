@@ -1,3 +1,4 @@
+import { Icon } from '@iconify/react/dist/iconify.js'
 import React from 'react'
 
 const SimplePricingPlan = () => {
@@ -66,7 +67,7 @@ const SimplePricingPlan = () => {
                                     <ul>
                                         <li className="d-flex align-items-center gap-16 mb-16">
                                             <span className="w-24-px h-24-px d-flex justify-content-center align-items-center bg-primary-600 rounded-circle">
-                                                <iconify-icon
+                                                <Icon
                                                     icon="iconamoon:check-light"
                                                     className="text-white text-lg "
                                                 />
@@ -77,7 +78,7 @@ const SimplePricingPlan = () => {
                                         </li>
                                         <li className="d-flex align-items-center gap-16 mb-16">
                                             <span className="w-24-px h-24-px d-flex justify-content-center align-items-center bg-primary-600 rounded-circle">
-                                                <iconify-icon
+                                                <Icon
                                                     icon="iconamoon:check-light"
                                                     className="text-white text-lg "
                                                 />
@@ -88,7 +89,7 @@ const SimplePricingPlan = () => {
                                         </li>
                                         <li className="d-flex align-items-center gap-16 mb-16">
                                             <span className="w-24-px h-24-px d-flex justify-content-center align-items-center bg-primary-600 rounded-circle">
-                                                <iconify-icon
+                                                <Icon
                                                     icon="iconamoon:check-light"
                                                     className="text-white text-lg "
                                                 />
@@ -99,7 +100,7 @@ const SimplePricingPlan = () => {
                                         </li>
                                         <li className="d-flex align-items-center gap-16">
                                             <span className="w-24-px h-24-px d-flex justify-content-center align-items-center bg-primary-600 rounded-circle">
-                                                <iconify-icon
+                                                <Icon
                                                     icon="iconamoon:check-light"
                                                     className="text-white text-lg "
                                                 />
@@ -151,7 +152,7 @@ const SimplePricingPlan = () => {
                                     <ul>
                                         <li className="d-flex align-items-center gap-16 mb-16">
                                             <span className="w-24-px h-24-px d-flex justify-content-center align-items-center bg-white rounded-circle text-primary-600">
-                                                <iconify-icon
+                                                <Icon
                                                     icon="iconamoon:check-light"
                                                     className="text-lg   "
                                                 />
@@ -162,7 +163,7 @@ const SimplePricingPlan = () => {
                                         </li>
                                         <li className="d-flex align-items-center gap-16 mb-16">
                                             <span className="w-24-px h-24-px d-flex justify-content-center align-items-center bg-white rounded-circle text-primary-600">
-                                                <iconify-icon
+                                                <Icon
                                                     icon="iconamoon:check-light"
                                                     className="text-lg   "
                                                 />
@@ -173,7 +174,7 @@ const SimplePricingPlan = () => {
                                         </li>
                                         <li className="d-flex align-items-center gap-16 mb-16">
                                             <span className="w-24-px h-24-px d-flex justify-content-center align-items-center bg-white rounded-circle text-primary-600">
-                                                <iconify-icon
+                                                <Icon
                                                     icon="iconamoon:check-light"
                                                     className="text-lg   "
                                                 />
@@ -182,7 +183,7 @@ const SimplePricingPlan = () => {
                                         </li>
                                         <li className="d-flex align-items-center gap-16">
                                             <span className="w-24-px h-24-px d-flex justify-content-center align-items-center bg-white rounded-circle text-primary-600">
-                                                <iconify-icon
+                                                <Icon
                                                     icon="iconamoon:check-light"
                                                     className="text-lg   "
                                                 />
@@ -228,7 +229,7 @@ const SimplePricingPlan = () => {
                                     <ul>
                                         <li className="d-flex align-items-center gap-16 mb-16">
                                             <span className="w-24-px h-24-px d-flex justify-content-center align-items-center bg-primary-600 rounded-circle">
-                                                <iconify-icon
+                                                <Icon
                                                     icon="iconamoon:check-light"
                                                     className="text-white text-lg "
                                                 />
@@ -239,7 +240,7 @@ const SimplePricingPlan = () => {
                                         </li>
                                         <li className="d-flex align-items-center gap-16 mb-16">
                                             <span className="w-24-px h-24-px d-flex justify-content-center align-items-center bg-primary-600 rounded-circle">
-                                                <iconify-icon
+                                                <Icon
                                                     icon="iconamoon:check-light"
                                                     className="text-white text-lg "
                                                 />
@@ -250,7 +251,7 @@ const SimplePricingPlan = () => {
                                         </li>
                                         <li className="d-flex align-items-center gap-16 mb-16">
                                             <span className="w-24-px h-24-px d-flex justify-content-center align-items-center bg-primary-600 rounded-circle">
-                                                <iconify-icon
+                                                <Icon
                                                     icon="iconamoon:check-light"
                                                     className="text-white text-lg "
                                                 />
@@ -261,7 +262,7 @@ const SimplePricingPlan = () => {
                                         </li>
                                         <li className="d-flex align-items-center gap-16">
                                             <span className="w-24-px h-24-px d-flex justify-content-center align-items-center bg-primary-600 rounded-circle">
-                                                <iconify-icon
+                                                <Icon
                                                     icon="iconamoon:check-light"
                                                     className="text-white text-lg "
                                                 />

@@ -453,7 +453,7 @@ const CalendarMainLayer = () => {
 
                                             <DatePicker className="form-control radius-8 bg-base" id="startDate" placeholder="03/12/2024, 10:30 AM" />
                                             <span className="position-absolute end-0 top-50 translate-middle-y me-12 line-height-1">
-                                                <iconify-icon icon="solar:calendar-linear" className="icon text-lg"></iconify-icon>
+                                                <Icon icon="solar:calendar-linear" className="icon text-lg"></Icon>
                                             </span>
                                         </div>
                                     </div>
@@ -468,7 +468,7 @@ const CalendarMainLayer = () => {
 
                                             <DatePicker className="form-control radius-8 bg-base" id="endDate" placeholder="03/12/2024, 2:30 PM" />
                                             <span className="position-absolute end-0 top-50 translate-middle-y me-12 line-height-1">
-                                                <iconify-icon icon="solar:calendar-linear" className="icon text-lg"></iconify-icon>
+                                                <Icon icon="solar:calendar-linear" className="icon text-lg"></Icon>
                                             </span>
                                         </div>
                                     </div>

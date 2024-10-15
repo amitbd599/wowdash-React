@@ -1,6 +1,7 @@
 import React from 'react'
 import useReactApexChart from '../../hook/useReactApexChart'
 import ReactApexChart from 'react-apexcharts'
+import { Icon } from '@iconify/react/dist/iconify.js'
 
 const CoinAnalyticsOne = () => {
     let { candleStickChartSeries, candleStickChartOptions } = useReactApexChart()
@@ -85,7 +86,7 @@ const CoinAnalyticsOne = () => {
                             Bitcoin (BTC)
                             <span className="bg-success-focus border border-success px-8 py-2 rounded-pill fw-semibold text-success-main text-sm d-inline-flex align-items-center gap-1">
                                 10%
-                                <iconify-icon
+                                <Icon
                                     icon="iconamoon:arrow-up-2-fill"
                                     className="icon"
                                 />

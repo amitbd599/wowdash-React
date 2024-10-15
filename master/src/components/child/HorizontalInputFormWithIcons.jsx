@@ -1,3 +1,4 @@
+import { Icon } from '@iconify/react/dist/iconify.js'
 import React from 'react'
 
 const HorizontalInputFormWithIcons = () => {
@@ -13,7 +14,7 @@ const HorizontalInputFormWithIcons = () => {
                         <div className="col-sm-10">
                             <div className="icon-field">
                                 <span className="icon">
-                                    <iconify-icon icon="f7:person" />
+                                    <Icon icon="f7:person" />
                                 </span>
                                 <input
                                     type="text"
@@ -29,7 +30,7 @@ const HorizontalInputFormWithIcons = () => {
                         <div className="col-sm-10">
                             <div className="icon-field">
                                 <span className="icon">
-                                    <iconify-icon icon="f7:person" />
+                                    <Icon icon="f7:person" />
                                 </span>
                                 <input
                                     type="text"
@@ -45,7 +46,7 @@ const HorizontalInputFormWithIcons = () => {
                         <div className="col-sm-10">
                             <div className="icon-field">
                                 <span className="icon">
-                                    <iconify-icon icon="mage:email" />
+                                    <Icon icon="mage:email" />
                                 </span>
                                 <input
                                     type="email"
@@ -61,7 +62,7 @@ const HorizontalInputFormWithIcons = () => {
                         <div className="col-sm-10">
                             <div className="icon-field">
                                 <span className="icon">
-                                    <iconify-icon icon="solar:phone-calling-linear" />
+                                    <Icon icon="solar:phone-calling-linear" />
                                 </span>
                                 <input
                                     type="text"
@@ -77,7 +78,7 @@ const HorizontalInputFormWithIcons = () => {
                         <div className="col-sm-10">
                             <div className="icon-field">
                                 <span className="icon">
-                                    <iconify-icon icon="solar:lock-password-outline" />
+                                    <Icon icon="solar:lock-password-outline" />
                                 </span>
                                 <input
                                     type="password"

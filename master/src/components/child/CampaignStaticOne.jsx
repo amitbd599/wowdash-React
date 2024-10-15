@@ -1,6 +1,7 @@
 import React from 'react'
 import useReactApexChart from '../../hook/useReactApexChart'
 import ReactApexChart from 'react-apexcharts'
+import { Icon } from '@iconify/react/dist/iconify.js'
 
 const CampaignStaticOne = () => {
     let { donutChartSeriesTwo, donutChartOptionsTwo } = useReactApexChart()
@@ -25,7 +26,7 @@ const CampaignStaticOne = () => {
                                 <div className="d-flex align-items-center justify-content-between gap-3 mb-12">
                                     <div className="d-flex align-items-center">
                                         <span className="text-xxl line-height-1 d-flex align-content-center flex-shrink-0 text-orange">
-                                            <iconify-icon icon="majesticons:mail" className="icon" />
+                                            <Icon icon="majesticons:mail" className="icon" />
                                         </span>
                                         <span className="text-primary-light fw-medium text-sm ps-12">
                                             Email
@@ -55,7 +56,7 @@ const CampaignStaticOne = () => {
                                 <div className="d-flex align-items-center justify-content-between gap-3 mb-12">
                                     <div className="d-flex align-items-center">
                                         <span className="text-xxl line-height-1 d-flex align-content-center flex-shrink-0 text-success-main">
-                                            <iconify-icon icon="eva:globe-2-fill" className="icon" />
+                                            <Icon icon="eva:globe-2-fill" className="icon" />
                                         </span>
                                         <span className="text-primary-light fw-medium text-sm ps-12">
                                             Website
@@ -85,7 +86,7 @@ const CampaignStaticOne = () => {
                                 <div className="d-flex align-items-center justify-content-between gap-3 mb-12">
                                     <div className="d-flex align-items-center">
                                         <span className="text-xxl line-height-1 d-flex align-content-center flex-shrink-0 text-info-main">
-                                            <iconify-icon
+                                            <Icon
                                                 icon="fa6-brands:square-facebook"
                                                 className="icon"
                                             />
@@ -118,7 +119,7 @@ const CampaignStaticOne = () => {
                                 <div className="d-flex align-items-center justify-content-between gap-3">
                                     <div className="d-flex align-items-center">
                                         <span className="text-xxl line-height-1 d-flex align-content-center flex-shrink-0 text-indigo">
-                                            <iconify-icon
+                                            <Icon
                                                 icon="fluent:location-off-20-filled"
                                                 className="icon"
                                             />
