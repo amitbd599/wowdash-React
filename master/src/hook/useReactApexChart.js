@@ -155,7 +155,6 @@ const useReactApexChart = () => {
                 borderRadius: 6,
                 horizontal: false,
                 columnWidth: 24,
-                columnWidth: '52%',
                 endingShape: 'rounded',
             }
         },
@@ -509,15 +508,9 @@ const useReactApexChart = () => {
                 }
             },
             xaxis: {
-                labels: {
-                    show: false
-                },
                 categories: [`Jan`, `Feb`, `Mar`, `Apr`, `May`, `Jun`, `Jul`, `Aug`, `Sep`, `Oct`, `Nov`, `Dec`],
                 tooltip: {
                     enabled: false,
-                },
-                tooltip: {
-                    enabled: false
                 },
                 labels: {
                     formatter: function (value) {
@@ -987,9 +980,7 @@ const useReactApexChart = () => {
                 }
             },
             xaxis: {
-                labels: {
-                    show: false
-                },
+
                 categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
                 tooltip: {
                     enabled: false
@@ -1111,9 +1102,7 @@ const useReactApexChart = () => {
                 }
             },
             xaxis: {
-                labels: {
-                    show: false
-                },
+
                 categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
                 tooltip: {
                     enabled: false
@@ -1331,7 +1320,6 @@ const useReactApexChart = () => {
                 enabled: false
             },
             markers: {
-                size: 0,
                 colors: [color],
                 strokeWidth: 2,
                 size: 0,
@@ -2213,7 +2201,6 @@ const useReactApexChart = () => {
             candlestick: {
                 colors: {
                     upward: '#487FFF',  // Color for bullish candles (green)
-                    downward: '#C0D9FD',  // Color for bearish candles (red)
                     downward: '#FF9F29'  // Color for bearish candles (red)
                 },
                 wick: {
@@ -2890,9 +2877,6 @@ const useReactApexChart = () => {
             categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
         },
         yaxis: {
-            categories: ['0', '5000', '10,000', '20,000', '30,000', '50,000', '60,000', '60,000', '70,000', '80,000', '90,000', '100,000'],
-        },
-        yaxis: {
             labels: {
                 formatter: function (value) {
                     return (value / 1000).toFixed(0) + 'k';
@@ -2967,7 +2951,6 @@ const useReactApexChart = () => {
             bar: {
                 horizontal: false,
                 borderRadius: 8,
-                columnWidth: 10,
                 borderRadiusApplication: 'end', // 'around', 'end'
                 borderRadiusWhenStacked: 'last', // 'all', 'last'
                 columnWidth: '23%',
@@ -3365,13 +3348,9 @@ const useReactApexChart = () => {
             }
         },
         xaxis: {
-            labels: {
-                show: false
-            },
+
             categories: [`Jan`, `Feb`, `Mar`, `Apr`, `May`, `Jun`, `Jul`, `Aug`, `Sep`, `Oct`, `Nov`, `Dec`],
-            tooltip: {
-                enabled: false,
-            },
+
             tooltip: {
                 enabled: false
             },
@@ -3428,13 +3407,7 @@ const useReactApexChart = () => {
             width: 4,
             color: "#000"
         },
-        markers: {
-            size: 0,
-            strokeWidth: 3,
-            hover: {
-                size: 8
-            }
-        },
+
         grid: {
             show: true,
             borderColor: '#D1D5DB',
@@ -3552,9 +3525,7 @@ const useReactApexChart = () => {
             }
         },
         xaxis: {
-            labels: {
-                show: false
-            },
+
             categories: [`Jan`, `Feb`, `Mar`, `Apr`, `May`, `Jun`, `Jul`, `Aug`, `Sep`, `Oct`, `Nov`, `Dec`],
             tooltip: {
                 enabled: false,
@@ -3621,9 +3592,6 @@ const useReactApexChart = () => {
             position: 'back',
         },
         xaxis: {
-            labels: {
-                show: false
-            },
             categories: [`Jan`, `Feb`, `Mar`, `Apr`, `May`, `Jun`, `Jul`, `Aug`, `Sep`, `Oct`, `Nov`, `Dec`],
             tooltip: {
                 enabled: false,

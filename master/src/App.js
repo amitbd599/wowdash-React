@@ -80,14 +80,12 @@ import WalletPage from "./pages/WalletPage";
 import WidgetsPage from "./pages/WidgetsPage";
 import WizardPage from "./pages/WizardPage";
 import RouteScrollToTop from "./helper/RouteScrollToTop";
-import BootstrapInit from "./helper/BootstrapInit";
 
 
 function App() {
   return (
     <BrowserRouter>
       <RouteScrollToTop />
-      <BootstrapInit />
       <Routes>
         <Route exact path="/" element={<HomePageOne />} />
         <Route exact path="/index-2" element={<HomePageTwo />} />

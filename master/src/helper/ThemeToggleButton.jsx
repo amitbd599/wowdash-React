@@ -9,17 +9,9 @@ const ThemeToggleButton = () => {
         document.documentElement.setAttribute('data-theme', theme);
     };
 
-    // 3. Function to update button text or styles based on the theme
-    const updateButton = (isDark) => {
-        // You can add button-specific styling or text changes here
-        // For example, you can update the button's text or icon based on the theme
-        console.log(isDark ? 'Dark mode enabled' : 'Light mode enabled');
-    };
-
     // 4. On initial render, set the theme from localStorage
     useEffect(() => {
         updateThemeOnHtmlEl(theme);
-        updateButton(theme === 'dark');
     }, [theme]);
 
     // 5. Toggle theme when button is clicked
@@ -27,7 +19,6 @@ const ThemeToggleButton = () => {
         const newTheme = theme === 'dark' ? 'light' : 'dark';
         setTheme(newTheme);
         localStorage.setItem('theme', newTheme);
-        updateButton(newTheme === 'dark');
         updateThemeOnHtmlEl(newTheme);
     };
 
