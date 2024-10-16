@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
+import KanbanBoard from './child/KanbanBoard';
 
 const KanbanLayer = () => {
     return (
-        <div>KanbanLayer</div>
-    )
-}
+        <div className='overflow-x-auto scroll-sm pb-8'>
+            <KanbanBoard />
+        </div>
+    );
+};
 
-export default KanbanLayer
+export default KanbanLayer;

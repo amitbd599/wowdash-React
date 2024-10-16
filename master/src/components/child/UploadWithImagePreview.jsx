@@ -39,7 +39,7 @@ const UploadWithImagePreview = () => {
                                         className="uploaded-img__remove position-absolute top-0 end-0 z-1 text-2xxl line-height-1 me-8 mt-8 d-flex"
                                         onClick={() => removeImage(image.src)}
                                     >
-                                        <Icon icon="radix-icons:cross-2" class="text-xl text-danger-600"></Icon>
+                                        <Icon icon="radix-icons:cross-2" className="text-xl text-danger-600"></Icon>
                                     </button>
                                     <img
                                         className="w-100 h-100 object-fit-cover"
@@ -54,7 +54,7 @@ const UploadWithImagePreview = () => {
                             className="upload-file-multiple h-120-px w-120-px border input-form-light radius-8 overflow-hidden border-dashed bg-neutral-50 bg-hover-neutral-200 d-flex align-items-center flex-column justify-content-center gap-1"
                             htmlFor="upload-file-multiple"
                         >
-                            <Icon icon="solar:camera-outline" class="text-xl text-secondary-light"></Icon>
+                            <Icon icon="solar:camera-outline" className="text-xl text-secondary-light"></Icon>
                             <span className="fw-semibold text-secondary-light">Upload</span>
                             <input
                                 id="upload-file-multiple"

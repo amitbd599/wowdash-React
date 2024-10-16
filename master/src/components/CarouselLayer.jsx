@@ -1,15 +1,14 @@
-import { Icon } from '@iconify/react/dist/iconify.js'
-import React from 'react'
-import DefaultCarousel from './child/DefaultCarousel'
-import CarouselWithArrows from './child/CarouselWithArrows'
-import CarouselWithPagination from './child/CarouselWithPagination'
-import CarouselWithProgress from './child/CarouselWithProgress'
-import MultipleSlides from './child/MultipleSlides'
+import React from 'react';
+import DefaultCarousel from './child/DefaultCarousel';
+import CarouselWithArrows from './child/CarouselWithArrows';
+import CarouselWithPagination from './child/CarouselWithPagination';
+import CarouselWithProgress from './child/CarouselWithProgress';
+import MultipleSlides from './child/MultipleSlides';
 
 
 const CarouselLayer = () => {
     return (
-        <div class="row gy-4">
+        <div className="row gy-4">
 
             {/* DefaultCarousel */}
             <DefaultCarousel />
@@ -29,7 +28,7 @@ const CarouselLayer = () => {
         </div>
 
 
-    )
-}
+    );
+};
 
-export default CarouselLayer
+export default CarouselLayer;

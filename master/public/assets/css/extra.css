@@ -186,6 +186,10 @@ table.dataTable td.dt-type-date {
   gap: 8px;
 }
 
+.w-33 {
+  width: 33.33%;
+}
+
 .overlay::after {
   position: absolute;
   content: "";

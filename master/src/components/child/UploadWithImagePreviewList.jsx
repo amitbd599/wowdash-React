@@ -24,7 +24,7 @@ const UploadWithImagePreviewList = () => {
                         htmlFor="file-upload-name"
                         className="mb-16 border border-neutral-600 fw-medium text-secondary-light px-16 py-12 radius-12 d-inline-flex align-items-center gap-2 bg-hover-neutral-200"
                     >
-                        <Icon icon="solar:upload-linear" class="text-xl"></Icon>
+                        <Icon icon="solar:upload-linear" className="text-xl"></Icon>
                         Click to upload
                         <input
                             type="file"
@@ -45,12 +45,12 @@ const UploadWithImagePreviewList = () => {
                                 >
                                     <Icon
                                         icon="ph:link-break-light"
-                                        class="text-xl text-secondary-light"
+                                        className="text-xl text-secondary-light"
                                     ></Icon>
                                     {fileName}
                                     <Icon
                                         icon="radix-icons:cross-2"
-                                        class="remove-image text-xl text-secondary-light text-hover-danger-600"
+                                        className="remove-image text-xl text-secondary-light text-hover-danger-600"
                                         onClick={() => removeFileName(fileName)}
                                     ></Icon>
                                 </li>
