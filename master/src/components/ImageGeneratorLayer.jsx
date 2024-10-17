@@ -1,6 +1,6 @@
-import { Icon } from '@iconify/react/dist/iconify.js'
-import React from 'react'
-import { Link } from 'react-router-dom'
+import { Icon } from '@iconify/react/dist/iconify.js';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const ImageGeneratorLayer = () => {
     return (
@@ -32,12 +32,14 @@ const ImageGeneratorLayer = () => {
                             <select
                                 className="form-select form-control px-16 py-14 h-48-px"
                                 id="style"
+                                defaultValue="carton"
                             >
-                                <option value="">Carton</option>
-                                <option value="">Oil painting</option>
-                                <option value="">Pencil sketch</option>
-                                <option value="">Paper collage</option>
-                                <option value="">Street art</option>
+                                <option value="Select a style" disabled>Select a style</option>
+                                <option value="carton">Carton</option>
+                                <option value="oil_painting">Oil painting</option>
+                                <option value="pencil_sketch">Pencil sketch</option>
+                                <option value="paper_collage">Paper collage</option>
+                                <option value="street_art">Street art</option>
                             </select>
                         </div>
                         <div className="mb-20">
@@ -48,16 +50,20 @@ const ImageGeneratorLayer = () => {
                                 Lighting Style
                             </label>
                             <select
-                                className="form-select form-control px-16 py-14 h-48-px"
+                                className="form-control radius-8 form-select"
                                 id="LightingStyle"
+                                defaultValue="Select Lighting Style"
                             >
-                                <option value="">Back lighting</option>
-                                <option value="">None</option>
-                                <option value="">Chiaroscuro</option>
-                                <option value="">God rays</option>
-                                <option value="">Studio lighting</option>
-                                <option value="">Candlelight</option>
-                                <option value="">Street lighting</option>
+                                <option value="Select Lighting Style" disabled>
+                                    Select Lighting Style
+                                </option>
+                                <option value="back_lighting">Back lighting</option>
+                                <option value="none">None</option>
+                                <option value="chiaroscuro">Chiaroscuro</option>
+                                <option value="god_rays">God rays</option>
+                                <option value="studio_lighting">Studio lighting</option>
+                                <option value="candlelight">Candlelight</option>
+                                <option value="street_lighting">Street lighting</option>
                             </select>
                         </div>
                         <div className="mb-20">
@@ -70,13 +76,17 @@ const ImageGeneratorLayer = () => {
                             <select
                                 className="form-select form-control px-16 py-14 h-48-px"
                                 id="Mood"
+                                defaultValue="Select Mood"
                             >
-                                <option value="">None</option>
-                                <option value="">Chiaroscuro</option>
-                                <option value="">God rays</option>
-                                <option value="">Studio lighting</option>
-                                <option value="">Candlelight</option>
-                                <option value="">Street lighting</option>
+                                <option value="Select Mood" disabled>
+                                    Select Mood
+                                </option>
+                                <option value="none">None</option>
+                                <option value="chiaroscuro">Chiaroscuro</option>
+                                <option value="god_rays">God rays</option>
+                                <option value="studio_lighting">Studio lighting</option>
+                                <option value="candlelight">Candlelight</option>
+                                <option value="street_lighting">Street lighting</option>
                             </select>
                         </div>
                         <div className="mb-20">
@@ -133,7 +143,7 @@ const ImageGeneratorLayer = () => {
                                 <div className="img overflow-hidden flex-shrink-0">
                                     <img
                                         src="assets/images/chat/1.png"
-                                        alt="image"
+                                        alt="image_icon"
                                         className="w-44-px h-44-px rounded-circle object-fit-cover"
                                     />
                                 </div>
@@ -157,7 +167,7 @@ const ImageGeneratorLayer = () => {
                             <div className="img overflow-hidden flex-shrink-0">
                                 <img
                                     src="assets/images/wow-dash-favicon.png"
-                                    alt="image"
+                                    alt="image_icon"
                                     className="w-44-px h-44-px rounded-circle object-fit-cover"
                                 />
                             </div>
@@ -310,7 +320,7 @@ const ImageGeneratorLayer = () => {
                                 <div className="img overflow-hidden flex-shrink-0">
                                     <img
                                         src="assets/images/chat/1.png"
-                                        alt="image"
+                                        alt="image_icon"
                                         className="w-44-px h-44-px rounded-circle object-fit-cover"
                                     />
                                 </div>
@@ -334,7 +344,7 @@ const ImageGeneratorLayer = () => {
                             <div className="img overflow-hidden flex-shrink-0">
                                 <img
                                     src="assets/images/wow-dash-favicon.png"
-                                    alt="image"
+                                    alt="image_icon"
                                     className="w-44-px h-44-px rounded-circle object-fit-cover"
                                 />
                             </div>
@@ -413,7 +423,7 @@ const ImageGeneratorLayer = () => {
             </div>
         </div>
 
-    )
-}
+    );
+};
 
-export default ImageGeneratorLayer
+export default ImageGeneratorLayer;

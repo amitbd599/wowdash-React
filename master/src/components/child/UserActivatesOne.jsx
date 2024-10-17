@@ -1,9 +1,9 @@
-import React from 'react'
-import useReactApexChart from '../../hook/useReactApexChart'
-import ReactApexChart from 'react-apexcharts'
+import React from 'react';
+import useReactApexChart from '../../hook/useReactApexChart';
+import ReactApexChart from 'react-apexcharts';
 
 const UserActivatesOne = () => {
-    let { statisticsDonutChartSeriesThree, statisticsDonutChartOptionsThree } = useReactApexChart()
+    let { statisticsDonutChartSeriesThree, statisticsDonutChartOptionsThree } = useReactApexChart();
     return (
         <div className="col-xxl-12 col-lg-6">
             <div className="card h-100 radius-8 border-0">
@@ -11,10 +11,10 @@ const UserActivatesOne = () => {
                     <div className="d-flex align-items-center flex-wrap gap-2 justify-content-between">
                         <h6 className="mb-2 fw-bold text-lg">User Activates</h6>
                         <div className="">
-                            <select className="form-select form-select-sm w-auto bg-base border text-secondary-light">
-                                <option>This Week</option>
-                                <option>This Month</option>
-                                <option>This Year</option>
+                            <select className="form-select form-select-sm w-auto bg-base border text-secondary-light" defaultValue="This Week">
+                                <option value="This Week">This Week</option>
+                                <option value="This Month">This Month</option>
+                                <option value="This Year">This Year</option>
                             </select>
                         </div>
                     </div>
@@ -47,7 +47,7 @@ const UserActivatesOne = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default UserActivatesOne
+export default UserActivatesOne;

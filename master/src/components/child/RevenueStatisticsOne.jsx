@@ -1,11 +1,11 @@
-import { Icon } from '@iconify/react/dist/iconify.js'
-import React from 'react'
-import useReactApexChart from '../../hook/useReactApexChart'
-import ReactApexChart from 'react-apexcharts'
+import { Icon } from '@iconify/react/dist/iconify.js';
+import React from 'react';
+import useReactApexChart from '../../hook/useReactApexChart';
+import ReactApexChart from 'react-apexcharts';
 
 const RevenueStatisticsOne = () => {
 
-    let { upDownBarChartSeries, upDownBarChartOptions } = useReactApexChart()
+    let { upDownBarChartSeries, upDownBarChartOptions } = useReactApexChart();
     return (
         <div className="col-xxl-8">
             <div className="card h-100 radius-8 border-0">
@@ -18,11 +18,11 @@ const RevenueStatisticsOne = () => {
                             </span>
                         </div>
                         <div className="">
-                            <select className="form-select form-select-sm w-auto bg-base border text-secondary-light">
-                                <option>Yearly</option>
-                                <option>Monthly</option>
-                                <option>Weekly</option>
-                                <option>Today</option>
+                            <select className="form-select form-select-sm w-auto bg-base border text-secondary-light" defaultValue="Yearly">
+                                <option value="Yearly">Yearly</option>
+                                <option value="Monthly">Monthly</option>
+                                <option value="Weekly">Weekly</option>
+                                <option value="Today">Today</option>
                             </select>
                         </div>
                     </div>
@@ -58,7 +58,7 @@ const RevenueStatisticsOne = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default RevenueStatisticsOne
+export default RevenueStatisticsOne;

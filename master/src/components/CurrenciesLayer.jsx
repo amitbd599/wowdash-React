@@ -1,6 +1,6 @@
-import { Icon } from '@iconify/react/dist/iconify.js'
-import React from 'react'
-import { Link } from 'react-router-dom'
+import { Icon } from '@iconify/react/dist/iconify.js';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const CurrenciesLayer = () => {
     return (
@@ -9,17 +9,20 @@ const CurrenciesLayer = () => {
                 <div className="card-header border-bottom bg-base py-16 px-24 d-flex align-items-center flex-wrap gap-3 justify-content-between">
                     <div className="d-flex align-items-center flex-wrap gap-3">
                         <span className="text-md fw-medium text-secondary-light mb-0">Show</span>
-                        <select className="form-select form-select-sm w-auto ps-12 py-6 radius-12 h-40-px">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                            <option>6</option>
-                            <option>7</option>
-                            <option>8</option>
-                            <option>9</option>
-                            <option>10</option>
+                        <select
+                            className="form-select form-select-sm w-auto ps-12 py-6 radius-12 h-40-px"
+                            defaultValue="1"
+                        >
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
                         </select>
                         <form className="navbar-search">
                             <input
@@ -413,7 +416,7 @@ const CurrenciesLayer = () => {
                         <ul className="pagination d-flex flex-wrap align-items-center gap-2 justify-content-center">
                             <li className="page-item">
                                 <Link
-                                    className="page-link bg-neutral-200 text-secondary-light fw-semibold radius-8 border-0 d-flex align-items-center justify-content-center h-32-px w-32-px text-md"
+                                    className="page-link bg-neutral-200 text-secondary-light fw-semibold radius-8 border-0 d-flex align-items-center justify-content-center h-32-px  text-md"
                                     to="#"
                                 >
                                     <Icon icon="ep:d-arrow-left" className="" />
@@ -461,7 +464,7 @@ const CurrenciesLayer = () => {
                             </li>
                             <li className="page-item">
                                 <Link
-                                    className="page-link bg-neutral-200 text-secondary-light fw-semibold radius-8 border-0 d-flex align-items-center justify-content-center h-32-px w-32-px text-md"
+                                    className="page-link bg-neutral-200 text-secondary-light fw-semibold radius-8 border-0 d-flex align-items-center justify-content-center h-32-px  text-md"
                                     to="#"
                                 >
                                     {" "}
@@ -521,13 +524,12 @@ const CurrenciesLayer = () => {
                                         <select
                                             className="form-control radius-8 form-select"
                                             id="country"
+                                            defaultValue="Select symbol"
                                         >
-                                            <option selected="" disabled="">
-                                                Select symbol
-                                            </option>
-                                            <option>$</option>
-                                            <option>৳</option>
-                                            <option>₹</option>
+                                            <option value="Select symbol">Select symbol</option>
+                                            <option value="$">$</option>
+                                            <option value="৳">৳</option>
+                                            <option value="₹">₹</option>
                                         </select>
                                     </div>
                                     <div className="col-6">
@@ -537,15 +539,17 @@ const CurrenciesLayer = () => {
                                         >
                                             Code{" "}
                                         </label>
-                                        <select className="form-control radius-8 form-select" id="code">
-                                            <option selected="" disabled="">
-                                                Select Code
-                                            </option>
-                                            <option>15</option>
-                                            <option>26</option>
-                                            <option>64</option>
-                                            <option>25</option>
-                                            <option>92</option>
+                                        <select
+                                            className="form-control radius-8 form-select"
+                                            id="code"
+                                            defaultValue="Select Code"
+                                        >
+                                            <option value="Select Code">Select Code</option>
+                                            <option value="15">15</option>
+                                            <option value="26">26</option>
+                                            <option value="64">64</option>
+                                            <option value="25">25</option>
+                                            <option value="92">92</option>
                                         </select>
                                     </div>
                                     <div className="col-6">
@@ -558,11 +562,10 @@ const CurrenciesLayer = () => {
                                         <select
                                             className="form-control radius-8 form-select"
                                             id="currency"
+                                            defaultValue="No"
                                         >
-                                            <option selected="" disabled="">
-                                                No
-                                            </option>
-                                            <option>Yes</option>
+                                            <option value="No">No</option>
+                                            <option value="Yes">Yes</option>
                                         </select>
                                     </div>
                                     <div className="d-flex align-items-center justify-content-center gap-3 mt-24">
@@ -633,13 +636,14 @@ const CurrenciesLayer = () => {
                                         <select
                                             className="form-control radius-8 form-select"
                                             id="editcountry"
+                                            defaultValue="Select symbol"
                                         >
-                                            <option selected="" disabled="">
+                                            <option value="Select symbol" disabled>
                                                 Select symbol
                                             </option>
-                                            <option>$</option>
-                                            <option>৳</option>
-                                            <option>₹</option>
+                                            <option value="$">$</option>
+                                            <option value="৳">৳</option>
+                                            <option value="₹">₹</option>
                                         </select>
                                     </div>
                                     <div className="col-6">
@@ -652,15 +656,16 @@ const CurrenciesLayer = () => {
                                         <select
                                             className="form-control radius-8 form-select"
                                             id="editcode"
+                                            defaultValue="Select Code"
                                         >
-                                            <option selected="" disabled="">
+                                            <option value="Select Code" disabled>
                                                 Select Code
                                             </option>
-                                            <option>15</option>
-                                            <option>26</option>
-                                            <option>64</option>
-                                            <option>25</option>
-                                            <option>92</option>
+                                            <option value="15">15</option>
+                                            <option value="26">26</option>
+                                            <option value="64">64</option>
+                                            <option value="25">25</option>
+                                            <option value="92">92</option>
                                         </select>
                                     </div>
                                     <div className="col-6">
@@ -673,11 +678,12 @@ const CurrenciesLayer = () => {
                                         <select
                                             className="form-control radius-8 form-select"
                                             id="editcurrency"
+                                            defaultValue="No"
                                         >
-                                            <option selected="" disabled="">
+                                            <option value="No" disabled>
                                                 No
                                             </option>
-                                            <option>Yes</option>
+                                            <option value="Yes">Yes</option>
                                         </select>
                                     </div>
                                     <div className="d-flex align-items-center justify-content-center gap-3 mt-24">
@@ -702,7 +708,7 @@ const CurrenciesLayer = () => {
             </div>
 
         </>
-    )
-}
+    );
+};
 
-export default CurrenciesLayer
+export default CurrenciesLayer;

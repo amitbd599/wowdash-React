@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect } from 'react';
 
 const ProgressCircle = () => {
     useEffect(() => {
@@ -8,8 +8,6 @@ const ProgressCircle = () => {
             const bar = progressBar.querySelector('.circleBar');
             const val = progressBar.querySelector('.barNumber');
             const perc = parseInt(val.textContent, 10);
-
-            let p = { current: 0 };
             const animateProgress = () => {
                 const start = Date.now();
                 const duration = 3000;
@@ -60,7 +58,7 @@ const ProgressCircle = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default ProgressCircle
+export default ProgressCircle;

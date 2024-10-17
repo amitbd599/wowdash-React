@@ -1,5 +1,5 @@
-import { Icon } from '@iconify/react/dist/iconify.js'
-import React from 'react'
+import { Icon } from '@iconify/react/dist/iconify.js';
+import React from 'react';
 
 const InvoiceEditLayer = () => {
     return (
@@ -45,7 +45,7 @@ const InvoiceEditLayer = () => {
                                     <div className="col-sm-4">
                                         <img
                                             src="assets/images/logo.png"
-                                            alt="image"
+                                            alt="image_icon"
                                             className="mb-8"
                                         />
                                         <p className="mb-1 text-sm">
@@ -305,7 +305,7 @@ const InvoiceEditLayer = () => {
             </div>
         </div>
 
-    )
-}
+    );
+};
 
-export default InvoiceEditLayer
+export default InvoiceEditLayer;

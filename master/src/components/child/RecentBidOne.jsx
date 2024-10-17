@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const RecentBidOne = () => {
     return (
@@ -7,11 +7,11 @@ const RecentBidOne = () => {
                 <div className="card-body p-24">
                     <div className="d-flex align-items-center flex-wrap gap-2 justify-content-between mb-20">
                         <h6 className="mb-2 fw-bold text-lg mb-0">Recent Bid</h6>
-                        <select className="form-select form-select-sm w-auto bg-base border text-secondary-light rounded-pill">
-                            <option>All Items </option>
-                            <option>New Item</option>
-                            <option>Trending Item</option>
-                            <option>Old Item</option>
+                        <select className="form-select form-select-sm w-auto bg-base border text-secondary-light rounded-pill" defaultValue="All Items">
+                            <option value="All Items">All Items </option>
+                            <option value="New Item">New Item</option>
+                            <option value="Trending Item">Trending Item</option>
+                            <option value="Old Item">Old Item</option>
                         </select>
                     </div>
                     <div className="table-responsive scroll-sm">
@@ -401,7 +401,7 @@ const RecentBidOne = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default RecentBidOne
+export default RecentBidOne;

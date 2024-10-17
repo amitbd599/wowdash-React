@@ -1,20 +1,23 @@
-import React from 'react'
-import ReactApexChart from 'react-apexcharts'
-import useReactApexChart from '../../hook/useReactApexChart'
+import React from 'react';
+import ReactApexChart from 'react-apexcharts';
+import useReactApexChart from '../../hook/useReactApexChart';
 
 const GeneratedContent = () => {
-    let { paymentStatusChartSeries, paymentStatusChartOptions } = useReactApexChart()
+    let { paymentStatusChartSeries, paymentStatusChartOptions } = useReactApexChart();
     return (
         <div className="col-xxl-6">
             <div className="card h-100">
                 <div className="card-body">
                     <div className="d-flex align-items-center flex-wrap gap-2 justify-content-between">
                         <h6 className="mb-2 fw-bold text-lg mb-0">Generated Content</h6>
-                        <select className="form-select form-select-sm w-auto bg-base border text-secondary-light">
-                            <option>Today</option>
-                            <option>Weekly</option>
-                            <option>Monthly</option>
-                            <option>Yearly</option>
+                        <select className="form-select form-select-sm w-auto bg-base border text-secondary-light" defaultValue="">
+                            <option value="" disabled>
+                                Select Timeframe
+                            </option>
+                            <option value="Today">Today</option>
+                            <option value="Weekly">Weekly</option>
+                            <option value="Monthly">Monthly</option>
+                            <option value="Yearly">Yearly</option>
                         </select>
                     </div>
                     <ul className="d-flex flex-wrap align-items-center mt-3 gap-3">
@@ -42,7 +45,7 @@ const GeneratedContent = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default GeneratedContent
+export default GeneratedContent;

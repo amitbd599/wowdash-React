@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const RazorPay = () => {
     return (
@@ -9,8 +9,7 @@ const RazorPay = () => {
                         <span className="w-36-px h-36-px bg-base rounded-circle d-flex justify-content-center align-items-center">
                             <img
                                 src="assets/images/payment/payment-gateway2.png"
-                                alt=""
-                                className=""
+                                alt="image_icon"
                             />
                         </span>
                         <span className="text-lg fw-semibold text-primary-light">
@@ -22,7 +21,7 @@ const RazorPay = () => {
                             className="form-check-input"
                             type="checkbox"
                             role="switch"
-                            defaultChecked=""
+                            defaultChecked
                         />
                     </div>
                 </div>
@@ -79,12 +78,13 @@ const RazorPay = () => {
                             <select
                                 className="form-control radius-8 form-select"
                                 id="currencyTwo"
+                                defaultValue="USD"
                             >
-                                <option selected="" disabled="">
+                                <option value="USD" disabled>
                                     USD
                                 </option>
-                                <option>TK</option>
-                                <option>Rupee</option>
+                                <option value="TK">TK</option>
+                                <option value="Rupee">Rupee</option>
                             </select>
                         </div>
                         <div className="col-sm-6">
@@ -145,7 +145,7 @@ const RazorPay = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default RazorPay
+export default RazorPay;

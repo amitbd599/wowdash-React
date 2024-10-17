@@ -1,52 +1,22 @@
-import { Icon } from '@iconify/react/dist/iconify.js'
-import React, { useState } from 'react'
+import { Icon } from '@iconify/react/dist/iconify.js';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 const InvoiceListLayer = () => {
-    // Initial state for the checkboxes
-    const [selectAll, setSelectAll] = useState(false);
-    const [checkboxes, setCheckboxes] = useState([
-        { id: 1, invoice: '#526534', name: "Kathryn Murphy", issuedDate: "25 Jan 2024", amount: "$200.00", status: "Paid", img: "assets/images/user-list/user-list1.png", checked: false },
-        { id: 2, invoice: '#696589', name: "Annette Black", issuedDate: "25 Jan 2024", amount: "$200.00", status: "Paid", img: "assets/images/user-list/user-list2.png", checked: false },
-        { id: 3, invoice: '#256584', name: "Ronald Richards", issuedDate: "10 Feb 2024", amount: "$200.00", status: "Paid", img: "assets/images/user-list/user-list3.png", checked: false },
-        { id: 4, invoice: '#526587', name: "Eleanor Pena", issuedDate: "10 Feb 2024", amount: "$150.00", status: "Paid", img: "assets/images/user-list/user-list4.png", checked: false },
-        { id: 5, invoice: '#105986', name: "Leslie Alexander", issuedDate: "15 March 2024", amount: "$150.00", status: "Pending", img: "assets/images/user-list/user-list5.png", checked: false },
-        { id: 6, invoice: '#526589', name: "Albert Flores", issuedDate: "15 March 2024", amount: "$150.00", status: "Paid", img: "assets/images/user-list/user-list6.png", checked: false },
-        { id: 7, invoice: '#526520', name: "Jacob Jones", issuedDate: "27 April 2024", amount: "$250.00", status: "Paid", img: "assets/images/user-list/user-list7.png", checked: false },
-        { id: 8, invoice: '#256584', name: "Jerome Bell", issuedDate: "27 April 2024", amount: "$250.00", status: "Pending", img: "assets/images/user-list/user-list8.png", checked: false },
-        { id: 9, invoice: '#200257', name: "Marvin McKinney", issuedDate: "30 April 2024", amount: "$250.00", status: "Paid", img: "assets/images/user-list/user-list9.png", checked: false },
-        { id: 10, invoice: '#526525', name: "Cameron Williamson", issuedDate: "30 April 2024", amount: "$200.00", status: "Paid", img: "assets/images/user-list/user-list10.png", checked: false },
 
-    ]);
-
-    // Handle the change event for the "select all" checkbox
-    const handleSelectAll = (e) => {
-        const checked = e.target.checked;
-        setSelectAll(checked);
-        setCheckboxes(checkboxes.map(checkbox => ({ ...checkbox, checked })));
-    };
-
-    // Handle the change event for individual checkboxes
-    const handleCheckboxChange = (id) => {
-        const updatedCheckboxes = checkboxes.map(checkbox =>
-            checkbox.id === id ? { ...checkbox, checked: !checkbox.checked } : checkbox
-        );
-        setCheckboxes(updatedCheckboxes);
-
-        // If all checkboxes are checked, set "select all" as true; otherwise, set it as false
-        const allChecked = updatedCheckboxes.every(checkbox => checkbox.checked);
-        setSelectAll(allChecked);
-    };
     return (
         <div className="card">
             <div className="card-header d-flex flex-wrap align-items-center justify-content-between gap-3">
                 <div className="d-flex flex-wrap align-items-center gap-3">
                     <div className="d-flex align-items-center gap-2">
                         <span>Show</span>
-                        <select className="form-select form-select-sm w-auto">
-                            <option>10</option>
-                            <option>15</option>
-                            <option>20</option>
+                        <select className="form-select form-select-sm w-auto" defaultValue="Select Number">
+                            <option value="Select Number" disabled>
+                                Select Number
+                            </option>
+                            <option value="10">10</option>
+                            <option value="15">15</option>
+                            <option value="20">20</option>
                         </select>
                     </div>
                     <div className="icon-field">
@@ -62,10 +32,12 @@ const InvoiceListLayer = () => {
                     </div>
                 </div>
                 <div className="d-flex flex-wrap align-items-center gap-3">
-                    <select className="form-select form-select-sm w-auto">
-                        <option>Satatus</option>
-                        <option>Paid</option>
-                        <option>Pending</option>
+                    <select className="form-select form-select-sm w-auto" defaultValue="Select Status">
+                        <option value="Select Status" disabled>
+                            Select Status
+                        </option>
+                        <option value="Paid">Paid</option>
+                        <option value="Pending">Pending</option>
                     </select>
                     <Link href="invoice-add.html" className="btn btn-sm btn-primary-600">
                         <i className="ri-add-line" /> Create Invoice
@@ -750,7 +722,7 @@ const InvoiceListLayer = () => {
         </div>
 
 
-    )
-}
+    );
+};
 
-export default InvoiceListLayer
+export default InvoiceListLayer;

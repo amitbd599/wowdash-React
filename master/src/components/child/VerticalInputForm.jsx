@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const VerticalInputForm = () => {
     return (
@@ -39,11 +39,11 @@ const VerticalInputForm = () => {
                         <div className="col-12">
                             <label className="form-label">Phone</label>
                             <div className="form-mobile-field">
-                                <select className="form-select">
-                                    <option>US</option>
-                                    <option>US</option>
-                                    <option>US</option>
-                                    <option>US</option>
+                                <select className="form-select" defaultValue="US">
+                                    <option value="US">US</option>
+                                    <option value="UK">UK</option>
+                                    <option value="BD">BD</option>
+                                    <option value="EU">EU</option>
                                 </select>
                                 <input
                                     type="text"
@@ -71,7 +71,7 @@ const VerticalInputForm = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default VerticalInputForm
+export default VerticalInputForm;

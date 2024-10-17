@@ -1,59 +1,30 @@
-import { Icon } from '@iconify/react/dist/iconify.js'
-import React, { useState } from 'react'
+import { Icon } from '@iconify/react/dist/iconify.js';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 
 
 const AssignRoleLayer = () => {
 
-    const [selectAll, setSelectAll] = useState(false);
-    const [checkboxes, setCheckboxes] = useState([
-        { id: 1, name: 'Kathryn Murphy', img: "assets/images/user-list/user-list1.png", role: 'Waiter', checked: false },
-        { id: 2, name: 'Annette Black', img: "assets/images/user-list/user-list2.png", role: 'Manager', checked: false },
-        { id: 3, name: 'Ronald Richards', img: "assets/images/user-list/user-list3.png", role: 'Project Manager', checked: false },
-        { id: 4, name: 'Eleanor Pena', img: "assets/images/user-list/user-list4.png", role: 'Game Developer', checked: false },
-        { id: 5, name: 'Leslie Alexander', img: "assets/images/user-list/user-list5.png", role: 'Head', checked: false },
-        { id: 6, name: 'Albert Flores', img: "assets/images/user-list/user-list6.png", role: 'Management', checked: false },
-        { id: 7, name: 'Jacob Jones', img: "assets/images/user-list/user-list7.png", role: 'Waiter', checked: false },
-        { id: 8, name: 'Jerome Bell', img: "assets/images/user-list/user-list8.png", role: 'Waiter', checked: false },
-        { id: 9, name: 'Marvin McKinney', img: "assets/images/user-list/user-list9.png", role: 'Waiter', checked: false },
-        { id: 10, name: 'Cameron Williamson', img: "assets/images/user-list/user-list10.png", role: 'Admin', checked: false },
-    ]);
-
-    // Handle the change event for the "select all" checkbox
-    const handleSelectAll = (e) => {
-        const checked = e.target.checked;
-        setSelectAll(checked);
-        setCheckboxes(checkboxes.map(checkbox => ({ ...checkbox, checked })));
-    };
-
-    // Handle the change event for individual checkboxes
-    const handleCheckboxChange = (id) => {
-        const updatedCheckboxes = checkboxes.map(checkbox =>
-            checkbox.id === id ? { ...checkbox, checked: !checkbox.checked } : checkbox
-        );
-        setCheckboxes(updatedCheckboxes);
-
-        // If all checkboxes are checked, set "select all" as true; otherwise, set it as false
-        const allChecked = updatedCheckboxes.every(checkbox => checkbox.checked);
-        setSelectAll(allChecked);
-    };
     return (
         <div className="card h-100 p-0 radius-12">
             <div className="card-header border-bottom bg-base py-16 px-24 d-flex align-items-center flex-wrap gap-3 justify-content-between">
                 <div className="d-flex align-items-center flex-wrap gap-3">
                     <span className="text-md fw-medium text-secondary-light mb-0">Show</span>
-                    <select className="form-select form-select-sm w-auto ps-12 py-6 radius-12 h-40-px">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                        <option>6</option>
-                        <option>7</option>
-                        <option>8</option>
-                        <option>9</option>
-                        <option>10</option>
+                    <select
+                        className="form-select form-select-sm w-auto ps-12 py-6 radius-12 h-40-px"
+                        defaultValue="1"
+                    >
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
                     </select>
                     <form className="navbar-search">
                         <input
@@ -64,10 +35,15 @@ const AssignRoleLayer = () => {
                         />
                         <Icon icon="ion:search-outline" className="icon" />
                     </form>
-                    <select className="form-select form-select-sm w-auto ps-12 py-6 radius-12 h-40-px">
-                        <option>Status</option>
-                        <option>Active</option>
-                        <option>Inactive</option>
+                    <select
+                        className="form-select form-select-sm w-auto ps-12 py-6 radius-12 h-40-px"
+                        defaultValue="Status"
+                    >
+                        <option value="Status" disabled>
+                            Status
+                        </option>
+                        <option value="Active">Active</option>
+                        <option value="Inactive">Inactive</option>
                     </select>
                 </div>
             </div>
@@ -84,8 +60,6 @@ const AssignRoleLayer = () => {
                                                 type="checkbox"
                                                 name="checkbox"
                                                 id="selectAll"
-                                                checked={selectAll}
-                                                onChange={handleSelectAll}
                                             />
                                         </div>
                                         S.L
@@ -101,102 +75,916 @@ const AssignRoleLayer = () => {
                             </tr>
                         </thead>
                         <tbody>
-
-                            {
-                                checkboxes.map((item, index) => <tr>
-                                    <td key={index}>
-                                        <div className="d-flex align-items-center gap-10">
-                                            <div className="form-check style-check d-flex align-items-center">
-                                                <input
-                                                    className="form-check-input radius-4 border border-neutral-400"
-                                                    type="checkbox"
-                                                    name="checkbox"
-                                                    checked={item.checked}
-                                                    onChange={() => handleCheckboxChange(item.id)}
-                                                />
-                                            </div>
-                                            {item.id}
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div className="d-flex align-items-center">
-                                            <img
-                                                src={item.img}
-                                                alt=""
-                                                className="w-40-px h-40-px rounded-circle flex-shrink-0 me-12 overflow-hidden"
+                            <tr>
+                                <td>
+                                    <div className="d-flex align-items-center gap-10">
+                                        <div className="form-check style-check d-flex align-items-center">
+                                            <input
+                                                className="form-check-input radius-4 border border-neutral-400"
+                                                type="checkbox"
+                                                name="checkbox"
                                             />
-                                            <div className="flex-grow-1">
-                                                <span className="text-md mb-0 fw-normal text-secondary-light">
-                                                    {item.name}
-                                                </span>
-                                            </div>
                                         </div>
-                                    </td>
-                                    <td className="text-center">{item.role}</td>
-                                    <td className="text-center">
-                                        <div className="dropdown">
-                                            <button
-                                                className="btn btn-outline-primary-600 not-active px-18 py-11 dropdown-toggle toggle-icon"
-                                                type="button"
-                                                data-bs-toggle="dropdown"
-                                                aria-expanded="false"
-                                            >
-                                                Assign Role
-                                            </button>
-                                            <ul className="dropdown-menu" style={{}}>
-                                                <li>
-                                                    <Link
-                                                        className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
-                                                        to="#"
-                                                    >
-                                                        Waiter
-                                                    </Link>
-                                                </li>
-                                                <li>
-                                                    <Link
-                                                        className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
-                                                        to="#"
-                                                    >
-                                                        Manager
-                                                    </Link>
-                                                </li>
-                                                <li>
-                                                    <Link
-                                                        className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
-                                                        to="#"
-                                                    >
-                                                        Project Manager
-                                                    </Link>
-                                                </li>
-                                                <li>
-                                                    <Link
-                                                        className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
-                                                        to="#"
-                                                    >
-                                                        Game Developer
-                                                    </Link>
-                                                </li>
-                                                <li>
-                                                    <Link
-                                                        className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
-                                                        to="#"
-                                                    >
-                                                        Head
-                                                    </Link>
-                                                </li>
-                                                <li>
-                                                    <Link
-                                                        className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
-                                                        to="#"
-                                                    >
-                                                        Management
-                                                    </Link>
-                                                </li>
-                                            </ul>
+                                        01
+                                    </div>
+                                </td>
+                                <td>
+                                    <div className="d-flex align-items-center">
+                                        <img
+                                            src="assets/images/user-list/user-list1.png"
+                                            alt=""
+                                            className="w-40-px h-40-px rounded-circle flex-shrink-0 me-12 overflow-hidden"
+                                        />
+                                        <div className="flex-grow-1">
+                                            <span className="text-md mb-0 fw-normal text-secondary-light">
+                                                Kathryn Murphy
+                                            </span>
                                         </div>
-                                    </td>
-                                </tr>)
-                            }
+                                    </div>
+                                </td>
+                                <td className="text-center">Waiter</td>
+                                <td className="text-center">
+                                    <div className="dropdown">
+                                        <button
+                                            className="btn btn-outline-primary-600 not-active px-18 py-11 dropdown-toggle toggle-icon"
+                                            type="button"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                        >
+                                            Assign Role
+                                        </button>
+                                        <ul className="dropdown-menu" style={{}}>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                                    to="#"
+                                                >
+                                                    Waiter
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                                    to="#"
+                                                >
+                                                    Manager
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                                    to="#"
+                                                >
+                                                    Project Manager
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                                    to="#"
+                                                >
+                                                    Game Developer
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                                    to="#"
+                                                >
+                                                    Head
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                                    to="#"
+                                                >
+                                                    Management
+                                                </Link>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div className="d-flex align-items-center gap-10">
+                                        <div className="form-check style-check d-flex align-items-center">
+                                            <input
+                                                className="form-check-input radius-4 border border-neutral-400"
+                                                type="checkbox"
+                                                name="checkbox"
+                                            />
+                                        </div>
+                                        01
+                                    </div>
+                                </td>
+                                <td>
+                                    <div className="d-flex align-items-center">
+                                        <img
+                                            src="assets/images/user-list/user-list2.png"
+                                            alt=""
+                                            className="w-40-px h-40-px rounded-circle flex-shrink-0 me-12 overflow-hidden"
+                                        />
+                                        <div className="flex-grow-1">
+                                            <span className="text-md mb-0 fw-normal text-secondary-light">
+                                                Annette Black
+                                            </span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td className="text-center">manager</td>
+                                <td className="text-center">
+                                    <div className="dropdown">
+                                        <button
+                                            className="btn btn-outline-primary-600 not-active px-18 py-11 dropdown-toggle toggle-icon"
+                                            type="button"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                        >
+                                            Assign Role
+                                        </button>
+                                        <ul className="dropdown-menu" style={{}}>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                                    to="#"
+                                                >
+                                                    Waiter
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                                    to="#"
+                                                >
+                                                    Manager
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                                    to="#"
+                                                >
+                                                    Project Manager
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                                    to="#"
+                                                >
+                                                    Game Developer
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                                    to="#"
+                                                >
+                                                    Head
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                                    to="#"
+                                                >
+                                                    Management
+                                                </Link>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div className="d-flex align-items-center gap-10">
+                                        <div className="form-check style-check d-flex align-items-center">
+                                            <input
+                                                className="form-check-input radius-4 border border-neutral-400"
+                                                type="checkbox"
+                                                name="checkbox"
+                                            />
+                                        </div>
+                                        01
+                                    </div>
+                                </td>
+                                <td>
+                                    <div className="d-flex align-items-center">
+                                        <img
+                                            src="assets/images/user-list/user-list3.png"
+                                            alt=""
+                                            className="w-40-px h-40-px rounded-circle flex-shrink-0 me-12 overflow-hidden"
+                                        />
+                                        <div className="flex-grow-1">
+                                            <span className="text-md mb-0 fw-normal text-secondary-light">
+                                                Ronald Richards
+                                            </span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td className="text-center">Project Manager</td>
+                                <td className="text-center">
+                                    <div className="dropdown">
+                                        <button
+                                            className="btn btn-outline-primary-600 not-active px-18 py-11 dropdown-toggle toggle-icon"
+                                            type="button"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                        >
+                                            Assign Role
+                                        </button>
+                                        <ul className="dropdown-menu" style={{}}>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                                    to="#"
+                                                >
+                                                    Waiter
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                                    to="#"
+                                                >
+                                                    Manager
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                                    to="#"
+                                                >
+                                                    Project Manager
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                                    to="#"
+                                                >
+                                                    Game Developer
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                                    to="#"
+                                                >
+                                                    Head
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                                    to="#"
+                                                >
+                                                    Management
+                                                </Link>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div className="d-flex align-items-center gap-10">
+                                        <div className="form-check style-check d-flex align-items-center">
+                                            <input
+                                                className="form-check-input radius-4 border border-neutral-400"
+                                                type="checkbox"
+                                                name="checkbox"
+                                            />
+                                        </div>
+                                        01
+                                    </div>
+                                </td>
+                                <td>
+                                    <div className="d-flex align-items-center">
+                                        <img
+                                            src="assets/images/user-list/user-list4.png"
+                                            alt=""
+                                            className="w-40-px h-40-px rounded-circle flex-shrink-0 me-12 overflow-hidden"
+                                        />
+                                        <div className="flex-grow-1">
+                                            <span className="text-md mb-0 fw-normal text-secondary-light">
+                                                Eleanor Pena
+                                            </span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td className="text-center">Game Developer</td>
+                                <td className="text-center">
+                                    <div className="dropdown">
+                                        <button
+                                            className="btn btn-outline-primary-600 not-active px-18 py-11 dropdown-toggle toggle-icon"
+                                            type="button"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                        >
+                                            Assign Role
+                                        </button>
+                                        <ul className="dropdown-menu" style={{}}>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                                    to="#"
+                                                >
+                                                    Waiter
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                                    to="#"
+                                                >
+                                                    Manager
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                                    to="#"
+                                                >
+                                                    Project Manager
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                                    to="#"
+                                                >
+                                                    Game Developer
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                                    to="#"
+                                                >
+                                                    Head
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                                    to="#"
+                                                >
+                                                    Management
+                                                </Link>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div className="d-flex align-items-center gap-10">
+                                        <div className="form-check style-check d-flex align-items-center">
+                                            <input
+                                                className="form-check-input radius-4 border border-neutral-400"
+                                                type="checkbox"
+                                                name="checkbox"
+                                            />
+                                        </div>
+                                        01
+                                    </div>
+                                </td>
+                                <td>
+                                    <div className="d-flex align-items-center">
+                                        <img
+                                            src="assets/images/user-list/user-list5.png"
+                                            alt=""
+                                            className="w-40-px h-40-px rounded-circle flex-shrink-0 me-12 overflow-hidden"
+                                        />
+                                        <div className="flex-grow-1">
+                                            <span className="text-md mb-0 fw-normal text-secondary-light">
+                                                Leslie Alexander
+                                            </span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td className="text-center">Head</td>
+                                <td className="text-center">
+                                    <div className="dropdown">
+                                        <button
+                                            className="btn btn-outline-primary-600 not-active px-18 py-11 dropdown-toggle toggle-icon"
+                                            type="button"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                        >
+                                            Assign Role
+                                        </button>
+                                        <ul className="dropdown-menu" style={{}}>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                                    to="#"
+                                                >
+                                                    Waiter
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                                    to="#"
+                                                >
+                                                    Manager
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                                    to="#"
+                                                >
+                                                    Project Manager
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                                    to="#"
+                                                >
+                                                    Game Developer
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                                    to="#"
+                                                >
+                                                    Head
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                                    to="#"
+                                                >
+                                                    Management
+                                                </Link>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div className="d-flex align-items-center gap-10">
+                                        <div className="form-check style-check d-flex align-items-center">
+                                            <input
+                                                className="form-check-input radius-4 border border-neutral-400"
+                                                type="checkbox"
+                                                name="checkbox"
+                                            />
+                                        </div>
+                                        01
+                                    </div>
+                                </td>
+                                <td>
+                                    <div className="d-flex align-items-center">
+                                        <img
+                                            src="assets/images/user-list/user-list6.png"
+                                            alt=""
+                                            className="w-40-px h-40-px rounded-circle flex-shrink-0 me-12 overflow-hidden"
+                                        />
+                                        <div className="flex-grow-1">
+                                            <span className="text-md mb-0 fw-normal text-secondary-light">
+                                                Albert Flores
+                                            </span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td className="text-center">Management</td>
+                                <td className="text-center">
+                                    <div className="dropdown">
+                                        <button
+                                            className="btn btn-outline-primary-600 not-active px-18 py-11 dropdown-toggle toggle-icon"
+                                            type="button"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                        >
+                                            Assign Role
+                                        </button>
+                                        <ul className="dropdown-menu" style={{}}>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                                    to="#"
+                                                >
+                                                    Waiter
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                                    to="#"
+                                                >
+                                                    Manager
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                                    to="#"
+                                                >
+                                                    Project Manager
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                                    to="#"
+                                                >
+                                                    Game Developer
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                                    to="#"
+                                                >
+                                                    Head
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                                    to="#"
+                                                >
+                                                    Management
+                                                </Link>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div className="d-flex align-items-center gap-10">
+                                        <div className="form-check style-check d-flex align-items-center">
+                                            <input
+                                                className="form-check-input radius-4 border border-neutral-400"
+                                                type="checkbox"
+                                                name="checkbox"
+                                            />
+                                        </div>
+                                        01
+                                    </div>
+                                </td>
+                                <td>
+                                    <div className="d-flex align-items-center">
+                                        <img
+                                            src="assets/images/user-list/user-list7.png"
+                                            alt=""
+                                            className="w-40-px h-40-px rounded-circle flex-shrink-0 me-12 overflow-hidden"
+                                        />
+                                        <div className="flex-grow-1">
+                                            <span className="text-md mb-0 fw-normal text-secondary-light">
+                                                Jacob Jones
+                                            </span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td className="text-center">Waiter</td>
+                                <td className="text-center">
+                                    <div className="dropdown">
+                                        <button
+                                            className="btn btn-outline-primary-600 not-active px-18 py-11 dropdown-toggle toggle-icon"
+                                            type="button"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                        >
+                                            Assign Role
+                                        </button>
+                                        <ul className="dropdown-menu" style={{}}>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                                    to="#"
+                                                >
+                                                    Waiter
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                                    to="#"
+                                                >
+                                                    Manager
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                                    to="#"
+                                                >
+                                                    Project Manager
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                                    to="#"
+                                                >
+                                                    Game Developer
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                                    to="#"
+                                                >
+                                                    Head
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                                    to="#"
+                                                >
+                                                    Management
+                                                </Link>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div className="d-flex align-items-center gap-10">
+                                        <div className="form-check style-check d-flex align-items-center">
+                                            <input
+                                                className="form-check-input radius-4 border border-neutral-400"
+                                                type="checkbox"
+                                                name="checkbox"
+                                            />
+                                        </div>
+                                        01
+                                    </div>
+                                </td>
+                                <td>
+                                    <div className="d-flex align-items-center">
+                                        <img
+                                            src="assets/images/user-list/user-list8.png"
+                                            alt=""
+                                            className="w-40-px h-40-px rounded-circle flex-shrink-0 me-12 overflow-hidden"
+                                        />
+                                        <div className="flex-grow-1">
+                                            <span className="text-md mb-0 fw-normal text-secondary-light">
+                                                Jerome Bell
+                                            </span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td className="text-center">Waiter</td>
+                                <td className="text-center">
+                                    <div className="dropdown">
+                                        <button
+                                            className="btn btn-outline-primary-600 not-active px-18 py-11 dropdown-toggle toggle-icon"
+                                            type="button"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                        >
+                                            Assign Role
+                                        </button>
+                                        <ul className="dropdown-menu" style={{}}>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                                    to="#"
+                                                >
+                                                    Waiter
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                                    to="#"
+                                                >
+                                                    Manager
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                                    to="#"
+                                                >
+                                                    Project Manager
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                                    to="#"
+                                                >
+                                                    Game Developer
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                                    to="#"
+                                                >
+                                                    Head
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                                    to="#"
+                                                >
+                                                    Management
+                                                </Link>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div className="d-flex align-items-center gap-10">
+                                        <div className="form-check style-check d-flex align-items-center">
+                                            <input
+                                                className="form-check-input radius-4 border border-neutral-400"
+                                                type="checkbox"
+                                                name="checkbox"
+                                            />
+                                        </div>
+                                        01
+                                    </div>
+                                </td>
+                                <td>
+                                    <div className="d-flex align-items-center">
+                                        <img
+                                            src="assets/images/user-list/user-list2.png"
+                                            alt=""
+                                            className="w-40-px h-40-px rounded-circle flex-shrink-0 me-12 overflow-hidden"
+                                        />
+                                        <div className="flex-grow-1">
+                                            <span className="text-md mb-0 fw-normal text-secondary-light">
+                                                Marvin McKinney
+                                            </span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td className="text-center">Waiter</td>
+                                <td className="text-center">
+                                    <div className="dropdown">
+                                        <button
+                                            className="btn btn-outline-primary-600 not-active px-18 py-11 dropdown-toggle toggle-icon"
+                                            type="button"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                        >
+                                            Assign Role
+                                        </button>
+                                        <ul className="dropdown-menu" style={{}}>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                                    to="#"
+                                                >
+                                                    Waiter
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                                    to="#"
+                                                >
+                                                    Manager
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                                    to="#"
+                                                >
+                                                    Project Manager
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                                    to="#"
+                                                >
+                                                    Game Developer
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                                    to="#"
+                                                >
+                                                    Head
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                                    to="#"
+                                                >
+                                                    Management
+                                                </Link>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div className="d-flex align-items-center gap-10">
+                                        <div className="form-check style-check d-flex align-items-center">
+                                            <input
+                                                className="form-check-input radius-4 border border-neutral-400"
+                                                type="checkbox"
+                                                name="checkbox"
+                                            />
+                                        </div>
+                                        01
+                                    </div>
+                                </td>
+                                <td>
+                                    <div className="d-flex align-items-center">
+                                        <img
+                                            src="assets/images/user-list/user-list10.png"
+                                            alt=""
+                                            className="w-40-px h-40-px rounded-circle flex-shrink-0 me-12 overflow-hidden"
+                                        />
+                                        <div className="flex-grow-1">
+                                            <span className="text-md mb-0 fw-normal text-secondary-light">
+                                                Cameron Williamson
+                                            </span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td className="text-center">Admin</td>
+                                <td className="text-center">
+                                    <div className="dropdown">
+                                        <button
+                                            className="btn btn-outline-primary-600 not-active px-18 py-11 dropdown-toggle toggle-icon"
+                                            type="button"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                        >
+                                            Assign Role
+                                        </button>
+                                        <ul className="dropdown-menu" style={{}}>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                                    to="#"
+                                                >
+                                                    Waiter
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                                    to="#"
+                                                >
+                                                    Manager
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                                    to="#"
+                                                >
+                                                    Project Manager
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                                    to="#"
+                                                >
+                                                    Game Developer
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                                    to="#"
+                                                >
+                                                    Head
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900"
+                                                    to="#"
+                                                >
+                                                    Management
+                                                </Link>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -257,7 +1045,7 @@ const AssignRoleLayer = () => {
                                 to="#"
                             >
                                 {" "}
-                                <Icon icon="ep:d-arrow-right" className="" />
+                                <Icon icon="ep:d-arrow-right" className="" />{" "}
                             </Link>
                         </li>
                     </ul>
@@ -265,7 +1053,8 @@ const AssignRoleLayer = () => {
             </div>
         </div>
 
-    )
-}
 
-export default AssignRoleLayer
+    );
+};
+
+export default AssignRoleLayer;

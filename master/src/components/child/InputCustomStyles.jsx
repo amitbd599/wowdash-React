@@ -1,5 +1,5 @@
-import { Icon } from '@iconify/react/dist/iconify.js'
-import React from 'react'
+import { Icon } from '@iconify/react/dist/iconify.js';
+import React from 'react';
 
 const InputCustomStyles = () => {
     return (
@@ -43,7 +43,7 @@ const InputCustomStyles = () => {
                             <label className="form-label">Input with Payment </label>
                             <div className="input-group has-validation">
                                 <span className="input-group-text bg-base">
-                                    <img src="assets/images/card/payment-icon.png" alt="image" />
+                                    <img src="assets/images/card/payment-icon.png" alt="image_icon" />
                                 </span>
                                 <input
                                     type="text"
@@ -59,12 +59,12 @@ const InputCustomStyles = () => {
                         <div className="col-md-6">
                             <label className="form-label">Input with Phone </label>
                             <div className="form-mobile-field has-validation">
-                                <select className="form-select" required="">
-                                    <option value="">MU</option>
-                                    <option value={1}>US</option>
-                                    <option value={2}>BN</option>
-                                    <option value={3}>EN</option>
-                                    <option value={4}>AM</option>
+                                <select className="form-select" required defaultValue={"MU"}>
+                                    <option value="MU">MU</option>
+                                    <option value="US">US</option>
+                                    <option value="BN">BN</option>
+                                    <option value="EN">EN</option>
+                                    <option value="AM">AM</option>
                                 </select>
                                 <input
                                     type="text"
@@ -102,7 +102,7 @@ const InputCustomStyles = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default InputCustomStyles
+export default InputCustomStyles;

@@ -1,5 +1,5 @@
-import { Icon } from '@iconify/react/dist/iconify.js'
-import React from 'react'
+import { Icon } from '@iconify/react/dist/iconify.js';
+import React from 'react';
 
 const MyOrdersOne = () => {
     return (
@@ -9,11 +9,11 @@ const MyOrdersOne = () => {
                     <div className="d-flex align-items-center flex-wrap gap-2 justify-content-between mb-20">
                         <h6 className="mb-2 fw-bold text-lg">My Orders</h6>
                         <div className="">
-                            <select className="form-select form-select-sm w-auto bg-base border text-secondary-light">
-                                <option>Today</option>
-                                <option>Monthly</option>
-                                <option>Weekly</option>
-                                <option>Today</option>
+                            <select className="form-select form-select-sm w-auto bg-base border text-secondary-light" defaultValue="Today">
+                                <option value="Today">Today</option>
+                                <option value="Monthly">Monthly</option>
+                                <option value="Weekly">Weekly</option>
+                                <option value="Today">Today</option>
                             </select>
                         </div>
                     </div>
@@ -144,7 +144,7 @@ const MyOrdersOne = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default MyOrdersOne
+export default MyOrdersOne;

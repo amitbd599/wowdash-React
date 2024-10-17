@@ -1,6 +1,6 @@
-import { Icon } from '@iconify/react/dist/iconify.js'
-import React from 'react'
-import { Link } from 'react-router-dom'
+import { Icon } from '@iconify/react/dist/iconify.js';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const CodeGeneratorLayer = () => {
     return (
@@ -181,7 +181,7 @@ const CodeGeneratorLayer = () => {
                                 <div className="img overflow-hidden flex-shrink-0">
                                     <img
                                         src="assets/images/chat/1.png"
-                                        alt="image"
+                                        alt="image_icon"
                                         className="w-44-px h-44-px rounded-circle object-fit-cover"
                                     />
                                 </div>
@@ -205,7 +205,7 @@ const CodeGeneratorLayer = () => {
                             <div className="img overflow-hidden flex-shrink-0">
                                 <img
                                     src="assets/images/wow-dash-favicon.png"
-                                    alt="image"
+                                    alt="image_icon"
                                     className="w-44-px h-44-px rounded-circle object-fit-cover"
                                 />
                             </div>
@@ -293,7 +293,7 @@ const CodeGeneratorLayer = () => {
                                 <div className="img overflow-hidden flex-shrink-0">
                                     <img
                                         src="assets/images/chat/1.png"
-                                        alt="image"
+                                        alt="image_icon"
                                         className="w-44-px h-44-px rounded-circle object-fit-cover"
                                     />
                                 </div>
@@ -331,7 +331,7 @@ const CodeGeneratorLayer = () => {
         </div>
 
 
-    )
-}
+    );
+};
 
-export default CodeGeneratorLayer
+export default CodeGeneratorLayer;

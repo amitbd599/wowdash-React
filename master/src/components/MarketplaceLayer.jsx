@@ -1,26 +1,29 @@
-import { Icon } from '@iconify/react/dist/iconify.js'
-import React from 'react'
-import useReactApexChart from '../hook/useReactApexChart'
-import { Link } from 'react-router-dom'
+import { Icon } from '@iconify/react/dist/iconify.js';
+import React from 'react';
+import useReactApexChart from '../hook/useReactApexChart';
+import { Link } from 'react-router-dom';
 
 const MarketplaceLayer = () => {
-    let { createChartNine } = useReactApexChart()
+    let { createChartNine } = useReactApexChart();
     return (
         <div className="card h-100 p-0 radius-12">
             <div className="card-header border-bottom bg-base py-16 px-24 d-flex align-items-center flex-wrap gap-3 justify-content-between">
                 <div className="d-flex align-items-center flex-wrap gap-3">
                     <span className="text-md fw-medium text-secondary-light mb-0">Show</span>
-                    <select className="form-select form-select-sm w-auto ps-12 py-6 radius-12 h-40-px">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                        <option>6</option>
-                        <option>7</option>
-                        <option>8</option>
-                        <option>9</option>
-                        <option>10</option>
+                    <select className="form-select form-select-sm w-auto ps-12 py-6 radius-12 h-40-px" defaultValue="Select Number">
+                        <option value="Select Number" disabled>
+                            Select Number
+                        </option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
                     </select>
                     <form className="navbar-search">
                         <input
@@ -743,7 +746,7 @@ const MarketplaceLayer = () => {
             </div>
         </div>
 
-    )
-}
+    );
+};
 
-export default MarketplaceLayer
+export default MarketplaceLayer;

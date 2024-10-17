@@ -1,8 +1,8 @@
-import React from 'react'
-import useReactApexChart from '../../hook/useReactApexChart'
+import React from 'react';
+import useReactApexChart from '../../hook/useReactApexChart';
 
 const CoinAnalyticsTwo = () => {
-    let { createChartFour } = useReactApexChart()
+    let { createChartFour } = useReactApexChart();
     return (
         <div className="col-xxl-6">
             <div className="card h-100 radius-8 border-0">
@@ -11,10 +11,13 @@ const CoinAnalyticsTwo = () => {
                         <h6 className="mb-2 fw-bold text-lg">Coin Analytics</h6>
                         <div className="border radius-4 px-3 py-2 pe-0 d-flex align-items-center gap-1 text-sm text-secondary-light">
                             Currency:
-                            <select className="form-select form-select-sm w-auto bg-base border-0 text-primary-light fw-semibold text-sm">
-                                <option>USD</option>
-                                <option>BDT</option>
-                                <option>RUP</option>
+                            <select className="form-select form-select-sm w-auto bg-base border-0 text-primary-light fw-semibold text-sm" defaultValue="Select Currency">
+                                <option value="Select Currency" disabled>
+                                    Select Currency
+                                </option>
+                                <option value="USD">USD</option>
+                                <option value="BDT">BDT</option>
+                                <option value="RUP">RUP</option>
                             </select>
                         </div>
                     </div>
@@ -153,7 +156,7 @@ const CoinAnalyticsTwo = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default CoinAnalyticsTwo
+export default CoinAnalyticsTwo;

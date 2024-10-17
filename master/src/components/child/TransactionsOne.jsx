@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const TransactionsOne = () => {
     return (
@@ -8,9 +8,9 @@ const TransactionsOne = () => {
                     <div className="d-flex align-items-center flex-wrap gap-2 justify-content-between">
                         <h6 className="mb-2 fw-bold text-lg">Transactions</h6>
                         <div className="">
-                            <select className="form-select form-select-sm w-auto bg-base border text-secondary-light">
-                                <option>This Month</option>
-                                <option>Last Month</option>
+                            <select className="form-select form-select-sm w-auto bg-base border text-secondary-light" defaultValue="This Month">
+                                <option value="This Month">This Month</option>
+                                <option value="Last Month">Last Month</option>
                             </select>
                         </div>
                     </div>
@@ -115,7 +115,7 @@ const TransactionsOne = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default TransactionsOne
+export default TransactionsOne;

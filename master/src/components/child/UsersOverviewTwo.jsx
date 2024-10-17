@@ -1,9 +1,9 @@
-import React from 'react'
-import ReactApexChart from 'react-apexcharts'
-import useReactApexChart from '../../hook/useReactApexChart'
+import React from 'react';
+import ReactApexChart from 'react-apexcharts';
+import useReactApexChart from '../../hook/useReactApexChart';
 
 const UsersOverviewTwo = () => {
-    let { donutChartSeries, donutChartOptions } = useReactApexChart()
+    let { donutChartSeries, donutChartOptions } = useReactApexChart();
     return (
         <div className="col-xxl-4 col-lg-6">
             <div className="card h-100 radius-8 border-0 overflow-hidden">
@@ -11,11 +11,11 @@ const UsersOverviewTwo = () => {
                     <div className="d-flex align-items-center flex-wrap gap-2 justify-content-between">
                         <h6 className="mb-2 fw-bold text-lg">Users Overview</h6>
                         <div className="">
-                            <select className="form-select form-select-sm w-auto bg-base border text-secondary-light">
-                                <option>Today</option>
-                                <option>Weekly</option>
-                                <option>Monthly</option>
-                                <option>Yearly</option>
+                            <select className="form-select form-select-sm w-auto bg-base border text-secondary-light" defaultValue="Today">
+                                <option value="Today">Today</option>
+                                <option value="Weekly">Weekly</option>
+                                <option value="Monthly">Monthly</option>
+                                <option value="Yearly">Yearly</option>
                             </select>
                         </div>
                     </div>
@@ -39,7 +39,7 @@ const UsersOverviewTwo = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default UsersOverviewTwo
+export default UsersOverviewTwo;

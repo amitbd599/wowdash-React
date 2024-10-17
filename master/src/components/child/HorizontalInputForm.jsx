@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const HorizontalInputForm = () => {
     return (
@@ -45,11 +45,14 @@ const HorizontalInputForm = () => {
                         <label className="form-label mb-0 col-sm-2">Phone</label>
                         <div className="col-sm-10">
                             <div className="form-mobile-field">
-                                <select className="form-select">
-                                    <option>US</option>
-                                    <option>US</option>
-                                    <option>US</option>
-                                    <option>US</option>
+                                <select className="form-select" defaultValue="Select Country">
+                                    <option value="Select Country" disabled>
+                                        Select Country
+                                    </option>
+                                    <option value="US">United States</option>
+                                    <option value="Canada">Canada</option>
+                                    <option value="UK">United Kingdom</option>
+                                    <option value="Australia">Australia</option>
                                 </select>
                                 <input
                                     type="text"
@@ -77,7 +80,7 @@ const HorizontalInputForm = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default HorizontalInputForm
+export default HorizontalInputForm;

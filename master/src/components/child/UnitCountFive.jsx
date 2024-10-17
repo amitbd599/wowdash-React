@@ -1,9 +1,9 @@
-import React from 'react'
-import useReactApexChart from '../../hook/useReactApexChart'
+import React from 'react';
+import useReactApexChart from '../../hook/useReactApexChart';
 
 const UnitCountFive = () => {
 
-    let { createChartSix } = useReactApexChart()
+    let { createChartSix } = useReactApexChart();
     return (
         <div className="col-xxl-8">
             <div className="card radius-8 border-0 p-20">
@@ -90,11 +90,11 @@ const UnitCountFive = () => {
                             <div className="d-flex align-items-center flex-wrap gap-2 justify-content-between">
                                 <h6 className="mb-2 fw-bold text-lg">Average Enrollment Rate</h6>
                                 <div className="">
-                                    <select className="form-select form-select-sm w-auto bg-base border text-secondary-light">
-                                        <option>Yearly</option>
-                                        <option>Monthly</option>
-                                        <option>Weekly</option>
-                                        <option>Today</option>
+                                    <select className="form-select form-select-sm w-auto bg-base border text-secondary-light" defaultValue="Yearly">
+                                        <option value="Yearly">Yearly</option>
+                                        <option value="Monthly">Monthly</option>
+                                        <option value="Weekly">Weekly</option>
+                                        <option value="Today">Today</option>
                                     </select>
                                 </div>
                             </div>
@@ -128,7 +128,7 @@ const UnitCountFive = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default UnitCountFive
+export default UnitCountFive;

@@ -1,10 +1,10 @@
-import React from 'react'
-import useReactApexChart from '../../hook/useReactApexChart'
-import ReactApexChart from 'react-apexcharts'
-import { Icon } from '@iconify/react/dist/iconify.js'
+import React from 'react';
+import useReactApexChart from '../../hook/useReactApexChart';
+import ReactApexChart from 'react-apexcharts';
+import { Icon } from '@iconify/react/dist/iconify.js';
 
 const CoinAnalyticsOne = () => {
-    let { candleStickChartSeries, candleStickChartOptions } = useReactApexChart()
+    let { candleStickChartSeries, candleStickChartOptions } = useReactApexChart();
     return (
         <div className="col-12">
             <div className="card h-100 radius-8 border-0">
@@ -73,11 +73,14 @@ const CoinAnalyticsOne = () => {
                                 </label>
                             </div>
                         </div>
-                        <select className="form-select form-select-sm w-auto bg-base border text-secondary-light">
-                            <option>Yearly</option>
-                            <option>Monthly</option>
-                            <option>Weekly</option>
-                            <option>Today</option>
+                        <select className="form-select form-select-sm w-auto bg-base border text-secondary-light" defaultValue="Select Frequency">
+                            <option value="Select Frequency" disabled>
+                                Select Frequency
+                            </option>
+                            <option value="Yearly">Yearly</option>
+                            <option value="Monthly">Monthly</option>
+                            <option value="Weekly">Weekly</option>
+                            <option value="Today">Today</option>
                         </select>
                     </div>
                     <div className="d-flex align-items-center gap-2 mt-12">
@@ -97,7 +100,7 @@ const CoinAnalyticsOne = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default CoinAnalyticsOne
+export default CoinAnalyticsOne;

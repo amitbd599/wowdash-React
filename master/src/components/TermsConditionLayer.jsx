@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef } from 'react';
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
 import 'highlight.js/styles/github.css';
@@ -87,7 +87,7 @@ const TermsConditionLayer = () => {
 
             <p>Some initial <strong>bold</strong> text</p>
             <p><br /></p>
-          </div>`
+          </div>`;
     return (
         <div className="card basic-data-table radius-12 overflow-hidden">
             <div className="card-body p-0">
@@ -169,7 +169,7 @@ const TermsConditionLayer = () => {
             </div>
         </div>
 
-    )
-}
+    );
+};
 
-export default TermsConditionLayer
+export default TermsConditionLayer;

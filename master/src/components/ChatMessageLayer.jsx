@@ -1,6 +1,6 @@
-import { Icon } from '@iconify/react/dist/iconify.js'
-import React from 'react'
-import { Link } from 'react-router-dom'
+import { Icon } from '@iconify/react/dist/iconify.js';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const ChatMessageLayer = () => {
     return (
@@ -8,7 +8,7 @@ const ChatMessageLayer = () => {
             <div className="chat-sidebar card">
                 <div className="chat-sidebar-single active top-profile">
                     <div className="img">
-                        <img src="assets/images/chat/1.png" alt="image" />
+                        <img src="assets/images/chat/1.png" alt="image_icon" />
                     </div>
                     <div className="info">
                         <h6 className="text-md mb-0">Kathryn Murphy</h6>
@@ -58,7 +58,7 @@ const ChatMessageLayer = () => {
                 <div className="chat-all-list">
                     <div className="chat-sidebar-single active">
                         <div className="img">
-                            <img src="assets/images/chat/2.png" alt="image" />
+                            <img src="assets/images/chat/2.png" alt="image_icon" />
                         </div>
                         <div className="info">
                             <h6 className="text-sm mb-1">Kathryn Murphy</h6>
@@ -74,7 +74,7 @@ const ChatMessageLayer = () => {
                     {/* chat-sidebar-single end */}
                     <div className="chat-sidebar-single active">
                         <div className="img">
-                            <img src="assets/images/chat/3.png" alt="image" />
+                            <img src="assets/images/chat/3.png" alt="image_icon" />
                         </div>
                         <div className="info">
                             <h6 className="text-sm mb-1">James Michael</h6>
@@ -90,7 +90,7 @@ const ChatMessageLayer = () => {
                     {/* chat-sidebar-single end */}
                     <div className="chat-sidebar-single">
                         <div className="img">
-                            <img src="assets/images/chat/4.png" alt="image" />
+                            <img src="assets/images/chat/4.png" alt="image_icon" />
                         </div>
                         <div className="info">
                             <h6 className="text-sm mb-1">Russell Lucas</h6>
@@ -106,7 +106,7 @@ const ChatMessageLayer = () => {
                     {/* chat-sidebar-single end */}
                     <div className="chat-sidebar-single">
                         <div className="img">
-                            <img src="assets/images/chat/5.png" alt="image" />
+                            <img src="assets/images/chat/5.png" alt="image_icon" />
                         </div>
                         <div className="info">
                             <h6 className="text-sm mb-1">Caleb Bradley</h6>
@@ -122,7 +122,7 @@ const ChatMessageLayer = () => {
                     {/* chat-sidebar-single end */}
                     <div className="chat-sidebar-single active">
                         <div className="img">
-                            <img src="assets/images/chat/6.png" alt="image" />
+                            <img src="assets/images/chat/6.png" alt="image_icon" />
                         </div>
                         <div className="info">
                             <h6 className="text-sm mb-1">Bobby Roy</h6>
@@ -138,7 +138,7 @@ const ChatMessageLayer = () => {
                     {/* chat-sidebar-single end */}
                     <div className="chat-sidebar-single active">
                         <div className="img">
-                            <img src="assets/images/chat/7.png" alt="image" />
+                            <img src="assets/images/chat/7.png" alt="image_icon" />
                         </div>
                         <div className="info">
                             <h6 className="text-sm mb-1">Vincent Liam</h6>
@@ -154,7 +154,7 @@ const ChatMessageLayer = () => {
                     {/* chat-sidebar-single end */}
                     <div className="chat-sidebar-single active">
                         <div className="img">
-                            <img src="assets/images/chat/8.png" alt="image" />
+                            <img src="assets/images/chat/8.png" alt="image_icon" />
                         </div>
                         <div className="info">
                             <h6 className="text-sm mb-1">Randy Mason</h6>
@@ -170,7 +170,7 @@ const ChatMessageLayer = () => {
                     {/* chat-sidebar-single end */}
                     <div className="chat-sidebar-single active">
                         <div className="img">
-                            <img src="assets/images/chat/9.png" alt="image" />
+                            <img src="assets/images/chat/9.png" alt="image_icon" />
                         </div>
                         <div className="info">
                             <h6 className="text-sm mb-1">Albert Wayne</h6>
@@ -186,7 +186,7 @@ const ChatMessageLayer = () => {
                     {/* chat-sidebar-single end */}
                     <div className="chat-sidebar-single active">
                         <div className="img">
-                            <img src="assets/images/chat/10.png" alt="image" />
+                            <img src="assets/images/chat/10.png" alt="image_icon" />
                         </div>
                         <div className="info">
                             <h6 className="text-sm mb-1">Elijah Willie</h6>
@@ -202,7 +202,7 @@ const ChatMessageLayer = () => {
                     {/* chat-sidebar-single end */}
                     <div className="chat-sidebar-single active">
                         <div className="img">
-                            <img src="assets/images/chat/2.png" alt="image" />
+                            <img src="assets/images/chat/2.png" alt="image_icon" />
                         </div>
                         <div className="info">
                             <h6 className="text-sm mb-1">Kathryn Murphy</h6>
@@ -218,7 +218,7 @@ const ChatMessageLayer = () => {
                     {/* chat-sidebar-single end */}
                     <div className="chat-sidebar-single active">
                         <div className="img">
-                            <img src="assets/images/chat/3.png" alt="image" />
+                            <img src="assets/images/chat/3.png" alt="image_icon" />
                         </div>
                         <div className="info">
                             <h6 className="text-sm mb-1">James Michael</h6>
@@ -234,7 +234,7 @@ const ChatMessageLayer = () => {
                     {/* chat-sidebar-single end */}
                     <div className="chat-sidebar-single">
                         <div className="img">
-                            <img src="assets/images/chat/4.png" alt="image" />
+                            <img src="assets/images/chat/4.png" alt="image_icon" />
                         </div>
                         <div className="info">
                             <h6 className="text-sm mb-1">Russell Lucas</h6>
@@ -250,7 +250,7 @@ const ChatMessageLayer = () => {
                     {/* chat-sidebar-single end */}
                     <div className="chat-sidebar-single">
                         <div className="img">
-                            <img src="assets/images/chat/5.png" alt="image" />
+                            <img src="assets/images/chat/5.png" alt="image_icon" />
                         </div>
                         <div className="info">
                             <h6 className="text-sm mb-1">Caleb Bradley</h6>
@@ -266,7 +266,7 @@ const ChatMessageLayer = () => {
                     {/* chat-sidebar-single end */}
                     <div className="chat-sidebar-single active">
                         <div className="img">
-                            <img src="assets/images/chat/6.png" alt="image" />
+                            <img src="assets/images/chat/6.png" alt="image_icon" />
                         </div>
                         <div className="info">
                             <h6 className="text-sm mb-1">Bobby Roy</h6>
@@ -282,7 +282,7 @@ const ChatMessageLayer = () => {
                     {/* chat-sidebar-single end */}
                     <div className="chat-sidebar-single active">
                         <div className="img">
-                            <img src="assets/images/chat/7.png" alt="image" />
+                            <img src="assets/images/chat/7.png" alt="image_icon" />
                         </div>
                         <div className="info">
                             <h6 className="text-sm mb-1">Vincent Liam</h6>
@@ -298,7 +298,7 @@ const ChatMessageLayer = () => {
                     {/* chat-sidebar-single end */}
                     <div className="chat-sidebar-single active">
                         <div className="img">
-                            <img src="assets/images/chat/8.png" alt="image" />
+                            <img src="assets/images/chat/8.png" alt="image_icon" />
                         </div>
                         <div className="info">
                             <h6 className="text-sm mb-1">Randy Mason</h6>
@@ -314,7 +314,7 @@ const ChatMessageLayer = () => {
                     {/* chat-sidebar-single end */}
                     <div className="chat-sidebar-single active">
                         <div className="img">
-                            <img src="assets/images/chat/9.png" alt="image" />
+                            <img src="assets/images/chat/9.png" alt="image_icon" />
                         </div>
                         <div className="info">
                             <h6 className="text-sm mb-1">Albert Wayne</h6>
@@ -330,7 +330,7 @@ const ChatMessageLayer = () => {
                     {/* chat-sidebar-single end */}
                     <div className="chat-sidebar-single active">
                         <div className="img">
-                            <img src="assets/images/chat/10.png" alt="image" />
+                            <img src="assets/images/chat/10.png" alt="image_icon" />
                         </div>
                         <div className="info">
                             <h6 className="text-sm mb-1">Elijah Willie</h6>
@@ -349,7 +349,7 @@ const ChatMessageLayer = () => {
             <div className="chat-main card">
                 <div className="chat-sidebar-single active">
                     <div className="img">
-                        <img src="assets/images/chat/11.png" alt="image" />
+                        <img src="assets/images/chat/11.png" alt="image_icon" />
                     </div>
                     <div className="info">
                         <h6 className="text-md mb-0">Kathryn Murphy</h6>
@@ -400,7 +400,7 @@ const ChatMessageLayer = () => {
                     <div className="chat-single-message left">
                         <img
                             src="assets/images/chat/11.png"
-                            alt="image"
+                            alt="image_icon"
                             className="avatar-lg object-fit-cover rounded-circle"
                         />
                         <div className="chat-message-content">
@@ -433,7 +433,7 @@ const ChatMessageLayer = () => {
                     <div className="chat-single-message left">
                         <img
                             src="assets/images/chat/11.png"
-                            alt="image"
+                            alt="image_icon"
                             className="avatar-lg object-fit-cover rounded-circle"
                         />
                         <div className="chat-message-content">
@@ -473,7 +473,7 @@ const ChatMessageLayer = () => {
             </div>
         </div>
 
-    )
-}
+    );
+};
 
-export default ChatMessageLayer
+export default ChatMessageLayer;

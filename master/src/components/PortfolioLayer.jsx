@@ -1,12 +1,12 @@
-import React from 'react'
-import useReactApexChart from '../hook/useReactApexChart'
-import ReactApexChart from 'react-apexcharts'
-import { Icon } from '@iconify/react/dist/iconify.js'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import useReactApexChart from '../hook/useReactApexChart';
+import ReactApexChart from 'react-apexcharts';
+import { Icon } from '@iconify/react/dist/iconify.js';
+import { Link } from 'react-router-dom';
 
 const PortfolioLayer = () => {
 
-    let { timeSeriesChartSeriesTwo, timeSeriesChartOptionsTwo } = useReactApexChart()
+    let { timeSeriesChartSeriesTwo, timeSeriesChartOptionsTwo } = useReactApexChart();
     return (
         <div className="card h-100 p-0 radius-12">
             <div className="card-body p-24">
@@ -25,17 +25,24 @@ const PortfolioLayer = () => {
                         </div>
                     </div>
                     <div className="d-flex align-items-center gap-16">
-                        <select className="form-select bg-base form-select-sm w-auto radius-8">
-                            <option>All coins</option>
-                            <option>Bitcoin</option>
-                            <option>Litecoin</option>
-                            <option>Dogecoin</option>
+                        <select className="form-select bg-base form-select-sm w-auto radius-8" defaultValue="Select Coin">
+                            <option value="Select Coin" disabled>
+                                Select Coin
+                            </option>
+                            <option value="All coins">All coins</option>
+                            <option value="Bitcoin">Bitcoin</option>
+                            <option value="Litecoin">Litecoin</option>
+                            <option value="Dogecoin">Dogecoin</option>
                         </select>
-                        <select className="form-select bg-base form-select-sm w-auto radius-8">
-                            <option>Yearly</option>
-                            <option>Monthly</option>
-                            <option>Weekly</option>
-                            <option>Today</option>
+
+                        <select className="form-select bg-base form-select-sm w-auto radius-8" defaultValue="Select Frequency">
+                            <option value="Select Frequency" disabled>
+                                Select Frequency
+                            </option>
+                            <option value="Yearly">Yearly</option>
+                            <option value="Monthly">Monthly</option>
+                            <option value="Weekly">Weekly</option>
+                            <option value="Today">Today</option>
                         </select>
                     </div>
                 </div>
@@ -772,7 +779,7 @@ const PortfolioLayer = () => {
             </div>
         </div>
 
-    )
-}
+    );
+};
 
-export default PortfolioLayer
+export default PortfolioLayer;

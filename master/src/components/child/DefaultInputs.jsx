@@ -1,5 +1,5 @@
-import { Icon } from '@iconify/react/dist/iconify.js'
-import React from 'react'
+import { Icon } from '@iconify/react/dist/iconify.js';
+import React from 'react';
 
 const DefaultInputs = () => {
     return (
@@ -39,7 +39,7 @@ const DefaultInputs = () => {
                             <label className="form-label">Input with Payment</label>
                             <div className="input-group">
                                 <span className="input-group-text bg-base">
-                                    <img src="assets/images/card/payment-icon.png" alt="image" />
+                                    <img src="assets/images/card/payment-icon.png" alt="image_icon" />
                                 </span>
                                 <input
                                     type="text"
@@ -74,12 +74,15 @@ const DefaultInputs = () => {
                         <div className="col-12">
                             <label className="form-label">Input</label>
                             <div className="input-group">
-                                <select className="form-select input-group-text w-90-px flex-grow-0">
-                                    <option>US</option>
-                                    <option>US</option>
-                                    <option>US</option>
-                                    <option>US</option>
-                                    <option>US</option>
+                                <select className="form-select input-group-text w-90-px flex-grow-0" defaultValue="Select Country">
+                                    <option value="" disabled>
+                                        Select Country
+                                    </option>
+                                    <option value="US">US</option>
+                                    <option value="Canada">Canada</option>
+                                    <option value="UK">UK</option>
+                                    <option value="Australia">Australia</option>
+                                    <option value="Germany">Germany</option>
                                 </select>
                                 <input
                                     type="text"
@@ -96,12 +99,15 @@ const DefaultInputs = () => {
                                     className="form-control flex-grow-1"
                                     placeholder="info@gmail.com"
                                 />
-                                <select className="form-select input-group-text w-90-px flex-grow-0">
-                                    <option>US</option>
-                                    <option>US</option>
-                                    <option>US</option>
-                                    <option>US</option>
-                                    <option>US</option>
+                                <select className="form-select input-group-text w-90-px flex-grow-0" defaultValue="Select Country">
+                                    <option value="" disabled>
+                                        Select Country
+                                    </option>
+                                    <option value="US">US</option>
+                                    <option value="Canada">Canada</option>
+                                    <option value="UK">UK</option>
+                                    <option value="Australia">Australia</option>
+                                    <option value="Germany">Germany</option>
                                 </select>
                             </div>
                         </div>
@@ -137,7 +143,7 @@ const DefaultInputs = () => {
             </div>
             {/* card end */}
         </div>
-    )
-}
+    );
+};
 
-export default DefaultInputs
+export default DefaultInputs;

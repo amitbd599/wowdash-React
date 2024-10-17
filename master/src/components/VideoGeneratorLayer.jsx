@@ -1,5 +1,5 @@
-import { Icon } from '@iconify/react/dist/iconify.js'
-import React, { useState } from 'react'
+import { Icon } from '@iconify/react/dist/iconify.js';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const VideoGeneratorLayer = () => {
@@ -80,9 +80,13 @@ const VideoGeneratorLayer = () => {
                             <select
                                 className="form-select form-control px-16 py-14 h-48-px"
                                 id="Voice"
+                                defaultValue="Select Voice"
                             >
-                                <option value="">Male</option>
-                                <option value="">female</option>
+                                <option value="Select Voice" disabled>
+                                    Select Voice
+                                </option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
                             </select>
                         </div>
                         <div className="mb-20">
@@ -376,7 +380,7 @@ const VideoGeneratorLayer = () => {
             </div>
         </div>
 
-    )
-}
+    );
+};
 
-export default VideoGeneratorLayer
+export default VideoGeneratorLayer;

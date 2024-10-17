@@ -1,5 +1,5 @@
-import { Icon } from '@iconify/react/dist/iconify.js'
-import React, { useState } from 'react'
+import { Icon } from '@iconify/react/dist/iconify.js';
+import React, { useState } from 'react';
 
 const ViewProfileLayer = () => {
     const [imagePreview, setImagePreview] = useState('assets/images/user-grid/user-grid-img13.png');
@@ -271,10 +271,14 @@ const ViewProfileLayer = () => {
                                                 <select
                                                     className="form-control radius-8 form-select"
                                                     id="depart"
+                                                    defaultValue="Select Event Title"
                                                 >
-                                                    <option>Enter Event Title </option>
-                                                    <option>Enter Event Title One </option>
-                                                    <option>Enter Event Title Two</option>
+                                                    <option value="Select Event Title" disabled>
+                                                        Select Event Title
+                                                    </option>
+                                                    <option value="Enter Event Title">Enter Event Title</option>
+                                                    <option value="Enter Event Title One">Enter Event Title One</option>
+                                                    <option value="Enter Event Title Two">Enter Event Title Two</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -290,10 +294,14 @@ const ViewProfileLayer = () => {
                                                 <select
                                                     className="form-control radius-8 form-select"
                                                     id="desig"
+                                                    defaultValue="Select Designation Title"
                                                 >
-                                                    <option>Enter Designation Title </option>
-                                                    <option>Enter Designation Title One </option>
-                                                    <option>Enter Designation Title Two</option>
+                                                    <option value="Select Designation Title" disabled>
+                                                        Select Designation Title
+                                                    </option>
+                                                    <option value="Enter Designation Title">Enter Designation Title</option>
+                                                    <option value="Enter Designation Title One">Enter Designation Title One</option>
+                                                    <option value="Enter Designation Title Two">Enter Designation Title Two</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -309,11 +317,15 @@ const ViewProfileLayer = () => {
                                                 <select
                                                     className="form-control radius-8 form-select"
                                                     id="Language"
+                                                    defaultValue="Select Language"
                                                 >
-                                                    <option> English</option>
-                                                    <option> Bangla </option>
-                                                    <option> Hindi</option>
-                                                    <option> Arabic</option>
+                                                    <option value="Select Language" disabled>
+                                                        Select Language
+                                                    </option>
+                                                    <option value="English">English</option>
+                                                    <option value="Bangla">Bangla</option>
+                                                    <option value="Hindi">Hindi</option>
+                                                    <option value="Arabic">Arabic</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -490,7 +502,7 @@ const ViewProfileLayer = () => {
             </div>
         </div>
 
-    )
-}
+    );
+};
 
-export default ViewProfileLayer
+export default ViewProfileLayer;

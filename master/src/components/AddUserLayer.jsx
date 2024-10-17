@@ -1,5 +1,5 @@
-import { Icon } from '@iconify/react/dist/iconify.js'
-import React, { useState } from 'react'
+import { Icon } from '@iconify/react/dist/iconify.js';
+import React, { useState } from 'react';
 
 const AddUserLayer = () => {
 
@@ -107,10 +107,13 @@ const AddUserLayer = () => {
                                         <select
                                             className="form-control radius-8 form-select"
                                             id="depart"
+                                            defaultValue="Enter Event Title"
                                         >
-                                            <option>Enter Event Title </option>
-                                            <option>Enter Event Title One </option>
-                                            <option>Enter Event Title Two</option>
+                                            <option value="Enter Event Title" disabled>
+                                                Enter Event Title
+                                            </option>
+                                            <option value="Enter Event Title One">Enter Event Title One</option>
+                                            <option value="Enter Event Title Two">Enter Event Title Two</option>
                                         </select>
                                     </div>
                                     <div className="mb-20">
@@ -124,10 +127,13 @@ const AddUserLayer = () => {
                                         <select
                                             className="form-control radius-8 form-select"
                                             id="desig"
+                                            defaultValue="Enter Designation Title"
                                         >
-                                            <option>Enter Designation Title </option>
-                                            <option>Enter Designation Title One </option>
-                                            <option>Enter Designation Title Two</option>
+                                            <option value="Enter Designation Title" disabled>
+                                                Enter Designation Title
+                                            </option>
+                                            <option value="Enter Designation Title One">Enter Designation Title One</option>
+                                            <option value="Enter Designation Title Two">Enter Designation Title Two</option>
                                         </select>
                                     </div>
                                     <div className="mb-20">
@@ -167,7 +173,7 @@ const AddUserLayer = () => {
             </div>
         </div>
 
-    )
-}
+    );
+};
 
-export default AddUserLayer
+export default AddUserLayer;

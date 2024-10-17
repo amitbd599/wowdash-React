@@ -1,10 +1,10 @@
-import React from 'react'
-import useReactApexChart from '../../hook/useReactApexChart'
-import ReactApexChart from 'react-apexcharts'
-import { Icon } from '@iconify/react/dist/iconify.js'
+import React from 'react';
+import useReactApexChart from '../../hook/useReactApexChart';
+import ReactApexChart from 'react-apexcharts';
+import { Icon } from '@iconify/react/dist/iconify.js';
 
 const CampaignStaticOne = () => {
-    let { donutChartSeriesTwo, donutChartOptionsTwo } = useReactApexChart()
+    let { donutChartSeriesTwo, donutChartOptionsTwo } = useReactApexChart();
     return (
         <div className="col-xxl-4">
             <div className="row gy-4">
@@ -14,11 +14,14 @@ const CampaignStaticOne = () => {
                             <div className="d-flex align-items-center flex-wrap gap-2 justify-content-between">
                                 <h6 className="mb-2 fw-bold text-lg">Campaigns</h6>
                                 <div className="">
-                                    <select className="form-select form-select-sm w-auto bg-base border text-secondary-light">
-                                        <option>Yearly</option>
-                                        <option>Monthly</option>
-                                        <option>Weekly</option>
-                                        <option>Today</option>
+                                    <select className="form-select form-select-sm w-auto bg-base border text-secondary-light" defaultValue="Select Frequency">
+                                        <option value="Select Frequency" disabled>
+                                            Select Frequency
+                                        </option>
+                                        <option value="Yearly">Yearly</option>
+                                        <option value="Monthly">Monthly</option>
+                                        <option value="Weekly">Weekly</option>
+                                        <option value="Today">Today</option>
                                     </select>
                                 </div>
                             </div>
@@ -159,11 +162,14 @@ const CampaignStaticOne = () => {
                             <div className="d-flex align-items-center flex-wrap gap-2 justify-content-between">
                                 <h6 className="mb-2 fw-bold text-lg">Customer Overview</h6>
                                 <div className="">
-                                    <select className="form-select form-select-sm w-auto bg-base border text-secondary-light">
-                                        <option>Yearly</option>
-                                        <option>Monthly</option>
-                                        <option>Weekly</option>
-                                        <option>Today</option>
+                                    <select className="form-select form-select-sm w-auto bg-base border text-secondary-light" defaultValue="Select Frequency">
+                                        <option value="Select Frequency" disabled>
+                                            Select Frequency
+                                        </option>
+                                        <option value="Yearly">Yearly</option>
+                                        <option value="Monthly">Monthly</option>
+                                        <option value="Weekly">Weekly</option>
+                                        <option value="Today">Today</option>
                                     </select>
                                 </div>
                             </div>
@@ -198,7 +204,7 @@ const CampaignStaticOne = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default CampaignStaticOne
+export default CampaignStaticOne;

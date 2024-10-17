@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect } from 'react';
 import jsVectorMap from "jsvectormap";
 import "jsvectormap/dist/maps/world.js";
 const TopCountries = () => {
@@ -76,11 +76,11 @@ const TopCountries = () => {
                 <div className="card-body">
                     <div className="d-flex align-items-center flex-wrap gap-2 justify-content-between mb-20">
                         <h6 className="mb-2 fw-bold text-lg mb-0">Top Countries</h6>
-                        <select className="form-select form-select-sm w-auto bg-base border text-secondary-light">
-                            <option>Today</option>
-                            <option>Weekly</option>
-                            <option>Monthly</option>
-                            <option>Yearly</option>
+                        <select className="form-select form-select-sm w-auto bg-base border text-secondary-light" defaultValue="Today">
+                            <option value="Today">Today</option>
+                            <option value="Weekly">Weekly</option>
+                            <option value="Monthly">Monthly</option>
+                            <option value="Yearly">Yearly</option>
                         </select>
                     </div>
                     <div className="row gy-4">
@@ -308,7 +308,7 @@ const TopCountries = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default TopCountries
+export default TopCountries;

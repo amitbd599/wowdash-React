@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const CompanyLayer = () => {
     return (
@@ -79,15 +79,19 @@ const CompanyLayer = () => {
                                 >
                                     Country <span className="text-danger-600">*</span>{" "}
                                 </label>
-                                <select className="form-control radius-8 form-select" id="country">
-                                    <option selected="" disabled="">
+                                <select
+                                    className="form-control radius-8 form-select"
+                                    id="country"
+                                    defaultValue="Select Country"
+                                >
+                                    <option value="Select Country" disabled>
                                         Select Country
                                     </option>
-                                    <option>USA</option>
-                                    <option>Bangladesh</option>
-                                    <option>Pakistan</option>
-                                    <option>India</option>
-                                    <option>Canada</option>
+                                    <option value="USA">USA</option>
+                                    <option value="Bangladesh">Bangladesh</option>
+                                    <option value="Pakistan">Pakistan</option>
+                                    <option value="India">India</option>
+                                    <option value="Canada">Canada</option>
                                 </select>
                             </div>
                         </div>
@@ -99,14 +103,18 @@ const CompanyLayer = () => {
                                 >
                                     City <span className="text-danger-600">*</span>{" "}
                                 </label>
-                                <select className="form-control radius-8 form-select" id="city">
-                                    <option selected="" disabled="">
+                                <select
+                                    className="form-control radius-8 form-select"
+                                    id="city"
+                                    defaultValue="Select City"
+                                >
+                                    <option value="Select City" disabled>
                                         Select City
                                     </option>
-                                    <option>Washington</option>
-                                    <option>Dhaka</option>
-                                    <option>Lahor</option>
-                                    <option>Panjab</option>
+                                    <option value="Washington">Washington</option>
+                                    <option value="Dhaka">Dhaka</option>
+                                    <option value="Lahore">Lahore</option>
+                                    <option value="Panjab">Panjab</option>
                                 </select>
                             </div>
                         </div>
@@ -118,14 +126,18 @@ const CompanyLayer = () => {
                                 >
                                     State <span className="text-danger-600">*</span>{" "}
                                 </label>
-                                <select className="form-control radius-8 form-select" id="state">
-                                    <option selected="" disabled="">
+                                <select
+                                    className="form-control radius-8 form-select"
+                                    id="state"
+                                    defaultValue="Select State"
+                                >
+                                    <option value="Select State" disabled>
                                         Select State
                                     </option>
-                                    <option>Washington</option>
-                                    <option>Dhaka</option>
-                                    <option>Lahor</option>
-                                    <option>Panjab</option>
+                                    <option value="Washington">Washington</option>
+                                    <option value="Dhaka">Dhaka</option>
+                                    <option value="Lahore">Lahore</option>
+                                    <option value="Panjab">Panjab</option>
                                 </select>
                             </div>
                         </div>
@@ -182,7 +194,7 @@ const CompanyLayer = () => {
             </div>
         </div>
 
-    )
-}
+    );
+};
 
-export default CompanyLayer
+export default CompanyLayer;

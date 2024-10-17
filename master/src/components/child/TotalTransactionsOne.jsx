@@ -1,9 +1,9 @@
-import React from 'react'
-import useReactApexChart from '../../hook/useReactApexChart'
-import ReactApexChart from 'react-apexcharts'
+import React from 'react';
+import useReactApexChart from '../../hook/useReactApexChart';
+import ReactApexChart from 'react-apexcharts';
 
 const TotalTransactionsOne = () => {
-    let { transactionLineChartSeries, transactionLineChartOptions } = useReactApexChart()
+    let { transactionLineChartSeries, transactionLineChartOptions } = useReactApexChart();
     return (
         <div className="col-xxl-4">
             <div className="card h-100">
@@ -11,11 +11,11 @@ const TotalTransactionsOne = () => {
                     <div className="d-flex align-items-center flex-wrap gap-2 justify-content-between mb-20">
                         <h6 className="mb-2 fw-bold text-lg">Total Transactions </h6>
                         <div className="">
-                            <select className="form-select form-select-sm w-auto bg-base border text-secondary-light">
-                                <option>Yearly</option>
-                                <option>Monthly</option>
-                                <option>Weekly</option>
-                                <option>Today</option>
+                            <select className="form-select form-select-sm w-auto bg-base border text-secondary-light" defaultValue="Yearly">
+                                <option value="Yearly">Yearly</option>
+                                <option value="Monthly">Monthly</option>
+                                <option value="Weekly">Weekly</option>
+                                <option value="Today">Today</option>
                             </select>
                         </div>
                     </div>
@@ -36,7 +36,7 @@ const TotalTransactionsOne = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default TotalTransactionsOne
+export default TotalTransactionsOne;

@@ -1,6 +1,6 @@
-import { Icon } from '@iconify/react/dist/iconify.js'
-import React from 'react'
-import { Link } from 'react-router-dom'
+import { Icon } from '@iconify/react/dist/iconify.js';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const VoiceGeneratorLayer = () => {
 
@@ -19,11 +19,15 @@ const VoiceGeneratorLayer = () => {
                             <select
                                 className="form-select form-control px-16 py-14 h-48-px"
                                 id="language"
+                                defaultValue="Select Language"
                             >
-                                <option value="">English</option>
-                                <option value="">Bangla</option>
-                                <option value="">Hindi</option>
-                                <option value="">Urdhu</option>
+                                <option value="Select Language" disabled>
+                                    Select Language
+                                </option>
+                                <option value="English">English</option>
+                                <option value="Bangla">Bangla</option>
+                                <option value="Hindi">Hindi</option>
+                                <option value="Urdhu">Urdhu</option>
                             </select>
                         </div>
                         <div className="mb-20">
@@ -36,10 +40,14 @@ const VoiceGeneratorLayer = () => {
                             <select
                                 className="form-select form-control px-16 py-14 h-48-px"
                                 id="audioEffect"
+                                defaultValue="Select Audio Effect"
                             >
-                                <option value="">Smart Voice</option>
-                                <option value="">Old Voice</option>
-                                <option value="">Similar Voice</option>
+                                <option value="Select Audio Effect" disabled>
+                                    Select Audio Effect
+                                </option>
+                                <option value="Smart Voice">Smart Voice</option>
+                                <option value="Old Voice">Old Voice</option>
+                                <option value="Similar Voice">Similar Voice</option>
                             </select>
                         </div>
                         <div className="mb-20">
@@ -52,11 +60,15 @@ const VoiceGeneratorLayer = () => {
                             <select
                                 className="form-select form-control px-16 py-14 h-48-px"
                                 id="voice"
+                                defaultValue="Select Voice"
                             >
-                                <option value="">Amber Heath</option>
-                                <option value="">Amber Heath</option>
-                                <option value="">Amber Heath</option>
-                                <option value="">Amber Heath</option>
+                                <option value="Select Voice" disabled>
+                                    Select Voice
+                                </option>
+                                <option value="Amber Heath">Amber Heath</option>
+                                <option value="Amber Heath 2">Amber Heath</option>
+                                <option value="Amber Heath 3">Amber Heath</option>
+                                <option value="Amber Heath 4">Amber Heath</option>
                             </select>
                         </div>
                         <div className="mb-20">
@@ -69,9 +81,13 @@ const VoiceGeneratorLayer = () => {
                             <select
                                 className="form-select form-control px-16 py-14 h-48-px"
                                 id="format"
+                                defaultValue="Select Format"
                             >
-                                <option value="">Mp3</option>
-                                <option value="">Mp4</option>
+                                <option value="Select Format" disabled>
+                                    Select Format
+                                </option>
+                                <option value="mp3">Mp3</option>
+                                <option value="mp4">Mp4</option>
                             </select>
                         </div>
                     </div>
@@ -162,9 +178,15 @@ const VoiceGeneratorLayer = () => {
                                         Download
                                         <i className="ri-download-2-line" />
                                     </button>
-                                    <select className="form-select form-control min-w-132-px px-16 py-14 h-48-px w-auto">
-                                        <option value="">Mp3</option>
-                                        <option value="">Mp4</option>
+                                    <select
+                                        className="form-select form-control min-w-132-px px-16 py-14 h-48-px w-auto"
+                                        defaultValue="Select Format"
+                                    >
+                                        <option value="Select Format" disabled>
+                                            Select Format
+                                        </option>
+                                        <option value="mp3">Mp3</option>
+                                        <option value="mp4">Mp4</option>
                                     </select>
                                 </div>
                             </div>
@@ -188,7 +210,7 @@ const VoiceGeneratorLayer = () => {
             </div>
         </div>
 
-    )
-}
+    );
+};
 
-export default VoiceGeneratorLayer
+export default VoiceGeneratorLayer;

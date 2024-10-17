@@ -1,6 +1,6 @@
-import { Icon } from '@iconify/react/dist/iconify.js'
-import React from 'react'
-import { Link } from 'react-router-dom'
+import { Icon } from '@iconify/react/dist/iconify.js';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const InvoicePreviewLayer = () => {
     return (
@@ -31,7 +31,7 @@ const InvoicePreviewLayer = () => {
                     <button
                         type="button"
                         className="btn btn-sm btn-danger radius-8 d-inline-flex align-items-center gap-1"
-                        onclick="printInvoice()"
+
                     >
                         <Icon icon="basil:printer-outline" className="text-xl" />
                         Print
@@ -49,7 +49,7 @@ const InvoicePreviewLayer = () => {
                                     <p className="mb-0 text-sm">Date Due: 29/08/2020</p>
                                 </div>
                                 <div>
-                                    <img src="assets/images/logo.png" alt="image" className="mb-8" />
+                                    <img src="assets/images/logo.png" alt="image_icon" className="mb-8" />
                                     <p className="mb-1 text-sm">
                                         4517 Washington Ave. Manchester, Kentucky 39495
                                     </p>
@@ -231,7 +231,7 @@ const InvoicePreviewLayer = () => {
             </div>
         </div>
 
-    )
-}
+    );
+};
 
-export default InvoicePreviewLayer
+export default InvoicePreviewLayer;

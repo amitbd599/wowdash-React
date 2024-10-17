@@ -1,10 +1,10 @@
-import { Icon } from '@iconify/react/dist/iconify.js'
-import React from 'react'
-import useReactApexChart from '../../hook/useReactApexChart'
-import ReactApexChart from 'react-apexcharts'
+import { Icon } from '@iconify/react/dist/iconify.js';
+import React from 'react';
+import useReactApexChart from '../../hook/useReactApexChart';
+import ReactApexChart from 'react-apexcharts';
 
 const RevenueReportOne = () => {
-    let { paymentStatusChartSeriesThree, paymentStatusChartOptionsThree } = useReactApexChart()
+    let { paymentStatusChartSeriesThree, paymentStatusChartOptionsThree } = useReactApexChart();
     return (
         <div className="col-xxl-9">
             <div className="card radius-8 border-0">
@@ -14,11 +14,11 @@ const RevenueReportOne = () => {
                             <div className="d-flex align-items-center flex-wrap gap-2 justify-content-between">
                                 <h6 className="mb-2 fw-bold text-lg">Revenue Report</h6>
                                 <div className="">
-                                    <select className="form-select form-select-sm w-auto bg-base border text-secondary-light">
-                                        <option>Yearly</option>
-                                        <option>Monthly</option>
-                                        <option>Weekly</option>
-                                        <option>Today</option>
+                                    <select className="form-select form-select-sm w-auto bg-base border text-secondary-light" defaultValue="Yearly">
+                                        <option value="Yearly">Yearly</option>
+                                        <option value="Monthly">Monthly</option>
+                                        <option value="Weekly">Weekly</option>
+                                        <option value="Today">Today</option>
                                     </select>
                                 </div>
                             </div>
@@ -155,7 +155,7 @@ const RevenueReportOne = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default RevenueReportOne
+export default RevenueReportOne;

@@ -1,21 +1,21 @@
-import { Icon } from '@iconify/react/dist/iconify.js'
-import React from 'react'
-import ReactApexChart from 'react-apexcharts'
-import useReactApexChart from '../../hook/useReactApexChart'
+import { Icon } from '@iconify/react/dist/iconify.js';
+import React from 'react';
+import ReactApexChart from 'react-apexcharts';
+import useReactApexChart from '../../hook/useReactApexChart';
 
 const SalesStatisticOne = () => {
-    let { chartOptions, chartSeries } = useReactApexChart()
+    let { chartOptions, chartSeries } = useReactApexChart();
     return (
         <div className="col-xxl-6 col-xl-12">
             <div className="card h-100">
                 <div className="card-body">
                     <div className="d-flex flex-wrap align-items-center justify-content-between">
                         <h6 className="text-lg mb-0">Sales Statistic</h6>
-                        <select className="form-select bg-base form-select-sm w-auto">
-                            <option>Yearly</option>
-                            <option>Monthly</option>
-                            <option>Weekly</option>
-                            <option>Today</option>
+                        <select className="form-select bg-base form-select-sm w-auto" defaultValue="Yearly">
+                            <option value="Yearly">Yearly</option>
+                            <option value="Monthly">Monthly</option>
+                            <option value="Weekly">Weekly</option>
+                            <option value="Today">Today</option>
                         </select>
                     </div>
                     <div className="d-flex flex-wrap align-items-center gap-2 mt-8">
@@ -29,7 +29,7 @@ const SalesStatisticOne = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default SalesStatisticOne
+export default SalesStatisticOne;

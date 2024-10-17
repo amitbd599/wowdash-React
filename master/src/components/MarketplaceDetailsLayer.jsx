@@ -1,11 +1,11 @@
-import { Icon } from '@iconify/react/dist/iconify.js'
-import React, { useState } from 'react'
-import useReactApexChart from '../hook/useReactApexChart'
-import ReactApexChart from 'react-apexcharts'
-import { Link } from 'react-router-dom'
+import { Icon } from '@iconify/react/dist/iconify.js';
+import React, { useState } from 'react';
+import useReactApexChart from '../hook/useReactApexChart';
+import ReactApexChart from 'react-apexcharts';
+import { Link } from 'react-router-dom';
 
 const MarketplaceDetailsLayer = () => {
-    let { timeSeriesChartSeries, timeSeriesChartOptions } = useReactApexChart()
+    let { timeSeriesChartSeries, timeSeriesChartOptions } = useReactApexChart();
     const [isStarred, setIsStarred] = useState(false);
     const toggleStar = () => {
         setIsStarred(!isStarred);
@@ -75,11 +75,14 @@ const MarketplaceDetailsLayer = () => {
                             <div className="my-24">
                                 <div className="d-flex flex-wrap align-items-center justify-content-between">
                                     <h6 className="text-lg mb-0">Bitcoin Chain Price</h6>
-                                    <select className="form-select bg-base form-select-sm w-auto radius-8">
-                                        <option>Yearly</option>
-                                        <option>Monthly</option>
-                                        <option>Weekly</option>
-                                        <option>Today</option>
+                                    <select className="form-select bg-base form-select-sm w-auto radius-8" defaultValue="Select Frequency">
+                                        <option value="Select Frequency" disabled>
+                                            Select Frequency
+                                        </option>
+                                        <option value="Yearly">Yearly</option>
+                                        <option value="Monthly">Monthly</option>
+                                        <option value="Weekly">Weekly</option>
+                                        <option value="Today">Today</option>
                                     </select>
                                 </div>
                                 <div className="">
@@ -598,7 +601,7 @@ const MarketplaceDetailsLayer = () => {
         </>
 
 
-    )
-}
+    );
+};
 
-export default MarketplaceDetailsLayer
+export default MarketplaceDetailsLayer;

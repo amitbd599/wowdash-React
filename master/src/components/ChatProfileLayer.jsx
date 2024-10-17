@@ -1,6 +1,6 @@
-import { Icon } from '@iconify/react/dist/iconify.js'
-import React from 'react'
-import { Link } from 'react-router-dom'
+import { Icon } from '@iconify/react/dist/iconify.js';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const ChatProfileLayer = () => {
     return (
@@ -13,7 +13,7 @@ const ChatProfileLayer = () => {
                 </div>
                 <div className="chat-main-profile">
                     <div className="img">
-                        <img src="assets/images/chat/chat-main.png" alt="image" />
+                        <img src="assets/images/chat/chat-main.png" alt="image_icon" />
                     </div>
                     <div className="text-center">
                         <h6 className="text-md mb-0">Kathryn Murphy</h6>
@@ -108,7 +108,7 @@ const ChatProfileLayer = () => {
             <div className="chat-main card">
                 <div className="chat-sidebar-single active">
                     <div className="img">
-                        <img src="assets/images/chat/11.png" alt="image" />
+                        <img src="assets/images/chat/11.png" alt="image_icon" />
                     </div>
                     <div className="info">
                         <h6 className="text-md mb-0">Kathryn Murphy</h6>
@@ -159,7 +159,7 @@ const ChatProfileLayer = () => {
                     <div className="chat-single-message left">
                         <img
                             src="assets/images/chat/11.png"
-                            alt="image"
+                            alt="image_icon"
                             className="avatar-lg object-fit-cover rounded-circle"
                         />
                         <div className="chat-message-content">
@@ -192,7 +192,7 @@ const ChatProfileLayer = () => {
                     <div className="chat-single-message left">
                         <img
                             src="assets/images/chat/11.png"
-                            alt="image"
+                            alt="image_icon"
                             className="avatar-lg object-fit-cover rounded-circle"
                         />
                         <div className="chat-message-content">
@@ -232,7 +232,7 @@ const ChatProfileLayer = () => {
             </div>
         </div>
 
-    )
-}
+    );
+};
 
-export default ChatProfileLayer
+export default ChatProfileLayer;

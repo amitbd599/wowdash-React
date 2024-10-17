@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const Paypal = () => {
     return (
@@ -78,13 +78,13 @@ const Paypal = () => {
                             </label>
                             <select
                                 className="form-control radius-8 form-select"
-                                id="currency"
+                                id="currency" defaultValue="USD"
                             >
-                                <option selected="" disabled="">
+                                <option value="USD">
                                     USD
                                 </option>
-                                <option>TK</option>
-                                <option>Rupee</option>
+                                <option value="TK">TK</option>
+                                <option value="Rupee">Rupee</option>
                             </select>
                         </div>
                         <div className="col-sm-6">
@@ -149,7 +149,7 @@ const Paypal = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default Paypal
+export default Paypal;

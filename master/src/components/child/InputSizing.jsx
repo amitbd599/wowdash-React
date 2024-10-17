@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const InputSizing = () => {
     return (
@@ -90,11 +90,11 @@ const InputSizing = () => {
                         <div className="col-12">
                             <label className="form-label">Input with Phone </label>
                             <div className="form-mobile-field">
-                                <select className="form-select">
-                                    <option>US</option>
-                                    <option>US</option>
-                                    <option>US</option>
-                                    <option>US</option>
+                                <select className="form-select" defaultValue={"US"}>
+                                    <option value={"US"}>US</option>
+                                    <option value={"UK"}>UK</option>
+                                    <option value={"BD"}>BD</option>
+                                    <option value={"EU"}>EU</option>
                                 </select>
                                 <input
                                     type="text"
@@ -112,7 +112,7 @@ const InputSizing = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default InputSizing
+export default InputSizing;

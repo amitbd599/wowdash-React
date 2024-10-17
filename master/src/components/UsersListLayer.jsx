@@ -1,6 +1,6 @@
-import { Icon } from '@iconify/react/dist/iconify.js'
-import React from 'react'
-import { Link } from 'react-router-dom'
+import { Icon } from '@iconify/react/dist/iconify.js';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const UsersListLayer = () => {
     return (
@@ -8,17 +8,20 @@ const UsersListLayer = () => {
             <div className="card-header border-bottom bg-base py-16 px-24 d-flex align-items-center flex-wrap gap-3 justify-content-between">
                 <div className="d-flex align-items-center flex-wrap gap-3">
                     <span className="text-md fw-medium text-secondary-light mb-0">Show</span>
-                    <select className="form-select form-select-sm w-auto ps-12 py-6 radius-12 h-40-px">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                        <option>6</option>
-                        <option>7</option>
-                        <option>8</option>
-                        <option>9</option>
-                        <option>10</option>
+                    <select className="form-select form-select-sm w-auto ps-12 py-6 radius-12 h-40-px" defaultValue="Select Number">
+                        <option value="Select Number" disabled>
+                            Select Number
+                        </option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
                     </select>
                     <form className="navbar-search">
                         <input
@@ -29,10 +32,12 @@ const UsersListLayer = () => {
                         />
                         <Icon icon="ion:search-outline" className="icon" />
                     </form>
-                    <select className="form-select form-select-sm w-auto ps-12 py-6 radius-12 h-40-px">
-                        <option>Status</option>
-                        <option>Active</option>
-                        <option>Inactive</option>
+                    <select className="form-select form-select-sm w-auto ps-12 py-6 radius-12 h-40-px" defaultValue="Select Status">
+                        <option value="Select Status" disabled>
+                            Select Status
+                        </option>
+                        <option value="Active">Active</option>
+                        <option value="Inactive">Inactive</option>
                     </select>
                 </div>
                 <Link
@@ -836,7 +841,7 @@ const UsersListLayer = () => {
             </div>
         </div>
 
-    )
-}
+    );
+};
 
-export default UsersListLayer
+export default UsersListLayer;

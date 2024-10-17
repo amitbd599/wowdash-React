@@ -1,6 +1,6 @@
-import { Icon } from '@iconify/react/dist/iconify.js'
-import React from 'react'
-import { Link } from 'react-router-dom'
+import { Icon } from '@iconify/react/dist/iconify.js';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const LanguageLayer = () => {
     return (
@@ -11,17 +11,23 @@ const LanguageLayer = () => {
                         <span className="text-md fw-medium text-secondary-light mb-0">
                             Show
                         </span>
-                        <select className="form-select form-select-sm w-auto ps-12 py-6 radius-12 h-40-px">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                            <option>6</option>
-                            <option>7</option>
-                            <option>8</option>
-                            <option>9</option>
-                            <option>10</option>
+                        <select
+                            className="form-select form-select-sm w-auto ps-12 py-6 radius-12 h-40-px"
+                            defaultValue="Select a number"
+                        >
+                            <option value="Select a number" disabled>
+                                Select a number
+                            </option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
                         </select>
                         <form className="navbar-search">
                             <input
@@ -486,12 +492,13 @@ const LanguageLayer = () => {
                                         <select
                                             className="form-control radius-8 form-select"
                                             id="country"
+                                            defaultValue="Select One"
                                         >
-                                            <option selected="" disabled="">
+                                            <option value="Select One" disabled>
                                                 Select One
                                             </option>
-                                            <option>ON</option>
-                                            <option>OFF</option>
+                                            <option value="ON">ON</option>
+                                            <option value="OFF">OFF</option>
                                         </select>
                                     </div>
                                     <div className="d-flex align-items-center justify-content-center gap-3 mt-24">
@@ -562,12 +569,13 @@ const LanguageLayer = () => {
                                         <select
                                             className="form-control radius-8 form-select"
                                             id="editcountry"
+                                            defaultValue="Select One"
                                         >
-                                            <option selected="" disabled="">
+                                            <option value="Select One" disabled>
                                                 Select One
                                             </option>
-                                            <option>ON</option>
-                                            <option>OFF</option>
+                                            <option value="ON">ON</option>
+                                            <option value="OFF">OFF</option>
                                         </select>
                                     </div>
                                     <div className="d-flex align-items-center justify-content-center gap-3 mt-24">
@@ -591,7 +599,7 @@ const LanguageLayer = () => {
                 </div>
             </div>
         </>
-    )
-}
+    );
+};
 
-export default LanguageLayer
+export default LanguageLayer;

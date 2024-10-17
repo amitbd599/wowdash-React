@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const NumberingWizard = () => {
     return (
@@ -304,77 +304,77 @@ const NumberingWizard = () => {
                                         <div className="row gy-4">
                                             <div className="col-sm-4">
                                                 <div className="position-relative">
-                                                    <select className="form-control form-select">
-                                                        <option value="">Date</option>
-                                                        <option value="">1</option>
-                                                        <option value="">2</option>
-                                                        <option value="">3</option>
-                                                        <option value="">4</option>
-                                                        <option value="">5</option>
-                                                        <option value="">6</option>
-                                                        <option value="">7</option>
-                                                        <option value="">8</option>
-                                                        <option value="">9</option>
-                                                        <option value="">10</option>
-                                                        <option value="">11</option>
-                                                        <option value="">12</option>
-                                                        <option value="">13</option>
-                                                        <option value="">14</option>
-                                                        <option value="">15</option>
-                                                        <option value="">16</option>
-                                                        <option value="">17</option>
-                                                        <option value="">18</option>
-                                                        <option value="">19</option>
-                                                        <option value="">20</option>
-                                                        <option value="">21</option>
-                                                        <option value="">22</option>
-                                                        <option value="">23</option>
-                                                        <option value="">24</option>
-                                                        <option value="">25</option>
-                                                        <option value="">26</option>
-                                                        <option value="">27</option>
-                                                        <option value="">28</option>
-                                                        <option value="">29</option>
-                                                        <option value="">30</option>
-                                                        <option value="">31</option>
+                                                    <select className="form-control form-select" defaultValue="1">
+                                                        <option value="Date">Date</option>
+                                                        <option value="1">1</option>
+                                                        <option value="3">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                        <option value="6">6</option>
+                                                        <option value="7">7</option>
+                                                        <option value="8">8</option>
+                                                        <option value="9">9</option>
+                                                        <option value="10">10</option>
+                                                        <option value="11">11</option>
+                                                        <option value="12">12</option>
+                                                        <option value="13">13</option>
+                                                        <option value="14">14</option>
+                                                        <option value="15">15</option>
+                                                        <option value="16">16</option>
+                                                        <option value="17">17</option>
+                                                        <option value="18">18</option>
+                                                        <option value="19">19</option>
+                                                        <option value="20">20</option>
+                                                        <option value="21">21</option>
+                                                        <option value="22">22</option>
+                                                        <option value="23">23</option>
+                                                        <option value="24">24</option>
+                                                        <option value="25">25</option>
+                                                        <option value="26">26</option>
+                                                        <option value="27">27</option>
+                                                        <option value="28">28</option>
+                                                        <option value="29">29</option>
+                                                        <option value="30">30</option>
+                                                        <option value="31">31</option>
                                                     </select>
                                                 </div>
                                             </div>
                                             <div className="col-sm-4">
                                                 <div className="position-relative">
-                                                    <select className="form-control form-select">
-                                                        <option value="">Month</option>
-                                                        <option value="">jan</option>
-                                                        <option value="">Feb</option>
-                                                        <option value="">March</option>
-                                                        <option value="">April</option>
-                                                        <option value="">May</option>
-                                                        <option value="">June</option>
-                                                        <option value="">Jully</option>
-                                                        <option value="">August</option>
-                                                        <option value="">Sept</option>
-                                                        <option value="">Oct</option>
-                                                        <option value="">Nov</option>
-                                                        <option value="">Dec</option>
+                                                    <select className="form-control form-select" defaultValue="Month">
+                                                        <option value="Month">Month</option>
+                                                        <option value="jan">jan</option>
+                                                        <option value="Feb">Feb</option>
+                                                        <option value="March">March</option>
+                                                        <option value="April">April</option>
+                                                        <option value="May">May</option>
+                                                        <option value="June">June</option>
+                                                        <option value="July">July</option>
+                                                        <option value="August">August</option>
+                                                        <option value="Sept">Sept</option>
+                                                        <option value="Oct">Oct</option>
+                                                        <option value="Nov">Nov</option>
+                                                        <option value="Dec">Dec</option>
                                                     </select>
                                                 </div>
                                             </div>
                                             <div className="col-sm-4">
                                                 <div className="position-relative">
-                                                    <select className="form-control form-select">
-                                                        <option value="">Years</option>
-                                                        <option value="">2019</option>
-                                                        <option value="">2020</option>
-                                                        <option value="">2021</option>
-                                                        <option value="">2022</option>
-                                                        <option value="">2023</option>
-                                                        <option value="">2024</option>
-                                                        <option value="">2025</option>
-                                                        <option value="">2026</option>
-                                                        <option value="">2027</option>
-                                                        <option value="">2028</option>
-                                                        <option value="">2029</option>
-                                                        <option value="">2030</option>
+                                                    <select className="form-control form-select" defaultValue="2019">
+                                                        <option value="Years">Years</option>
+                                                        <option value="2019">2019</option>
+                                                        <option value="2020">2020</option>
+                                                        <option value="2021">2021</option>
+                                                        <option value="2022">2022</option>
+                                                        <option value="2023">2023</option>
+                                                        <option value="2024">2024</option>
+                                                        <option value="2025">2025</option>
+                                                        <option value="2026">2026</option>
+                                                        <option value="2027">2027</option>
+                                                        <option value="2028">2028</option>
+                                                        <option value="2029">2029</option>
+                                                        <option value="2030">2030</option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -429,7 +429,7 @@ const NumberingWizard = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default NumberingWizard
+export default NumberingWizard;

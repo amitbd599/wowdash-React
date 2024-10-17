@@ -1,5 +1,5 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const TotalBalanceOne = () => {
     return (
@@ -67,10 +67,10 @@ const TotalBalanceOne = () => {
                                         placeholder="Estimated Value"
                                     />
                                     <div className="input-group-text bg-neutral-50 border-0 fw-normal text-md ps-1 pe-1">
-                                        <select className="form-select form-select-sm w-auto bg-transparent fw-bolder border-0 text-secondary-light">
-                                            <option className="bg-base">BTC</option>
-                                            <option className="bg-base">LTC</option>
-                                            <option className="bg-base">ETC</option>
+                                        <select className="form-select form-select-sm w-auto bg-transparent fw-bolder border-0 text-secondary-light" defaultValue="BTC">
+                                            <option className="bg-base" value="BTC">BTC</option>
+                                            <option className="bg-base" value="LTC">LTC</option>
+                                            <option className="bg-base" value="ETC">ETC</option>
                                         </select>
                                     </div>
                                 </div>
@@ -90,11 +90,11 @@ const TotalBalanceOne = () => {
                                         placeholder="Trade Value"
                                     />
                                     <div className="input-group-text bg-neutral-50 border-0 fw-normal text-md ps-1 pe-1">
-                                        <select className="form-select form-select-sm w-auto bg-transparent fw-bolder border-0 text-secondary-light">
-                                            <option className="bg-base">USD</option>
-                                            <option className="bg-base">BTC</option>
-                                            <option className="bg-base">LTC</option>
-                                            <option className="bg-base">ETC</option>
+                                        <select className="form-select form-select-sm w-auto bg-transparent fw-bolder border-0 text-secondary-light" defaultValue="USD">
+                                            <option className="bg-base" value="USD">USD</option>
+                                            <option className="bg-base" value="BTC">BTC</option>
+                                            <option className="bg-base" value="LTC">LTC</option>
+                                            <option className="bg-base" value="ETC">ETC</option>
                                         </select>
                                     </div>
                                 </div>
@@ -147,11 +147,11 @@ const TotalBalanceOne = () => {
                                         placeholder="Estimated Value"
                                     />
                                     <div className="input-group-text bg-neutral-50 border-0 fw-normal text-md ps-1 pe-1">
-                                        <select className="form-select form-select-sm w-auto bg-transparent fw-bolder border-0 text-secondary-light">
-                                            <option>BTC</option>
-                                            <option>LTC</option>
-                                            <option>USD</option>
-                                            <option>ETC</option>
+                                        <select className="form-select form-select-sm w-auto bg-transparent fw-bolder border-0 text-secondary-light" defaultValue="BTC">
+                                            <option value="BTC">BTC</option>
+                                            <option value="LTC">LTC</option>
+                                            <option value="USD">USD</option>
+                                            <option value="ETC">ETC</option>
                                         </select>
                                     </div>
                                 </div>
@@ -171,11 +171,11 @@ const TotalBalanceOne = () => {
                                         placeholder="Trade Value"
                                     />
                                     <div className="input-group-text bg-neutral-50 border-0 fw-normal text-md ps-1 pe-1">
-                                        <select className="form-select form-select-sm w-auto bg-transparent fw-bolder border-0 text-secondary-light">
-                                            <option>BTC</option>
-                                            <option>LTC</option>
-                                            <option>USD</option>
-                                            <option>ETC</option>
+                                        <select className="form-select form-select-sm w-auto bg-transparent fw-bolder border-0 text-secondary-light" defaultValue="BTC">
+                                            <option value="BTC">BTC</option>
+                                            <option value="LTC">LTC</option>
+                                            <option value="USD">USD</option>
+                                            <option value="ETC">ETC</option>
                                         </select>
                                     </div>
                                 </div>
@@ -208,7 +208,7 @@ const TotalBalanceOne = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default TotalBalanceOne
+export default TotalBalanceOne;
