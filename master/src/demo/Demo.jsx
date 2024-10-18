@@ -213,6 +213,8 @@ const Demo = () => {
 /* Media Breakpoint for Each Device End */
 /* ============================ Mixins Css End ============================ */
 /* ================================= Button Css Start =========================== */
+
+
 .btn-check:checked + .btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check) + .btn:active {
     color: none;
     background-color: none;
@@ -6635,6 +6637,10 @@ button:focus {
      z-index: 99000 !important;
 }
 
+.demo .banner__content h1{
+font-size: 52px !important;
+}
+
 
     
     `;
@@ -6737,7 +6743,7 @@ button:focus {
 
 
     return (
-        <>
+        <section className='demo'>
             <ScrollToTop smooth width={20} color="#477EFF" />
             <>
                 {loading && (
@@ -6875,7 +6881,7 @@ button:focus {
                                             Dashboard{" "}
                                         </h6>
                                         <h1 className="mb-24 wow bounceIn">
-                                            WowDash React Js Admin Dashboard Multipurpose Bootstrap 5 Template{" "}
+                                            WowDash React Js Admin Dashboard Multipurpose Template{" "}
                                         </h1>
                                         <p className="max-w-772 ms-auto me-auto wow bounceInUp">
                                             Wowdash React Js is a developer-friendly, ready-to-use admin template
@@ -6938,7 +6944,7 @@ button:focus {
                                 <span className="counter-item__icon mb-12">
                                     <img src="assets_demo/images/icons/counter-icon1.png" alt="" />
                                 </span>
-                                <h5 className="mb-4 counter-number">5</h5>
+                                <h5 className="mb-4 counter-number">7</h5>
                                 <span className="counter-item__text">Awesome Dashboard</span>
                             </div>
                             <div className="counter-item text-center py-24 px-8">
@@ -6952,14 +6958,14 @@ button:focus {
                                 <span className="counter-item__icon mb-12">
                                     <img src="assets_demo/images/icons/counter-icon3.png" alt="" />
                                 </span>
-                                <h5 className="mb-4 counter-number">65+</h5>
+                                <h5 className="mb-4 counter-number">80+</h5>
                                 <span className="counter-item__text">All Other Pages</span>
                             </div>
                             <div className="counter-item text-center py-24 px-8">
                                 <span className="counter-item__icon mb-12">
                                     <img src="assets_demo/images/icons/counter-icon4.png" alt="" />
                                 </span>
-                                <h5 className="mb-4 counter-number">100+</h5>
+                                <h5 className="mb-4 counter-number">260+</h5>
                                 <span className="counter-item__text">Reusable Components</span>
                             </div>
                         </div>
@@ -7831,7 +7837,7 @@ button:focus {
                     </div>
                 </div>
             )}
-        </>
+        </section>
 
     );
 };
