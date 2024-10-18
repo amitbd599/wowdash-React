@@ -1,6 +1,6 @@
-import { Icon } from '@iconify/react/dist/iconify.js'
-import React from 'react'
-import { Link } from 'react-router-dom'
+import { Icon } from '@iconify/react/dist/iconify.js';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const CodeGeneratorNewLayer = () => {
     return (
@@ -199,7 +199,7 @@ const CodeGeneratorNewLayer = () => {
             </div>
         </div>
 
-    )
-}
+    );
+};
 
-export default CodeGeneratorNewLayer
+export default CodeGeneratorNewLayer;

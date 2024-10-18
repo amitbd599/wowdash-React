@@ -80,6 +80,7 @@ import WalletPage from "./pages/WalletPage";
 import WidgetsPage from "./pages/WidgetsPage";
 import WizardPage from "./pages/WizardPage";
 import RouteScrollToTop from "./helper/RouteScrollToTop";
+import TextGeneratorNewPage from "./pages/TextGeneratorNewPage";
 
 
 function App() {
@@ -156,6 +157,7 @@ function App() {
         <Route exact path="/tabs" element={<TabsPage />} />
         <Route exact path="/tags" element={<TagsPage />} />
         <Route exact path="/terms-condition" element={<TermsConditionPage />} />
+        <Route exact path="/text-generator-new" element={<TextGeneratorNewPage />} />
         <Route exact path="/text-generator" element={<TextGeneratorPage />} />
         <Route exact path="/theme" element={<ThemePage />} />
         <Route exact path="/tooltip" element={<TooltipPage />} />

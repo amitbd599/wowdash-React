@@ -4,8 +4,8 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 import ThemeToggleButton from "../helper/ThemeToggleButton";
 
 const MasterLayout = ({ children }) => {
-  let [sidebarActive, seSidebarActive] = useState(false)
-  let [mobileMenu, setMobileMenu] = useState(false)
+  let [sidebarActive, seSidebarActive] = useState(false);
+  let [mobileMenu, setMobileMenu] = useState(false);
   const location = useLocation(); // Hook to get the current route
 
   useEffect(() => {
@@ -67,12 +67,12 @@ const MasterLayout = ({ children }) => {
 
 
   let sidebarControl = () => {
-    seSidebarActive(!sidebarActive)
-  }
+    seSidebarActive(!sidebarActive);
+  };
 
   let mobileMenuControl = () => {
-    setMobileMenu(!mobileMenu)
-  }
+    setMobileMenu(!mobileMenu);
+  };
 
 
 
