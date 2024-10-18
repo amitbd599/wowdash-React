@@ -134,7 +134,7 @@ const CodeGeneratorLayer = () => {
                             </li>
                             <li className="mb-0">
                                 <Link
-                                    to="/"
+                                    to="/index"
                                     className="text-line-1 text-secondary-light text-hover-primary-600"
                                 >
                                     Calorie-dense foods: Needs, healthy

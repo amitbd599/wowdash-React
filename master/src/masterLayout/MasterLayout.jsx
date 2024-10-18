@@ -4,8 +4,8 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 import ThemeToggleButton from "../helper/ThemeToggleButton";
 
 const MasterLayout = ({ children }) => {
-  let [sidebarActive, seSidebarActive] = useState(false)
-  let [mobileMenu, setMobileMenu] = useState(false)
+  let [sidebarActive, seSidebarActive] = useState(false);
+  let [mobileMenu, setMobileMenu] = useState(false);
   const location = useLocation(); // Hook to get the current route
 
   useEffect(() => {
@@ -67,12 +67,12 @@ const MasterLayout = ({ children }) => {
 
 
   let sidebarControl = () => {
-    seSidebarActive(!sidebarActive)
-  }
+    seSidebarActive(!sidebarActive);
+  };
 
   let mobileMenuControl = () => {
-    setMobileMenu(!mobileMenu)
-  }
+    setMobileMenu(!mobileMenu);
+  };
 
 
 
@@ -84,7 +84,7 @@ const MasterLayout = ({ children }) => {
           <Icon icon="radix-icons:cross-2" />
         </button>
         <div>
-          <Link to="/" className="sidebar-logo">
+          <Link to="/index" className="sidebar-logo">
             <img
               src="assets/images/logo.png"
               alt="site logo"
@@ -111,7 +111,7 @@ const MasterLayout = ({ children }) => {
               </Link>
               <ul className="sidebar-submenu">
                 <li>
-                  <NavLink to="/" className={(navData) =>
+                  <NavLink to="/index" className={(navData) =>
                     navData.isActive ? "active-page" : ""
                   }>
                     <i className="ri-circle-fill circle-icon text-primary-600 w-auto" />AI

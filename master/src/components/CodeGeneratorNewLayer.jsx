@@ -1,6 +1,6 @@
-import { Icon } from '@iconify/react/dist/iconify.js'
-import React from 'react'
-import { Link } from 'react-router-dom'
+import { Icon } from '@iconify/react/dist/iconify.js';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const CodeGeneratorNewLayer = () => {
     return (
@@ -134,7 +134,7 @@ const CodeGeneratorNewLayer = () => {
                             </li>
                             <li className="mb-0">
                                 <Link
-                                    to="/"
+                                    to="/index"
                                     className="text-line-1 text-secondary-light text-hover-primary-600"
                                 >
                                     Calorie-dense foods: Needs, healthy
@@ -199,7 +199,7 @@ const CodeGeneratorNewLayer = () => {
             </div>
         </div>
 
-    )
-}
+    );
+};
 
-export default CodeGeneratorNewLayer
+export default CodeGeneratorNewLayer;
