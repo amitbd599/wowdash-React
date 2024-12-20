@@ -4669,7 +4669,103 @@ const useReactApexChart = () => {
     },
   ];
 
+  let paymentStatusChartOptionsFour = {
+    colors: ["#45B369", "#FF9F29"],
+    labels: ["Active", "New", "Total"],
+
+    legend: {
+      show: false,
+    },
+    chart: {
+      type: "bar",
+      height: 260,
+      toolbar: {
+        show: false,
+      },
+    },
+    grid: {
+      show: true,
+      borderColor: "#D1D5DB",
+      strokeDashArray: 4, // Use a number for dashed style
+      position: "back",
+    },
+    plotOptions: {
+      bar: {
+        borderRadius: 4,
+        columnWidth: 8,
+      },
+    },
+    dataLabels: {
+      enabled: false,
+    },
+    states: {
+      hover: {
+        filter: {
+          type: "none",
+        },
+      },
+    },
+    stroke: {
+      show: true,
+      width: 0,
+      colors: ["transparent"],
+    },
+    xaxis: {
+      categories: ["Mon", "Tues", "Wed", "Thurs", "Fri", "Sat", "Sun"],
+    },
+    fill: {
+      opacity: 1,
+      width: 18,
+    },
+  };
+
+  let paymentStatusChartSeriesFour = [
+    {
+      name: "Net Profit",
+      data: [44, 100, 40, 56, 30, 58, 50],
+    },
+    {
+      name: "Free Cash",
+      data: [60, 120, 60, 90, 50, 95, 90],
+    },
+  ];
+
+  let radialMultipleBarOptions = {
+    chart: {
+      height: 300,
+      type: "radialBar",
+    },
+    colors: ["#3D7FF9", "#ff9f29", "#16a34a"],
+    stroke: {
+      lineCap: "round",
+    },
+    plotOptions: {
+      radialBar: {
+        hollow: {
+          size: "10%", // Adjust this value to control the bar width
+        },
+        dataLabels: {
+          name: {
+            fontSize: "16px",
+          },
+          value: {
+            fontSize: "16px",
+          },
+        },
+        track: {
+          margin: 20, // Space between the bars
+        },
+      },
+    },
+    labels: ["Cardiology", "Psychiatry", "Pediatrics"],
+  };
+  let radialMultipleBarSeries = [80, 40, 10];
+
   return {
+    radialMultipleBarOptions,
+    radialMultipleBarSeries,
+    paymentStatusChartOptionsFour,
+    paymentStatusChartSeriesFour,
     chartSeries,
     chartOptions,
     barChartSeries,

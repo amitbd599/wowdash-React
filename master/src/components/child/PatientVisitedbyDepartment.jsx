@@ -1,6 +1,10 @@
 import React from "react";
+import useReactApexChart from "../../hook/useReactApexChart";
+import ReactApexChart from "react-apexcharts";
 
 const PatientVisitedDepartment = () => {
+  let { radialMultipleBarOptions, radialMultipleBarSeries } =
+    useReactApexChart();
   return (
     <div className='col-xxl-6'>
       <div className='card h-100'>
@@ -12,7 +16,15 @@ const PatientVisitedDepartment = () => {
           </div>
         </div>
         <div className='card-body p-24 d-flex align-items-center gap-16'>
-          <div id='radialMultipleBar' />
+          <div id='radialMultipleBar'>
+            <ReactApexChart
+              options={radialMultipleBarOptions}
+              series={radialMultipleBarSeries}
+              type='radialBar'
+              height={300}
+              width={"100%"}
+            />
+          </div>
           <ul className='d-flex flex-column gap-12'>
             <li>
               <span className='text-lg'>
