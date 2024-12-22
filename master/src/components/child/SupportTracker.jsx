@@ -18,7 +18,7 @@ const SupportTracker = () => {
               <option>Today</option>
             </select>
           </div>
-          <div className='mt-32 d-flex flex-wrap gap-24 align-items-center justify-content-between'>
+          <div className='mt-32 d-flex  gap-24 align-items-center justify-content-between'>
             <div className='d-flex flex-column gap-24'>
               <div className='d-flex align-items-center gap-3'>
                 <div className='w-40-px h-40-px rounded-circle d-flex justify-content-center align-items-center bg-primary-100 flex-shrink-0'>
