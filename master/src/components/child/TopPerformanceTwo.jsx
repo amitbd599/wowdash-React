@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const TopPerformanceTwo = () => {
   return (
@@ -7,8 +8,8 @@ const TopPerformanceTwo = () => {
         <div className='card-header border-bottom'>
           <div className='d-flex align-items-center flex-wrap gap-2 justify-content-between'>
             <h6 className='mb-2 fw-bold text-lg mb-0'>Doctors List</h6>
-            <a
-              href='javascript:void(0)'
+            <Link
+              to='#'
               className='text-primary-600 hover-text-primary d-flex align-items-center gap-1'
             >
               View All
@@ -16,7 +17,7 @@ const TopPerformanceTwo = () => {
                 icon='solar:alt-arrow-right-linear'
                 className='icon'
               />
-            </a>
+            </Link>
           </div>
         </div>
         <div className='card-body'>

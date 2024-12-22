@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const HealthReportsDocument = () => {
   return (
@@ -9,8 +10,8 @@ const HealthReportsDocument = () => {
             <h6 className='mb-2 fw-bold text-lg mb-0'>
               Health Reports Document
             </h6>
-            <a
-              href='javascript:void(0)'
+            <Link
+              to='#'
               className='text-primary-600 hover-text-primary d-flex align-items-center gap-1'
             >
               View All
@@ -18,7 +19,7 @@ const HealthReportsDocument = () => {
                 icon='solar:alt-arrow-right-linear'
                 className='icon'
               />
-            </a>
+            </Link>
           </div>
         </div>
         <div className='card-body'>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const LatestAppointmentsOne = () => {
   return (
@@ -6,8 +7,8 @@ const LatestAppointmentsOne = () => {
       <div className='card h-100'>
         <div className='card-header border-bottom bg-base py-16 px-24 d-flex align-items-center justify-content-between'>
           <h6 className='text-lg fw-semibold mb-0'>Latest Appointments</h6>
-          <a
-            href='javascript:void(0)'
+          <Link
+            to='#'
             className='text-primary-600 hover-text-primary d-flex align-items-center gap-1'
           >
             View All
@@ -15,7 +16,7 @@ const LatestAppointmentsOne = () => {
               icon='solar:alt-arrow-right-linear'
               className='icon'
             />
-          </a>
+          </Link>
         </div>
         <div className='card-body p-0'>
           <div className='table-responsive scroll-sm'>
