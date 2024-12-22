@@ -1,6 +1,9 @@
 import React from "react";
+import useReactApexChart from "../../hook/useReactApexChart";
+import ReactApexChart from "react-apexcharts";
 
 const RevenueStatisticOne = () => {
+  let { revenueChartOptionsOne, revenueChartSeriesOne } = useReactApexChart();
   return (
     <div className='col-xxl-6'>
       <div className='card h-100'>
@@ -46,7 +49,15 @@ const RevenueStatisticOne = () => {
               </div>
             </li>
           </ul>
-          <div id='revenueChart' className='apexcharts-tooltip-style-1' />
+          <div id='revenueChart' className='apexcharts-tooltip-style-1'>
+            <ReactApexChart
+              options={revenueChartOptionsOne}
+              series={revenueChartSeriesOne}
+              type='area'
+              height={150}
+              width={"100%"}
+            />
+          </div>
         </div>
       </div>
     </div>

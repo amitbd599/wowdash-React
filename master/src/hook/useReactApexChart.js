@@ -4948,7 +4948,148 @@ const useReactApexChart = () => {
     },
   ];
 
+  let revenueChartOptionsOne = {
+    legend: {
+      show: false,
+    },
+    chart: {
+      type: "area",
+      width: "100%",
+      height: 150,
+      toolbar: {
+        show: false,
+      },
+      padding: {
+        left: 0,
+        right: 0,
+        top: 0,
+        bottom: 0,
+      },
+    },
+    dataLabels: {
+      enabled: false,
+    },
+    stroke: {
+      curve: "smooth",
+      width: 3,
+      colors: ["#CD20F9", "#6593FF"], // Use two colors for the lines
+      lineCap: "round",
+    },
+    grid: {
+      show: true,
+      borderColor: "#D1D5DB",
+      strokeDashArray: 1,
+      position: "back",
+      xaxis: {
+        lines: {
+          show: false,
+        },
+      },
+      yaxis: {
+        lines: {
+          show: true,
+        },
+      },
+      row: {
+        colors: undefined,
+        opacity: 0.5,
+      },
+      column: {
+        colors: undefined,
+        opacity: 0.5,
+      },
+      padding: {
+        top: -20,
+        right: 0,
+        bottom: -10,
+        left: 0,
+      },
+    },
+    fill: {
+      type: "gradient",
+      colors: ["#CD20F9", "#6593FF"], // Use two colors for the gradient
+
+      gradient: {
+        shade: "light",
+        type: "vertical",
+        shadeIntensity: 0.5,
+        gradientToColors: [undefined, `${"#6593FF"}00`], // Apply transparency to both colors
+        inverseColors: false,
+        opacityFrom: [0.4, 0.6], // Starting opacity for both colors
+        opacityTo: [0.3, 0.3], // Ending opacity for both colors
+        stops: [0, 100],
+      },
+    },
+
+    markers: {
+      colors: ["#CD20F9", "#6593FF"],
+      strokeWidth: 2,
+      size: 0,
+      hover: {
+        size: 8,
+      },
+    },
+
+    xaxis: {
+      labels: {
+        show: false,
+      },
+      categories: [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec",
+      ],
+      tooltip: {
+        enabled: false,
+      },
+      labels: {
+        formatter: function (value) {
+          return value;
+        },
+        style: {
+          fontSize: "14px",
+        },
+      },
+    },
+    yaxis: {
+      labels: {
+        formatter: function (value) {
+          return "$" + value + "k";
+        },
+        style: {
+          fontSize: "14px",
+        },
+      },
+    },
+    tooltip: {
+      x: {
+        format: "dd/MM/yy HH:mm",
+      },
+    },
+  };
+  let revenueChartSeriesOne = [
+    {
+      name: "series1",
+      data: [6, 20, 15, 48, 28, 55, 28, 52, 25, 32, 15, 25],
+    },
+    {
+      name: "series2",
+      data: [0, 8, 4, 36, 16, 42, 16, 40, 12, 24, 4, 12],
+    },
+  ];
+
   return {
+    revenueChartOptionsOne,
+    revenueChartSeriesOne,
     barChartOptionsOne,
     barChartSeriesOne,
     userOverviewDonutChartOptionsOne,
