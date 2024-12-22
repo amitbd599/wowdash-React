@@ -5222,7 +5222,57 @@ const useReactApexChart = () => {
     },
   ];
 
+  let userOverviewDonutChartOptionsTwo = {
+    colors: ["#FF9F29", "#487FFF", "#45B369", "#9935FE"],
+    labels: ["Purchase", "Sales", "Expense", "Gross Profit"],
+    legend: {
+      show: false,
+    },
+    chart: {
+      type: "donut",
+      height: 270,
+      sparkline: {
+        enabled: true, // Remove whitespace
+      },
+      margin: {
+        top: 0,
+        right: 0,
+        bottom: 0,
+        left: 0,
+      },
+      padding: {
+        top: 0,
+        right: 0,
+        bottom: 0,
+        left: 0,
+      },
+    },
+    stroke: {
+      width: 0,
+    },
+    dataLabels: {
+      enabled: true,
+    },
+    responsive: [
+      {
+        breakpoint: 480,
+        options: {
+          chart: {
+            width: 200,
+          },
+          legend: {
+            position: "bottom",
+          },
+        },
+      },
+    ],
+  };
+
+  let userOverviewDonutChartSeriesTwo = [30, 30, 20, 20];
+
   return {
+    userOverviewDonutChartOptionsTwo,
+    userOverviewDonutChartSeriesTwo,
     incomeExpenseOptions,
     incomeExpenseSeries,
     revenueChartOptionsOne,
