@@ -5165,9 +5165,6 @@ const useReactApexChart = () => {
       },
     },
     xaxis: {
-      labels: {
-        show: false,
-      },
       categories: [
         "Jan",
         "Feb",
