@@ -4809,7 +4809,57 @@ const useReactApexChart = () => {
 
   let statisticsDonutChartSeriesTwo = [30, 25];
 
+  let userOverviewDonutChartOptionsOne = {
+    colors: ["#FF9F29", "#487FFF", "#45B369"],
+    labels: ["Active", "New", "Total"],
+    legend: {
+      show: false,
+    },
+    chart: {
+      type: "donut",
+      height: 270,
+      sparkline: {
+        enabled: true, // Remove whitespace
+      },
+      margin: {
+        top: 0,
+        right: 0,
+        bottom: 0,
+        left: 0,
+      },
+      padding: {
+        top: 0,
+        right: 0,
+        bottom: 0,
+        left: 0,
+      },
+    },
+    stroke: {
+      width: 0,
+    },
+    dataLabels: {
+      enabled: false,
+    },
+    responsive: [
+      {
+        breakpoint: 480,
+        options: {
+          chart: {
+            width: 200,
+          },
+          legend: {
+            position: "bottom",
+          },
+        },
+      },
+    ],
+  };
+
+  let userOverviewDonutChartSeriesOne = [500, 500, 500];
+
   return {
+    userOverviewDonutChartOptionsOne,
+    userOverviewDonutChartSeriesOne,
     statisticsDonutChartOptionsTwo,
     statisticsDonutChartSeriesTwo,
     radialMultipleBarOptions,
