@@ -5270,7 +5270,70 @@ const useReactApexChart = () => {
 
   let userOverviewDonutChartSeriesTwo = [30, 30, 20, 20];
 
+  let purchaseSaleChartOptions = {
+    colors: ["#45B369", "#FF9F29"],
+    labels: ["Active", "New", "Total"],
+
+    legend: {
+      show: false,
+    },
+    chart: {
+      type: "bar",
+      height: 260,
+      toolbar: {
+        show: false,
+      },
+    },
+    grid: {
+      show: true,
+      borderColor: "#D1D5DB",
+      strokeDashArray: 4, // Use a number for dashed style
+      position: "back",
+    },
+    plotOptions: {
+      bar: {
+        borderRadius: 4,
+        columnWidth: 8,
+      },
+    },
+    dataLabels: {
+      enabled: false,
+    },
+    states: {
+      hover: {
+        filter: {
+          type: "none",
+        },
+      },
+    },
+    stroke: {
+      show: true,
+      width: 0,
+      colors: ["transparent"],
+    },
+    xaxis: {
+      categories: ["Mon", "Tues", "Wed", "Thurs", "Fri", "Sat", "Sun"],
+    },
+    fill: {
+      opacity: 1,
+      width: 18,
+    },
+  };
+
+  let purchaseSaleChartSeries = [
+    {
+      name: "Net Profit",
+      data: [44, 100, 40, 56, 30, 58, 50],
+    },
+    {
+      name: "Free Cash",
+      data: [60, 120, 60, 90, 50, 95, 90],
+    },
+  ];
+
   return {
+    purchaseSaleChartOptions,
+    purchaseSaleChartSeries,
     userOverviewDonutChartOptionsTwo,
     userOverviewDonutChartSeriesTwo,
     incomeExpenseOptions,
