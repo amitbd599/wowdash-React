@@ -5084,7 +5084,147 @@ const useReactApexChart = () => {
     },
   ];
 
+  let incomeExpenseOptions = {
+    legend: {
+      show: false,
+    },
+    chart: {
+      type: "area",
+      width: "100%",
+      height: 270,
+      toolbar: {
+        show: false,
+      },
+      padding: {
+        left: 0,
+        right: 0,
+        top: 0,
+        bottom: 0,
+      },
+    },
+    dataLabels: {
+      enabled: false,
+    },
+    stroke: {
+      curve: "smooth",
+      width: 3,
+      colors: ["#487FFF", "#FF9F29"], // Use two colors for the lines
+      lineCap: "round",
+    },
+    grid: {
+      show: true,
+      borderColor: "#D1D5DB",
+      strokeDashArray: 1,
+      position: "back",
+      xaxis: {
+        lines: {
+          show: false,
+        },
+      },
+      yaxis: {
+        lines: {
+          show: true,
+        },
+      },
+      row: {
+        colors: undefined,
+        opacity: 0.5,
+      },
+      column: {
+        colors: undefined,
+        opacity: 0.5,
+      },
+      padding: {
+        top: -20,
+        right: 0,
+        bottom: -10,
+        left: 0,
+      },
+    },
+    fill: {
+      type: "gradient",
+      colors: ["#487FFF", "#FF9F29"], // Use two colors for the gradient
+
+      gradient: {
+        shade: "light",
+        type: "vertical",
+        shadeIntensity: 0.5,
+        gradientToColors: [undefined, `${"#FF9F29"}00`], // Apply transparency to both colors
+        inverseColors: false,
+        opacityFrom: [0.4, 0.6], // Starting opacity for both colors
+        opacityTo: [0.3, 0.3], // Ending opacity for both colors
+        stops: [0, 100],
+      },
+    },
+    markers: {
+      colors: ["#487FFF", "#FF9F29"], // Use two colors for the markers
+      strokeWidth: 3,
+      size: 0,
+      hover: {
+        size: 10,
+      },
+    },
+    xaxis: {
+      labels: {
+        show: false,
+      },
+      categories: [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec",
+      ],
+      tooltip: {
+        enabled: false,
+      },
+      labels: {
+        formatter: function (value) {
+          return value;
+        },
+        style: {
+          fontSize: "14px",
+        },
+      },
+    },
+    yaxis: {
+      labels: {
+        formatter: function (value) {
+          return "$" + value + "k";
+        },
+        style: {
+          fontSize: "14px",
+        },
+      },
+    },
+    tooltip: {
+      x: {
+        format: "dd/MM/yy HH:mm",
+      },
+    },
+  };
+
+  let incomeExpenseSeries = [
+    {
+      name: "series1",
+      data: [48, 35, 50, 32, 48, 40, 55, 50, 60],
+    },
+    {
+      name: "series2",
+      data: [12, 20, 15, 26, 22, 30, 25, 35, 25],
+    },
+  ];
+
   return {
+    incomeExpenseOptions,
+    incomeExpenseSeries,
     revenueChartOptionsOne,
     revenueChartSeriesOne,
     barChartOptionsOne,
