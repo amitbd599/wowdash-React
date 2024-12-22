@@ -83,6 +83,7 @@ import RouteScrollToTop from "./helper/RouteScrollToTop";
 import Demo from "./demo/Demo";
 import TextGeneratorNewPage from "./pages/TextGeneratorNewPage";
 import HomePageEight from "./pages/HomePageEight";
+import HomePageNine from "./pages/HomePageNine";
 
 function App() {
   return (
@@ -98,6 +99,7 @@ function App() {
         <Route exact path='/index-6' element={<HomePageSix />} />
         <Route exact path='/index-7' element={<HomePageSeven />} />
         <Route exact path='/index-8' element={<HomePageEight />} />
+        <Route exact path='/index-9' element={<HomePageNine />} />
 
         {/* SL */}
         <Route exact path='/add-user' element={<AddUserPage />} />
