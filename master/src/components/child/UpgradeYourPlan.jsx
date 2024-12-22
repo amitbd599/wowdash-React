@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const UpgradeYourPlan = () => {
   return (
@@ -13,12 +14,12 @@ const UpgradeYourPlan = () => {
                   <p className='text-white'>
                     Your free trial expired in 7 days
                   </p>
-                  <a
-                    href='#'
+                  <Link
+                    to='#'
                     className='btn py-8 rounded-pill w-100 bg-gradient-blue-warning text-sm'
                   >
                     Upgrade Now
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

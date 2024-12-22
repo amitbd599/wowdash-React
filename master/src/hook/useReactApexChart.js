@@ -4869,7 +4869,7 @@ const useReactApexChart = () => {
       bar: {
         borderRadius: 6,
         horizontal: false,
-        columnWidth: 24,
+
         columnWidth: "40%",
         endingShape: "rounded",
       },
@@ -5031,9 +5031,6 @@ const useReactApexChart = () => {
     },
 
     xaxis: {
-      labels: {
-        show: false,
-      },
       categories: [
         "Jan",
         "Feb",

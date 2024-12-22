@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const TransactionsTwo = () => {
   return (
@@ -7,8 +8,8 @@ const TransactionsTwo = () => {
         <div className='card-body p-24'>
           <div className='d-flex align-items-center flex-wrap gap-2 justify-content-between'>
             <h6 className='mb-2 fw-bold text-lg'>Transactions</h6>
-            <a
-              href='javascript:void(0)'
+            <Link
+              to='#'
               className='text-primary-600 hover-text-primary d-flex align-items-center gap-1'
             >
               View All
@@ -16,7 +17,7 @@ const TransactionsTwo = () => {
                 icon='solar:alt-arrow-right-linear'
                 className='icon'
               />
-            </a>
+            </Link>
           </div>
           <div className='mt-32'>
             <div className='d-flex align-items-center justify-content-between gap-3 mb-24'>
