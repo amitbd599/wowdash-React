@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Slider from "react-slick";
 
 const QuickTransfer = () => {
@@ -36,8 +37,8 @@ const QuickTransfer = () => {
         <div className='px-24 bg-neutral-100 border-bottom-0 py-20 dark-bg-neutral-200'>
           <div className='d-flex align-items-center flex-wrap gap-2 justify-content-between'>
             <h6 className='mb-2 fw-bold text-lg mb-0'>Contacts</h6>
-            <a
-              href='javascript:void(0)'
+            <Link
+              to='#'
               className='text-primary-600 hover-text-primary d-flex align-items-center gap-1'
             >
               View All
@@ -45,7 +46,7 @@ const QuickTransfer = () => {
                 icon='solar:alt-arrow-right-linear'
                 className='icon'
               />
-            </a>
+            </Link>
           </div>
         </div>
         <div className='py-16 px-24'>
