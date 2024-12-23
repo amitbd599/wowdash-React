@@ -5416,7 +5416,36 @@ const useReactApexChart = () => {
     },
   ];
 
+  let expenseStatisticsOptions = {
+    chart: {
+      height: 240,
+      type: "pie",
+    },
+    labels: ["Entertainment", "Bill Expense", "Others", "Investment"],
+    colors: ["#02BCAF", "#F0437D", "#1C52F6", "#43DCFF"],
+    legend: {
+      show: true,
+    },
+    responsive: [
+      {
+        breakpoint: 480,
+        options: {
+          chart: {
+            width: 200,
+          },
+          legend: {
+            position: "bottom",
+          },
+        },
+      },
+    ],
+  };
+
+  let expenseStatisticsSeries = [30, 30, 30, 30];
+
   return {
+    expenseStatisticsOptions,
+    expenseStatisticsSeries,
     balanceStatisticsOptions,
     balanceStatisticsSeries,
     purchaseSaleChartOptions,
