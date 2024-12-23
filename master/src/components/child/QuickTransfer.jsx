@@ -12,7 +12,7 @@ const QuickTransfer = () => {
     infinite: true,
     autoplaySpeed: 2000,
     centerMode: true,
-    autoplay: true,
+    autoplay: false,
   };
   return (
     <div className='card radius-16'>
