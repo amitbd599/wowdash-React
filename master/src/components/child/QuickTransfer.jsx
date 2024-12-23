@@ -1,6 +1,19 @@
 import React from "react";
+import Slider from "react-slick";
 
 const QuickTransfer = () => {
+  const settings = {
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: false,
+    speed: 800,
+    centerPadding: "20px",
+    infinite: true,
+    autoplaySpeed: 2000,
+    centerMode: true,
+    autoplay: true,
+  };
   return (
     <div className='card radius-16'>
       <div className='card-header'>
@@ -37,96 +50,98 @@ const QuickTransfer = () => {
         </div>
         <div className='py-16 px-24'>
           <div className='officer-slider'>
-            <div className='officer-slider__item d-flex flex-column text-center align-items-center justify-content-center'>
-              <div className='officer-slider__thumb w-56-px h-56-px rounded-circle overflow-hidden flex-shrink-0 mx-8'>
-                <img
-                  src='assets/images/home-eleven/officer-img1.png'
-                  alt=''
-                  className='w-100 h-100 object-fit-cover'
-                />
+            <Slider {...settings}>
+              <div className='officer-slider__item d-flex flex-column text-center align-items-center justify-content-center'>
+                <div className='officer-slider__thumb w-56-px h-56-px rounded-circle overflow-hidden flex-shrink-0 mx-8'>
+                  <img
+                    src='assets/images/home-eleven/officer-img1.png'
+                    alt=''
+                    className='w-100 h-100 object-fit-cover'
+                  />
+                </div>
+                <div className='officer-slider__content mt-24 min-w-max-content'>
+                  <h6 className='mb-0 text-xl'>Mr. Bin</h6>
+                  <span className='text-sm text-secondary-light'>
+                    Insurance officer
+                  </span>
+                </div>
               </div>
-              <div className='officer-slider__content mt-24 min-w-max-content'>
-                <h6 className='mb-0 text-xl'>Mr. Bin</h6>
-                <span className='text-sm text-secondary-light'>
-                  Insurance officer
-                </span>
+              <div className='officer-slider__item d-flex flex-column text-center align-items-center justify-content-center'>
+                <div className='officer-slider__thumb w-56-px h-56-px rounded-circle overflow-hidden flex-shrink-0 mx-8'>
+                  <img
+                    src='assets/images/home-eleven/officer-img2.png'
+                    alt=''
+                    className='w-100 h-100 object-fit-cover'
+                  />
+                </div>
+                <div className='officer-slider__content mt-24 min-w-max-content'>
+                  <h6 className='mb-0 text-xl'>Mr. Robiul</h6>
+                  <span className='text-sm text-secondary-light'>
+                    Insurance officer
+                  </span>
+                </div>
               </div>
-            </div>
-            <div className='officer-slider__item d-flex flex-column text-center align-items-center justify-content-center'>
-              <div className='officer-slider__thumb w-56-px h-56-px rounded-circle overflow-hidden flex-shrink-0 mx-8'>
-                <img
-                  src='assets/images/home-eleven/officer-img2.png'
-                  alt=''
-                  className='w-100 h-100 object-fit-cover'
-                />
+              <div className='officer-slider__item d-flex flex-column text-center align-items-center justify-content-center'>
+                <div className='officer-slider__thumb w-56-px h-56-px rounded-circle overflow-hidden flex-shrink-0 mx-8'>
+                  <img
+                    src='assets/images/home-eleven/officer-img3.png'
+                    alt=''
+                    className='w-100 h-100 object-fit-cover'
+                  />
+                </div>
+                <div className='officer-slider__content mt-24 min-w-max-content'>
+                  <h6 className='mb-0 text-xl'>Mr. Deo</h6>
+                  <span className='text-sm text-secondary-light'>
+                    Insurance officer
+                  </span>
+                </div>
               </div>
-              <div className='officer-slider__content mt-24 min-w-max-content'>
-                <h6 className='mb-0 text-xl'>Mr. Robiul</h6>
-                <span className='text-sm text-secondary-light'>
-                  Insurance officer
-                </span>
+              <div className='officer-slider__item d-flex flex-column text-center align-items-center justify-content-center'>
+                <div className='officer-slider__thumb w-56-px h-56-px rounded-circle overflow-hidden flex-shrink-0 mx-8'>
+                  <img
+                    src='assets/images/home-eleven/officer-img4.png'
+                    alt=''
+                    className='w-100 h-100 object-fit-cover'
+                  />
+                </div>
+                <div className='officer-slider__content mt-24 min-w-max-content'>
+                  <h6 className='mb-0 text-xl'>Mr. Riad</h6>
+                  <span className='text-sm text-secondary-light'>
+                    Insurance officer
+                  </span>
+                </div>
               </div>
-            </div>
-            <div className='officer-slider__item d-flex flex-column text-center align-items-center justify-content-center'>
-              <div className='officer-slider__thumb w-56-px h-56-px rounded-circle overflow-hidden flex-shrink-0 mx-8'>
-                <img
-                  src='assets/images/home-eleven/officer-img3.png'
-                  alt=''
-                  className='w-100 h-100 object-fit-cover'
-                />
+              <div className='officer-slider__item d-flex flex-column text-center align-items-center justify-content-center'>
+                <div className='officer-slider__thumb w-56-px h-56-px rounded-circle overflow-hidden flex-shrink-0 mx-8'>
+                  <img
+                    src='assets/images/home-eleven/officer-img5.png'
+                    alt=''
+                    className='w-100 h-100 object-fit-cover'
+                  />
+                </div>
+                <div className='officer-slider__content mt-24 min-w-max-content'>
+                  <h6 className='mb-0 text-xl'>Mr. Alex</h6>
+                  <span className='text-sm text-secondary-light'>
+                    Insurance officer
+                  </span>
+                </div>
               </div>
-              <div className='officer-slider__content mt-24 min-w-max-content'>
-                <h6 className='mb-0 text-xl'>Mr. Deo</h6>
-                <span className='text-sm text-secondary-light'>
-                  Insurance officer
-                </span>
+              <div className='officer-slider__item d-flex flex-column text-center align-items-center justify-content-center'>
+                <div className='officer-slider__thumb w-56-px h-56-px rounded-circle overflow-hidden flex-shrink-0 mx-8'>
+                  <img
+                    src='assets/images/home-eleven/officer-img2.png'
+                    alt=''
+                    className='w-100 h-100 object-fit-cover'
+                  />
+                </div>
+                <div className='officer-slider__content mt-24 min-w-max-content'>
+                  <h6 className='mb-0 text-xl'>Mr. John</h6>
+                  <span className='text-sm text-secondary-light'>
+                    Insurance officer
+                  </span>
+                </div>
               </div>
-            </div>
-            <div className='officer-slider__item d-flex flex-column text-center align-items-center justify-content-center'>
-              <div className='officer-slider__thumb w-56-px h-56-px rounded-circle overflow-hidden flex-shrink-0 mx-8'>
-                <img
-                  src='assets/images/home-eleven/officer-img4.png'
-                  alt=''
-                  className='w-100 h-100 object-fit-cover'
-                />
-              </div>
-              <div className='officer-slider__content mt-24 min-w-max-content'>
-                <h6 className='mb-0 text-xl'>Mr. Riad</h6>
-                <span className='text-sm text-secondary-light'>
-                  Insurance officer
-                </span>
-              </div>
-            </div>
-            <div className='officer-slider__item d-flex flex-column text-center align-items-center justify-content-center'>
-              <div className='officer-slider__thumb w-56-px h-56-px rounded-circle overflow-hidden flex-shrink-0 mx-8'>
-                <img
-                  src='assets/images/home-eleven/officer-img5.png'
-                  alt=''
-                  className='w-100 h-100 object-fit-cover'
-                />
-              </div>
-              <div className='officer-slider__content mt-24 min-w-max-content'>
-                <h6 className='mb-0 text-xl'>Mr. Alex</h6>
-                <span className='text-sm text-secondary-light'>
-                  Insurance officer
-                </span>
-              </div>
-            </div>
-            <div className='officer-slider__item d-flex flex-column text-center align-items-center justify-content-center'>
-              <div className='officer-slider__thumb w-56-px h-56-px rounded-circle overflow-hidden flex-shrink-0 mx-8'>
-                <img
-                  src='assets/images/home-eleven/officer-img2.png'
-                  alt=''
-                  className='w-100 h-100 object-fit-cover'
-                />
-              </div>
-              <div className='officer-slider__content mt-24 min-w-max-content'>
-                <h6 className='mb-0 text-xl'>Mr. John</h6>
-                <span className='text-sm text-secondary-light'>
-                  Insurance officer
-                </span>
-              </div>
-            </div>
+            </Slider>
           </div>
           <form action='#'>
             <div className=''>
