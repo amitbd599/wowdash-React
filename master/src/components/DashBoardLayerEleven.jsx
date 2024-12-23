@@ -1,144 +1,20 @@
 import React from "react";
-import TotalPeriodIncome from "./child/TotalPeriodIncome";
+import UnitCountEight from "./child/UnitCountEight";
+import BalanceStatistic from "./child/BalanceStatistic";
 
 const DashBoardLayerEleven = () => {
   return (
     <>
-      {/* Widgets start */}
-      <div className='row gy-4'>
-        {/* TotalPeriodIncome */}
-        <TotalPeriodIncome />
+      {/* UnitCountEight */}
+      <UnitCountEight />
 
-        <div className='col-xxl-3 col-sm-6'>
-          <div className='card p-3 shadow-2 radius-8 h-100 gradient-deep-two-2 border border-white'>
-            <div className='card-body p-0'>
-              <div className='d-flex flex-wrap align-items-center justify-content-between gap-1 mb-8'>
-                <div className='d-flex align-items-center gap-10'>
-                  <span className='mb-0 w-48-px h-48-px bg-warning-600 flex-shrink-0 text-white d-flex justify-content-center align-items-center rounded-circle h6 mb-0'>
-                    <img
-                      src='assets/images/home-eleven/icons/home-eleven-icon2.svg'
-                      alt=''
-                    />
-                  </span>
-                  <div>
-                    <span className='fw-medium text-secondary-light text-md'>
-                      Total Period Expenses
-                    </span>
-                    <h6 className='fw-semibold mt-2'>$35,000</h6>
-                  </div>
-                </div>
-              </div>
-              <p className='text-sm mb-0 d-flex align-items-center flex-wrap gap-12 mt-12 text-secondary-light'>
-                <span className='bg-success-focus px-6 py-2 rounded-2 fw-medium text-success-main text-sm d-flex align-items-center gap-1'>
-                  <i className='ri-arrow-right-up-line' /> 95%
-                </span>{" "}
-                Last month $1,600.00
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className='col-xxl-3 col-sm-6'>
-          <div className='card p-3 shadow-2 radius-8 h-100 gradient-deep-two-3 border border-white'>
-            <div className='card-body p-0'>
-              <div className='d-flex flex-wrap align-items-center justify-content-between gap-1 mb-8'>
-                <div className='d-flex align-items-center gap-10'>
-                  <span className='mb-0 w-48-px h-48-px bg-lilac-600 flex-shrink-0 text-white d-flex justify-content-center align-items-center rounded-circle h6 mb-0'>
-                    <img
-                      src='assets/images/home-eleven/icons/home-eleven-icon3.svg'
-                      alt=''
-                    />
-                  </span>
-                  <div>
-                    <span className='fw-medium text-secondary-light text-md'>
-                      Net Profit
-                    </span>
-                    <h6 className='fw-semibold mt-2'>$50,000</h6>
-                  </div>
-                </div>
-              </div>
-              <p className='text-sm mb-0 d-flex align-items-center flex-wrap gap-12 mt-12 text-secondary-light'>
-                <span className='bg-danger-focus px-6 py-2 rounded-2 fw-medium text-danger-main text-sm d-flex align-items-center gap-1'>
-                  <i className='ri-arrow-right-down-line' /> 70%
-                </span>{" "}
-                Last month $24,000.00
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className='col-xxl-3 col-sm-6'>
-          <div className='card p-3 shadow-2 radius-8 h-100 gradient-deep-two-4 border border-white'>
-            <div className='card-body p-0'>
-              <div className='d-flex flex-wrap align-items-center justify-content-between gap-1 mb-8'>
-                <div className='d-flex align-items-center gap-10'>
-                  <span className='mb-0 w-48-px h-48-px bg-success-600 flex-shrink-0 text-white d-flex justify-content-center align-items-center rounded-circle h6 mb-0'>
-                    <img
-                      src='assets/images/home-eleven/icons/home-eleven-icon4.svg'
-                      alt=''
-                    />
-                  </span>
-                  <div>
-                    <span className='fw-medium text-secondary-light text-md'>
-                      Total Saving
-                    </span>
-                    <h6 className='fw-semibold mt-2'>$50,000</h6>
-                  </div>
-                </div>
-              </div>
-              <p className='text-sm mb-0 d-flex align-items-center flex-wrap gap-12 mt-12 text-secondary-light'>
-                <span className='bg-success-focus px-6 py-2 rounded-2 fw-medium text-success-main text-sm d-flex align-items-center gap-1'>
-                  <i className='ri-arrow-right-up-line' /> 95%
-                </span>{" "}
-                Last month $2,500.00
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* Widgets end */}
       <div className='mt-24'>
         <div className='row gy-4'>
           <div className='col-xl-8'>
             <div className='row gy-4'>
-              <div className='col-12'>
-                <div className='card h-100'>
-                  <div className='card-body'>
-                    <div className='d-flex align-items-center flex-wrap gap-2 justify-content-between'>
-                      <h6 className='mb-2 fw-bold text-lg mb-0'>
-                        Balance Statistic
-                      </h6>
-                      <select className='form-select form-select-sm w-auto bg-base border text-secondary-light'>
-                        <option>Today</option>
-                        <option>Weekly</option>
-                        <option>Monthly</option>
-                        <option>Yearly</option>
-                      </select>
-                    </div>
-                    <ul className='d-flex flex-wrap align-items-center justify-content-center mt-3 gap-3'>
-                      <li className='d-flex align-items-center gap-2'>
-                        <span className='w-12-px h-12-px rounded-circle bg-primary-600' />
-                        <span className='text-secondary-light text-sm fw-semibold'>
-                          Word:
-                          <span className='text-primary-light fw-bold'>
-                            500
-                          </span>
-                        </span>
-                      </li>
-                      <li className='d-flex align-items-center gap-2'>
-                        <span className='w-12-px h-12-px rounded-circle bg-yellow' />
-                        <span className='text-secondary-light text-sm fw-semibold'>
-                          Image:
-                          <span className='text-primary-light fw-bold'>
-                            300
-                          </span>
-                        </span>
-                      </li>
-                    </ul>
-                    <div className='mt-40'>
-                      <div id='balanceStatistics' className='' />
-                    </div>
-                  </div>
-                </div>
-              </div>
+              {/* BalanceStatistic */}
+              <BalanceStatistic />
+
               <div className='col-md-6'>
                 <div className='card radius-16 h-100'>
                   <div className='card-header'>
