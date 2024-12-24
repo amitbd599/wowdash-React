@@ -94,6 +94,7 @@ import BlogDetailsPage from "./pages/BlogDetailsPage";
 import AddBlogPage from "./pages/AddBlogPage";
 import TestimonialsPage from "./pages/TestimonialsPage";
 import ComingSoonPage from "./pages/ComingSoonPage";
+import AccessDeniedPage from "./pages/AccessDeniedPage";
 
 function App() {
   return (
@@ -156,6 +157,7 @@ function App() {
 
         <Route exact path='/testimonials' element={<TestimonialsPage />} />
         <Route exact path='/coming-soon' element={<ComingSoonPage />} />
+        <Route exact path='/access-denied' element={<AccessDeniedPage />} />
 
         <Route exact path='/image-generator' element={<ImageGeneratorPage />} />
         <Route exact path='/image-upload' element={<ImageUploadPage />} />

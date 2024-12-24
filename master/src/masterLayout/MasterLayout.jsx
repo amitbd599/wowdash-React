@@ -1151,6 +1151,15 @@ const MasterLayout = ({ children }) => {
                 <span>Coming Soon</span>
               </NavLink>
             </li>
+            <li>
+              <NavLink
+                to='/access-denied'
+                className={(navData) => (navData.isActive ? "active-page" : "")}
+              >
+                <Icon icon='octicon:info-24' className='menu-icon' />
+                <span>Access Senied</span>
+              </NavLink>
+            </li>
 
             {/* Settings Dropdown */}
             <li className='dropdown'>
