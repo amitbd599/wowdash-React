@@ -1034,7 +1034,7 @@ const MasterLayout = ({ children }) => {
                     }
                   >
                     <i className='ri-circle-fill circle-icon text-danger-main w-auto' />{" "}
-                    Gallery Grid
+                    Gallery Hover Effect
                   </NavLink>
                 </li>
               </ul>
@@ -1052,6 +1052,65 @@ const MasterLayout = ({ children }) => {
                 <span>Pricing</span>
               </NavLink>
             </li>
+
+            {/* Blog */}
+
+            <li className='dropdown'>
+              <Link to='#'>
+                <Icon
+                  icon='flowbite:users-group-outline'
+                  className='menu-icon'
+                />
+                <span>Blog</span>
+              </Link>
+              <ul className='sidebar-submenu'>
+                <li>
+                  <NavLink
+                    to='/blog'
+                    className={(navData) =>
+                      navData.isActive ? "active-page" : ""
+                    }
+                  >
+                    <i className='ri-circle-fill circle-icon text-primary-600 w-auto' />{" "}
+                    Blog
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to='/gallery'
+                    className={(navData) =>
+                      navData.isActive ? "active-page" : ""
+                    }
+                  >
+                    <i className='ri-circle-fill circle-icon text-warning-main w-auto' />{" "}
+                    Gallery Grid Desc
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to='/gallery-masonry'
+                    className={(navData) =>
+                      navData.isActive ? "active-page" : ""
+                    }
+                  >
+                    <i className='ri-circle-fill circle-icon text-info-main w-auto' />{" "}
+                    Gallery Grid
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to='/gallery-hover'
+                    className={(navData) =>
+                      navData.isActive ? "active-page" : ""
+                    }
+                  >
+                    <i className='ri-circle-fill circle-icon text-danger-main w-auto' />{" "}
+                    Gallery Hover Effect
+                  </NavLink>
+                </li>
+              </ul>
+            </li>
+
             <li>
               <NavLink
                 to='/faq'
