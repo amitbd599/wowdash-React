@@ -88,6 +88,7 @@ import HomePageTen from "./pages/HomePageTen";
 import HomePageEleven from "./pages/HomePageEleven";
 import GalleryGridPage from "./pages/GalleryGridPage";
 import GalleryMasonryPage from "./pages/GalleryMasonryPage";
+import GalleryHoverPage from "./pages/GalleryHoverPage";
 
 function App() {
   return (
@@ -142,6 +143,7 @@ function App() {
         <Route exact path='/gallery' element={<GalleryPage />} />
         <Route exact path='/gallery-grid' element={<GalleryGridPage />} />
         <Route exact path='/gallery-masonry' element={<GalleryMasonryPage />} />
+        <Route exact path='/gallery-hover' element={<GalleryHoverPage />} />
 
         <Route exact path='/image-generator' element={<ImageGeneratorPage />} />
         <Route exact path='/image-upload' element={<ImageUploadPage />} />
