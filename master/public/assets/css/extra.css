@@ -134,28 +134,26 @@ table.dataTable td.dt-type-date {
 
 /* Hide all submenus by default */
 .sidebar-submenu {
-  display: none;
+  /* display: none; */
   list-style: none;
   padding-left: 20px;
   /* Adjust as needed */
 }
 
-/* Show submenu when parent has 'open' class */
-.sidebar-menu .dropdown.open .sidebar-submenu {
+.sidebar-menu .sidebar-submenu {
   display: block;
 }
 
 /* Optional: Add transition for smooth toggle */
-.sidebar-submenu {
-  transition: all 0.3s ease-out;
+.sidebar-menu .dropdown .sidebar-submenu {
+  transition: max-height 0.3s linear;
   overflow: hidden;
-  max-height: 0;
+  max-height: 0px;
 }
 
-.sidebar-menu .dropdown.open .sidebar-submenu {
+/* .sidebar-menu .dropdown.open .sidebar-submenu {
   max-height: 1000px;
-  transition: all 0.3s ease-out;
-}
+} */
 
 .sidebar-menu li > a > i {
   margin-inline-end: 0;

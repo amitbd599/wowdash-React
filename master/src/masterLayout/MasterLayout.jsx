@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import ThemeToggleButton from "../helper/ThemeToggleButton";
@@ -9,7 +9,6 @@ const MasterLayout = ({ children }) => {
   const location = useLocation(); // Hook to get the current route
 
   useEffect(() => {
-    // Function to handle dropdown clicks
     const handleDropdownClick = (event) => {
       event.preventDefault();
       const clickedLink = event.currentTarget;
@@ -23,11 +22,19 @@ const MasterLayout = ({ children }) => {
       const allDropdowns = document.querySelectorAll(".sidebar-menu .dropdown");
       allDropdowns.forEach((dropdown) => {
         dropdown.classList.remove("open");
+        const submenu = dropdown.querySelector(".sidebar-submenu");
+        if (submenu) {
+          submenu.style.maxHeight = "0px"; // Collapse submenu
+        }
       });
 
       // Toggle the clicked dropdown
       if (!isActive) {
         clickedDropdown.classList.add("open");
+        const submenu = clickedDropdown.querySelector(".sidebar-submenu");
+        if (submenu) {
+          submenu.style.maxHeight = `${submenu.scrollHeight}px`; // Expand submenu
+        }
       }
     };
 
@@ -40,7 +47,6 @@ const MasterLayout = ({ children }) => {
       trigger.addEventListener("click", handleDropdownClick);
     });
 
-    // Function to open submenu based on current route
     const openActiveDropdown = () => {
       const allDropdowns = document.querySelectorAll(".sidebar-menu .dropdown");
       allDropdowns.forEach((dropdown) => {
@@ -51,12 +57,16 @@ const MasterLayout = ({ children }) => {
             link.getAttribute("to") === location.pathname
           ) {
             dropdown.classList.add("open");
+            const submenu = dropdown.querySelector(".sidebar-submenu");
+            if (submenu) {
+              submenu.style.maxHeight = `${submenu.scrollHeight}px`; // Expand submenu
+            }
           }
         });
       });
     };
 
-    // Open the submenu that contains the open route
+    // Open the submenu that contains the active route
     openActiveDropdown();
 
     // Cleanup event listeners on unmount
@@ -412,7 +422,7 @@ const MasterLayout = ({ children }) => {
             {/* Crypto Currency Dropdown */}
             <li className='dropdown'>
               <Link to='#'>
-                <i className='ri-robot-2-line mr-10' />
+                <i className='ri-btc-line mr-10' />
                 <span>Crypto Currency</span>
               </Link>
               <ul className='sidebar-submenu'>
@@ -1147,7 +1157,7 @@ const MasterLayout = ({ children }) => {
                 to='/coming-soon'
                 className={(navData) => (navData.isActive ? "active-page" : "")}
               >
-                <Icon icon='octicon:info-24' className='menu-icon' />
+                <i className='ri-rocket-line menu-icon'></i>
                 <span>Coming Soon</span>
               </NavLink>
             </li>
@@ -1156,7 +1166,7 @@ const MasterLayout = ({ children }) => {
                 to='/access-denied'
                 className={(navData) => (navData.isActive ? "active-page" : "")}
               >
-                <Icon icon='octicon:info-24' className='menu-icon' />
+                <i className='ri-folder-lock-line menu-icon'></i>
                 <span>Access Denied</span>
               </NavLink>
             </li>
@@ -1165,7 +1175,7 @@ const MasterLayout = ({ children }) => {
                 to='/maintenance'
                 className={(navData) => (navData.isActive ? "active-page" : "")}
               >
-                <Icon icon='octicon:info-24' className='menu-icon' />
+                <i className='ri-hammer-line menu-icon'></i>
                 <span>Maintenance</span>
               </NavLink>
             </li>
@@ -1174,7 +1184,7 @@ const MasterLayout = ({ children }) => {
                 to='/blank-page'
                 className={(navData) => (navData.isActive ? "active-page" : "")}
               >
-                <Icon icon='octicon:info-24' className='menu-icon' />
+                <i className='ri-checkbox-multiple-blank-line menu-icon'></i>
                 <span>Blank Page</span>
               </NavLink>
             </li>
