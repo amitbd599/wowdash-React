@@ -90,6 +90,7 @@ import GalleryGridPage from "./pages/GalleryGridPage";
 import GalleryMasonryPage from "./pages/GalleryMasonryPage";
 import GalleryHoverPage from "./pages/GalleryHoverPage";
 import BlogPage from "./pages/BlogPage";
+import BlogDetailsPage from "./pages/BlogDetailsPage";
 
 function App() {
   return (
@@ -147,6 +148,7 @@ function App() {
         <Route exact path='/gallery-hover' element={<GalleryHoverPage />} />
 
         <Route exact path='/blog' element={<BlogPage />} />
+        <Route exact path='/blog-details' element={<BlogDetailsPage />} />
 
         <Route exact path='/image-generator' element={<ImageGeneratorPage />} />
         <Route exact path='/image-upload' element={<ImageUploadPage />} />

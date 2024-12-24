@@ -1077,13 +1077,13 @@ const MasterLayout = ({ children }) => {
                 </li>
                 <li>
                   <NavLink
-                    to='/gallery'
+                    to='/blog-details'
                     className={(navData) =>
                       navData.isActive ? "active-page" : ""
                     }
                   >
                     <i className='ri-circle-fill circle-icon text-warning-main w-auto' />{" "}
-                    Gallery Grid Desc
+                    Blog Details
                   </NavLink>
                 </li>
                 <li>
