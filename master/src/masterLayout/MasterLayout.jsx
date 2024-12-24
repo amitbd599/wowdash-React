@@ -1088,24 +1088,13 @@ const MasterLayout = ({ children }) => {
                 </li>
                 <li>
                   <NavLink
-                    to='/gallery-masonry'
+                    to='/add-blog'
                     className={(navData) =>
                       navData.isActive ? "active-page" : ""
                     }
                   >
                     <i className='ri-circle-fill circle-icon text-info-main w-auto' />{" "}
-                    Gallery Grid
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    to='/gallery-hover'
-                    className={(navData) =>
-                      navData.isActive ? "active-page" : ""
-                    }
-                  >
-                    <i className='ri-circle-fill circle-icon text-danger-main w-auto' />{" "}
-                    Gallery Hover Effect
+                    Add Blog
                   </NavLink>
                 </li>
               </ul>
