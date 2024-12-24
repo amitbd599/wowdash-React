@@ -982,15 +982,64 @@ const MasterLayout = ({ children }) => {
               </ul>
             </li>
 
-            <li>
-              <NavLink
-                to='/gallery'
-                className={(navData) => (navData.isActive ? "active-page" : "")}
-              >
-                <Icon icon='solar:gallery-wide-linear' className='menu-icon' />
+            {/* gallery */}
+
+            <li className='dropdown'>
+              <Link to='#'>
+                <Icon
+                  icon='flowbite:users-group-outline'
+                  className='menu-icon'
+                />
                 <span>Gallery</span>
-              </NavLink>
+              </Link>
+              <ul className='sidebar-submenu'>
+                <li>
+                  <NavLink
+                    to='/gallery-grid'
+                    className={(navData) =>
+                      navData.isActive ? "active-page" : ""
+                    }
+                  >
+                    <i className='ri-circle-fill circle-icon text-primary-600 w-auto' />{" "}
+                    Gallery Grid
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to='/gallery'
+                    className={(navData) =>
+                      navData.isActive ? "active-page" : ""
+                    }
+                  >
+                    <i className='ri-circle-fill circle-icon text-warning-main w-auto' />{" "}
+                    Gallery Grid Desc
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to='/gallery-masonry'
+                    className={(navData) =>
+                      navData.isActive ? "active-page" : ""
+                    }
+                  >
+                    <i className='ri-circle-fill circle-icon text-info-main w-auto' />{" "}
+                    Gallery Grid
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to='/gallery-hover'
+                    className={(navData) =>
+                      navData.isActive ? "active-page" : ""
+                    }
+                  >
+                    <i className='ri-circle-fill circle-icon text-danger-main w-auto' />{" "}
+                    Gallery Grid
+                  </NavLink>
+                </li>
+              </ul>
             </li>
+
             <li>
               <NavLink
                 to='/pricing'
