@@ -3,42 +3,20 @@ import hljs from "highlight.js";
 import ReactQuill from "react-quill-new";
 
 const AddBlogLayer = () => {
+  const [imagePreview, setImagePreview] = useState(null);
+
+  const handleFileChange = (e) => {
+    if (e.target.files && e.target.files.length > 0) {
+      const src = URL.createObjectURL(e.target.files[0]);
+      setImagePreview(src);
+    }
+  };
+
+  const handleRemoveImage = () => {
+    setImagePreview(null);
+  };
   const quillRef = useRef(null);
-  const [value, setValue] = useState(`<div id="editor">
-        <p class="">This policy explains how 6amMart website and related applications (the “Site”, “we” or “us”)
-          collects, uses, shares and protects the personal information that we collect through this site or
-          different channels. 6amMart has established the site to link up the users </p>
-        <p><br /></p>
-
-        <h6>Using ChatGPT</h6>
-        <p class="">This policy explains how 6amMart website and related applications (the “Site”, “we” or “us”)
-          collects, uses, shares and protects the personal information that we collect through this site or
-          different channels. 6amMart has established the site to link up the users who need foods or grocery items
-          to be shipped or </p>
-        <p><br /></p>
-
-        <h6>Intellectual Property</h6>
-        <p class="">This policy explains how 6amMart website and related applications (the “Site”, “we” or “us”)
-          collects, uses, shares and protects the personal information that we collect through this site or
-          different channels. 6amMart has established the site to link up the users who need foods or grocery items
-          to be shipped or delivered by the riders from the affiliated restaurants or shops to the desired location.
-          This policy also applies to any mobile applications that we develop for use </p>
-        <p><br /></p>
-
-        <h6>Using ChatGPT</h6>
-        <p class="">This policy explains how 6amMart website and related applications (the “Site”, “we” or “us”)
-          collects, uses, shares and protects the personal information that we collect through this site or
-          different channels. 6amMart has established the site to link up the users who need foods or grocery items
-          to be shipped or delivered by the riders from the affiliated restaurants or shops to the desired location.
-          This policy also applies to any mobile applications that we develop for use with </p>
-        <p><br /></p>
-        <p> our services on the Site, and references to this “Site”, “we” or “us” is intended . grocery items to be
-          shipped or delivered by the riders from the affiliated restaurants or shops to the desired location. This
-          policy also applies to any mobile applications that we develop for use</p>
-
-        <p>Some initial <strong>bold</strong> text</p>
-        <p><br /></p>
-      </div>`);
+  const [value, setValue] = useState(``);
   // eslint-disable-next-line no-unused-vars
   const [isHighlightReady, setIsHighlightReady] = useState(false);
 
@@ -205,39 +183,48 @@ const AddBlogLayer = () => {
               </div>
               <div>
                 <label className='form-label fw-bold text-neutral-900'>
-                  Upload Thumbnail{" "}
+                  Upload Thumbnail
                 </label>
                 <div className='upload-image-wrapper'>
-                  <div className='uploaded-img d-none position-relative h-160-px w-100 border input-form-light radius-8 overflow-hidden border-dashed bg-neutral-50'>
-                    <button
-                      type='button'
-                      className='uploaded-img__remove position-absolute top-0 end-0 z-1 text-2xxl line-height-1 me-8 mt-8 d-flex bg-danger-600 w-40-px h-40-px justify-content-center align-items-center rounded-circle'
+                  {imagePreview ? (
+                    <div className='uploaded-img position-relative h-160-px w-100 border input-form-light radius-8 overflow-hidden border-dashed bg-neutral-50'>
+                      <button
+                        type='button'
+                        className='uploaded-img__remove position-absolute top-0 end-0 z-1 text-2xxl line-height-1 me-8 mt-8 d-flex bg-danger-600 w-40-px h-40-px justify-content-center align-items-center rounded-circle'
+                        onClick={handleRemoveImage}
+                      >
+                        <iconify-icon
+                          icon='radix-icons:cross-2'
+                          className='text-2xl text-white'
+                        ></iconify-icon>
+                      </button>
+                      <img
+                        id='uploaded-img__preview'
+                        className='w-100 h-100 object-fit-cover'
+                        src={imagePreview}
+                        alt='Uploaded'
+                      />
+                    </div>
+                  ) : (
+                    <label
+                      className='upload-file h-160-px w-100 border input-form-light radius-8 overflow-hidden border-dashed bg-neutral-50 bg-hover-neutral-200 d-flex align-items-center flex-column justify-content-center gap-1'
+                      htmlFor='upload-file'
                     >
                       <iconify-icon
-                        icon='radix-icons:cross-2'
-                        className='text-2xl text-white'
+                        icon='solar:camera-outline'
+                        className='text-xl text-secondary-light'
+                      ></iconify-icon>
+                      <span className='fw-semibold text-secondary-light'>
+                        Upload
+                      </span>
+                      <input
+                        id='upload-file'
+                        type='file'
+                        hidden
+                        onChange={handleFileChange}
                       />
-                    </button>
-                    <img
-                      id='uploaded-img__preview'
-                      className='w-100 h-100 object-fit-cover'
-                      src='assets/images/user.png'
-                      alt='image'
-                    />
-                  </div>
-                  <label
-                    className='upload-file h-160-px w-100 border input-form-light radius-8 overflow-hidden border-dashed bg-neutral-50 bg-hover-neutral-200 d-flex align-items-center flex-column justify-content-center gap-1'
-                    htmlFor='upload-file'
-                  >
-                    <iconify-icon
-                      icon='solar:camera-outline'
-                      className='text-xl text-secondary-light'
-                    />
-                    <span className='fw-semibold text-secondary-light'>
-                      Upload
-                    </span>
-                    <input id='upload-file' type='file' hidden='' />
-                  </label>
+                    </label>
+                  )}
                 </div>
               </div>
               <button type='submit' className='btn btn-primary-600 radius-8'>
