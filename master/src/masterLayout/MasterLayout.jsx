@@ -1142,6 +1142,15 @@ const MasterLayout = ({ children }) => {
                 <span>Terms &amp; Conditions</span>
               </NavLink>
             </li>
+            <li>
+              <NavLink
+                to='/coming-soon'
+                className={(navData) => (navData.isActive ? "active-page" : "")}
+              >
+                <Icon icon='octicon:info-24' className='menu-icon' />
+                <span>Coming Soon</span>
+              </NavLink>
+            </li>
 
             {/* Settings Dropdown */}
             <li className='dropdown'>

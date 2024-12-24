@@ -93,6 +93,7 @@ import BlogPage from "./pages/BlogPage";
 import BlogDetailsPage from "./pages/BlogDetailsPage";
 import AddBlogPage from "./pages/AddBlogPage";
 import TestimonialsPage from "./pages/TestimonialsPage";
+import ComingSoonPage from "./pages/ComingSoonPage";
 
 function App() {
   return (
@@ -154,6 +155,7 @@ function App() {
         <Route exact path='/add-blog' element={<AddBlogPage />} />
 
         <Route exact path='/testimonials' element={<TestimonialsPage />} />
+        <Route exact path='/coming-soon' element={<ComingSoonPage />} />
 
         <Route exact path='/image-generator' element={<ImageGeneratorPage />} />
         <Route exact path='/image-upload' element={<ImageUploadPage />} />
