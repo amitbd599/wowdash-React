@@ -1102,6 +1102,18 @@ const MasterLayout = ({ children }) => {
 
             <li>
               <NavLink
+                to='/testimonials'
+                className={(navData) => (navData.isActive ? "active-page" : "")}
+              >
+                <Icon
+                  icon='mage:message-question-mark-round'
+                  className='menu-icon'
+                />
+                <span>Testimonials</span>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
                 to='/faq'
                 className={(navData) => (navData.isActive ? "active-page" : "")}
               >
