@@ -1157,7 +1157,25 @@ const MasterLayout = ({ children }) => {
                 className={(navData) => (navData.isActive ? "active-page" : "")}
               >
                 <Icon icon='octicon:info-24' className='menu-icon' />
-                <span>Access Senied</span>
+                <span>Access Denied</span>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to='/maintenance'
+                className={(navData) => (navData.isActive ? "active-page" : "")}
+              >
+                <Icon icon='octicon:info-24' className='menu-icon' />
+                <span>Maintenance</span>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to='/blank-page'
+                className={(navData) => (navData.isActive ? "active-page" : "")}
+              >
+                <Icon icon='octicon:info-24' className='menu-icon' />
+                <span>Blank Page</span>
               </NavLink>
             </li>
 
