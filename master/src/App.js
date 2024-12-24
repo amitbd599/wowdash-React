@@ -86,7 +86,8 @@ import HomePageEight from "./pages/HomePageEight";
 import HomePageNine from "./pages/HomePageNine";
 import HomePageTen from "./pages/HomePageTen";
 import HomePageEleven from "./pages/HomePageEleven";
-import GalleryGrid from "./pages/GalleryGrid";
+import GalleryGridPage from "./pages/GalleryGridPage";
+import GalleryMasonryPage from "./pages/GalleryMasonryPage";
 
 function App() {
   return (
@@ -138,7 +139,9 @@ function App() {
         <Route exact path='/form-validation' element={<FormValidationPage />} />
         <Route exact path='/form' element={<FormPage />} />
 
-        <Route exact path='/gallery-grid' element={<GalleryGrid />} />
+        <Route exact path='/gallery' element={<GalleryPage />} />
+        <Route exact path='/gallery-grid' element={<GalleryGridPage />} />
+        <Route exact path='/gallery-masonry' element={<GalleryMasonryPage />} />
 
         <Route exact path='/image-generator' element={<ImageGeneratorPage />} />
         <Route exact path='/image-upload' element={<ImageUploadPage />} />

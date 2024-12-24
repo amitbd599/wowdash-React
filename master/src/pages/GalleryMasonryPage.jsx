@@ -1,21 +1,21 @@
 import React from "react";
 import MasterLayout from "../masterLayout/MasterLayout";
 import Breadcrumb from "../components/Breadcrumb";
-import GalleryLayer from "../components/GalleryLayer";
+import GalleryMasonryLayer from "../components/GalleryMasonryLayer";
 
-const GalleryPage = () => {
+const GalleryMasonryPage = () => {
   return (
     <>
       {/* MasterLayout */}
       <MasterLayout>
         {/* Breadcrumb */}
-        <Breadcrumb title='Gallery Grid Desc' />
+        <Breadcrumb title='Gallery Grid' />
 
         {/* GalleryLayer */}
-        <GalleryLayer />
+        <GalleryMasonryLayer />
       </MasterLayout>
     </>
   );
 };
 
-export default GalleryPage;
+export default GalleryMasonryPage;
