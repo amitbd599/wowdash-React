@@ -39,7 +39,7 @@ const InvoiceListLayer = () => {
                         <option value="Paid">Paid</option>
                         <option value="Pending">Pending</option>
                     </select>
-                    <Link href="invoice-add.html" className="btn btn-sm btn-primary-600">
+                    <Link to="/invoice-add" className="btn btn-sm btn-primary-600">
                         <i className="ri-add-line" /> Create Invoice
                     </Link>
                 </div>

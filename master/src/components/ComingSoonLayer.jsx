@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const ComingSoonLayer = () => {
   const calculateTimeLeft = (endTime) => {
@@ -38,12 +39,12 @@ const ComingSoonLayer = () => {
     <div className='custom-bg'>
       <div className='container container--xl'>
         <div className='d-flex align-items-center justify-content-between py-24'>
-          <a href='index.html'>
+          <Link to='/index'>
             <img src='assets/images/logo.png' alt='Logo' />
-          </a>
-          <a href='index.html' className='btn btn-outline-primary-600 text-sm'>
+          </Link>
+          <Link to='/index' className='btn btn-outline-primary-600 text-sm'>
             Go To Home
-          </a>
+          </Link>
         </div>
 
         <div className='py-res-120'>

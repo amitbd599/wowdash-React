@@ -1,17 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const MaintenanceLayer = () => {
   return (
     <div className='custom-bg'>
       <div className='container container--xl'>
         <div className='d-flex align-items-center justify-content-between py-24'>
-          <a href='index.html' className=''>
+          <Link to='/index' className=''>
             <img src='assets/images/logo.png' alt='' />
-          </a>
-          <a href='index.html' className='btn btn-outline-primary-600 text-sm'>
+          </Link>
+          <Link to='/index' className='btn btn-outline-primary-600 text-sm'>
             {" "}
             Go To Home{" "}
-          </a>
+          </Link>
         </div>
         <div className='py-res-120'>
           <div className='row align-items-center'>
